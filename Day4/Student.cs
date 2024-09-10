@@ -8,15 +8,15 @@ namespace Day4
 {
     internal class Student
     {
-        public Student(int Id,string Name,DateTime DOB,long Phone,string Email)
+        public Student(int id, string name, DateTime dOB, long phone, string email)
         {
-            this.Id = Id;
-            this.DOB = DOB;
-            this.Name = Name;
-            this.Phone = Phone;
-            this.Email = Email;
-            
+            Id = id;
+            Name = name;
+            DOB = dOB;
+            Phone = phone;
+            Email = email;
         }
+
         public int Id { get; set; }
 
         public string Name { get; set; } = "";
