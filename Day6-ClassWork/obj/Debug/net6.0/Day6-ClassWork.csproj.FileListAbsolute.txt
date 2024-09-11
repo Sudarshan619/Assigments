@@ -1,0 +1,15 @@
+C:\Users\sudarshan\source\repos\Assignment\Day6-ClassWork\bin\Debug\net6.0\Day6-ClassWork.exe
+C:\Users\sudarshan\source\repos\Assignment\Day6-ClassWork\bin\Debug\net6.0\Day6-ClassWork.deps.json
+C:\Users\sudarshan\source\repos\Assignment\Day6-ClassWork\bin\Debug\net6.0\Day6-ClassWork.runtimeconfig.json
+C:\Users\sudarshan\source\repos\Assignment\Day6-ClassWork\bin\Debug\net6.0\Day6-ClassWork.dll
+C:\Users\sudarshan\source\repos\Assignment\Day6-ClassWork\bin\Debug\net6.0\Day6-ClassWork.pdb
+C:\Users\sudarshan\source\repos\Assignment\Day6-ClassWork\obj\Debug\net6.0\Day6-ClassWork.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sudarshan\source\repos\Assignment\Day6-ClassWork\obj\Debug\net6.0\Day6-ClassWork.AssemblyInfoInputs.cache
+C:\Users\sudarshan\source\repos\Assignment\Day6-ClassWork\obj\Debug\net6.0\Day6-ClassWork.AssemblyInfo.cs
+C:\Users\sudarshan\source\repos\Assignment\Day6-ClassWork\obj\Debug\net6.0\Day6-ClassWork.csproj.CoreCompileInputs.cache
+C:\Users\sudarshan\source\repos\Assignment\Day6-ClassWork\obj\Debug\net6.0\Day6-ClassWork.sourcelink.json
+C:\Users\sudarshan\source\repos\Assignment\Day6-ClassWork\obj\Debug\net6.0\Day6-ClassWork.dll
+C:\Users\sudarshan\source\repos\Assignment\Day6-ClassWork\obj\Debug\net6.0\refint\Day6-ClassWork.dll
+C:\Users\sudarshan\source\repos\Assignment\Day6-ClassWork\obj\Debug\net6.0\Day6-ClassWork.pdb
+C:\Users\sudarshan\source\repos\Assignment\Day6-ClassWork\obj\Debug\net6.0\Day6-ClassWork.genruntimeconfig.cache
+C:\Users\sudarshan\source\repos\Assignment\Day6-ClassWork\obj\Debug\net6.0\ref\Day6-ClassWork.dll
