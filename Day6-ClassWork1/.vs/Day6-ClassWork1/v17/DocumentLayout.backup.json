@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day6-ClassWork1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0FCC05AC-C36B-4B89-8DC9-A6BABBF18BC2}|Day6-ClassWork1.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day6-classwork1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FCC05AC-C36B-4B89-8DC9-A6BABBF18BC2}|Day6-ClassWork1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FCC05AC-C36B-4B89-8DC9-A6BABBF18BC2}|Day6-ClassWork1.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day6-classwork1\\nriaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FCC05AC-C36B-4B89-8DC9-A6BABBF18BC2}|Day6-ClassWork1.csproj|solutionrelative:nriaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FCC05AC-C36B-4B89-8DC9-A6BABBF18BC2}|Day6-ClassWork1.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day6-classwork1\\salaryaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FCC05AC-C36B-4B89-8DC9-A6BABBF18BC2}|Day6-ClassWork1.csproj|solutionrelative:salaryaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FCC05AC-C36B-4B89-8DC9-A6BABBF18BC2}|Day6-ClassWork1.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day6-classwork1\\savingsaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FCC05AC-C36B-4B89-8DC9-A6BABBF18BC2}|Day6-ClassWork1.csproj|solutionrelative:savingsaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FCC05AC-C36B-4B89-8DC9-A6BABBF18BC2}|Day6-ClassWork1.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day6-classwork1\\ibankaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FCC05AC-C36B-4B89-8DC9-A6BABBF18BC2}|Day6-ClassWork1.csproj|solutionrelative:ibankaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NRIAccount.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day6-ClassWork1\\NRIAccount.cs",
+              "RelativeDocumentMoniker": "NRIAccount.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day6-ClassWork1\\NRIAccount.cs",
+              "RelativeToolTip": "NRIAccount.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAgwDQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T15:29:46.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SalaryAccount.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day6-ClassWork1\\SalaryAccount.cs",
+              "RelativeDocumentMoniker": "SalaryAccount.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day6-ClassWork1\\SalaryAccount.cs",
+              "RelativeToolTip": "SalaryAccount.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwCEAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T15:29:18.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SavingsAccount.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day6-ClassWork1\\SavingsAccount.cs",
+              "RelativeDocumentMoniker": "SavingsAccount.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day6-ClassWork1\\SavingsAccount.cs",
+              "RelativeToolTip": "SavingsAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T15:24:46.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IBankAccount.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day6-ClassWork1\\IBankAccount.cs",
+              "RelativeDocumentMoniker": "IBankAccount.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day6-ClassWork1\\IBankAccount.cs",
+              "RelativeToolTip": "IBankAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T15:23:59.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day6-ClassWork1\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day6-ClassWork1\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AgIAACgAAAAAAAAAAAAQwDsAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T15:22:33.623Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
