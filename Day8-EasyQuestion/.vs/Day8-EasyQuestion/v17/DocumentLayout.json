@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day8-EasyQuestion\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B1D97C20-87C6-4A4B-8370-AC7B36D816E1}|Day8-EasyQuestion.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day8-easyquestion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1D97C20-87C6-4A4B-8370-AC7B36D816E1}|Day8-EasyQuestion.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1D97C20-87C6-4A4B-8370-AC7B36D816E1}|Day8-EasyQuestion.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day8-easyquestion\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1D97C20-87C6-4A4B-8370-AC7B36D816E1}|Day8-EasyQuestion.csproj|solutionrelative:employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1D97C20-87C6-4A4B-8370-AC7B36D816E1}|Day8-EasyQuestion.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day8-easyquestion\\iemployeepromotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1D97C20-87C6-4A4B-8370-AC7B36D816E1}|Day8-EasyQuestion.csproj|solutionrelative:iemployeepromotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1D97C20-87C6-4A4B-8370-AC7B36D816E1}|Day8-EasyQuestion.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day8-easyquestion\\employeepromotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1D97C20-87C6-4A4B-8370-AC7B36D816E1}|Day8-EasyQuestion.csproj|solutionrelative:employeepromotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmployeePromotion.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day8-EasyQuestion\\EmployeePromotion.cs",
+              "RelativeDocumentMoniker": "EmployeePromotion.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day8-EasyQuestion\\EmployeePromotion.cs",
+              "RelativeToolTip": "EmployeePromotion.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAiwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T08:48:36.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IEmployeePromotion.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day8-EasyQuestion\\IEmployeePromotion.cs",
+              "RelativeDocumentMoniker": "IEmployeePromotion.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day8-EasyQuestion\\IEmployeePromotion.cs",
+              "RelativeToolTip": "IEmployeePromotion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T08:48:18.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day8-EasyQuestion\\Employee.cs",
+              "RelativeDocumentMoniker": "Employee.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day8-EasyQuestion\\Employee.cs",
+              "RelativeToolTip": "Employee.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAcwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T08:42:54.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day8-EasyQuestion\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day8-EasyQuestion\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAKcAAAAAAAAAAAAAAKsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T08:41:02.49Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
