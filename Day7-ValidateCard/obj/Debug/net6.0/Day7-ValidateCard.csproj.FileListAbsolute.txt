@@ -1,0 +1,15 @@
+C:\Users\sudarshan\source\repos\Assignment\Day7-ValidateCard\bin\Debug\net6.0\Day7-ValidateCard.exe
+C:\Users\sudarshan\source\repos\Assignment\Day7-ValidateCard\bin\Debug\net6.0\Day7-ValidateCard.deps.json
+C:\Users\sudarshan\source\repos\Assignment\Day7-ValidateCard\bin\Debug\net6.0\Day7-ValidateCard.runtimeconfig.json
+C:\Users\sudarshan\source\repos\Assignment\Day7-ValidateCard\bin\Debug\net6.0\Day7-ValidateCard.dll
+C:\Users\sudarshan\source\repos\Assignment\Day7-ValidateCard\bin\Debug\net6.0\Day7-ValidateCard.pdb
+C:\Users\sudarshan\source\repos\Assignment\Day7-ValidateCard\obj\Debug\net6.0\Day7-ValidateCard.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sudarshan\source\repos\Assignment\Day7-ValidateCard\obj\Debug\net6.0\Day7-ValidateCard.AssemblyInfoInputs.cache
+C:\Users\sudarshan\source\repos\Assignment\Day7-ValidateCard\obj\Debug\net6.0\Day7-ValidateCard.AssemblyInfo.cs
+C:\Users\sudarshan\source\repos\Assignment\Day7-ValidateCard\obj\Debug\net6.0\Day7-ValidateCard.csproj.CoreCompileInputs.cache
+C:\Users\sudarshan\source\repos\Assignment\Day7-ValidateCard\obj\Debug\net6.0\Day7-ValidateCard.sourcelink.json
+C:\Users\sudarshan\source\repos\Assignment\Day7-ValidateCard\obj\Debug\net6.0\Day7-ValidateCard.dll
+C:\Users\sudarshan\source\repos\Assignment\Day7-ValidateCard\obj\Debug\net6.0\refint\Day7-ValidateCard.dll
+C:\Users\sudarshan\source\repos\Assignment\Day7-ValidateCard\obj\Debug\net6.0\Day7-ValidateCard.pdb
+C:\Users\sudarshan\source\repos\Assignment\Day7-ValidateCard\obj\Debug\net6.0\Day7-ValidateCard.genruntimeconfig.cache
+C:\Users\sudarshan\source\repos\Assignment\Day7-ValidateCard\obj\Debug\net6.0\ref\Day7-ValidateCard.dll

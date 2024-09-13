@@ -1,0 +1,15 @@
+C:\Users\sudarshan\source\repos\Assignment\Day7-StringOperations\bin\Debug\net6.0\Day7-StringOperations.exe
+C:\Users\sudarshan\source\repos\Assignment\Day7-StringOperations\bin\Debug\net6.0\Day7-StringOperations.deps.json
+C:\Users\sudarshan\source\repos\Assignment\Day7-StringOperations\bin\Debug\net6.0\Day7-StringOperations.runtimeconfig.json
+C:\Users\sudarshan\source\repos\Assignment\Day7-StringOperations\bin\Debug\net6.0\Day7-StringOperations.dll
+C:\Users\sudarshan\source\repos\Assignment\Day7-StringOperations\bin\Debug\net6.0\Day7-StringOperations.pdb
+C:\Users\sudarshan\source\repos\Assignment\Day7-StringOperations\obj\Debug\net6.0\Day7-StringOperations.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sudarshan\source\repos\Assignment\Day7-StringOperations\obj\Debug\net6.0\Day7-StringOperations.AssemblyInfoInputs.cache
+C:\Users\sudarshan\source\repos\Assignment\Day7-StringOperations\obj\Debug\net6.0\Day7-StringOperations.AssemblyInfo.cs
+C:\Users\sudarshan\source\repos\Assignment\Day7-StringOperations\obj\Debug\net6.0\Day7-StringOperations.csproj.CoreCompileInputs.cache
+C:\Users\sudarshan\source\repos\Assignment\Day7-StringOperations\obj\Debug\net6.0\Day7-StringOperations.sourcelink.json
+C:\Users\sudarshan\source\repos\Assignment\Day7-StringOperations\obj\Debug\net6.0\Day7-StringOperations.dll
+C:\Users\sudarshan\source\repos\Assignment\Day7-StringOperations\obj\Debug\net6.0\refint\Day7-StringOperations.dll
+C:\Users\sudarshan\source\repos\Assignment\Day7-StringOperations\obj\Debug\net6.0\Day7-StringOperations.pdb
+C:\Users\sudarshan\source\repos\Assignment\Day7-StringOperations\obj\Debug\net6.0\Day7-StringOperations.genruntimeconfig.cache
+C:\Users\sudarshan\source\repos\Assignment\Day7-StringOperations\obj\Debug\net6.0\ref\Day7-StringOperations.dll

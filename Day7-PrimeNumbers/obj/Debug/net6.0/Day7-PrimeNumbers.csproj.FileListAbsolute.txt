@@ -1,0 +1,15 @@
+C:\Users\sudarshan\source\repos\Assignment\Day7-PrimeNumbers\bin\Debug\net6.0\Day7-PrimeNumbers.exe
+C:\Users\sudarshan\source\repos\Assignment\Day7-PrimeNumbers\bin\Debug\net6.0\Day7-PrimeNumbers.deps.json
+C:\Users\sudarshan\source\repos\Assignment\Day7-PrimeNumbers\bin\Debug\net6.0\Day7-PrimeNumbers.runtimeconfig.json
+C:\Users\sudarshan\source\repos\Assignment\Day7-PrimeNumbers\bin\Debug\net6.0\Day7-PrimeNumbers.dll
+C:\Users\sudarshan\source\repos\Assignment\Day7-PrimeNumbers\bin\Debug\net6.0\Day7-PrimeNumbers.pdb
+C:\Users\sudarshan\source\repos\Assignment\Day7-PrimeNumbers\obj\Debug\net6.0\Day7-PrimeNumbers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sudarshan\source\repos\Assignment\Day7-PrimeNumbers\obj\Debug\net6.0\Day7-PrimeNumbers.AssemblyInfoInputs.cache
+C:\Users\sudarshan\source\repos\Assignment\Day7-PrimeNumbers\obj\Debug\net6.0\Day7-PrimeNumbers.AssemblyInfo.cs
+C:\Users\sudarshan\source\repos\Assignment\Day7-PrimeNumbers\obj\Debug\net6.0\Day7-PrimeNumbers.csproj.CoreCompileInputs.cache
+C:\Users\sudarshan\source\repos\Assignment\Day7-PrimeNumbers\obj\Debug\net6.0\Day7-PrimeNumbers.sourcelink.json
+C:\Users\sudarshan\source\repos\Assignment\Day7-PrimeNumbers\obj\Debug\net6.0\Day7-PrimeNumbers.dll
+C:\Users\sudarshan\source\repos\Assignment\Day7-PrimeNumbers\obj\Debug\net6.0\refint\Day7-PrimeNumbers.dll
+C:\Users\sudarshan\source\repos\Assignment\Day7-PrimeNumbers\obj\Debug\net6.0\Day7-PrimeNumbers.pdb
+C:\Users\sudarshan\source\repos\Assignment\Day7-PrimeNumbers\obj\Debug\net6.0\Day7-PrimeNumbers.genruntimeconfig.cache
+C:\Users\sudarshan\source\repos\Assignment\Day7-PrimeNumbers\obj\Debug\net6.0\ref\Day7-PrimeNumbers.dll

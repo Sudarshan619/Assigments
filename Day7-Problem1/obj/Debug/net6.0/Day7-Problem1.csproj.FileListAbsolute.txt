@@ -1,0 +1,15 @@
+C:\Users\sudarshan\source\repos\Assignment\Day7-Problem1\bin\Debug\net6.0\Day7-Problem1.exe
+C:\Users\sudarshan\source\repos\Assignment\Day7-Problem1\bin\Debug\net6.0\Day7-Problem1.deps.json
+C:\Users\sudarshan\source\repos\Assignment\Day7-Problem1\bin\Debug\net6.0\Day7-Problem1.runtimeconfig.json
+C:\Users\sudarshan\source\repos\Assignment\Day7-Problem1\bin\Debug\net6.0\Day7-Problem1.dll
+C:\Users\sudarshan\source\repos\Assignment\Day7-Problem1\bin\Debug\net6.0\Day7-Problem1.pdb
+C:\Users\sudarshan\source\repos\Assignment\Day7-Problem1\obj\Debug\net6.0\Day7-Problem1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sudarshan\source\repos\Assignment\Day7-Problem1\obj\Debug\net6.0\Day7-Problem1.AssemblyInfoInputs.cache
+C:\Users\sudarshan\source\repos\Assignment\Day7-Problem1\obj\Debug\net6.0\Day7-Problem1.AssemblyInfo.cs
+C:\Users\sudarshan\source\repos\Assignment\Day7-Problem1\obj\Debug\net6.0\Day7-Problem1.csproj.CoreCompileInputs.cache
+C:\Users\sudarshan\source\repos\Assignment\Day7-Problem1\obj\Debug\net6.0\Day7-Problem1.sourcelink.json
+C:\Users\sudarshan\source\repos\Assignment\Day7-Problem1\obj\Debug\net6.0\Day7-Problem1.dll
+C:\Users\sudarshan\source\repos\Assignment\Day7-Problem1\obj\Debug\net6.0\refint\Day7-Problem1.dll
+C:\Users\sudarshan\source\repos\Assignment\Day7-Problem1\obj\Debug\net6.0\Day7-Problem1.pdb
+C:\Users\sudarshan\source\repos\Assignment\Day7-Problem1\obj\Debug\net6.0\Day7-Problem1.genruntimeconfig.cache
+C:\Users\sudarshan\source\repos\Assignment\Day7-Problem1\obj\Debug\net6.0\ref\Day7-Problem1.dll
