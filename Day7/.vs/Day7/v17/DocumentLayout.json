@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day7\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0C54AF75-6D5D-432D-A024-E4CFECBE3239}|Day7.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day7\\invalidinputdetailexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C54AF75-6D5D-432D-A024-E4CFECBE3239}|Day7.csproj|solutionrelative:invalidinputdetailexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C54AF75-6D5D-432D-A024-E4CFECBE3239}|Day7.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day7\\numbers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C54AF75-6D5D-432D-A024-E4CFECBE3239}|Day7.csproj|solutionrelative:numbers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C54AF75-6D5D-432D-A024-E4CFECBE3239}|Day7.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day7\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C54AF75-6D5D-432D-A024-E4CFECBE3239}|Day7.csproj|solutionrelative:calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C54AF75-6D5D-432D-A024-E4CFECBE3239}|Day7.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day7\\icalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C54AF75-6D5D-432D-A024-E4CFECBE3239}|Day7.csproj|solutionrelative:icalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C54AF75-6D5D-432D-A024-E4CFECBE3239}|Day7.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day7\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C54AF75-6D5D-432D-A024-E4CFECBE3239}|Day7.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InvalidInputDetailException.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day7\\InvalidInputDetailException.cs",
+              "RelativeDocumentMoniker": "InvalidInputDetailException.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day7\\InvalidInputDetailException.cs",
+              "RelativeToolTip": "InvalidInputDetailException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T07:17:22.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ICalculator.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day7\\ICalculator.cs",
+              "RelativeDocumentMoniker": "ICalculator.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day7\\ICalculator.cs",
+              "RelativeToolTip": "ICalculator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T04:36:21.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Calculator.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day7\\Calculator.cs",
+              "RelativeDocumentMoniker": "Calculator.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day7\\Calculator.cs",
+              "RelativeToolTip": "Calculator.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T04:13:12.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Numbers.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day7\\Numbers.cs",
+              "RelativeDocumentMoniker": "Numbers.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day7\\Numbers.cs",
+              "RelativeToolTip": "Numbers.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwBkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T04:12:57.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day7\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day7\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA1wDQAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T04:12:35.861Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
