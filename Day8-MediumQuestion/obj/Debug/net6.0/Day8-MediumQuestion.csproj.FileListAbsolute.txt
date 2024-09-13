@@ -1,0 +1,15 @@
+C:\Users\sudarshan\source\repos\Assignment\Day8-MediumQuestion\bin\Debug\net6.0\Day8-MediumQuestion.exe
+C:\Users\sudarshan\source\repos\Assignment\Day8-MediumQuestion\bin\Debug\net6.0\Day8-MediumQuestion.deps.json
+C:\Users\sudarshan\source\repos\Assignment\Day8-MediumQuestion\bin\Debug\net6.0\Day8-MediumQuestion.runtimeconfig.json
+C:\Users\sudarshan\source\repos\Assignment\Day8-MediumQuestion\bin\Debug\net6.0\Day8-MediumQuestion.dll
+C:\Users\sudarshan\source\repos\Assignment\Day8-MediumQuestion\bin\Debug\net6.0\Day8-MediumQuestion.pdb
+C:\Users\sudarshan\source\repos\Assignment\Day8-MediumQuestion\obj\Debug\net6.0\Day8-MediumQuestion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sudarshan\source\repos\Assignment\Day8-MediumQuestion\obj\Debug\net6.0\Day8-MediumQuestion.AssemblyInfoInputs.cache
+C:\Users\sudarshan\source\repos\Assignment\Day8-MediumQuestion\obj\Debug\net6.0\Day8-MediumQuestion.AssemblyInfo.cs
+C:\Users\sudarshan\source\repos\Assignment\Day8-MediumQuestion\obj\Debug\net6.0\Day8-MediumQuestion.csproj.CoreCompileInputs.cache
+C:\Users\sudarshan\source\repos\Assignment\Day8-MediumQuestion\obj\Debug\net6.0\Day8-MediumQuestion.sourcelink.json
+C:\Users\sudarshan\source\repos\Assignment\Day8-MediumQuestion\obj\Debug\net6.0\Day8-MediumQuestion.dll
+C:\Users\sudarshan\source\repos\Assignment\Day8-MediumQuestion\obj\Debug\net6.0\refint\Day8-MediumQuestion.dll
+C:\Users\sudarshan\source\repos\Assignment\Day8-MediumQuestion\obj\Debug\net6.0\Day8-MediumQuestion.pdb
+C:\Users\sudarshan\source\repos\Assignment\Day8-MediumQuestion\obj\Debug\net6.0\Day8-MediumQuestion.genruntimeconfig.cache
+C:\Users\sudarshan\source\repos\Assignment\Day8-MediumQuestion\obj\Debug\net6.0\ref\Day8-MediumQuestion.dll

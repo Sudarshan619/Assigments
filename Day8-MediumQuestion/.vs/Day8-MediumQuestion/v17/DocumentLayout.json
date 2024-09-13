@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day8-MediumQuestion\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6A246A13-D71C-4351-8DC3-7D2CC7CE37C7}|Day8-MediumQuestion.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day8-mediumquestion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A246A13-D71C-4351-8DC3-7D2CC7CE37C7}|Day8-MediumQuestion.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A246A13-D71C-4351-8DC3-7D2CC7CE37C7}|Day8-MediumQuestion.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day8-mediumquestion\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A246A13-D71C-4351-8DC3-7D2CC7CE37C7}|Day8-MediumQuestion.csproj|solutionrelative:employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A246A13-D71C-4351-8DC3-7D2CC7CE37C7}|Day8-MediumQuestion.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day8-mediumquestion\\employeeoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A246A13-D71C-4351-8DC3-7D2CC7CE37C7}|Day8-MediumQuestion.csproj|solutionrelative:employeeoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A246A13-D71C-4351-8DC3-7D2CC7CE37C7}|Day8-MediumQuestion.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day8-mediumquestion\\iemployeeoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A246A13-D71C-4351-8DC3-7D2CC7CE37C7}|Day8-MediumQuestion.csproj|solutionrelative:iemployeeoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IEmployeeOperations.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day8-MediumQuestion\\IEmployeeOperations.cs",
+              "RelativeDocumentMoniker": "IEmployeeOperations.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day8-MediumQuestion\\IEmployeeOperations.cs",
+              "RelativeToolTip": "IEmployeeOperations.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAADwvxoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T10:36:24.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeOperations.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day8-MediumQuestion\\EmployeeOperations.cs",
+              "RelativeDocumentMoniker": "EmployeeOperations.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day8-MediumQuestion\\EmployeeOperations.cs",
+              "RelativeToolTip": "EmployeeOperations.cs",
+              "ViewState": "AgIAAOQAAAAAAAAAAAAqwPwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T10:27:40.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day8-MediumQuestion\\Employee.cs",
+              "RelativeDocumentMoniker": "Employee.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day8-MediumQuestion\\Employee.cs",
+              "RelativeToolTip": "Employee.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAiwDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T10:25:50.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day8-MediumQuestion\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day8-MediumQuestion\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAAAJIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T10:24:18.131Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

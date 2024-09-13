@@ -1,0 +1,15 @@
+C:\Users\sudarshan\source\repos\Assignment\Day8-EasyQuestion\bin\Debug\net6.0\Day8-EasyQuestion.exe
+C:\Users\sudarshan\source\repos\Assignment\Day8-EasyQuestion\bin\Debug\net6.0\Day8-EasyQuestion.deps.json
+C:\Users\sudarshan\source\repos\Assignment\Day8-EasyQuestion\bin\Debug\net6.0\Day8-EasyQuestion.runtimeconfig.json
+C:\Users\sudarshan\source\repos\Assignment\Day8-EasyQuestion\bin\Debug\net6.0\Day8-EasyQuestion.dll
+C:\Users\sudarshan\source\repos\Assignment\Day8-EasyQuestion\bin\Debug\net6.0\Day8-EasyQuestion.pdb
+C:\Users\sudarshan\source\repos\Assignment\Day8-EasyQuestion\obj\Debug\net6.0\Day8-EasyQuestion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sudarshan\source\repos\Assignment\Day8-EasyQuestion\obj\Debug\net6.0\Day8-EasyQuestion.AssemblyInfoInputs.cache
+C:\Users\sudarshan\source\repos\Assignment\Day8-EasyQuestion\obj\Debug\net6.0\Day8-EasyQuestion.AssemblyInfo.cs
+C:\Users\sudarshan\source\repos\Assignment\Day8-EasyQuestion\obj\Debug\net6.0\Day8-EasyQuestion.csproj.CoreCompileInputs.cache
+C:\Users\sudarshan\source\repos\Assignment\Day8-EasyQuestion\obj\Debug\net6.0\Day8-EasyQuestion.sourcelink.json
+C:\Users\sudarshan\source\repos\Assignment\Day8-EasyQuestion\obj\Debug\net6.0\Day8-EasyQuestion.dll
+C:\Users\sudarshan\source\repos\Assignment\Day8-EasyQuestion\obj\Debug\net6.0\refint\Day8-EasyQuestion.dll
+C:\Users\sudarshan\source\repos\Assignment\Day8-EasyQuestion\obj\Debug\net6.0\Day8-EasyQuestion.pdb
+C:\Users\sudarshan\source\repos\Assignment\Day8-EasyQuestion\obj\Debug\net6.0\Day8-EasyQuestion.genruntimeconfig.cache
+C:\Users\sudarshan\source\repos\Assignment\Day8-EasyQuestion\obj\Debug\net6.0\ref\Day8-EasyQuestion.dll
