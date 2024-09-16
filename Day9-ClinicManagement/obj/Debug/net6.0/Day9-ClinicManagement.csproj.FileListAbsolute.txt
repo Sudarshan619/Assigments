@@ -1,0 +1,15 @@
+C:\Users\sudarshan\source\repos\Assignment\Day9-ClinicManagement\bin\Debug\net6.0\Day9-ClinicManagement.exe
+C:\Users\sudarshan\source\repos\Assignment\Day9-ClinicManagement\bin\Debug\net6.0\Day9-ClinicManagement.deps.json
+C:\Users\sudarshan\source\repos\Assignment\Day9-ClinicManagement\bin\Debug\net6.0\Day9-ClinicManagement.runtimeconfig.json
+C:\Users\sudarshan\source\repos\Assignment\Day9-ClinicManagement\bin\Debug\net6.0\Day9-ClinicManagement.dll
+C:\Users\sudarshan\source\repos\Assignment\Day9-ClinicManagement\bin\Debug\net6.0\Day9-ClinicManagement.pdb
+C:\Users\sudarshan\source\repos\Assignment\Day9-ClinicManagement\obj\Debug\net6.0\Day9-ClinicManagement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sudarshan\source\repos\Assignment\Day9-ClinicManagement\obj\Debug\net6.0\Day9-ClinicManagement.AssemblyInfoInputs.cache
+C:\Users\sudarshan\source\repos\Assignment\Day9-ClinicManagement\obj\Debug\net6.0\Day9-ClinicManagement.AssemblyInfo.cs
+C:\Users\sudarshan\source\repos\Assignment\Day9-ClinicManagement\obj\Debug\net6.0\Day9-ClinicManagement.csproj.CoreCompileInputs.cache
+C:\Users\sudarshan\source\repos\Assignment\Day9-ClinicManagement\obj\Debug\net6.0\Day9-ClinicManagement.sourcelink.json
+C:\Users\sudarshan\source\repos\Assignment\Day9-ClinicManagement\obj\Debug\net6.0\Day9-ClinicManagement.dll
+C:\Users\sudarshan\source\repos\Assignment\Day9-ClinicManagement\obj\Debug\net6.0\refint\Day9-ClinicManagement.dll
+C:\Users\sudarshan\source\repos\Assignment\Day9-ClinicManagement\obj\Debug\net6.0\Day9-ClinicManagement.pdb
+C:\Users\sudarshan\source\repos\Assignment\Day9-ClinicManagement\obj\Debug\net6.0\Day9-ClinicManagement.genruntimeconfig.cache
+C:\Users\sudarshan\source\repos\Assignment\Day9-ClinicManagement\obj\Debug\net6.0\ref\Day9-ClinicManagement.dll
