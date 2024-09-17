@@ -8,13 +8,10 @@ namespace Day9_ClinicManagement
 {
     public interface IClinicManagement
     {
-        
 
         public Doctor LoginAsDoctor(List<Doctor> doctor);
 
         public Patient LoginAsPatient(List<Patient> patient);
-
-
 
     }
 }

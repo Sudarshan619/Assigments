@@ -1,0 +1,15 @@
+C:\Users\sudarshan\source\repos\Assignment\Day-10\bin\Debug\net6.0\Day-10.exe
+C:\Users\sudarshan\source\repos\Assignment\Day-10\bin\Debug\net6.0\Day-10.deps.json
+C:\Users\sudarshan\source\repos\Assignment\Day-10\bin\Debug\net6.0\Day-10.runtimeconfig.json
+C:\Users\sudarshan\source\repos\Assignment\Day-10\bin\Debug\net6.0\Day-10.dll
+C:\Users\sudarshan\source\repos\Assignment\Day-10\bin\Debug\net6.0\Day-10.pdb
+C:\Users\sudarshan\source\repos\Assignment\Day-10\obj\Debug\net6.0\Day-10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sudarshan\source\repos\Assignment\Day-10\obj\Debug\net6.0\Day-10.AssemblyInfoInputs.cache
+C:\Users\sudarshan\source\repos\Assignment\Day-10\obj\Debug\net6.0\Day-10.AssemblyInfo.cs
+C:\Users\sudarshan\source\repos\Assignment\Day-10\obj\Debug\net6.0\Day-10.csproj.CoreCompileInputs.cache
+C:\Users\sudarshan\source\repos\Assignment\Day-10\obj\Debug\net6.0\Day-10.sourcelink.json
+C:\Users\sudarshan\source\repos\Assignment\Day-10\obj\Debug\net6.0\Day-10.dll
+C:\Users\sudarshan\source\repos\Assignment\Day-10\obj\Debug\net6.0\refint\Day-10.dll
+C:\Users\sudarshan\source\repos\Assignment\Day-10\obj\Debug\net6.0\Day-10.pdb
+C:\Users\sudarshan\source\repos\Assignment\Day-10\obj\Debug\net6.0\Day-10.genruntimeconfig.cache
+C:\Users\sudarshan\source\repos\Assignment\Day-10\obj\Debug\net6.0\ref\Day-10.dll

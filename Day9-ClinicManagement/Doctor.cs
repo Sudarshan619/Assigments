@@ -9,46 +9,46 @@ namespace Day9_ClinicManagement
 {
     public class Doctor
     {
-        public Doctor() { }
+        
 
-        public int DoctorId { get; set; }
+        public int? DoctorId { get; set; } = null;
 
-        public string DoctorName { get; set; }
+        public string DoctorName { get; set; } = string.Empty;
 
-        public string DoctorType { get; set; }
+        public string DoctorType { get; set; } = string.Empty ;
 
-        public long Phone { get; set; }
+        public long? Phone { get; set; } = null;
 
         
 
         public Doctor Register(List<Doctor> doctors)
         {
-
-            Doctor doctor = new Doctor();
             try
             {
+                Doctor doctor = new Doctor();
                 Console.WriteLine("Enter doctor id");
-                doctor.DoctorId = Convert.ToInt32(Console.ReadLine());
-                var filteredDoctor = doctors.Where(x => x.DoctorId == doctor.DoctorId).ToList();
-                if (filteredDoctor.Count() > 0) {
+                var id = Convert.ToInt32(Console.ReadLine());
+                var filteredDoctor = doctors.Where(e => e.DoctorId == id).ToList();
+
+                if (filteredDoctor.Count >0 ) {
                     throw new Exception("Doctor already exist");
                 }
-                else
-                {
-                    return doctor;
-                }
+        
+                doctor.DoctorId = id;
                 Console.WriteLine("Enter doctor name");
                 doctor.DoctorName = Console.ReadLine();
                 Console.WriteLine("Enter doctor type");
                 doctor.DoctorType = Console.ReadLine();
                 Console.WriteLine("Enter doctor phone");
-                doctor.Phone = Convert.ToInt32(Console.ReadLine());
+                doctor.Phone = Convert.ToInt64(Console.ReadLine());
+
+                return doctor;
             }
             catch (Exception ex) {
                 Console.WriteLine(ex.Message);
             }
 
-            return doctor;
+            return null;
         }
 
         public void ShowAppointments(Doctor doctor, List<Appointment> appointment)
@@ -68,7 +68,7 @@ namespace Day9_ClinicManagement
 
         public override string ToString()
         {
-            return $"Doctor Id: {DoctorId} \n Doctor Name:{DoctorName} \n Specialization:{DoctorType} \n Phone no:{Phone}";
+            return $"Doctor Id: {DoctorId} \n Doctor Name: {DoctorName} \n Specialization: {DoctorType} \n Phone no: {Phone}\n ------------------------------------";
         }
     }
 }

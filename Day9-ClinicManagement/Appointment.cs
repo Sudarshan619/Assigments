@@ -8,17 +8,13 @@ namespace Day9_ClinicManagement
 {
     public class Appointment
     {
-        public Appointment() { }
-
         public int AppointmentId {  get; set; }
 
-        public Doctor AppointedDoctor { get; set; }
+        public Doctor AppointedDoctor { get; set; } = new Doctor();
 
-        public Patient AppointedPatient { get; set; }
+        public Patient AppointedPatient { get; set; } = new Patient();
 
-        public DateTime AppointedTime { get;set; }
-
-
+        public DateTime AppointedTime { get;set; } = DateTime.Now;
 
     }
 }

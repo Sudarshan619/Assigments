@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Day9-ClinicManagement")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5867a29acfbdca83c276c846cfd9dc2c360c29e8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c852ecab8ed5a215cf923c4a818e7f9513cf07c8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Day9-ClinicManagement")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Day9-ClinicManagement")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
