@@ -30,34 +30,65 @@ namespace Day9_ClinicManagement
         }
         void ShowDoctors()
         {
-            foreach (Doctor doctor in DoctorList)
+            if (DoctorList.Count <= 0)
             {
-                Console.WriteLine(doctor);
+                Console.WriteLine("No doctors found");
             }
+            else
+            {
+                foreach (Doctor doctor in DoctorList)
+                {
+                    Console.WriteLine(doctor);
+                }
+            }
+            
         }
 
         void ShowPatients()
         {
-            foreach (Patient patient in PatientList)
+            if (PatientList.Count <= 0)
             {
-                Console.WriteLine(patient);
+                Console.WriteLine("No patients found");
             }
+
+            else
+            {
+                foreach (Patient patient in PatientList)
+                {
+                    Console.WriteLine(patient);
+                }
+            }
+            
         }
         void RegisterAsDoctor()
         {
-           
-                DoctorList.Add(Doctor.Register(DoctorList));
+            var doctor = Doctor.Register(DoctorList);
+            if (doctor != null)
+            {
+                DoctorList.Add(doctor);
+            }
+              
 
-            
         }
 
         void BookAppointment()
+
         {
-            AppointmentList.Add(Patient.MakeAppointment(DoctorList, AppointmentId,currPatient));
+            var result = Patient.MakeAppointment(DoctorList, AppointmentList, AppointmentId, currPatient);
+            if (result != null)
+            {
+                AppointmentList.Add(result);
+                AppointmentId = AppointmentId + 1;
+            }
+  
         }
         void RegisterAsPatient()
         {
-            PatientList.Add(Patient.Register(PatientList));
+            var patient = Patient.Register(PatientList);
+            if (patient != null)
+            {
+                PatientList.Add(patient);
+            }
         }
         
         static void Main(string[] args)
@@ -88,32 +119,37 @@ namespace Day9_ClinicManagement
                             }
                             else if (val == 2)
                             {
-                                currDoctor = program.clinicManagement.LoginAsDoctor(DoctorList);
-
-                                int selection = 0;
-                                do
+                                var result = program.clinicManagement.LoginAsDoctor(DoctorList);
+                                Console.WriteLine(result);
+                                if (result != null)
                                 {
-                                    Console.WriteLine("1.Show Patients");
-                                    Console.WriteLine("2.Show Appointment");
-                                    Console.WriteLine("3.Logout");
+                                    currDoctor = result;
 
-                                    selection = Convert.ToInt32(Console.ReadLine());
-                                    switch (selection)
+                                    int selection = 0;
+                                    do
                                     {
-                                        case 1:
-                                            program.ShowPatients();
-                                            break;
-                                        case 2:
-                                            program.Doctor.ShowAppointments(currDoctor, AppointmentList);
-                                            break;
-                                        case 3:
-                                            currDoctor = null;
-                                            break;
-                                        default:
-                                            break;
-                                    }
+                                        Console.WriteLine("1.Show Patients");
+                                        Console.WriteLine("2.Show Appointment");
+                                        Console.WriteLine("3.Logout");
 
-                                } while (selection != 3);
+                                        selection = Convert.ToInt32(Console.ReadLine());
+                                        switch (selection)
+                                        {
+                                            case 1:
+                                                program.ShowPatients();
+                                                break;
+                                            case 2:
+                                                program.Doctor.ShowAppointments(currDoctor, AppointmentList);
+                                                break;
+                                            case 3:
+                                                currDoctor = null;
+                                                break;
+                                            default:
+                                                break;
+                                        }
+
+                                    } while (selection != 3);
+                                }      
 
                             }
 
@@ -131,39 +167,46 @@ namespace Day9_ClinicManagement
                             else if (val1 == 2)
                             {
 
-                                currPatient = program.clinicManagement.LoginAsPatient(PatientList);
+                                var result = program.clinicManagement.LoginAsPatient(PatientList);
 
-                                int selection = 0;
-                                do
+                                if (result != null)
                                 {
+                                    currPatient = result;
 
-                                    Console.WriteLine("1.Show doctors");
-                                    Console.WriteLine("2.Book Appointment");
-                                    Console.WriteLine("3.Show Appointment");
-                                    Console.WriteLine("4.Logout");
-                                    selection = Convert.ToInt32(Console.ReadLine());
-                                    switch (selection)
+
+
+                                    int selection = 0;
+                                    do
                                     {
-                                        case 1:
-                                            program.ShowDoctors();
-                                            break;
-                                        case 2:
-                                            program.BookAppointment();
-                                            break;
-                                        case 3:
-                                            program.Patient.ShowAppointments(currPatient, AppointmentList);
-                                            break;
-                                        case 4:
-                                            currPatient = null;
-                                            break;
-                                        default:
-                                            break;
-                                    }
-                                } while (selection != 4);
 
+                                        Console.WriteLine("1.Show doctors");
+                                        Console.WriteLine("2.Book Appointment");
+                                        Console.WriteLine("3.Show Appointment");
+                                        Console.WriteLine("4.Logout");
+                                        selection = Convert.ToInt32(Console.ReadLine());
+                                        switch (selection)
+                                        {
+                                            case 1:
+                                                program.ShowDoctors();
+                                                break;
+                                            case 2:
+                                                program.BookAppointment();
+                                                break;
+                                            case 3:
+                                                program.Patient.ShowAppointments(currPatient, AppointmentList);
+                                                break;
+                                            case 4:
+                                                currPatient = null;
+                                                break;
+                                            default:
+                                                break;
+                                        }
+                                    } while (selection != 4);
+
+                                }
                             }
-
                             break;
+                        
                     }
 
                 } while (choice != 0);

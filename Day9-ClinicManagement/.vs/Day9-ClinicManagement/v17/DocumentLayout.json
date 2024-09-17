@@ -1,0 +1,123 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day9-ClinicManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DCE55444-B25B-4D6D-AAD5-C434F9F7AE2A}|Day9-ClinicManagement.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day9-clinicmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCE55444-B25B-4D6D-AAD5-C434F9F7AE2A}|Day9-ClinicManagement.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCE55444-B25B-4D6D-AAD5-C434F9F7AE2A}|Day9-ClinicManagement.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day9-clinicmanagement\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCE55444-B25B-4D6D-AAD5-C434F9F7AE2A}|Day9-ClinicManagement.csproj|solutionrelative:appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCE55444-B25B-4D6D-AAD5-C434F9F7AE2A}|Day9-ClinicManagement.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day9-clinicmanagement\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCE55444-B25B-4D6D-AAD5-C434F9F7AE2A}|Day9-ClinicManagement.csproj|solutionrelative:patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCE55444-B25B-4D6D-AAD5-C434F9F7AE2A}|Day9-ClinicManagement.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day9-clinicmanagement\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCE55444-B25B-4D6D-AAD5-C434F9F7AE2A}|Day9-ClinicManagement.csproj|solutionrelative:doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCE55444-B25B-4D6D-AAD5-C434F9F7AE2A}|Day9-ClinicManagement.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day9-clinicmanagement\\clinicmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCE55444-B25B-4D6D-AAD5-C434F9F7AE2A}|Day9-ClinicManagement.csproj|solutionrelative:clinicmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCE55444-B25B-4D6D-AAD5-C434F9F7AE2A}|Day9-ClinicManagement.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day9-clinicmanagement\\iclinicmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCE55444-B25B-4D6D-AAD5-C434F9F7AE2A}|Day9-ClinicManagement.csproj|solutionrelative:iclinicmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day9-ClinicManagement\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day9-ClinicManagement\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAmwMwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T04:32:49.149Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day9-ClinicManagement\\Patient.cs",
+              "RelativeDocumentMoniker": "Patient.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day9-ClinicManagement\\Patient.cs",
+              "RelativeToolTip": "Patient.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAuwHUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T04:32:48.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IClinicManagement.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day9-ClinicManagement\\IClinicManagement.cs",
+              "RelativeDocumentMoniker": "IClinicManagement.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day9-ClinicManagement\\IClinicManagement.cs",
+              "RelativeToolTip": "IClinicManagement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T04:32:47.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day9-ClinicManagement\\Doctor.cs",
+              "RelativeDocumentMoniker": "Doctor.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day9-ClinicManagement\\Doctor.cs",
+              "RelativeToolTip": "Doctor.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAqwEIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T04:32:46.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ClinicManagement.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day9-ClinicManagement\\ClinicManagement.cs",
+              "RelativeDocumentMoniker": "ClinicManagement.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day9-ClinicManagement\\ClinicManagement.cs",
+              "RelativeToolTip": "ClinicManagement.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAAEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T04:32:45.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day9-ClinicManagement\\Appointment.cs",
+              "RelativeDocumentMoniker": "Appointment.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day9-ClinicManagement\\Appointment.cs",
+              "RelativeToolTip": "Appointment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T04:32:43.417Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
