@@ -23,3 +23,12 @@ body {
     justify-content:center;
     align-items:center
 }
+.row{
+    justify-content:center;
+    align-items:center;
+}
+.form-create {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}

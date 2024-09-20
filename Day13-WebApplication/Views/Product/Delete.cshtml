@@ -1,0 +1,24 @@
+﻿@model Day13_WebApplication.Models.Product
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Product</h4>
+    <hr />
+        <div>
+         Product name:@Model.Name
+         Product Image:<img src="@Model.Image" />
+
+        </div>
+       
+    
+    <form asp-action="Delete">
+        <input type="submit" value="Delete" asp-route-id="@Model.Id" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
