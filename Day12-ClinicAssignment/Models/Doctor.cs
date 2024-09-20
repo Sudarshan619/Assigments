@@ -1,6 +1,6 @@
 ﻿namespace Day12_ClinicAssignment.Models
 {
-    public class Doctor
+    public class Doctor:IEquatable<Doctor>
     {
         public int Id { get; set; }
 
@@ -13,8 +13,11 @@
 
         public string Image { get; set; }
 
-        public long Contact{ get; set; }
+        public long Contact { get; set; }
 
+        public Doctor(){
+
+        }
 
         public Doctor(int id,string name,string specialization,string gender,string image,long contact) { 
             Id=id;
@@ -23,7 +26,12 @@
             Gender=gender;
             Image=image;
             Contact=contact;
-        
+        }
+
+        public bool Equals(Doctor? other)
+        {
+
+            return this.Id == other.Id;
         }
     }
 }
