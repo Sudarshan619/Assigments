@@ -18,7 +18,6 @@
         public Doctor(){
 
         }
-
         public Doctor(int id,string name,string specialization,string gender,string image,long contact) { 
             Id=id;
             Name=name;

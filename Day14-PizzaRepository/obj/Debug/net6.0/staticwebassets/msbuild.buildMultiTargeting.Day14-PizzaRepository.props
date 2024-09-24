@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Day14-PizzaRepository.props" />
+</Project>

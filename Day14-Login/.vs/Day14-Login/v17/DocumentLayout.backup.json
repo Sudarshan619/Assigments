@@ -1,0 +1,455 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day14-login\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day14-login\\repositories\\userrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|solutionrelative:repositories\\userrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day14-login\\repositories\\pizzaimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|solutionrelative:repositories\\pizzaimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day14-login\\repositories\\pizzarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|solutionrelative:repositories\\pizzarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day14-login\\controllers\\pizzacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|solutionrelative:controllers\\pizzacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day14-login\\views\\pizza\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|solutionrelative:views\\pizza\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day14-login\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|solutionrelative:services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day14-login\\services\\pizzaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|solutionrelative:services\\pizzaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day14-login\\interface\\ipizzaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|solutionrelative:interface\\ipizzaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day14-login\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day14-login\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day14-login\\repositories\\irepositorycs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|solutionrelative:repositories\\irepositorycs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day14-login\\exceptions\\cannotaddwithnoimagesexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|solutionrelative:exceptions\\cannotaddwithnoimagesexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day14-login\\exceptions\\noimagesexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|solutionrelative:exceptions\\noimagesexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day14-login\\exceptions\\nosuchimageexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|solutionrelative:exceptions\\nosuchimageexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day14-login\\exceptions\\cannotupdatewithnoimagesexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|solutionrelative:exceptions\\cannotupdatewithnoimagesexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day14-login\\models\\pizzaimages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|solutionrelative:models\\pizzaimages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day14-login\\day14-login.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|solutionrelative:day14-login.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day14-login\\interface\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|solutionrelative:interface\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day14-login\\models\\viewmodel\\pizzaimageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|solutionrelative:models\\viewmodel\\pizzaimageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day14-login\\models\\pizza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|solutionrelative:models\\pizza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day14-login\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day14-login\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|solutionrelative:views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day14-login\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day14-login\\views\\login\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|solutionrelative:views\\login\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day14-login\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|solutionrelative:views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day14-login\\views\\login\\passwordchange.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{383BCC5E-B5EA-411F-ACF6-E224FDDD5972}|Day14-Login.csproj|solutionrelative:views\\login\\passwordchange.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IPizzaService.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Interface\\IPizzaService.cs",
+              "RelativeDocumentMoniker": "Interface\\IPizzaService.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Interface\\IPizzaService.cs",
+              "RelativeToolTip": "Interface\\IPizzaService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T05:54:30.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginService.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Services\\LoginService.cs",
+              "RelativeDocumentMoniker": "Services\\LoginService.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Services\\LoginService.cs",
+              "RelativeToolTip": "Services\\LoginService.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBYAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T08:35:52.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Views\\Pizza\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Pizza\\Index.cshtml",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Views\\Pizza\\Index.cshtml",
+              "RelativeToolTip": "Views\\Pizza\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-24T06:15:46.943Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PizzaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Repositories\\PizzaRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\PizzaRepository.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Repositories\\PizzaRepository.cs",
+              "RelativeToolTip": "Repositories\\PizzaRepository.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAA7wAEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T05:55:50.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PizzaImageRepository.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Repositories\\PizzaImageRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\PizzaImageRepository.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Repositories\\PizzaImageRepository.cs",
+              "RelativeToolTip": "Repositories\\PizzaImageRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAB3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T05:57:19.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PizzaService.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Services\\PizzaService.cs",
+              "RelativeDocumentMoniker": "Services\\PizzaService.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Services\\PizzaService.cs",
+              "RelativeToolTip": "Services\\PizzaService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAzwCQAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T05:55:20.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserRepositories.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Repositories\\UserRepositories.cs",
+              "RelativeDocumentMoniker": "Repositories\\UserRepositories.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Repositories\\UserRepositories.cs",
+              "RelativeToolTip": "Repositories\\UserRepositories.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T09:03:35.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T08:57:26.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBMAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T08:36:02.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PizzaController.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Controllers\\PizzaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PizzaController.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Controllers\\PizzaController.cs",
+              "RelativeToolTip": "Controllers\\PizzaController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T05:59:48.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Controllers\\LoginController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAkwDkAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T08:40:16.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IRepositorycs.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Repositories\\IRepositorycs.cs",
+              "RelativeDocumentMoniker": "Repositories\\IRepositorycs.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Repositories\\IRepositorycs.cs",
+              "RelativeToolTip": "Repositories\\IRepositorycs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T06:06:19.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CannotAddWithNoImagesException.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Exceptions\\CannotAddWithNoImagesException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\CannotAddWithNoImagesException.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Exceptions\\CannotAddWithNoImagesException.cs",
+              "RelativeToolTip": "Exceptions\\CannotAddWithNoImagesException.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T06:08:56.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "NoImagesException.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Exceptions\\NoImagesException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\NoImagesException.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Exceptions\\NoImagesException.cs",
+              "RelativeToolTip": "Exceptions\\NoImagesException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T06:11:03.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "NoSuchImageException.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Exceptions\\NoSuchImageException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\NoSuchImageException.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Exceptions\\NoSuchImageException.cs",
+              "RelativeToolTip": "Exceptions\\NoSuchImageException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T06:11:12.347Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CannotUpdateWithNoImagesException.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Exceptions\\CannotUpdateWithNoImagesException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\CannotUpdateWithNoImagesException.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Exceptions\\CannotUpdateWithNoImagesException.cs",
+              "RelativeToolTip": "Exceptions\\CannotUpdateWithNoImagesException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T06:10:17.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IUser.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Interface\\IUser.cs",
+              "RelativeDocumentMoniker": "Interface\\IUser.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Interface\\IUser.cs",
+              "RelativeToolTip": "Interface\\IUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T08:58:20.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PizzaImages.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Models\\PizzaImages.cs",
+              "RelativeDocumentMoniker": "Models\\PizzaImages.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Models\\PizzaImages.cs",
+              "RelativeToolTip": "Models\\PizzaImages.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T05:53:08.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Day14-Login.csproj",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Day14-Login.csproj",
+              "RelativeDocumentMoniker": "Day14-Login.csproj",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Day14-Login.csproj",
+              "RelativeToolTip": "Day14-Login.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-23T08:35:33.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PizzaImageViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Models\\ViewModel\\PizzaImageViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModel\\PizzaImageViewModel.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Models\\ViewModel\\PizzaImageViewModel.cs",
+              "RelativeToolTip": "Models\\ViewModel\\PizzaImageViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T05:53:51.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Pizza.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Models\\Pizza.cs",
+              "RelativeDocumentMoniker": "Models\\Pizza.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Models\\Pizza.cs",
+              "RelativeToolTip": "Models\\Pizza.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T05:52:40.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-24T04:47:58.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Views\\Login\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Login\\Login.cshtml",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Views\\Login\\Login.cshtml",
+              "RelativeToolTip": "Views\\Login\\Login.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T09:59:02.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Login\\Index.cshtml",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "Views\\Login\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T09:39:08.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T04:48:33.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ChangePassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Views\\Login\\ChangePassword.cshtml",
+              "RelativeDocumentMoniker": "Views\\Login\\ChangePassword.cshtml",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Views\\Login\\ChangePassword.cshtml",
+              "RelativeToolTip": "Views\\Login\\ChangePassword.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T09:51:15.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "PassWordChange.cshtml",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Views\\Login\\PassWordChange.cshtml",
+              "RelativeDocumentMoniker": "Views\\Login\\PassWordChange.cshtml",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day14-Login\\Views\\Login\\PassWordChange.cshtml",
+              "RelativeToolTip": "Views\\Login\\PassWordChange.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T11:25:23.075Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
