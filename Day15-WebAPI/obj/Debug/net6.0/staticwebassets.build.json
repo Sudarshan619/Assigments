@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "NixB72RyCDfn+grlj69XGZ5APXRsBH2bS9+AKIlqiD4=",
+  "Source": "Day15-WebAPI",
+  "BasePath": "_content/Day15-WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

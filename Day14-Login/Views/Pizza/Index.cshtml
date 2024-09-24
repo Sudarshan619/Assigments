@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Day14_Login.Models.ViewModel.PizzaImageViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+@{
+    foreach(var item in Model)
+    {
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="/images/@item.Images[0]" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">@item.Description</p>
+                <p class="card-text">@item.Name</p>
+                <p class="card-text">@item.Price</p>
+            </div>
+        </div>
+    }
+    
+}
+

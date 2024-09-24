@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Day15-LandingPage.props" />
+</Project>
