@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Day15-PatientLogin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b12bfaffe199ab6543e94d451e66567c94c9ab9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ffbfd08e093acd501b679db8cb4e1d1fb6d31f2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Day15-PatientLogin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Day15-PatientLogin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
