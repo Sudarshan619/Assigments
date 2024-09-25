@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-LandingPage\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{73A68862-96AC-41A2-9E66-69CBDAB44C4E}|Day15-LandingPage.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-landingpage\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{73A68862-96AC-41A2-9E66-69CBDAB44C4E}|Day15-LandingPage.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{73A68862-96AC-41A2-9E66-69CBDAB44C4E}|Day15-LandingPage.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-landingpage\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73A68862-96AC-41A2-9E66-69CBDAB44C4E}|Day15-LandingPage.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{73A68862-96AC-41A2-9E66-69CBDAB44C4E}|Day15-LandingPage.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-landingpage\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{73A68862-96AC-41A2-9E66-69CBDAB44C4E}|Day15-LandingPage.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73A68862-96AC-41A2-9E66-69CBDAB44C4E}|Day15-LandingPage.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-landingpage\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{73A68862-96AC-41A2-9E66-69CBDAB44C4E}|Day15-LandingPage.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{73A68862-96AC-41A2-9E66-69CBDAB44C4E}|Day15-LandingPage.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-landingpage\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73A68862-96AC-41A2-9E66-69CBDAB44C4E}|Day15-LandingPage.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{73A68862-96AC-41A2-9E66-69CBDAB44C4E}|Day15-LandingPage.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-landingpage\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -30,17 +30,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-LandingPage\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
               "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-LandingPage\\Views\\Home\\Privacy.cshtml",
               "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAqwDAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-24T11:08:48.554Z",
               "EditorCaption": ""
@@ -55,31 +55,29 @@
               "RelativeToolTip": "wwwroot\\css\\site.css",
               "ViewState": "AgIAAAwAAAAAAAAAAAAUwB0AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-24T09:47:46.669Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T09:47:46.669Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Day15-LandingPage",
+              "Title": "Day15-LandingPage.csproj",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-LandingPage\\Day15-LandingPage.csproj",
               "RelativeDocumentMoniker": "Day15-LandingPage.csproj",
               "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-LandingPage\\Day15-LandingPage.csproj",
               "RelativeToolTip": "Day15-LandingPage.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-24T09:37:33.06Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T09:37:33.06Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-LandingPage\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-LandingPage\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACoAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAqwEMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-24T09:34:33.946Z",
               "EditorCaption": ""
@@ -92,7 +90,7 @@
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-LandingPage\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAqwDAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-24T09:34:15.592Z",
               "EditorCaption": ""

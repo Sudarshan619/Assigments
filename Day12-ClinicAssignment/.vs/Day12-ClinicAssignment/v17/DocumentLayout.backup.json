@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{1B351F69-F66C-462F-97C6-54A0C9B9E9B7}|Day12-ClinicAssignment.csproj|solutionrelative:views\\clinic\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{1B351F69-F66C-462F-97C6-54A0C9B9E9B7}|Day12-ClinicAssignment.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day12-clinicassignment\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B351F69-F66C-462F-97C6-54A0C9B9E9B7}|Day12-ClinicAssignment.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B351F69-F66C-462F-97C6-54A0C9B9E9B7}|Day12-ClinicAssignment.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day12-clinicassignment\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B351F69-F66C-462F-97C6-54A0C9B9E9B7}|Day12-ClinicAssignment.csproj|solutionrelative:models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1B351F69-F66C-462F-97C6-54A0C9B9E9B7}|Day12-ClinicAssignment.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day12-clinicassignment\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{1B351F69-F66C-462F-97C6-54A0C9B9E9B7}|Day12-ClinicAssignment.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
@@ -27,10 +35,6 @@
       "RelativeMoniker": "D:0:0:{1B351F69-F66C-462F-97C6-54A0C9B9E9B7}|Day12-ClinicAssignment.csproj|solutionrelative:views\\clinic\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B351F69-F66C-462F-97C6-54A0C9B9E9B7}|Day12-ClinicAssignment.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day12-clinicassignment\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B351F69-F66C-462F-97C6-54A0C9B9E9B7}|Day12-ClinicAssignment.csproj|solutionrelative:models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1B351F69-F66C-462F-97C6-54A0C9B9E9B7}|Day12-ClinicAssignment.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day12-clinicassignment\\controllers\\cliniccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B351F69-F66C-462F-97C6-54A0C9B9E9B7}|Day12-ClinicAssignment.csproj|solutionrelative:controllers\\cliniccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -46,11 +50,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day12-ClinicAssignment\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -63,7 +67,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day12-ClinicAssignment\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day12-ClinicAssignment\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-24T17:34:41.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day12-ClinicAssignment\\Views\\Clinic\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\Clinic\\Edit.cshtml",
@@ -75,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day12-ClinicAssignment\\Views\\Clinic\\Delete.cshtml",
               "RelativeDocumentMoniker": "Views\\Clinic\\Delete.cshtml",
@@ -87,7 +104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day12-ClinicAssignment\\Views\\Clinic\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Clinic\\Create.cshtml",
@@ -99,7 +116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day12-ClinicAssignment\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
@@ -111,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day12-ClinicAssignment\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -129,14 +146,14 @@
               "RelativeDocumentMoniker": "Views\\Clinic\\Index.cshtml",
               "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day12-ClinicAssignment\\Views\\Clinic\\Index.cshtml",
               "RelativeToolTip": "Views\\Clinic\\Index.cshtml",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAkwBMAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-19T13:32:32.974Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ClinicController.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day12-ClinicAssignment\\Controllers\\ClinicController.cs",
               "RelativeDocumentMoniker": "Controllers\\ClinicController.cs",
@@ -148,15 +165,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Doctor.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day12-ClinicAssignment\\Models\\Doctor.cs",
               "RelativeDocumentMoniker": "Models\\Doctor.cs",
               "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day12-ClinicAssignment\\Models\\Doctor.cs",
               "RelativeToolTip": "Models\\Doctor.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAzwCUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAADwvxQAAABpAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T13:31:41.189Z"
+              "WhenOpened": "2024-09-19T13:31:41.189Z",
+              "EditorCaption": ""
             }
           ]
         }

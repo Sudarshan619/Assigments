@@ -50,6 +50,8 @@ namespace Day15_PatientLogin.Controllers
             if (loginUser != null)
             {
                 HttpContext.Session.SetString("username", loginUser.UserName);
+                
+                
                 return RedirectToAction("Index", "Appointment");
             }
             ModelState.AddModelError("", "User not found");

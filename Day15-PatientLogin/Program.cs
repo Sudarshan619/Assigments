@@ -3,6 +3,7 @@ using Day15_PatientLogin.Interface;
 using Day15_PatientLogin.Repositories;
 using Day15_PatientLogin.Models;
 
+
 namespace Day15_PatientLogin
 {
     public class Program
@@ -16,6 +17,10 @@ namespace Day15_PatientLogin
             builder.Services.AddControllersWithViews();
             builder.Services.AddScoped<LoginService>();
             builder.Services.AddScoped<ILogin<string, string, Patient>, LoginRepository>();
+            builder.Services.AddScoped<AppointmentRepository>();
+            builder.Services.AddScoped<AppointmentService>();
+            builder.Services.AddScoped<PatientRepository>();
+
 
             var app = builder.Build();
 

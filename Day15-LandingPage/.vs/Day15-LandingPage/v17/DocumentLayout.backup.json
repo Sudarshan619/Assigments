@@ -38,9 +38,9 @@
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-LandingPage\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-LandingPage\\Views\\Home\\Privacy.cshtml*",
-              "RelativeToolTip": "Views\\Home\\Privacy.cshtml*",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACoAAABXAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-LandingPage\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-24T11:08:48.554Z",
               "EditorCaption": ""
@@ -55,21 +55,19 @@
               "RelativeToolTip": "wwwroot\\css\\site.css",
               "ViewState": "AgIAAAwAAAAAAAAAAAAUwB0AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-24T09:47:46.669Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T09:47:46.669Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Day15-LandingPage",
+              "Title": "Day15-LandingPage.csproj",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-LandingPage\\Day15-LandingPage.csproj",
               "RelativeDocumentMoniker": "Day15-LandingPage.csproj",
               "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-LandingPage\\Day15-LandingPage.csproj",
               "RelativeToolTip": "Day15-LandingPage.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-24T09:37:33.06Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T09:37:33.06Z"
             },
             {
               "$type": "Document",
@@ -79,10 +77,9 @@
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-LandingPage\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAADUAAACDAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACoAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-24T09:34:33.946Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T09:34:33.946Z"
             },
             {
               "$type": "Document",
@@ -92,10 +89,9 @@
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-LandingPage\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAACwAAABXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-24T09:34:15.592Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T09:34:15.592Z"
             }
           ]
         }

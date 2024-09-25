@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Day16-PizzaStore.props" />
+</Project>

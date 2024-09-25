@@ -9,8 +9,8 @@ namespace Day15_PatientLogin.Repositories
 
         static List<Patient> _users = new List<Patient>()
         {
-            new Patient("Sudu","skp123"),
-            new Patient("Desh","desh@123")
+            new Patient("Sudu","skp123",20,"sudu@gamil.com"),
+            new Patient("Desh","desh@123",23,"desh@gmail.com")
         };
 
         public Patient Delete(string username, string password)

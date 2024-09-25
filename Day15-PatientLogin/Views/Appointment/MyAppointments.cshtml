@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Day15_PatientLogin.Models.Appointment>
+
+@{
+    ViewData["Title"] = "My Appointments";
+}
+
+<h1>My Appointments</h1>
+
+@if (Model != null && Model.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Appointment ID</th>
+                <th>Doctor ID</th>
+                <th>Patient ID</th>
+                <th>Appointment Date</th>
+                <th>Status</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var appointment in Model)
+            {
+                <tr>
+                    <td>@appointment.AppointmentId</td>
+                    <td>@appointment.DoctorId</td>
+                    <td>@appointment.PatientId</td>
+                    <td>@appointment.AppointmentDate.ToString("g")</td>
+                    <td>@appointment.Status</td>
+                    <td>@appointment.Notes</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <div>No appointments found.</div>
+}
+
+<div>
+    <a asp-action="BookAppointment" class="btn btn-primary">Book New Appointment</a>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</div>
