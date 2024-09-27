@@ -17,12 +17,12 @@ namespace Day16_PizzaStore.Controllers
         }
 
         // Get all orders for a specific customer
-        [HttpGet("{customerId}")]
+        [HttpGet]
         public async Task<IActionResult> GetOrder(int customerId)
         {
             try
             {
-                var order = await _orderService.GetAllOrder(customerId);
+                var order = await _orderService.GetAllOrder(customerId);   
                 return Ok(order);
             }
             catch (Exception e)
@@ -33,9 +33,8 @@ namespace Day16_PizzaStore.Controllers
             }
         }
 
-        // Create a new order for a customer
-        [HttpPost("{customerId}")]
-        public async Task<IActionResult> GenerateOrder([FromBody] PizzaOrderDTO pizzaOrderDTO, int customerId)
+        [HttpPost]
+        public async Task<IActionResult> GenerateOrder(PizzaOrderDTO pizzaOrderDTO, int customerId)
         {
             try
             {
@@ -49,5 +48,20 @@ namespace Day16_PizzaStore.Controllers
                 return BadRequest(e.Message);
             }
         }
+
+        //public async Task<IActionResult> GenerateOrderWithoutCart(PizzaOrderDTO pizzaOrderDTO, int customerId)
+        //{
+        //    try
+        //    {
+        //        //var order = await _orderService.CreateOrderWithoutCart(pizzaOrderDTO, customerId);
+        //        //return Ok(order);
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        Debug.WriteLine(e.Message);
+        //        Debug.WriteLine(e.StackTrace);
+        //        return BadRequest(e.Message);
+        //    }
+        //}
     }
 }

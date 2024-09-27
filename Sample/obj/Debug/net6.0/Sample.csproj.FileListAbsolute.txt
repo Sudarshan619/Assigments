@@ -1,0 +1,15 @@
+C:\Users\sudarshan\source\repos\Assignment\Sample\bin\Debug\net6.0\Sample.exe
+C:\Users\sudarshan\source\repos\Assignment\Sample\bin\Debug\net6.0\Sample.deps.json
+C:\Users\sudarshan\source\repos\Assignment\Sample\bin\Debug\net6.0\Sample.runtimeconfig.json
+C:\Users\sudarshan\source\repos\Assignment\Sample\bin\Debug\net6.0\Sample.dll
+C:\Users\sudarshan\source\repos\Assignment\Sample\bin\Debug\net6.0\Sample.pdb
+C:\Users\sudarshan\source\repos\Assignment\Sample\obj\Debug\net6.0\Sample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sudarshan\source\repos\Assignment\Sample\obj\Debug\net6.0\Sample.AssemblyInfoInputs.cache
+C:\Users\sudarshan\source\repos\Assignment\Sample\obj\Debug\net6.0\Sample.AssemblyInfo.cs
+C:\Users\sudarshan\source\repos\Assignment\Sample\obj\Debug\net6.0\Sample.csproj.CoreCompileInputs.cache
+C:\Users\sudarshan\source\repos\Assignment\Sample\obj\Debug\net6.0\Sample.sourcelink.json
+C:\Users\sudarshan\source\repos\Assignment\Sample\obj\Debug\net6.0\Sample.dll
+C:\Users\sudarshan\source\repos\Assignment\Sample\obj\Debug\net6.0\refint\Sample.dll
+C:\Users\sudarshan\source\repos\Assignment\Sample\obj\Debug\net6.0\Sample.pdb
+C:\Users\sudarshan\source\repos\Assignment\Sample\obj\Debug\net6.0\Sample.genruntimeconfig.cache
+C:\Users\sudarshan\source\repos\Assignment\Sample\obj\Debug\net6.0\ref\Sample.dll

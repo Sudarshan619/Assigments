@@ -3,52 +3,68 @@
   "WorkspaceRootPath": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-patientlogin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-patientlogin\\views\\appointment\\myappointments.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|solutionrelative:views\\appointment\\myappointments.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-patientlogin\\views\\appointment\\bookappointment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|solutionrelative:views\\appointment\\bookappointment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-patientlogin\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|solutionrelative:views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-patientlogin\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-patientlogin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-patientlogin\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|solutionrelative:controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-patientlogin\\service\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|solutionrelative:service\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-patientlogin\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|solutionrelative:models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-patientlogin\\repositories\\appointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|solutionrelative:repositories\\appointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-patientlogin\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|solutionrelative:models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-patientlogin\\repositories\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|solutionrelative:repositories\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-patientlogin\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-patientlogin\\views\\appointment\\myappointments.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|solutionrelative:views\\appointment\\myappointments.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-patientlogin\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|solutionrelative:views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-patientlogin\\interface\\iappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|solutionrelative:interface\\iappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-patientlogin\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|solutionrelative:models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-patientlogin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-patientlogin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-patientlogin\\interface\\ilogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|solutionrelative:interface\\ilogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-patientlogin\\service\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|solutionrelative:service\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-patientlogin\\service\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|solutionrelative:service\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-patientlogin\\repositories\\appointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|solutionrelative:repositories\\appointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-patientlogin\\repositories\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -57,22 +73,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-patientlogin\\repositories\\doctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|solutionrelative:repositories\\doctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-patientlogin\\repositories\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|solutionrelative:repositories\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-patientlogin\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|solutionrelative:models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-patientlogin\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|solutionrelative:models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-patientlogin\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|solutionrelative:models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{15F5514C-0253-4BE8-867B-C5C2DD0BBBDE}|Day15-PatientLogin.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day15-patientlogin\\views\\appointment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -102,17 +102,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 6,
               "Title": "PatientRepository.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Repositories\\PatientRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\PatientRepository.cs",
               "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Repositories\\PatientRepository.cs",
               "RelativeToolTip": "Repositories\\PatientRepository.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAswCUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAowCUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T11:31:55.812Z",
               "IsPinned": true,
@@ -120,52 +120,53 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAkwCAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T13:55:53.373Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "Controllers\\LoginController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwDMAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T11:37:54.108Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Views\\Login\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Login\\Index.cshtml",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Views\\Login\\Index.cshtml",
-              "RelativeToolTip": "Views\\Login\\Index.cshtml",
-              "ViewState": "AgIAAAoAAAAAAAAAAADwvyYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-24T17:10:37.897Z",
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Models\\Doctor.cs",
+              "RelativeDocumentMoniker": "Models\\Doctor.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Models\\Doctor.cs",
+              "RelativeToolTip": "Models\\Doctor.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAkwBcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T11:31:13.295Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "AppointmentService.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Service\\AppointmentService.cs",
+              "RelativeDocumentMoniker": "Service\\AppointmentService.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Service\\AppointmentService.cs",
+              "RelativeToolTip": "Service\\AppointmentService.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA0wBQAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T11:35:22.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppointmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Repositories\\AppointmentRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\AppointmentRepository.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Repositories\\AppointmentRepository.cs",
+              "RelativeToolTip": "Repositories\\AppointmentRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T17:27:52.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "BookAppointment.cshtml",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Views\\Appointment\\BookAppointment.cshtml",
               "RelativeDocumentMoniker": "Views\\Appointment\\BookAppointment.cshtml",
               "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Views\\Appointment\\BookAppointment.cshtml",
               "RelativeToolTip": "Views\\Appointment\\BookAppointment.cshtml",
-              "ViewState": "AgIAABEAAAAAAAAAAADwvxsAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-25T15:08:41.879Z",
               "EditorCaption": ""
@@ -173,45 +174,71 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MyAppointments.cshtml",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Views\\Appointment\\MyAppointments.cshtml",
-              "RelativeDocumentMoniker": "Views\\Appointment\\MyAppointments.cshtml",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Views\\Appointment\\MyAppointments.cshtml",
-              "RelativeToolTip": "Views\\Appointment\\MyAppointments.cshtml",
-              "ViewState": "AgIAABEAAAAAAAAAAADwvy0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-25T15:28:35.065Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAADwvyUAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T16:41:54.178Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "AppointmentController.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Controllers\\AppointmentController.cs",
               "RelativeDocumentMoniker": "Controllers\\AppointmentController.cs",
               "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Controllers\\AppointmentController.cs",
               "RelativeToolTip": "Controllers\\AppointmentController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAIAzwDQAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T11:38:12.494Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Models\\Appointment.cs",
+              "RelativeDocumentMoniker": "Models\\Appointment.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Models\\Appointment.cs",
+              "RelativeToolTip": "Models\\Appointment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T14:21:12.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Login\\Index.cshtml",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "Views\\Login\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-24T17:10:37.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Controllers\\LoginController.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAkwC4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T11:37:54.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MyAppointments.cshtml",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Views\\Appointment\\MyAppointments.cshtml",
+              "RelativeDocumentMoniker": "Views\\Appointment\\MyAppointments.cshtml",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Views\\Appointment\\MyAppointments.cshtml",
+              "RelativeToolTip": "Views\\Appointment\\MyAppointments.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-25T15:28:35.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "IAppointment.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Interface\\IAppointment.cs",
               "RelativeDocumentMoniker": "Interface\\IAppointment.cs",
@@ -224,7 +251,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Models\\Patient.cs",
+              "RelativeDocumentMoniker": "Models\\Patient.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Models\\Patient.cs",
+              "RelativeToolTip": "Models\\Patient.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T11:30:51.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAADwvxIAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T16:41:54.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAkwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T13:55:53.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "ILogin.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Interface\\ILogin.cs",
               "RelativeDocumentMoniker": "Interface\\ILogin.cs",
@@ -232,25 +297,11 @@
               "RelativeToolTip": "Interface\\ILogin.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T16:54:51.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T16:54:51.114Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AppointmentService.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Service\\AppointmentService.cs",
-              "RelativeDocumentMoniker": "Service\\AppointmentService.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Service\\AppointmentService.cs",
-              "RelativeToolTip": "Service\\AppointmentService.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAowCQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T11:35:22.513Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "LoginService.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Service\\LoginService.cs",
               "RelativeDocumentMoniker": "Service\\LoginService.cs",
@@ -258,25 +309,11 @@
               "RelativeToolTip": "Service\\LoginService.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAkwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T11:36:00.409Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T11:36:00.409Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AppointmentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Repositories\\AppointmentRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\AppointmentRepository.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Repositories\\AppointmentRepository.cs",
-              "RelativeToolTip": "Repositories\\AppointmentRepository.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAowD0AAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T17:27:52.96Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "LoginRepository.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Repositories\\LoginRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\LoginRepository.cs",
@@ -284,12 +321,11 @@
               "RelativeToolTip": "Repositories\\LoginRepository.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAowDIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T11:36:25.927Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T11:36:25.927Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "DoctorRepository.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Repositories\\DoctorRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\DoctorRepository.cs",
@@ -297,47 +333,7 @@
               "RelativeToolTip": "Repositories\\DoctorRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T11:32:20.185Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Appointment.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Models\\Appointment.cs",
-              "RelativeDocumentMoniker": "Models\\Appointment.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Models\\Appointment.cs",
-              "RelativeToolTip": "Models\\Appointment.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAYwB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T14:21:12.471Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Patient.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Models\\Patient.cs",
-              "RelativeDocumentMoniker": "Models\\Patient.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Models\\Patient.cs",
-              "RelativeToolTip": "Models\\Patient.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAQwBoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T11:30:51.91Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Doctor.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Models\\Doctor.cs",
-              "RelativeDocumentMoniker": "Models\\Doctor.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day15-PatientLogin\\Models\\Doctor.cs",
-              "RelativeToolTip": "Models\\Doctor.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA5wCYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T11:31:13.295Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T11:32:20.185Z"
             },
             {
               "$type": "Document",
@@ -349,8 +345,7 @@
               "RelativeToolTip": "Views\\Appointment\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-24T17:12:37.695Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T17:12:37.695Z"
             },
             {
               "$type": "Document",
@@ -362,8 +357,7 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAcAAAAAAAAAAADwvx8AAAB9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-24T16:42:05.391Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T16:42:05.391Z"
             },
             {
               "$type": "Document",

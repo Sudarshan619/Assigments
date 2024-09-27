@@ -12,8 +12,6 @@
 
         public string Status { get; set; } = "Pending";
 
-        public string Notes { get; set; } = string.Empty;
-
         public Appointment()
         {
         }

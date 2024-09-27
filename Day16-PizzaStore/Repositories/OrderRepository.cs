@@ -6,11 +6,19 @@ namespace Day16_PizzaStore.Repositories
 {
     public class OrderRepository:IRepository<int,Order>
     {
-        List<Order> Orders = new List<Order>();
+        static List<Order> Orders = new List<Order>();
         
         public async Task<Order> Add(Order entity)
         {
-            entity.OrderNumber = Orders.Max(c => c.OrderNumber) + 1;
+            if (!Orders.Any())
+            {
+                entity.OrderNumber = 1; // or any initial value you prefer, like 100
+            }
+            else
+            {
+                entity.OrderNumber = Orders.Max(c => c.OrderNumber) + 1;
+            }
+
             Orders.Add(entity);
             return entity;
         }

@@ -42,9 +42,17 @@ namespace Day15_PatientLogin.Controllers
         [HttpGet]
         public IActionResult BookAppointment()
         {
-            ViewBag.Doctors = new SelectList(_appointmentService.GetAllDoctors(), "DoctorId", "Name");
+            
             Appointment appointment = new Appointment();
+            var doctor = _appointmentService.GetAllDoctors().ToList();
+            List<int> ids = new List<int>();
+            foreach (var doc in doctor)
+            {
+                ids.Add(doc.DoctorId);
+            }
+            ViewBag.Doctors = new SelectList(ids,"DoctorId");
             return View(appointment);
+            
         }
 
       
@@ -52,21 +60,14 @@ namespace Day15_PatientLogin.Controllers
 
         public IActionResult BookAppointment(Appointment appointment)
         {
-            Console.WriteLine(appointment.AppointmentId);
-            Console.WriteLine(appointment.DoctorId);
-            Console.WriteLine(appointment.PatientId);
-            if (ModelState.IsValid)
-            {
-                bool isBooked = _appointmentService.BookAppointment(appointment.DoctorId, appointment.PatientId, appointment.AppointmentDate);
+            bool isBooked = _appointmentService.BookAppointment(appointment.DoctorId, appointment.PatientId, appointment.AppointmentDate);
                 if (isBooked)
                 {
-                    return RedirectToAction("Index"); 
+                    Console.WriteLine("isBooked");
+                    return RedirectToAction("MyAppointments", "Appointment"); 
                 }
-                ModelState.AddModelError("", "Doctor is not available at the selected time.");
-            }
 
-          
-            ViewBag.Doctors = new SelectList(_appointmentService.GetAllDoctors(), "DoctorId", "Name", appointment.DoctorId);
+            ModelState.AddModelError("", "Doctor is not available at the selected time or doctor does not exist");
             return View(appointment);
         }
 
@@ -81,6 +82,7 @@ namespace Day15_PatientLogin.Controllers
             }
 
             Patient patient = GetPatientByUsername(username);
+            Console.WriteLine("Patient" + patient);
 
             if (patient == null)
             {
@@ -88,7 +90,7 @@ namespace Day15_PatientLogin.Controllers
             }
 
             var appointments = _appointmentService.GetAppointmentsForPatient(patient.Id);
-            Console.WriteLine(patient.Id);
+            Console.WriteLine("line 91"+patient.Id);
             ViewBag.Username = username;
             Console.WriteLine(appointments.Count);
             return View(appointments);

@@ -2,13 +2,14 @@
 {
     public class PizzaOrderDTO:IEquatable<PizzaOrderDTO>
     {
-        public int CartNumber { get; set; }
-        public int CustomerId { get; set; }
+        public int OrderNumber { get; set; }
+        public float TotalAmount { get; set; }
         public string PaymentMethod { get; set; } = string.Empty;
-
+        public string OrderStatus { get; set; }
+        public List<Pizza> Pizzas { get; set; }
         bool IEquatable<PizzaOrderDTO>.Equals(PizzaOrderDTO? other)
         {
-            return this.CartNumber == other.CartNumber;
+            return this.OrderNumber == other.OrderNumber;
         }
     }
 }
