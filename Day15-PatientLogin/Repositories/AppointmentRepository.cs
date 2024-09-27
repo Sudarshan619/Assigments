@@ -7,7 +7,7 @@ namespace Day15_PatientLogin.Repositories
     public class AppointmentRepository : IAppointment
     {
         static List<Doctor> doctors;
-        static List<Appointment> appointments;
+        static List<Appointment> appointments = new List<Appointment>();
 
         public AppointmentRepository()
         {
@@ -22,13 +22,18 @@ namespace Day15_PatientLogin.Repositories
                 new Doctor(6,"Hema","Surgeon","Female","Images/d6.jpeg",8227428433)
             };
 
-            appointments = new List<Appointment>();
+            
         }
 
         
         public List<Doctor> GetAllDoctors()
         {
             return doctors;
+        }
+
+        public List<Appointment> GetAllAppointments() {
+            
+            return appointments;
         }
 
        
@@ -42,6 +47,7 @@ namespace Day15_PatientLogin.Repositories
             if (IsDoctorAvailable(appointment.DoctorId, appointment.AppointmentDate))
             {
                 appointments.Add(appointment);
+                Console.WriteLine("line 50 repo" +appointments.Count);
                 return true;
             }
             return false;
@@ -61,12 +67,15 @@ namespace Day15_PatientLogin.Repositories
 
         public List<Appointment> GetAppointmentsByPatient(int patientId)
         {
+            Console.WriteLine(appointments.Count);
             return appointments.Where(a => a.PatientId == patientId).ToList();
+            
         }
 
         
         public bool IsDoctorAvailable(int doctorId, DateTime appointmentDate)
         {
+            Console.WriteLine(!appointments.Any(a => a.DoctorId == doctorId && a.AppointmentDate == appointmentDate));
             return !appointments.Any(a => a.DoctorId == doctorId && a.AppointmentDate == appointmentDate);
         }
     }

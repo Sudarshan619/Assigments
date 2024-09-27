@@ -2,7 +2,7 @@
 {
     public class Doctor : IEquatable<Doctor>
     {
-        public int Id { get; set; }
+        public int DoctorId { get; set; }
 
         public string Name { get; set; }
         = string.Empty;
@@ -21,7 +21,7 @@
         }
         public Doctor(int id, string name, string specialization, string gender, string image, long contact)
         {
-            Id = id;
+            DoctorId = id;
             Name = name;
             Specialization = specialization;
             Gender = gender;
@@ -32,7 +32,7 @@
         public bool Equals(Doctor? other)
         {
 
-            return this.Id == other.Id;
+            return this.DoctorId == other.DoctorId;
         }
     }
 }

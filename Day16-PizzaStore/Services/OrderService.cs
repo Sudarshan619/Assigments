@@ -2,9 +2,12 @@
 using Day16_PizzaStore.Interface;
 using Day16_PizzaStore.Models;
 using Day16_PizzaStore.Models.DTOs;
+using Day16_PizzaStore.Repositories;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Day16_PizzaStore.Services
 {
+    
     public class OrderService : IOrderService
     {
         private readonly IRepository<int, Customer> _customerRepository;
@@ -25,26 +28,50 @@ namespace Day16_PizzaStore.Services
             _orderRepository = orderRepository;
         }
 
+        static int orderNumber = 100;
         // Create a new order
         public async Task<PizzaOrderDTO> CreateOrder(PizzaOrderDTO pizzaOrderDTO, int customerId)
         {
             if (await DoesCustomerHaveCart(customerId))
             {
-                Order order = new Order()
-                {
-                    CustomerId = customerId,
-                    OrderStatus = OrderStatus.Created,
-                    PaymentMethod = pizzaOrderDTO.PaymentMethod,
-                    TotalAmount = 100.0f // Placeholder for calculation
-                };
+                    var customer = await _customerRepository.Get(customerId);
+                    var carts = await _cartRepository.GetAll();
+                    var customerCart = carts.FirstOrDefault(c => c.CustomerId == customerId);
+                    Order order = new Order();
 
-                // Save the order
-                _orderRepository.Add(order);
+                    orderNumber++;
+                    order.OrderNumber = orderNumber;
+                    order.CustomerId = customerId;
+                    order.PaymentMethod = pizzaOrderDTO.PaymentMethod;
+                    order.TotalAmount = pizzaOrderDTO.TotalAmount;
+                    order.IsPaymentSuccess = !order.IsPaymentSuccess;
+                    order.Pizzas = customerCart.Pizzas;
+                    order.OrderStatus = pizzaOrderDTO.OrderStatus;
+                    
+
+                await _orderRepository.Add(order);
+                await _cartRepository.Delete(customerId);
+                return pizzaOrderDTO;
             }
+
             return pizzaOrderDTO;
         }
 
-        // Get all orders for a specific customer
+        [HttpPost]
+        public async Task<PizzaOrderDTO> CreateOrderWithoutCart(PizzaOrderDTO pizzaOrderDTO, int customerId)
+        {
+            
+                Order order = new Order();
+                var customer = _customerRepository.Get(customerId);
+                order.CustomerId = customerId;
+
+               await _orderRepository.Add(order);
+            
+
+            return pizzaOrderDTO;
+        }
+          
+
         public async Task<OrderDTO> GetAllOrder(int customerId)
         {
             var orders = await GetCustomerOrders(customerId);
@@ -61,6 +88,7 @@ namespace Day16_PizzaStore.Services
         public async Task<List<Order>> GetCustomerOrders(int customerId)
         {
             var orders = await _orderRepository.GetAll();
+            Console.WriteLine("line 82" + orders);
             return orders.Where(c => c.CustomerId == customerId).ToList();
         }
 
@@ -72,9 +100,11 @@ namespace Day16_PizzaStore.Services
             foreach (var order in orders)
             {
                 pizzaOrderDTOs.Add(new PizzaOrderDTO()
-                {
-                    CustomerId = order.CustomerId,
-                    CartNumber = order.OrderNumber,
+                { 
+                    Pizzas = order.Pizzas,
+                    OrderNumber= order.OrderNumber,
+                    OrderStatus = order.OrderStatus,
+                    TotalAmount = order.TotalAmount,
                     PaymentMethod = order.PaymentMethod
                 });
             }

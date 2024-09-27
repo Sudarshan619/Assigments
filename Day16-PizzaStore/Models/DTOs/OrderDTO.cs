@@ -4,20 +4,11 @@
     {
         public int OrderNumber { get; set; }
 
-        
         public List<PizzaOrderDTO> Orders { get; set; }
 
         public OrderDTO()
         {
             Orders = new List<PizzaOrderDTO>();
-        }
-
-        public override bool Equals(object? obj)
-        {
-            if (obj == null || this.GetType() != obj.GetType())
-                return false;
-
-            return Equals(obj as OrderDTO);
         }
 
         public bool Equals(OrderDTO? other)

@@ -49,7 +49,7 @@
   {
     "ContainingType": "Day16_PizzaStore.Controllers.OrderController",
     "Method": "GetOrder",
-    "RelativePath": "api/Order/{customerId}",
+    "RelativePath": "api/Order",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -57,7 +57,7 @@
       {
         "Name": "customerId",
         "Type": "System.Int32",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -65,7 +65,7 @@
   {
     "ContainingType": "Day16_PizzaStore.Controllers.OrderController",
     "Method": "GenerateOrder",
-    "RelativePath": "api/Order/{customerId}",
+    "RelativePath": "api/Order",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -78,7 +78,7 @@
       {
         "Name": "customerId",
         "Type": "System.Int32",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

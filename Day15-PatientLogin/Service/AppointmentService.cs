@@ -17,8 +17,9 @@ namespace Day15_PatientLogin.Service
 
         public bool BookAppointment(int doctorId, int patientId, DateTime appointmentDate)
         {
-           
-            if (_repository.IsDoctorAvailable(doctorId, appointmentDate))
+            var doctors = GetAllDoctors();
+            var doctor = doctors.FirstOrDefault(e => e.DoctorId == doctorId);
+            if (doctor!=null && _repository.IsDoctorAvailable(doctorId, appointmentDate))
             {
                 count++;
                 var appointment = new Appointment
