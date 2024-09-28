@@ -16,7 +16,6 @@ namespace Day16_PizzaStore.Controllers
             _orderService = orderService;
         }
 
-        // Get all orders for a specific customer
         [HttpGet]
         public async Task<IActionResult> GetOrder(int customerId)
         {
@@ -49,19 +48,6 @@ namespace Day16_PizzaStore.Controllers
             }
         }
 
-        //public async Task<IActionResult> GenerateOrderWithoutCart(PizzaOrderDTO pizzaOrderDTO, int customerId)
-        //{
-        //    try
-        //    {
-        //        //var order = await _orderService.CreateOrderWithoutCart(pizzaOrderDTO, customerId);
-        //        //return Ok(order);
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        Debug.WriteLine(e.Message);
-        //        Debug.WriteLine(e.StackTrace);
-        //        return BadRequest(e.Message);
-        //    }
-        //}
+       
     }
 }

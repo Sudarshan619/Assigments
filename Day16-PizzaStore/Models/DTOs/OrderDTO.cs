@@ -6,6 +6,8 @@
 
         public List<PizzaOrderDTO> Orders { get; set; }
 
+        public Customer customer { get; set; }  
+
         public OrderDTO()
         {
             Orders = new List<PizzaOrderDTO>();

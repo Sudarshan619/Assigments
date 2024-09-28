@@ -7,6 +7,7 @@
         public string PaymentMethod { get; set; } = string.Empty;
         public string OrderStatus { get; set; }
         public List<Pizza> Pizzas { get; set; }
+
         bool IEquatable<PizzaOrderDTO>.Equals(PizzaOrderDTO? other)
         {
             return this.OrderNumber == other.OrderNumber;

@@ -103,13 +103,15 @@ namespace Day16_PizzaStore.Services
 
         public async Task<CartDTO> GetCart(int customerId)
         {
-            var cart = await GetCustomerCart(customerId);
-            var pizzaDtoObjects = await MapPizzaToPizzaDTO(cart.Pizzas);
-            return new CartDTO()
-            {
-                CartNumber = cart.CartNumber,
-                Pizzas = pizzaDtoObjects
-            };
+           
+                var cart = await GetCustomerCart(customerId);
+                var pizzaDtoObjects = await MapPizzaToPizzaDTO(cart.Pizzas);
+                return new CartDTO()
+                {
+                    CartNumber = cart.CartNumber,
+                    Pizzas = pizzaDtoObjects
+                };
+           
         }
 
         async Task<List<PizzaCartDTO>> MapPizzaToPizzaDTO(List<Pizza> pizzas)

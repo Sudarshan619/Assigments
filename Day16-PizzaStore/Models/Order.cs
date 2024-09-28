@@ -13,9 +13,9 @@
     public class Order : IEquatable<Order>
     {
         public int OrderNumber { get; set; }
-        public int CustomerId { get; set; }
+        public Customer CustomerId { get; set; }
         public List<Pizza> Pizzas { get; set; }
-        public float TotalAmount { get; set; }
+        public double TotalAmount { get; set; }
         public string PaymentMethod { get; set; } = string.Empty;
         public bool IsPaymentSuccess { get; set; } = false;
         public string OrderStatus { get; set; }

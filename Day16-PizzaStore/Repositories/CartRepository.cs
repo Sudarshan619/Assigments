@@ -11,9 +11,13 @@ namespace Day16_PizzaStore.Repositories
         public async Task<Cart> Add(Cart entity)
         {
             if (carts.Count == 0)
+            {
                 entity.CartNumber = 1;
+            }
             else
+            {
                 entity.CartNumber = carts.Max(c => c.CartNumber) + 1;
+            }             
             carts.Add(entity);
             return entity;
         }
