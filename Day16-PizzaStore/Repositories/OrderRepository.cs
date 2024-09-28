@@ -12,7 +12,7 @@ namespace Day16_PizzaStore.Repositories
         {
             if (!Orders.Any())
             {
-                entity.OrderNumber = 1; // or any initial value you prefer, like 100
+                entity.OrderNumber = 100; // or any initial value you prefer, like 100
             }
             else
             {

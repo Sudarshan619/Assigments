@@ -10,7 +10,14 @@ namespace Day16_PizzaStore.Repositories
 
         public async Task<OrderDetails> Add(OrderDetails entity)
         {
-            entity.SINo = orderDetails.Max(c => c.SINo) + 1;
+            if (!orderDetails.Any())
+            {
+                entity.SINo = 200;
+            }
+            else
+            {
+               entity.SINo = orderDetails.Max(c => c.SINo) + 1;             
+            }
             orderDetails.Add(entity);
             return entity;
         }
