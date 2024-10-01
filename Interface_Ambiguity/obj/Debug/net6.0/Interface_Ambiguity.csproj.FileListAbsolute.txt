@@ -1,0 +1,15 @@
+C:\Users\sudarshan\source\repos\Assignment\Interface_Ambiguity\bin\Debug\net6.0\Interface_Ambiguity.exe
+C:\Users\sudarshan\source\repos\Assignment\Interface_Ambiguity\bin\Debug\net6.0\Interface_Ambiguity.deps.json
+C:\Users\sudarshan\source\repos\Assignment\Interface_Ambiguity\bin\Debug\net6.0\Interface_Ambiguity.runtimeconfig.json
+C:\Users\sudarshan\source\repos\Assignment\Interface_Ambiguity\bin\Debug\net6.0\Interface_Ambiguity.dll
+C:\Users\sudarshan\source\repos\Assignment\Interface_Ambiguity\bin\Debug\net6.0\Interface_Ambiguity.pdb
+C:\Users\sudarshan\source\repos\Assignment\Interface_Ambiguity\obj\Debug\net6.0\Interface_Ambiguity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sudarshan\source\repos\Assignment\Interface_Ambiguity\obj\Debug\net6.0\Interface_Ambiguity.AssemblyInfoInputs.cache
+C:\Users\sudarshan\source\repos\Assignment\Interface_Ambiguity\obj\Debug\net6.0\Interface_Ambiguity.AssemblyInfo.cs
+C:\Users\sudarshan\source\repos\Assignment\Interface_Ambiguity\obj\Debug\net6.0\Interface_Ambiguity.csproj.CoreCompileInputs.cache
+C:\Users\sudarshan\source\repos\Assignment\Interface_Ambiguity\obj\Debug\net6.0\Interface_Ambiguity.sourcelink.json
+C:\Users\sudarshan\source\repos\Assignment\Interface_Ambiguity\obj\Debug\net6.0\Interface_Ambiguity.dll
+C:\Users\sudarshan\source\repos\Assignment\Interface_Ambiguity\obj\Debug\net6.0\refint\Interface_Ambiguity.dll
+C:\Users\sudarshan\source\repos\Assignment\Interface_Ambiguity\obj\Debug\net6.0\Interface_Ambiguity.pdb
+C:\Users\sudarshan\source\repos\Assignment\Interface_Ambiguity\obj\Debug\net6.0\Interface_Ambiguity.genruntimeconfig.cache
+C:\Users\sudarshan\source\repos\Assignment\Interface_Ambiguity\obj\Debug\net6.0\ref\Interface_Ambiguity.dll

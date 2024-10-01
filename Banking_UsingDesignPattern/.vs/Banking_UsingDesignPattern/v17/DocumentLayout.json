@@ -1,0 +1,207 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Banking_UsingDesignPattern\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7C1B732D-AA0A-4525-B7F2-A299AD726549}|Banking_UsingDesignPattern.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\banking_usingdesignpattern\\current.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C1B732D-AA0A-4525-B7F2-A299AD726549}|Banking_UsingDesignPattern.csproj|solutionrelative:current.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C1B732D-AA0A-4525-B7F2-A299AD726549}|Banking_UsingDesignPattern.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\banking_usingdesignpattern\\concretecurrent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C1B732D-AA0A-4525-B7F2-A299AD726549}|Banking_UsingDesignPattern.csproj|solutionrelative:concretecurrent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C1B732D-AA0A-4525-B7F2-A299AD726549}|Banking_UsingDesignPattern.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\banking_usingdesignpattern\\bankcreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C1B732D-AA0A-4525-B7F2-A299AD726549}|Banking_UsingDesignPattern.csproj|solutionrelative:bankcreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C1B732D-AA0A-4525-B7F2-A299AD726549}|Banking_UsingDesignPattern.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\banking_usingdesignpattern\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C1B732D-AA0A-4525-B7F2-A299AD726549}|Banking_UsingDesignPattern.csproj|solutionrelative:account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C1B732D-AA0A-4525-B7F2-A299AD726549}|Banking_UsingDesignPattern.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\banking_usingdesignpattern\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C1B732D-AA0A-4525-B7F2-A299AD726549}|Banking_UsingDesignPattern.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C1B732D-AA0A-4525-B7F2-A299AD726549}|Banking_UsingDesignPattern.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\banking_usingdesignpattern\\concretebuildersavings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C1B732D-AA0A-4525-B7F2-A299AD726549}|Banking_UsingDesignPattern.csproj|solutionrelative:concretebuildersavings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C1B732D-AA0A-4525-B7F2-A299AD726549}|Banking_UsingDesignPattern.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\banking_usingdesignpattern\\ibuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C1B732D-AA0A-4525-B7F2-A299AD726549}|Banking_UsingDesignPattern.csproj|solutionrelative:ibuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C1B732D-AA0A-4525-B7F2-A299AD726549}|Banking_UsingDesignPattern.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\banking_usingdesignpattern\\concretebuildercurrent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C1B732D-AA0A-4525-B7F2-A299AD726549}|Banking_UsingDesignPattern.csproj|solutionrelative:concretebuildercurrent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C1B732D-AA0A-4525-B7F2-A299AD726549}|Banking_UsingDesignPattern.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\banking_usingdesignpattern\\savings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C1B732D-AA0A-4525-B7F2-A299AD726549}|Banking_UsingDesignPattern.csproj|solutionrelative:savings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C1B732D-AA0A-4525-B7F2-A299AD726549}|Banking_UsingDesignPattern.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\banking_usingdesignpattern\\concretesavings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C1B732D-AA0A-4525-B7F2-A299AD726549}|Banking_UsingDesignPattern.csproj|solutionrelative:concretesavings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C1B732D-AA0A-4525-B7F2-A299AD726549}|Banking_UsingDesignPattern.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\banking_usingdesignpattern\\iproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C1B732D-AA0A-4525-B7F2-A299AD726549}|Banking_UsingDesignPattern.csproj|solutionrelative:iproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Savings.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Banking_UsingDesignPattern\\Savings.cs",
+              "RelativeDocumentMoniker": "Savings.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Banking_UsingDesignPattern\\Savings.cs",
+              "RelativeToolTip": "Savings.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T09:18:17.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Current.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Banking_UsingDesignPattern\\Current.cs",
+              "RelativeDocumentMoniker": "Current.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Banking_UsingDesignPattern\\Current.cs",
+              "RelativeToolTip": "Current.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAvwA0AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T09:16:53.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConcreteCurrent.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Banking_UsingDesignPattern\\ConcreteCurrent.cs",
+              "RelativeDocumentMoniker": "ConcreteCurrent.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Banking_UsingDesignPattern\\ConcreteCurrent.cs",
+              "RelativeToolTip": "ConcreteCurrent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T09:04:32.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ConcreteSavings.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Banking_UsingDesignPattern\\ConcreteSavings.cs",
+              "RelativeDocumentMoniker": "ConcreteSavings.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Banking_UsingDesignPattern\\ConcreteSavings.cs",
+              "RelativeToolTip": "ConcreteSavings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T09:04:19.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Banking_UsingDesignPattern\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Banking_UsingDesignPattern\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T08:59:26.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ConcreteBuilderSavings.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Banking_UsingDesignPattern\\ConcreteBuilderSavings.cs",
+              "RelativeDocumentMoniker": "ConcreteBuilderSavings.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Banking_UsingDesignPattern\\ConcreteBuilderSavings.cs",
+              "RelativeToolTip": "ConcreteBuilderSavings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T10:22:32.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BankCreator.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Banking_UsingDesignPattern\\BankCreator.cs",
+              "RelativeDocumentMoniker": "BankCreator.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Banking_UsingDesignPattern\\BankCreator.cs",
+              "RelativeToolTip": "BankCreator.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T08:59:58.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Banking_UsingDesignPattern\\Account.cs",
+              "RelativeDocumentMoniker": "Account.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Banking_UsingDesignPattern\\Account.cs",
+              "RelativeToolTip": "Account.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T09:13:52.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IBuilder.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Banking_UsingDesignPattern\\IBuilder.cs",
+              "RelativeDocumentMoniker": "IBuilder.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Banking_UsingDesignPattern\\IBuilder.cs",
+              "RelativeToolTip": "IBuilder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T09:55:35.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ConcreteBuilderCurrent.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Banking_UsingDesignPattern\\ConcreteBuilderCurrent.cs",
+              "RelativeDocumentMoniker": "ConcreteBuilderCurrent.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Banking_UsingDesignPattern\\ConcreteBuilderCurrent.cs",
+              "RelativeToolTip": "ConcreteBuilderCurrent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T10:04:49.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IProduct.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Banking_UsingDesignPattern\\IProduct.cs",
+              "RelativeDocumentMoniker": "IProduct.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Banking_UsingDesignPattern\\IProduct.cs",
+              "RelativeToolTip": "IProduct.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T09:06:18.505Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

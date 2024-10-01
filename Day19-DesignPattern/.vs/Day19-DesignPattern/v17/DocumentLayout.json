@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day19-DesignPattern\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B5AA557A-D14D-4C15-96B8-137150E85D72}|Day19-DesignPattern.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day19-designpattern\\regularfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5AA557A-D14D-4C15-96B8-137150E85D72}|Day19-DesignPattern.csproj|solutionrelative:regularfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5AA557A-D14D-4C15-96B8-137150E85D72}|Day19-DesignPattern.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day19-designpattern\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5AA557A-D14D-4C15-96B8-137150E85D72}|Day19-DesignPattern.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5AA557A-D14D-4C15-96B8-137150E85D72}|Day19-DesignPattern.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day19-designpattern\\icar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5AA557A-D14D-4C15-96B8-137150E85D72}|Day19-DesignPattern.csproj|solutionrelative:icar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5AA557A-D14D-4C15-96B8-137150E85D72}|Day19-DesignPattern.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day19-designpattern\\ifactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5AA557A-D14D-4C15-96B8-137150E85D72}|Day19-DesignPattern.csproj|solutionrelative:ifactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5AA557A-D14D-4C15-96B8-137150E85D72}|Day19-DesignPattern.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day19-designpattern\\supercar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5AA557A-D14D-4C15-96B8-137150E85D72}|Day19-DesignPattern.csproj|solutionrelative:supercar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5AA557A-D14D-4C15-96B8-137150E85D72}|Day19-DesignPattern.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day19-designpattern\\superbike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5AA557A-D14D-4C15-96B8-137150E85D72}|Day19-DesignPattern.csproj|solutionrelative:superbike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5AA557A-D14D-4C15-96B8-137150E85D72}|Day19-DesignPattern.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day19-designpattern\\ibike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5AA557A-D14D-4C15-96B8-137150E85D72}|Day19-DesignPattern.csproj|solutionrelative:ibike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegularFactory.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day19-DesignPattern\\RegularFactory.cs",
+              "RelativeDocumentMoniker": "RegularFactory.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day19-DesignPattern\\RegularFactory.cs",
+              "RelativeToolTip": "RegularFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T09:11:23.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IFactory.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day19-DesignPattern\\IFactory.cs",
+              "RelativeDocumentMoniker": "IFactory.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day19-DesignPattern\\IFactory.cs",
+              "RelativeToolTip": "IFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T09:08:16.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SuperCar.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day19-DesignPattern\\SuperCar.cs",
+              "RelativeDocumentMoniker": "SuperCar.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day19-DesignPattern\\SuperCar.cs",
+              "RelativeToolTip": "SuperCar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T09:07:00.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ICar.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day19-DesignPattern\\ICar.cs",
+              "RelativeDocumentMoniker": "ICar.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day19-DesignPattern\\ICar.cs",
+              "RelativeToolTip": "ICar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T09:05:08.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SuperBike.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day19-DesignPattern\\SuperBike.cs",
+              "RelativeDocumentMoniker": "SuperBike.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day19-DesignPattern\\SuperBike.cs",
+              "RelativeToolTip": "SuperBike.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T08:52:21.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IBike.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day19-DesignPattern\\IBike.cs",
+              "RelativeDocumentMoniker": "IBike.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day19-DesignPattern\\IBike.cs",
+              "RelativeToolTip": "IBike.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T08:50:50.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day19-DesignPattern\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day19-DesignPattern\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T08:45:57.732Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
