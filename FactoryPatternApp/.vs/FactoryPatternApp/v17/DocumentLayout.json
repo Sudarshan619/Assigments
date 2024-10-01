@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\FactoryPatternApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9D69CF77-418B-4F2A-BDC0-BC8C0DE57304}|FactoryPatternApp.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\factorypatternapp\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D69CF77-418B-4F2A-BDC0-BC8C0DE57304}|FactoryPatternApp.csproj|solutionrelative:bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D69CF77-418B-4F2A-BDC0-BC8C0DE57304}|FactoryPatternApp.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\factorypatternapp\\accountfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D69CF77-418B-4F2A-BDC0-BC8C0DE57304}|FactoryPatternApp.csproj|solutionrelative:accountfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D69CF77-418B-4F2A-BDC0-BC8C0DE57304}|FactoryPatternApp.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\factorypatternapp\\iaccountfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D69CF77-418B-4F2A-BDC0-BC8C0DE57304}|FactoryPatternApp.csproj|solutionrelative:iaccountfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D69CF77-418B-4F2A-BDC0-BC8C0DE57304}|FactoryPatternApp.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\factorypatternapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D69CF77-418B-4F2A-BDC0-BC8C0DE57304}|FactoryPatternApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D69CF77-418B-4F2A-BDC0-BC8C0DE57304}|FactoryPatternApp.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\factorypatternapp\\savingsaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D69CF77-418B-4F2A-BDC0-BC8C0DE57304}|FactoryPatternApp.csproj|solutionrelative:savingsaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D69CF77-418B-4F2A-BDC0-BC8C0DE57304}|FactoryPatternApp.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\factorypatternapp\\currentaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D69CF77-418B-4F2A-BDC0-BC8C0DE57304}|FactoryPatternApp.csproj|solutionrelative:currentaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D69CF77-418B-4F2A-BDC0-BC8C0DE57304}|FactoryPatternApp.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\factorypatternapp\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D69CF77-418B-4F2A-BDC0-BC8C0DE57304}|FactoryPatternApp.csproj|solutionrelative:account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Bank.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\FactoryPatternApp\\Bank.cs",
+              "RelativeDocumentMoniker": "Bank.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\FactoryPatternApp\\Bank.cs",
+              "RelativeToolTip": "Bank.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwBgAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T11:10:59.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountFactory.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\FactoryPatternApp\\AccountFactory.cs",
+              "RelativeDocumentMoniker": "AccountFactory.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\FactoryPatternApp\\AccountFactory.cs",
+              "RelativeToolTip": "AccountFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T11:10:27.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IAccountFactory.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\FactoryPatternApp\\IAccountFactory.cs",
+              "RelativeDocumentMoniker": "IAccountFactory.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\FactoryPatternApp\\IAccountFactory.cs",
+              "RelativeToolTip": "IAccountFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T11:09:30.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SavingsAccount.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\FactoryPatternApp\\SavingsAccount.cs",
+              "RelativeDocumentMoniker": "SavingsAccount.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\FactoryPatternApp\\SavingsAccount.cs",
+              "RelativeToolTip": "SavingsAccount.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAuwAoAAABrAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T11:07:36.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CurrentAccount.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\FactoryPatternApp\\CurrentAccount.cs",
+              "RelativeDocumentMoniker": "CurrentAccount.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\FactoryPatternApp\\CurrentAccount.cs",
+              "RelativeToolTip": "CurrentAccount.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T11:07:02.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\FactoryPatternApp\\Account.cs",
+              "RelativeDocumentMoniker": "Account.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\FactoryPatternApp\\Account.cs",
+              "RelativeToolTip": "Account.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAB4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T11:06:13.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\FactoryPatternApp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\FactoryPatternApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T11:05:37.584Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
