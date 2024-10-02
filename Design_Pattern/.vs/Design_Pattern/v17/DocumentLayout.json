@@ -1,0 +1,241 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Design_Pattern\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5A2CFD8E-E440-45D3-8512-10B5BFDE44FC}|Design_Pattern.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\design_pattern\\observer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A2CFD8E-E440-45D3-8512-10B5BFDE44FC}|Design_Pattern.csproj|solutionrelative:observer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A2CFD8E-E440-45D3-8512-10B5BFDE44FC}|Design_Pattern.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\design_pattern\\structural.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A2CFD8E-E440-45D3-8512-10B5BFDE44FC}|Design_Pattern.csproj|solutionrelative:structural.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A2CFD8E-E440-45D3-8512-10B5BFDE44FC}|Design_Pattern.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\design_pattern\\strategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A2CFD8E-E440-45D3-8512-10B5BFDE44FC}|Design_Pattern.csproj|solutionrelative:strategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A2CFD8E-E440-45D3-8512-10B5BFDE44FC}|Design_Pattern.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\design_pattern\\proxy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A2CFD8E-E440-45D3-8512-10B5BFDE44FC}|Design_Pattern.csproj|solutionrelative:proxy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A2CFD8E-E440-45D3-8512-10B5BFDE44FC}|Design_Pattern.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\design_pattern\\facade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A2CFD8E-E440-45D3-8512-10B5BFDE44FC}|Design_Pattern.csproj|solutionrelative:facade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A2CFD8E-E440-45D3-8512-10B5BFDE44FC}|Design_Pattern.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\design_pattern\\decorator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A2CFD8E-E440-45D3-8512-10B5BFDE44FC}|Design_Pattern.csproj|solutionrelative:decorator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A2CFD8E-E440-45D3-8512-10B5BFDE44FC}|Design_Pattern.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\design_pattern\\adapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A2CFD8E-E440-45D3-8512-10B5BFDE44FC}|Design_Pattern.csproj|solutionrelative:adapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A2CFD8E-E440-45D3-8512-10B5BFDE44FC}|Design_Pattern.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\design_pattern\\singleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A2CFD8E-E440-45D3-8512-10B5BFDE44FC}|Design_Pattern.csproj|solutionrelative:singleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A2CFD8E-E440-45D3-8512-10B5BFDE44FC}|Design_Pattern.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\design_pattern\\builder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A2CFD8E-E440-45D3-8512-10B5BFDE44FC}|Design_Pattern.csproj|solutionrelative:builder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A2CFD8E-E440-45D3-8512-10B5BFDE44FC}|Design_Pattern.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\design_pattern\\prototype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A2CFD8E-E440-45D3-8512-10B5BFDE44FC}|Design_Pattern.csproj|solutionrelative:prototype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A2CFD8E-E440-45D3-8512-10B5BFDE44FC}|Design_Pattern.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\design_pattern\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A2CFD8E-E440-45D3-8512-10B5BFDE44FC}|Design_Pattern.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A2CFD8E-E440-45D3-8512-10B5BFDE44FC}|Design_Pattern.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\design_pattern\\factorymethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A2CFD8E-E440-45D3-8512-10B5BFDE44FC}|Design_Pattern.csproj|solutionrelative:factorymethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A2CFD8E-E440-45D3-8512-10B5BFDE44FC}|Design_Pattern.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\design_pattern\\command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A2CFD8E-E440-45D3-8512-10B5BFDE44FC}|Design_Pattern.csproj|solutionrelative:command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Facade.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Design_Pattern\\Facade.cs",
+              "RelativeDocumentMoniker": "Facade.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Design_Pattern\\Facade.cs",
+              "RelativeToolTip": "Facade.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAiwDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T15:02:56.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Decorator.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Design_Pattern\\Decorator.cs",
+              "RelativeDocumentMoniker": "Decorator.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Design_Pattern\\Decorator.cs",
+              "RelativeToolTip": "Decorator.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAcwDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T14:44:41.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Builder.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Design_Pattern\\Builder.cs",
+              "RelativeDocumentMoniker": "Builder.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Design_Pattern\\Builder.cs",
+              "RelativeToolTip": "Builder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T14:24:15.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Prototype.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Design_Pattern\\Prototype.cs",
+              "RelativeDocumentMoniker": "Prototype.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Design_Pattern\\Prototype.cs",
+              "RelativeToolTip": "Prototype.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAIwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T14:25:09.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Proxy.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Design_Pattern\\Proxy.cs",
+              "RelativeDocumentMoniker": "Proxy.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Design_Pattern\\Proxy.cs",
+              "RelativeToolTip": "Proxy.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAA6wDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T15:10:03.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Singleton.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Design_Pattern\\Singleton.cs",
+              "RelativeDocumentMoniker": "Singleton.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Design_Pattern\\Singleton.cs",
+              "RelativeToolTip": "Singleton.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAiwA4AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T14:16:36.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Adapter.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Design_Pattern\\Adapter.cs",
+              "RelativeDocumentMoniker": "Adapter.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Design_Pattern\\Adapter.cs",
+              "RelativeToolTip": "Adapter.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAA4wB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T14:43:08.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Strategy.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Design_Pattern\\Strategy.cs",
+              "RelativeDocumentMoniker": "Strategy.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Design_Pattern\\Strategy.cs",
+              "RelativeToolTip": "Strategy.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAcwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T15:17:22.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Structural.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Design_Pattern\\Structural.cs",
+              "RelativeDocumentMoniker": "Structural.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Design_Pattern\\Structural.cs",
+              "RelativeToolTip": "Structural.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T14:32:01.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Observer.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Design_Pattern\\Observer.cs",
+              "RelativeDocumentMoniker": "Observer.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Design_Pattern\\Observer.cs",
+              "RelativeToolTip": "Observer.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAmwDYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T15:15:02.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Design_Pattern\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Design_Pattern\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T14:16:14.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FactoryMethod.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Design_Pattern\\FactoryMethod.cs",
+              "RelativeDocumentMoniker": "FactoryMethod.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Design_Pattern\\FactoryMethod.cs",
+              "RelativeToolTip": "FactoryMethod.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T14:19:03.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Command.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Design_Pattern\\Command.cs",
+              "RelativeDocumentMoniker": "Command.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Design_Pattern\\Command.cs",
+              "RelativeToolTip": "Command.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAUwDoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T15:20:26.143Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
