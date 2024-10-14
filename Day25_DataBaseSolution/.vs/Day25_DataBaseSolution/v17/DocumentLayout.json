@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day25_DataBaseSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CC0DD61E-2C87-4F75-9D12-369C54C48945}|Day25_DataBase\\Day25_DataBase.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day25_databasesolution\\day25_database\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC0DD61E-2C87-4F75-9D12-369C54C48945}|Day25_DataBase\\Day25_DataBase.csproj|solutionrelative:day25_database\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC0DD61E-2C87-4F75-9D12-369C54C48945}|Day25_DataBase\\Day25_DataBase.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day25_databasesolution\\day25_database\\services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC0DD61E-2C87-4F75-9D12-369C54C48945}|Day25_DataBase\\Day25_DataBase.csproj|solutionrelative:day25_database\\services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC0DD61E-2C87-4F75-9D12-369C54C48945}|Day25_DataBase\\Day25_DataBase.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day25_databasesolution\\day25_database\\iservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC0DD61E-2C87-4F75-9D12-369C54C48945}|Day25_DataBase\\Day25_DataBase.csproj|solutionrelative:day25_database\\iservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC0DD61E-2C87-4F75-9D12-369C54C48945}|Day25_DataBase\\Day25_DataBase.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day25_databasesolution\\day25_database\\authentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC0DD61E-2C87-4F75-9D12-369C54C48945}|Day25_DataBase\\Day25_DataBase.csproj|solutionrelative:day25_database\\authentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC0DD61E-2C87-4F75-9D12-369C54C48945}|Day25_DataBase\\Day25_DataBase.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day25_databasesolution\\day25_database\\iauthentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC0DD61E-2C87-4F75-9D12-369C54C48945}|Day25_DataBase\\Day25_DataBase.csproj|solutionrelative:day25_database\\iauthentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC0DD61E-2C87-4F75-9D12-369C54C48945}|Day25_DataBase\\Day25_DataBase.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day25_databasesolution\\day25_database\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC0DD61E-2C87-4F75-9D12-369C54C48945}|Day25_DataBase\\Day25_DataBase.csproj|solutionrelative:day25_database\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day25_DataBaseSolution\\Day25_DataBase\\User.cs",
+              "RelativeDocumentMoniker": "Day25_DataBase\\User.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day25_DataBaseSolution\\Day25_DataBase\\User.cs",
+              "RelativeToolTip": "Day25_DataBase\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T09:02:46.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Services.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day25_DataBaseSolution\\Day25_DataBase\\Services.cs",
+              "RelativeDocumentMoniker": "Day25_DataBase\\Services.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day25_DataBaseSolution\\Day25_DataBase\\Services.cs",
+              "RelativeToolTip": "Day25_DataBase\\Services.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAuwFEAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T08:54:16.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IServices.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day25_DataBaseSolution\\Day25_DataBase\\IServices.cs",
+              "RelativeDocumentMoniker": "Day25_DataBase\\IServices.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day25_DataBaseSolution\\Day25_DataBase\\IServices.cs",
+              "RelativeToolTip": "Day25_DataBase\\IServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T08:54:07.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IAuthentication.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day25_DataBaseSolution\\Day25_DataBase\\IAuthentication.cs",
+              "RelativeDocumentMoniker": "Day25_DataBase\\IAuthentication.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day25_DataBaseSolution\\Day25_DataBase\\IAuthentication.cs",
+              "RelativeToolTip": "Day25_DataBase\\IAuthentication.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T08:43:53.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Authentication.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day25_DataBaseSolution\\Day25_DataBase\\Authentication.cs",
+              "RelativeDocumentMoniker": "Day25_DataBase\\Authentication.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day25_DataBaseSolution\\Day25_DataBase\\Authentication.cs",
+              "RelativeToolTip": "Day25_DataBase\\Authentication.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAAAKUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T08:43:39.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day25_DataBaseSolution\\Day25_DataBase\\Program.cs",
+              "RelativeDocumentMoniker": "Day25_DataBase\\Program.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day25_DataBaseSolution\\Day25_DataBase\\Program.cs",
+              "RelativeToolTip": "Day25_DataBase\\Program.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T07:12:32.278Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
