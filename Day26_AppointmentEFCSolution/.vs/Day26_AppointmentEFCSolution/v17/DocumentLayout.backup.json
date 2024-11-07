@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{C7E151D2-9073-45E1-A7FE-48A28765A744}|Day26_AppointmentEFC\\Day26_AppointmentEFC.csproj|solutionrelative:day26_appointmentefc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C7E151D2-9073-45E1-A7FE-48A28765A744}|Day26_AppointmentEFC\\Day26_AppointmentEFC.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day26_appointmentefcsolution\\day26_appointmentefc\\context\\cliniccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7E151D2-9073-45E1-A7FE-48A28765A744}|Day26_AppointmentEFC\\Day26_AppointmentEFC.csproj|solutionrelative:day26_appointmentefc\\context\\cliniccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C7E151D2-9073-45E1-A7FE-48A28765A744}|Day26_AppointmentEFC\\Day26_AppointmentEFC.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day26_appointmentefcsolution\\day26_appointmentefc\\clinicservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7E151D2-9073-45E1-A7FE-48A28765A744}|Day26_AppointmentEFC\\Day26_AppointmentEFC.csproj|solutionrelative:day26_appointmentefc\\clinicservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,16 +27,12 @@
       "RelativeMoniker": "D:0:0:{C7E151D2-9073-45E1-A7FE-48A28765A744}|Day26_AppointmentEFC\\Day26_AppointmentEFC.csproj|solutionrelative:day26_appointmentefc\\model\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C7E151D2-9073-45E1-A7FE-48A28765A744}|Day26_AppointmentEFC\\Day26_AppointmentEFC.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day26_appointmentefcsolution\\day26_appointmentefc\\context\\cliniccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7E151D2-9073-45E1-A7FE-48A28765A744}|Day26_AppointmentEFC\\Day26_AppointmentEFC.csproj|solutionrelative:day26_appointmentefc\\context\\cliniccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C7E151D2-9073-45E1-A7FE-48A28765A744}|Day26_AppointmentEFC\\Day26_AppointmentEFC.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day26_appointmentefcsolution\\day26_appointmentefc\\model\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7E151D2-9073-45E1-A7FE-48A28765A744}|Day26_AppointmentEFC\\Day26_AppointmentEFC.csproj|solutionrelative:day26_appointmentefc\\model\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day26_AppointmentEFCSolution\\Day26_AppointmentEFC\\Migrations\\20241015091826_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Day26_AppointmentEFC\\Migrations\\20241015091826_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C7E151D2-9073-45E1-A7FE-48A28765A744}|Day26_AppointmentEFC\\Day26_AppointmentEFC.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day26_appointmentefcsolution\\day26_appointmentefc\\migrations\\20241015091826_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7E151D2-9073-45E1-A7FE-48A28765A744}|Day26_AppointmentEFC\\Day26_AppointmentEFC.csproj|solutionrelative:day26_appointmentefc\\migrations\\20241015091826_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,26 +46,26 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ClinicService.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day26_AppointmentEFCSolution\\Day26_AppointmentEFC\\ClinicService.cs",
               "RelativeDocumentMoniker": "Day26_AppointmentEFC\\ClinicService.cs",
               "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day26_AppointmentEFCSolution\\Day26_AppointmentEFC\\ClinicService.cs",
               "RelativeToolTip": "Day26_AppointmentEFC\\ClinicService.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAwwCgAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA9wBkAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T09:39:41.492Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "IClinicService.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day26_AppointmentEFCSolution\\Day26_AppointmentEFC\\IClinicService.cs",
               "RelativeDocumentMoniker": "Day26_AppointmentEFC\\IClinicService.cs",
               "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day26_AppointmentEFCSolution\\Day26_AppointmentEFC\\IClinicService.cs",
               "RelativeToolTip": "Day26_AppointmentEFC\\IClinicService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T09:37:45.765Z",
               "EditorCaption": ""
@@ -80,12 +80,11 @@
               "RelativeToolTip": "Day26_AppointmentEFC\\Migrations\\20241015091826_init.cs",
               "ViewState": "AgIAADQAAAAAAAAAAAAQwEIAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T09:18:26.214Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T09:18:26.214Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "ClinicContext.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day26_AppointmentEFCSolution\\Day26_AppointmentEFC\\Context\\ClinicContext.cs",
               "RelativeDocumentMoniker": "Day26_AppointmentEFC\\Context\\ClinicContext.cs",
@@ -98,13 +97,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Appointment.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day26_AppointmentEFCSolution\\Day26_AppointmentEFC\\Model\\Appointment.cs",
               "RelativeDocumentMoniker": "Day26_AppointmentEFC\\Model\\Appointment.cs",
               "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day26_AppointmentEFCSolution\\Day26_AppointmentEFC\\Model\\Appointment.cs",
               "RelativeToolTip": "Day26_AppointmentEFC\\Model\\Appointment.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T09:03:17.321Z",
               "EditorCaption": ""
@@ -119,12 +118,11 @@
               "RelativeToolTip": "Day26_AppointmentEFC\\Model\\Patient.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T09:02:18.937Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T09:02:18.937Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Doctor.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day26_AppointmentEFCSolution\\Day26_AppointmentEFC\\Model\\Doctor.cs",
               "RelativeDocumentMoniker": "Day26_AppointmentEFC\\Model\\Doctor.cs",
@@ -132,8 +130,7 @@
               "RelativeToolTip": "Day26_AppointmentEFC\\Model\\Doctor.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T09:02:04.489Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T09:02:04.489Z"
             },
             {
               "$type": "Document",
@@ -143,7 +140,7 @@
               "RelativeDocumentMoniker": "Day26_AppointmentEFC\\Program.cs",
               "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day26_AppointmentEFCSolution\\Day26_AppointmentEFC\\Program.cs",
               "RelativeToolTip": "Day26_AppointmentEFC\\Program.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAwwFoAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAwwFYAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T08:51:40.806Z",
               "EditorCaption": ""

@@ -11,7 +11,6 @@ namespace Day26_AppointmentEFC
     {
         public Doctor AddDoctor();
         public Patient AddPatient();
-        public void ListDoctor();
         public Appointment BookAppointment();
 
     }
