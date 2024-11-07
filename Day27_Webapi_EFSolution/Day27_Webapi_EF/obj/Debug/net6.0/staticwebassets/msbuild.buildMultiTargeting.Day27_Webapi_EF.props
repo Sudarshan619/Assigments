@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Day27_Webapi_EF.props" />
+</Project>

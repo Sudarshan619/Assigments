@@ -24,15 +24,32 @@ namespace Day26_AppointmentEFC
 
         void AddDoctor()
         {
-            Doctor doctor = service.AddDoctor();
-            context.Doctors.Add(doctor);
-            context.SaveChanges();
+            try
+            {
+                Doctor doctor = service.AddDoctor();
+                context.Doctors.Add(doctor);
+                context.SaveChanges();
+                Console.WriteLine("Doctor added succesfully");
+            }
+            catch (Exception ex) {
+                Console.WriteLine(ex.Message);
+            
+            }
+            
         }
         void AddPatient()
         {
-            Patient patient = service.AddPatient();
-            context.Patients.Add(patient);
-            context.SaveChanges();
+            try
+            {
+                Patient patient = service.AddPatient();
+                context.Patients.Add(patient);
+                context.SaveChanges();
+                Console.WriteLine("Patient Added succesfully");
+            }
+            catch (Exception ex) {
+                Console.WriteLine(ex.Message);
+            }
+            
         }
 
         void BookAppointment()
@@ -55,15 +72,24 @@ namespace Day26_AppointmentEFC
 
         void ListDoctors()
         {
-            var doctors = context.Doctors.ToList();
-            foreach(var doctor in doctors)
+            try
             {
-                Console.WriteLine($"Doctor Id:{doctor.DoctorId}");
-                Console.WriteLine($"Doctor Name:{doctor.DoctorName}");
-                Console.WriteLine($"Doctor Specialization:{doctor.Specialization}");
-                Console.WriteLine($"Doctor Phone number:{doctor.Phone}");
-                Console.WriteLine($"---------------------");
+                var doctors = context.Doctors.ToList();
+                foreach (var doctor in doctors)
+                {
+                    Console.WriteLine($"Doctor Id:{doctor.DoctorId}");
+                    Console.WriteLine($"Doctor Name:{doctor.DoctorName}");
+                    Console.WriteLine($"Doctor Specialization:{doctor.Specialization}");
+                    Console.WriteLine($"Doctor Phone number:{doctor.Phone}");
+                    Console.WriteLine($"---------------------");
+                }
             }
+
+            catch (Exception ex) {
+                Console.WriteLine(ex.Message);
+            
+            }
+           
         }
         static void Main(string[] args)
         {

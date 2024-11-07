@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day28_EventBooking", "Day28_EventBooking\Day28_EventBooking.csproj", "{7990F86B-C7E0-4B84-8DE5-963D1102913F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{2DCF2B8D-E635-4092-ABC1-4CFC6B5ED484}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7990F86B-C7E0-4B84-8DE5-963D1102913F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7990F86B-C7E0-4B84-8DE5-963D1102913F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7990F86B-C7E0-4B84-8DE5-963D1102913F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7990F86B-C7E0-4B84-8DE5-963D1102913F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DCF2B8D-E635-4092-ABC1-4CFC6B5ED484}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DCF2B8D-E635-4092-ABC1-4CFC6B5ED484}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DCF2B8D-E635-4092-ABC1-4CFC6B5ED484}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DCF2B8D-E635-4092-ABC1-4CFC6B5ED484}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {45C98454-7B97-412D-B43E-9BBA745FC769}
+	EndGlobalSection
+EndGlobal

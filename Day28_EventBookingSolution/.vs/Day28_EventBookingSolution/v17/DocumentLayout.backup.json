@@ -1,0 +1,592 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Migrations\\20241022085756_changes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Day28_EventBooking\\Migrations\\20241022085756_changes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day28_eventbookingsolution\\day28_eventbooking\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|solutionrelative:day28_eventbooking\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day28_eventbookingsolution\\day28_eventbooking\\context\\eventbookingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|solutionrelative:day28_eventbooking\\context\\eventbookingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day28_eventbookingsolution\\day28_eventbooking\\model\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|solutionrelative:day28_eventbooking\\model\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day28_eventbookingsolution\\day28_eventbooking\\dto\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|solutionrelative:day28_eventbooking\\dto\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day28_eventbookingsolution\\day28_eventbooking\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|solutionrelative:day28_eventbooking\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day28_eventbookingsolution\\day28_eventbooking\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|solutionrelative:day28_eventbooking\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day28_eventbookingsolution\\day28_eventbooking\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|solutionrelative:day28_eventbooking\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day28_eventbookingsolution\\day28_eventbooking\\model\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|solutionrelative:day28_eventbooking\\model\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day28_eventbookingsolution\\day28_eventbooking\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|solutionrelative:day28_eventbooking\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day28_eventbookingsolution\\day28_eventbooking\\controllers\\eventbookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|solutionrelative:day28_eventbooking\\controllers\\eventbookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day28_eventbookingsolution\\day28_eventbooking\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|solutionrelative:day28_eventbooking\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day28_eventbookingsolution\\day28_eventbooking\\repository\\eventbookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|solutionrelative:day28_eventbooking\\repository\\eventbookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day28_eventbookingsolution\\day28_eventbooking\\services\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|solutionrelative:day28_eventbooking\\services\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day28_eventbookingsolution\\day28_eventbooking\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|solutionrelative:day28_eventbooking\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day28_eventbookingsolution\\day28_eventbooking\\services\\eventbookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|solutionrelative:day28_eventbooking\\services\\eventbookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day28_eventbookingsolution\\day28_eventbooking\\repository\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|solutionrelative:day28_eventbooking\\repository\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day28_eventbookingsolution\\day28_eventbooking\\repository\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|solutionrelative:day28_eventbooking\\repository\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day28_eventbookingsolution\\day28_eventbooking\\services\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|solutionrelative:day28_eventbooking\\services\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day28_eventbookingsolution\\day28_eventbooking\\dto\\bookingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|solutionrelative:day28_eventbooking\\dto\\bookingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day28_eventbookingsolution\\day28_eventbooking\\mapper\\bookingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|solutionrelative:day28_eventbooking\\mapper\\bookingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day28_eventbookingsolution\\day28_eventbooking\\repository\\bookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|solutionrelative:day28_eventbooking\\repository\\bookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day28_eventbookingsolution\\day28_eventbooking\\mapper\\eventprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|solutionrelative:day28_eventbooking\\mapper\\eventprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day28_eventbookingsolution\\day28_eventbooking\\dto\\eventdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|solutionrelative:day28_eventbooking\\dto\\eventdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day28_eventbookingsolution\\day28_eventbooking\\mapper\\eventbookingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|solutionrelative:day28_eventbooking\\mapper\\eventbookingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day28_eventbookingsolution\\day28_eventbooking\\mapper\\employeeprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|solutionrelative:day28_eventbooking\\mapper\\employeeprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day28_eventbookingsolution\\day28_eventbooking\\model\\eventbooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|solutionrelative:day28_eventbooking\\model\\eventbooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day28_eventbookingsolution\\day28_eventbooking\\dto\\eventbookingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|solutionrelative:day28_eventbooking\\dto\\eventbookingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day28_eventbookingsolution\\day28_eventbooking\\model\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|solutionrelative:day28_eventbooking\\model\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day28_eventbookingsolution\\day28_eventbooking\\day28_eventbooking.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|solutionrelative:day28_eventbooking\\day28_eventbooking.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Migrations\\20241021090242_changes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Day28_EventBooking\\Migrations\\20241021090242_changes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day28_eventbookingsolution\\day28_eventbooking\\interface\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|solutionrelative:day28_eventbooking\\interface\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Migrations\\20241021072333_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Day28_EventBooking\\Migrations\\20241021072333_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day28_eventbookingsolution\\day28_eventbooking\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|solutionrelative:day28_eventbooking\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day28_eventbookingsolution\\day28_eventbooking\\migrations\\20241021090447_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7990F86B-C7E0-4B84-8DE5-963D1102913F}|Day28_EventBooking\\Day28_EventBooking.csproj|solutionrelative:day28_eventbooking\\migrations\\20241021090447_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20241022085756_changes.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Migrations\\20241022085756_changes.cs",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\Migrations\\20241022085756_changes.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Migrations\\20241022085756_changes.cs",
+              "RelativeToolTip": "Day28_EventBooking\\Migrations\\20241022085756_changes.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T08:57:56.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\Repository\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "Day28_EventBooking\\Repository\\UserRepository.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T08:45:59.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Model\\User.cs",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\Model\\User.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Model\\User.cs",
+              "RelativeToolTip": "Day28_EventBooking\\Model\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T08:43:37.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\Controllers\\BookingController.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Controllers\\BookingController.cs",
+              "RelativeToolTip": "Day28_EventBooking\\Controllers\\BookingController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwCMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T11:30:38.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EventBookingContext.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Context\\EventBookingContext.cs",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\Context\\EventBookingContext.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Context\\EventBookingContext.cs",
+              "RelativeToolTip": "Day28_EventBooking\\Context\\EventBookingContext.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwB4AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T06:47:42.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Model\\Employee.cs",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\Model\\Employee.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Model\\Employee.cs",
+              "RelativeToolTip": "Day28_EventBooking\\Model\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T06:25:58.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmployeeService.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Services\\EmployeeService.cs",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\Services\\EmployeeService.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Services\\EmployeeService.cs",
+              "RelativeToolTip": "Day28_EventBooking\\Services\\EmployeeService.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAswDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T06:40:30.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmployeeDTO.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\DTO\\EmployeeDTO.cs",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\DTO\\EmployeeDTO.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\DTO\\EmployeeDTO.cs",
+              "RelativeToolTip": "Day28_EventBooking\\DTO\\EmployeeDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T09:36:22.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EventController.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Controllers\\EventController.cs",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\Controllers\\EventController.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Controllers\\EventController.cs",
+              "RelativeToolTip": "Day28_EventBooking\\Controllers\\EventController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T10:59:39.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EventBookingController.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Controllers\\EventBookingController.cs",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\Controllers\\EventBookingController.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Controllers\\EventBookingController.cs",
+              "RelativeToolTip": "Day28_EventBooking\\Controllers\\EventBookingController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCgAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T11:45:24.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Model\\Booking.cs",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\Model\\Booking.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Model\\Booking.cs",
+              "RelativeToolTip": "Day28_EventBooking\\Model\\Booking.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T06:59:14.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\Controllers\\EmployeeController.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "Day28_EventBooking\\Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T09:50:10.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EventBookingService.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Services\\EventBookingService.cs",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\Services\\EventBookingService.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Services\\EventBookingService.cs",
+              "RelativeToolTip": "Day28_EventBooking\\Services\\EventBookingService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCQAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T11:43:00.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EventBookingRepository.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Repository\\EventBookingRepository.cs",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\Repository\\EventBookingRepository.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Repository\\EventBookingRepository.cs",
+              "RelativeToolTip": "Day28_EventBooking\\Repository\\EventBookingRepository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBoAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T09:06:28.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Program.cs",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\Program.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Program.cs",
+              "RelativeToolTip": "Day28_EventBooking\\Program.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCQAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T06:39:29.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EventService.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Services\\EventService.cs",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\Services\\EventService.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Services\\EventService.cs",
+              "RelativeToolTip": "Day28_EventBooking\\Services\\EventService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T06:44:27.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "EventRepository.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Repository\\EventRepository.cs",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\Repository\\EventRepository.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Repository\\EventRepository.cs",
+              "RelativeToolTip": "Day28_EventBooking\\Repository\\EventRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T06:32:43.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Repository\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\Repository\\EmployeeRepository.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Repository\\EmployeeRepository.cs",
+              "RelativeToolTip": "Day28_EventBooking\\Repository\\EmployeeRepository.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAowE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T06:42:07.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "BookingService.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Services\\BookingService.cs",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\Services\\BookingService.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Services\\BookingService.cs",
+              "RelativeToolTip": "Day28_EventBooking\\Services\\BookingService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T06:45:05.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BookingDTO.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\DTO\\BookingDTO.cs",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\DTO\\BookingDTO.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\DTO\\BookingDTO.cs",
+              "RelativeToolTip": "Day28_EventBooking\\DTO\\BookingDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T09:36:34.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BookingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Mapper\\BookingProfile.cs",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\Mapper\\BookingProfile.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Mapper\\BookingProfile.cs",
+              "RelativeToolTip": "Day28_EventBooking\\Mapper\\BookingProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T09:48:15.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "BookingRepository.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Repository\\BookingRepository.cs",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\Repository\\BookingRepository.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Repository\\BookingRepository.cs",
+              "RelativeToolTip": "Day28_EventBooking\\Repository\\BookingRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T06:42:21.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "EventDTO.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\DTO\\EventDTO.cs",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\DTO\\EventDTO.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\DTO\\EventDTO.cs",
+              "RelativeToolTip": "Day28_EventBooking\\DTO\\EventDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T09:35:50.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "EventProfile.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Mapper\\EventProfile.cs",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\Mapper\\EventProfile.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Mapper\\EventProfile.cs",
+              "RelativeToolTip": "Day28_EventBooking\\Mapper\\EventProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T09:32:53.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "EventBookingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Mapper\\EventBookingProfile.cs",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\Mapper\\EventBookingProfile.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Mapper\\EventBookingProfile.cs",
+              "RelativeToolTip": "Day28_EventBooking\\Mapper\\EventBookingProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T09:44:21.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "EmployeeProfile.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Mapper\\EmployeeProfile.cs",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\Mapper\\EmployeeProfile.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Mapper\\EmployeeProfile.cs",
+              "RelativeToolTip": "Day28_EventBooking\\Mapper\\EmployeeProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T10:11:50.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "EventBookingDTO.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\DTO\\EventBookingDTO.cs",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\DTO\\EventBookingDTO.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\DTO\\EventBookingDTO.cs",
+              "RelativeToolTip": "Day28_EventBooking\\DTO\\EventBookingDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T09:37:18.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "EventBooking.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Model\\EventBooking.cs",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\Model\\EventBooking.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Model\\EventBooking.cs",
+              "RelativeToolTip": "Day28_EventBooking\\Model\\EventBooking.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T06:26:20.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Event.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Model\\Event.cs",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\Model\\Event.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Model\\Event.cs",
+              "RelativeToolTip": "Day28_EventBooking\\Model\\Event.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T06:26:09.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Day28_EventBooking.csproj",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Day28_EventBooking.csproj",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\Day28_EventBooking.csproj",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Day28_EventBooking.csproj",
+              "RelativeToolTip": "Day28_EventBooking\\Day28_EventBooking.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-21T09:34:10.506Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "20241021090447_init.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Migrations\\20241021090447_init.cs",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\Migrations\\20241021090447_init.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Migrations\\20241021090447_init.cs",
+              "RelativeToolTip": "Day28_EventBooking\\Migrations\\20241021090447_init.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T09:04:47.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "20241021090242_changes.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Migrations\\20241021090242_changes.cs",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\Migrations\\20241021090242_changes.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Migrations\\20241021090242_changes.cs",
+              "RelativeToolTip": "Day28_EventBooking\\Migrations\\20241021090242_changes.cs",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T09:02:42.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Interface\\IRepository.cs",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\Interface\\IRepository.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Interface\\IRepository.cs",
+              "RelativeToolTip": "Day28_EventBooking\\Interface\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T06:33:19.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "20241021072333_init.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Migrations\\20241021072333_init.cs",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\Migrations\\20241021072333_init.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\Migrations\\20241021072333_init.cs",
+              "RelativeToolTip": "Day28_EventBooking\\Migrations\\20241021072333_init.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T07:23:33.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\appsettings.json",
+              "RelativeDocumentMoniker": "Day28_EventBooking\\appsettings.json",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day28_EventBookingSolution\\Day28_EventBooking\\appsettings.json",
+              "RelativeToolTip": "Day28_EventBooking\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-21T06:49:02.576Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
