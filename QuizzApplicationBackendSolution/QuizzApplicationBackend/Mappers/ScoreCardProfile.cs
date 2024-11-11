@@ -11,6 +11,8 @@ namespace ScoreCardzApplicationBackend.Mappers
             CreateMap<ScoreCard, ScoreCardDTO>();
             CreateMap<ScoreCard, ScoreCardResponseDTO>();
             CreateMap<ScoreCardResponseDTO, ScoreCard>();
+            CreateMap<SubmittedOptionDTO, ScoreCard>();
+            CreateMap<ScoreCard,SubmittedOptionDTO>();
             CreateMap<ScoreCardDTO, ScoreCard>();
         }
     }

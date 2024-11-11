@@ -1,14 +1,13 @@
-﻿namespace TestProject1
+﻿namespace QuizzApplicationBackend.Exceptions
 {
     public class CouldNotAddException:Exception
     {
-        string message = string.Empty;
+        string msg;
 
-        public CouldNotAddException(string msg)
-        {
-            message = msg;
+        public CouldNotAddException(string msg) {
+            msg = msg;
         }
 
-        public override string Message => message;
+        public override string  Message => base.Message;
     }
 }

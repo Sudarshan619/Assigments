@@ -9,6 +9,6 @@
             msg = message;
         }
 
-        
+        public override string Message => base.Message;     
     }
 }

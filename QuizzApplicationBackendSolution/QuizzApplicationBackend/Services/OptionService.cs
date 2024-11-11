@@ -68,12 +68,12 @@ namespace QuizzApplicationBackend.Services
             }
         }
 
-        public async Task<OptionDTO> GetOption(int id)
+        public async Task<OptionResponseDTO> GetOption(int id)
         {
             try
             {
                 var option = await _repository.Get(id);
-                return _mapper.Map<OptionDTO>(option);
+                return _mapper.Map<OptionResponseDTO>(option);
             }
             catch (NotFoundException)
             {
@@ -85,12 +85,17 @@ namespace QuizzApplicationBackend.Services
             }
         }
 
-        public async Task<IEnumerable<OptionDTO>> GetAllOptions()
+        public async Task<IEnumerable<OptionResponseDTO>> GetAllOptions(int pageNumber)
         {
             try
             {
                 var options = await _repository.GetAll();
-                return _mapper.Map<IEnumerable<OptionDTO>>(options);
+                var paginatedOptions = options
+           .Skip((pageNumber - 1) * 5)
+           .Take(5)
+           .ToList();
+
+                return _mapper.Map<IEnumerable<OptionResponseDTO>>(paginatedOptions);
             }
             catch (CollectionEmptyException)
             {

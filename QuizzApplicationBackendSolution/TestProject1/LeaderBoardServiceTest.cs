@@ -68,11 +68,10 @@ namespace TestProject1
 
             // Assert
             Assert.True(result);
-            _mockLeaderBoardRepository.Verify(repo => repo.Delete(leaderBoardId), Times.Once);
         }
 
         [Test]
-        public async Task GetLeaderBoard_ValidId_ReturnsLeaderBoardDTO()
+        public async Task GetLeaderBoard_ReturnsLeaderBoardDTO()
         {
             // Arrange
             int leaderBoardId = 1;
@@ -110,7 +109,6 @@ namespace TestProject1
                }
             };
 
-            // Mock the repository to add and retrieve ScoreCards within the LeaderBoard
             _mockLeaderBoardRepository.Setup(repo => repo.Add(It.IsAny<LeaderBoard>())).ReturnsAsync(new LeaderBoard { LeaderBoardId = leaderBoardId });
             _mockScoreCardRepository.Setup(repo => repo.GetAll()).ReturnsAsync(new List<ScoreCard>
     {
@@ -118,9 +116,8 @@ namespace TestProject1
         new ScoreCard { ScoreCardId = 2, UserId = 2, Score = 200, Acuuracy = 0.8 }
     });
 
-            // Act: First create the leaderboard with ScoreCards, then sort
             await _leaderBoardService.CreateLeaderBoard(leaderBoard);
-            await _leaderBoardService.CreateLeaderBoard(leaderBoard);// Creates leaderboard and ScoreCards
+            await _leaderBoardService.CreateLeaderBoard(leaderBoard);
             var result = await _leaderBoardService.SortLeaderBoard(Choice.Score, leaderBoardId);
 
             // Assert

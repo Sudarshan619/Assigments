@@ -13,7 +13,7 @@ namespace QuizzApplicationBackend.Interfaces
     {
         public Task<bool> CreateLeaderBoard(LeaderBoardDTO leaderBoard);
 
-        public Task<IEnumerable<LeaderBoardDTO>> GetAllLeaderBoard();
+        public Task<IEnumerable<LeaderBoardResponseDTO>> GetAllLeaderBoard(int pageNumber,int pageSize);
 
         public Task<LeaderBoardResponseDTO> GetLeaderBoard(int id);
 

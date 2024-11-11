@@ -22,7 +22,18 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -30,6 +41,43 @@
     "Method": "GetLeaderBoard",
     "RelativePath": "api/LeaderBoard/{id}",
     "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuizzApplicationBackend.Controllers.LeaderBoardController",
+    "Method": "UpdateLeaderBoard",
+    "RelativePath": "api/LeaderBoard/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "leaderBoardDto",
+        "Type": "QuizzApplicationBackend.DTO.LeaderBoardDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuizzApplicationBackend.Controllers.LeaderBoardController",
+    "Method": "DeleteLeaderBoard",
+    "RelativePath": "api/LeaderBoard/{id}",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -69,7 +117,13 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -164,7 +218,13 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -254,6 +314,16 @@
   },
   {
     "ContainingType": "QuizzApplicationBackend.Controllers.QuizController",
+    "Method": "GetAllQuizzes",
+    "RelativePath": "api/Quiz",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuizzApplicationBackend.Controllers.QuizController",
     "Method": "DeleteQuiz",
     "RelativePath": "api/Quiz/{id}",
     "HttpMethod": "DELETE",
@@ -314,8 +384,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "scoreCardDto",
-        "Type": "QuizzApplicationBackend.DTO.ScoreCardDTO",
+        "Name": "submittedOptionDTO",
+        "Type": "QuizzApplicationBackend.DTO.SubmittedOptionDTO",
         "IsRequired": true
       }
     ],
@@ -425,26 +495,5 @@
         "StatusCode": 200
       }
     ]
-  },
-  {
-    "ContainingType": "QuizzApplicationBackend.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[QuizzApplicationBackend.WeatherForecast, QuizzApplicationBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ],
-    "EndpointName": "GetWeatherForecast"
   }
 ]

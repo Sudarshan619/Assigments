@@ -164,7 +164,7 @@ namespace QuizzApplicationBackend.Tests
             _mockMapper.Setup(m => m.Map<IEnumerable<OptionDTO>>(options)).Returns(optionDtos);
 
             // Act
-            var result = await _optionService.GetAllOptions();
+            var result = await _optionService.GetAllOptions(1);
 
             // Assert
             Assert.IsNotNull(result);
@@ -178,7 +178,7 @@ namespace QuizzApplicationBackend.Tests
             _mockOptionRepository.Setup(repo => repo.GetAll()).ThrowsAsync(new CollectionEmptyException("No options available"));
 
             // Act & Assert
-            Assert.ThrowsAsync<CollectionEmptyException>(() => _optionService.GetAllOptions());
+            Assert.ThrowsAsync<CollectionEmptyException>(() => _optionService.GetAllOptions(1));
         }
     }
 }

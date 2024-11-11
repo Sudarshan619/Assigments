@@ -70,7 +70,7 @@ namespace QuizzApplicationBackend.Services
                 {
                     QuestionName = questionEntity.QuestionName,
                     Category = questionEntity.Category,
-                    Options = _mapper.Map<ICollection<OptionDTO>>(questionOptions)
+                    Options = _mapper.Map<ICollection<OptionResponseDTO>>(questionOptions)
                 };
             }
             
@@ -84,12 +84,33 @@ namespace QuizzApplicationBackend.Services
             }
         }
 
-        public async Task<IEnumerable<QuestionDTO>> GetAllQuestions()
+        public async Task<IEnumerable<QuestionResponseDTO>> GetAllQuestions(int pageNumber)
         {
             try
             {
                 var questions = await _repository.GetAll();
-                return _mapper.Map<IEnumerable<QuestionDTO>>(questions);
+
+                var allOptions = await _optionRepository.GetAll();
+
+                var questionResponseDTOs = questions.Select(question =>
+                {
+                    var questionOptions = allOptions.Where(option => option.QuestionId == question.QuestionId).ToList();
+                    return new QuestionResponseDTO
+                    {
+                        QuestionId = question.QuestionId,
+                        QuestionName = question.QuestionName,
+                        Category = question.Category,
+                        Points = question.Points,
+                        Options = _mapper.Map<ICollection<OptionResponseDTO>>(questionOptions)
+                    };
+                });
+
+                var paginatedQuestions = questionResponseDTOs.
+                    Skip((pageNumber - 1) * 5)
+                    .Take(5)
+                    .ToList();
+
+                return paginatedQuestions;
             }
             catch (CollectionEmptyException)
             {

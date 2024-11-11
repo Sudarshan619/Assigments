@@ -26,7 +26,7 @@ namespace TestProject1
         }
 
         [Test]
-        public async Task CreateQuiz_ShouldReturnOk_WhenQuizCreatedSuccessfully()
+        public async Task CreateQuiz_ShouldReturnOk()
         {
             // Arrange
             var quizDto = new QuizDTO { Title = "Sample Quiz" };
@@ -44,7 +44,7 @@ namespace TestProject1
         }
 
         [Test]
-        public async Task DeleteQuiz_ShouldReturnNoContent_WhenQuizDeletedSuccessfully()
+        public async Task DeleteQuiz_ShouldReturnOk()
         {
             // Arrange
             int quizId = 1;
@@ -55,13 +55,13 @@ namespace TestProject1
 
             // Assert
             Assert.IsNotNull(result);
-            var noContentResult = result as NoContentResult;
+            var noContentResult = result as OkObjectResult;
             Assert.IsNotNull(noContentResult);
-            Assert.AreEqual(204, noContentResult.StatusCode);
+            Assert.AreEqual(200, noContentResult.StatusCode);
         }
 
         [Test]
-        public async Task DeleteQuiz_ShouldReturnNotFound_WhenQuizDoesNotExist()
+        public async Task DeleteQuiz_ShouldReturnNotFound()
         {
             // Arrange
             int quizId = 1;
@@ -79,7 +79,7 @@ namespace TestProject1
         }
 
         [Test]
-        public async Task EditQuiz_ShouldReturnNoContent_WhenQuizEditedSuccessfully()
+        public async Task EditQuiz_ShouldReturnNoContent()
         {
             // Arrange
             int quizId = 1;
@@ -97,12 +97,42 @@ namespace TestProject1
         }
 
         [Test]
-        public async Task GetQuiz_ShouldReturnQuiz_WhenQuizExists()
+        public async Task GetQuiz_ShouldReturnQuiz()
         {
             // Arrange
             int quizId = 1;
-            var quiz = new QuizDTO { Title = "Sample Quiz" };
-            //_mockQuizService.Setup(service => service.GetQuiz(quizId)).ReturnsAsync(quiz);
+            var quiz = new QuizQuestionReponseDTO
+            {
+                MaxPoints = 100,
+                questions = new List<QuestionResponseDTO>
+
+          {
+          new QuestionResponseDTO
+          {
+            QuestionId = 1,
+            Category = 0,
+            QuestionName = "Sample question 1",
+            Points = 4,
+            Options = new List<OptionResponseDTO>
+            {
+                new OptionResponseDTO
+                {
+                    OptionId = 1,
+                    Text = "Option 1 text"
+                },
+                new OptionResponseDTO
+                {
+                    OptionId = 2,
+                    Text = "Option 2 text"
+                }
+            }
+           }
+         
+        
+          }
+            };
+        
+            _mockQuizService.Setup(service => service.GetQuiz(quizId)).ReturnsAsync(quiz);
 
             // Act
             var result = await _controller.GetQuiz(quizId);
@@ -116,7 +146,7 @@ namespace TestProject1
         }
 
         [Test]
-        public async Task GetQuiz_ShouldReturnNotFound_WhenQuizDoesNotExist()
+        public async Task GetQuiz_ShouldReturnNotFound()
         {
             // Arrange
             int quizId = 1;
@@ -131,6 +161,44 @@ namespace TestProject1
             Assert.IsNotNull(notFoundResult);
             Assert.AreEqual(404, notFoundResult.StatusCode);
             Assert.AreEqual("Quiz not found.", notFoundResult.Value);
+        }
+
+        [Test]
+        public async Task GetQuiz_ShouldReturnInternalServerError()
+        {
+            // Arrange
+            int quizId = 1;
+           
+            
+            _mockQuizService.Setup(service => service.GetQuiz(quizId)).ThrowsAsync(new Exception("Internal server error."));
+
+            // Act
+            var result = await _controller.GetQuiz(quizId);
+
+            // Assert
+            Assert.IsNotNull(result);
+            var notFoundResult = result as ObjectResult;
+            Assert.IsNotNull(notFoundResult);
+            Assert.AreEqual(500, notFoundResult.StatusCode);
+        }
+
+        [Test]
+        public async Task DeleteQuiz_ShouldReturnInternalServerError()
+        {
+            // Arrange
+            int quizId = 1;
+
+
+            _mockQuizService.Setup(service => service.DeleteQuiz(quizId)).ThrowsAsync(new Exception("Internal server error."));
+
+            // Act
+            var result = await _controller.DeleteQuiz(quizId);
+
+            // Assert
+            Assert.IsNotNull(result);
+            var notFoundResult = result as ObjectResult;
+            Assert.IsNotNull(notFoundResult);
+            Assert.AreEqual(500, notFoundResult.StatusCode);
         }
     }
 }
