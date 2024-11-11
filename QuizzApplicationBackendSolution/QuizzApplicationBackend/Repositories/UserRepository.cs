@@ -3,7 +3,6 @@ using QuizzApplicationBackend.Models;
 using QuizzApplicationBackend.Context;
 using QuizzApplicationBackend.Exceptions;
 using QuizzApplicationBackend.Services;
-using TestProject1;
 using Microsoft.EntityFrameworkCore;
 
 namespace QuizzApplicationBackend.Repositories

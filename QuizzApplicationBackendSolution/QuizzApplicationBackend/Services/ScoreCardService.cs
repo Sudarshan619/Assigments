@@ -2,6 +2,7 @@
 using QuizzApplicationBackend.DTO;
 using QuizzApplicationBackend.Exceptions;
 using QuizzApplicationBackend.Interfaces;
+using QuizzApplicationBackend.Services;
 using QuizzApplicationBackend.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -11,35 +12,78 @@ namespace QuizzApplicationBackend.Services
     public class ScoreCardService : IScoreCardService
     {
         private readonly IRepository<int, ScoreCard> _scoreCardRepository;
-        private readonly IRepository<int, Quiz> _quizRepository;
+        private readonly IQuizService<IEnumerable<Question>, int> _quizService;
+        private readonly IRepository<int, Option> _optionRepo;
+        private readonly IQuestionService _questionService;
         private readonly IRepository<string , User> _userRepository;
+        private readonly IRepository<int, Quiz> _quizRepository;
         private readonly IMapper _mapper;
 
-        public ScoreCardService(IRepository<string, User> userRepository,IRepository<int, ScoreCard> scoreCardRepository, IRepository<int, Quiz> quizRepository, IMapper mapper)
+        public ScoreCardService(IRepository<int, Option> optionRepo,IQuestionService questionService,IRepository<string, User> userRepository,IRepository<int, ScoreCard> scoreCardRepository, IQuizService<IEnumerable<Question>, int> quizService, IRepository<int, Quiz> quizRepository, IMapper mapper)
         {
             _scoreCardRepository = scoreCardRepository;
             _userRepository = userRepository;
+            _questionService = questionService;
+            _optionRepo = optionRepo;
             _quizRepository = quizRepository;
+            _quizService = quizService;
             _mapper = mapper;
         }
 
-        public async Task<bool> CreateScoreCard(ScoreCardDTO scoreCardDto)
+        public async Task<bool> CreateScoreCard(SubmittedOptionDTO submittedOptionDTO)
         {
             var user = await _userRepository.GetAll();
             if(user == null)
             {
                 throw new NotFoundException("User not found while gettinf scorecard");
-            }
-
-            
-                var scoreCard = _mapper.Map<ScoreCard>(scoreCardDto);
-                var accuracy = await CalculateAccuracy(scoreCardDto);
+            }         
+                var scoreCard = _mapper.Map<ScoreCard>(submittedOptionDTO);
+                scoreCard.Score =await  CalculateScore(submittedOptionDTO);
+                var accuracy = await CalculateAccuracy(submittedOptionDTO, scoreCard.Score);
                 scoreCard.Acuuracy = accuracy;
                 var result = await _scoreCardRepository.Add(scoreCard);
                 return result != null;
- 
             
         }
+
+        public async Task<int> CalculateScore(SubmittedOptionDTO submittedOptionDTO)
+        {
+            // Retrieve the quiz by its ID
+            var quiz = await _quizService.GetQuiz(submittedOptionDTO.QuizId);
+            if (quiz == null)
+            {
+                return 0;
+            }
+
+            var allQuestions = await _questionService.GetAllQuestions(1);
+            var options = await _optionRepo.GetAll();
+
+            int totalScore = 0;
+
+            var questions = quiz.questions;
+
+            foreach (var selectedOption in submittedOptionDTO.Options)
+            {
+                var question = questions.FirstOrDefault(q => q.Options.Any(o => o.OptionId == selectedOption.OptionId));
+                Console.WriteLine("question" + question.QuestionId);
+
+                if (question != null)
+                {
+                   
+                    var correctOption = options.FirstOrDefault(o => o.QuestionId == question.QuestionId && o.IsCorrect);
+                    Console.WriteLine("Correct optonn" + correctOption.OptionId);
+                    if (correctOption != null && correctOption.OptionId == selectedOption.OptionId)
+                    {
+                        totalScore += question.Points;
+                    }
+                     Console.WriteLine("Inside the if statement - Correct answer found.");
+                }
+            }
+
+            return totalScore;
+        }
+
+
 
         public async Task<bool> UpdateScoreCard(int id, ScoreCardDTO scoreCardDto)
         {
@@ -53,13 +97,13 @@ namespace QuizzApplicationBackend.Services
             var result = await _scoreCardRepository.Update(id, updatedScoreCard);
             return result != null;
         }
-        private async Task<double> CalculateAccuracy(ScoreCardDTO scoreCard)
+        private async Task<double> CalculateAccuracy(SubmittedOptionDTO submittedOptionDTO, int score)
         {
             try
             {
-                var quiz = await _quizRepository.Get(scoreCard.QuizId);
+                var quiz = await _quizRepository.Get(submittedOptionDTO.QuizId);
 
-                double accuracy = ((double)scoreCard.Score / (double)quiz.MaxPoint) * 100;
+                double accuracy = ((double)score / (double)quiz.MaxPoint) * 100;
 
                 return accuracy;
             }

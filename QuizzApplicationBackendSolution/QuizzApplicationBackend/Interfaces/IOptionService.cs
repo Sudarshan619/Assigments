@@ -8,9 +8,9 @@ namespace QuizzApplicationBackend.Interfaces
 
         public Task<bool> DeleteOption(int id);
 
-        public Task<OptionDTO> GetOption(int id);
+        public Task<OptionResponseDTO> GetOption(int id);
 
-        public Task<IEnumerable<OptionDTO>> GetAllOptions();
+        public Task<IEnumerable<OptionResponseDTO>> GetAllOptions(int pageNumber);
 
         public Task<bool> EditOption(int id, OptionDTO question);
     }

@@ -43,11 +43,6 @@ namespace QuizzApplicationBackend.Services
             }
         }
 
-        public Task<bool> DeleteLeaderBoard(int id)
-        {
-            throw new NotImplementedException();
-        }
-
         public async Task<LeaderBoardResponseDTO> GetLeaderBoard(int id)
         {
             try
@@ -87,43 +82,79 @@ namespace QuizzApplicationBackend.Services
         }
 
 
-        public async Task<IEnumerable<LeaderBoardDTO>> GetAllLeaderBoard()
+        public async Task<IEnumerable<LeaderBoardResponseDTO>> GetAllLeaderBoard(int pageNumber,int pageSize)
         {
-            //try
-            //{
-            //    var leaderBoard = await _leaderBoardRepository.GetAll();
+            try
+            {     
+                var leaderBoards = await _leaderBoardRepository.GetAll();
+
+                if (!leaderBoards.Any())
+                {
+                    throw new CollectionEmptyException("No leaderBoard found");
+                }
+
+               
+                var scoreCards = await _scoreCardRepository.GetAll();
+                var quizzes = await _quizRepository.GetAll();
+
+                var users = await _userRepo.GetAll();
+
+                var pagedLeaderBoards = leaderBoards
+           .Skip((pageNumber - 1) * pageSize)
+           .Take(pageSize)
+           .ToList();
+
+                var leaderBoardDTOs = pagedLeaderBoards.Select(leaderBoard =>
+                {
+               
+                    var requiredQuiz = quizzes.FirstOrDefault(q => q.Category == leaderBoard.Categories);
+                    if (requiredQuiz == null)
+                    {
+                        throw new Exception("Quiz with specified category not found");
+                    }
+                 var sortedScoreCards = scoreCards
+                .Select(sc => new ScoreCardResponseDTO
+                {
+                    ScoreCardId = sc.ScoreCardId,
+                    Username = users.FirstOrDefault(u => u.Id == sc.UserId)?.Name ?? "Unknown User",
+                    Score = sc.Score,
+                    QuizId = sc.QuizId,
+                    Acuuracy = sc.Acuuracy
+                });
+
+                    var scoreCardDtos = sortedScoreCards
+                        .Where(sc => sc.QuizId == requiredQuiz.QuizId)
+                        .Select(sc => _mapper.Map<ScoreCardResponseDTO>(sc))
+                        .ToList();
 
 
-            //    if (leaderBoard ==null) {
+                    return new LeaderBoardResponseDTO
+                    {
+                        LeaderBoardName = leaderBoard.LeaderBoardName,
+                        Category = leaderBoard.Categories,
+                        ScoreCards = scoreCardDtos
+                    };
+                }).ToList();
 
-            //        throw new CollectionEmptyException("No leaderBoard found");
-            //    }
-            //    var scoreCards = await _scoreCardRepository.GetAll();
-
-
-            //    return leaderBoardDTOs;
-
-
-            //}
-            //catch(Exception ex)
-            //{
-
-            //}
-            throw new NotImplementedException();
+                return leaderBoardDTOs;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Could not retrieve leader boards: " + ex.Message);
+            }
         }
 
         public async Task<LeaderBoardResponseDTO> SortLeaderBoard(Choice choice,int id)
         {
             var scoreCards = await _scoreCardRepository.GetAll();
             var leaderBoard = await _leaderBoardRepository.Get(id);
-            var filteredScoreCards = scoreCards.Where(e => e.ScoreCardId == id);
-
-            
+     
             var users = await _userRepo.GetAll();
 
-            var sortedScoreCards = filteredScoreCards
+            var sortedScoreCards = scoreCards
                 .Select(sc => new ScoreCardResponseDTO
                 {
+                    ScoreCardId = sc.ScoreCardId,
                     Username = users.FirstOrDefault(u => u.Id == sc.UserId)?.Name ?? "Unknown User",
                     Score = sc.Score,
                     QuizId = sc.QuizId,
@@ -138,7 +169,7 @@ namespace QuizzApplicationBackend.Services
             {
                 sortedScoreCards = sortedScoreCards.OrderBy(sc => sc.Username).ToList();
             }
-            //var scoreCard = _mapper.Map<IEnumerable<ScoreCard>>(sortedScoreCards);
+
             return new LeaderBoardResponseDTO
             {
                 LeaderBoardName = leaderBoard.LeaderBoardName,
@@ -149,9 +180,47 @@ namespace QuizzApplicationBackend.Services
             };
 
         }
-        public Task<bool> UpdateLeaderBoard(int id,LeaderBoardDTO leaderBoard)
+        public async Task<bool> DeleteLeaderBoard(int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var leaderBoard = await _leaderBoardRepository.Get(id);
+                if (leaderBoard == null)
+                {
+                    throw new CollectionEmptyException($"LeaderBoard with ID {id} not found.");
+                }
+
+                await _leaderBoardRepository.Delete(id);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Could not delete leader board: " + ex.Message);
+            }
         }
+
+        public async Task<bool> UpdateLeaderBoard(int id, LeaderBoardDTO leaderBoardDto)
+        {
+            try
+            {
+                var existingLeaderBoard = await _leaderBoardRepository.Get(id);
+                if (existingLeaderBoard == null)
+                {
+                    throw new CollectionEmptyException($"LeaderBoard with ID {id} not found.");
+                }
+
+                // Map the updated values from DTO to the existing entity
+                existingLeaderBoard.LeaderBoardName = leaderBoardDto.LeaderBoardName;
+                existingLeaderBoard.Categories = leaderBoardDto.Category;
+
+                await _leaderBoardRepository.Update(id, existingLeaderBoard);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Could not update leader board: " + ex.Message);
+            }
+        }
+
     }
 }

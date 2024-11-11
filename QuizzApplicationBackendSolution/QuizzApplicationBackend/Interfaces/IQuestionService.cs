@@ -14,7 +14,7 @@ namespace QuizzApplicationBackend.Interfaces
 
         public Task<bool> AddOptionsToQuestion(int id);
 
-        public Task<IEnumerable<QuestionDTO>> GetAllQuestions();
+        public Task<IEnumerable<QuestionResponseDTO>> GetAllQuestions(int pageNumber);
 
         public Task<QuestionResponseDTO> GetQuestion(int id);
 

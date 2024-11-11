@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using QuizzApplicationBackend.DTO;
 using QuizzApplicationBackend.Exceptions;
 using QuizzApplicationBackend.Interfaces;
@@ -18,25 +19,27 @@ namespace QuizzApplicationBackend.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllOptions()
+        [Authorize(Roles = "QuizzCreator")]
+        public async Task<IActionResult> GetAllOptions(int pageNumber)
         {
             try
             {
-                var options = await _optionService.GetAllOptions();
+                var options = await _optionService.GetAllOptions(pageNumber);
                 return Ok(options);
             }
             catch (CollectionEmptyException ex)
             {
-                return NotFound(new { message = ex.Message });
+                return NotFound( ex.Message );
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { message = ex.Message });
+                return StatusCode(500, ex.Message);
             }
         }
 
         // GET: api/Option/{id}
         [HttpGet("{id}")]
+        [Authorize(Roles = "QuizzCreator")]
         public async Task<IActionResult> GetOption(int id)
         {
             try
@@ -46,16 +49,17 @@ namespace QuizzApplicationBackend.Controllers
             }
             catch (NotFoundException ex)
             {
-                return NotFound(new { message = ex.Message });
+                return NotFound(ex.Message);
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { message = ex.Message });
+                return StatusCode(500, ex.Message);
             }
         }
 
         // POST: api/Option
         [HttpPost]
+        [Authorize(Roles = "QuizzCreator")]
         public async Task<IActionResult> CreateOption(OptionDTO optionDto)
         {
             if (!ModelState.IsValid)
@@ -72,11 +76,12 @@ namespace QuizzApplicationBackend.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { message = ex.Message });
+                return StatusCode(500, ex.Message);
             }
         }
 
         [HttpPut("{id}")]
+        [Authorize(Roles = "QuizzCreator")]
         public async Task<IActionResult> EditOption(int id,OptionDTO optionDto)
         {
             if (!ModelState.IsValid)
@@ -97,11 +102,12 @@ namespace QuizzApplicationBackend.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { message = ex.Message });
+                return StatusCode(500, ex.Message);
             }
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "QuizzCreator")]
         public async Task<IActionResult> DeleteOption(int id)
         {
             try
@@ -117,7 +123,7 @@ namespace QuizzApplicationBackend.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { message = ex.Message });
+                return StatusCode(500, ex.Message);
             }
         }
     }

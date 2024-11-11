@@ -15,9 +15,12 @@ namespace QuizzApplicationBackend.Tests.Services
     {
         private Mock<IRepository<int, ScoreCard>> _mockScoreCardRepository;
         private Mock<IRepository<int, Quiz>> _mockQuizRepository;
+        private Mock<IQuestionService> _mockQuestionService;
+        private Mock<IRepository<int,Option>> _optionRepo;
+        private Mock<IQuizService<IEnumerable<Question>, int>> _mockQuizService;
         private Mock<IRepository<string, User>> _mockUserRepository;
         private Mock<IMapper> _mockMapper;
-        private ScoreCardService _scoreCardService;
+        private IScoreCardService _scoreCardService;
 
         [SetUp]
         public void SetUp()
@@ -25,11 +28,17 @@ namespace QuizzApplicationBackend.Tests.Services
             _mockScoreCardRepository = new Mock<IRepository<int, ScoreCard>>();
             _mockQuizRepository = new Mock<IRepository<int, Quiz>>();
             _mockMapper = new Mock<IMapper>();
-            _mockUserRepository = new Mock<IRepository<string, User>>();
 
+            _mockUserRepository = new Mock<IRepository<string, User>>();
+            _mockQuizService = new Mock<IQuizService<IEnumerable<Question>, int>>();
+            _mockQuestionService = new Mock<IQuestionService>();
+            _optionRepo = new Mock<IRepository<int, Option>>();
             _scoreCardService = new ScoreCardService(
+                _optionRepo.Object,
+                _mockQuestionService.Object,
                 _mockUserRepository.Object,
-                _mockScoreCardRepository.Object,        
+                _mockScoreCardRepository.Object,
+                _mockQuizService.Object,
                 _mockQuizRepository.Object,
                 _mockMapper.Object
             );
@@ -42,6 +51,14 @@ namespace QuizzApplicationBackend.Tests.Services
             var scoreCardDto = new ScoreCardDTO { QuizId = 1, UserId= 1,Score = 80 };
             var scoreCard = new ScoreCard();
             var quiz = new Quiz { QuizId = 1, MaxPoint = 100 };
+            var submittedOptionDto = new SubmittedOptionDTO
+            {
+                Options = new List<SelectedOptionDTO>
+             {
+                 new SelectedOptionDTO { OptionId = 1, OptionName = "Option 1" },
+                    new SelectedOptionDTO { OptionId = 2, OptionName = "Option 2" }
+              }
+            };
             var expectedAccuracy = 80.0;
 
             _mockMapper.Setup(m => m.Map<ScoreCard>(scoreCardDto)).Returns(scoreCard);
@@ -49,7 +66,7 @@ namespace QuizzApplicationBackend.Tests.Services
             _mockScoreCardRepository.Setup(repo => repo.Add(scoreCard)).ReturnsAsync(scoreCard);
 
             // Act
-            var result = await _scoreCardService.CreateScoreCard(scoreCardDto);
+            var result = await _scoreCardService.CreateScoreCard(submittedOptionDto);
             var score = await _scoreCardService.GetScoreCard(scoreCard.ScoreCardId);
 
             // Assert
@@ -63,10 +80,18 @@ namespace QuizzApplicationBackend.Tests.Services
         {
             // Arrange
             var scoreCardDto = new ScoreCardDTO { QuizId = 99 };
+            var submittedOptionDto = new SubmittedOptionDTO
+            {
+                Options = new List<SelectedOptionDTO>
+             {
+                 new SelectedOptionDTO { OptionId = 1, OptionName = "Option 1" },
+                    new SelectedOptionDTO { OptionId = 2, OptionName = "Option 2" }
+              }
+            };
             _mockQuizRepository.Setup(q => q.Get(scoreCardDto.QuizId)).ThrowsAsync(new NotFoundException("Quiz not found"));
 
             // Act & Assert
-            Assert.ThrowsAsync<Exception>(async () => await _scoreCardService.CreateScoreCard(scoreCardDto));
+            Assert.ThrowsAsync<Exception>(async () => await _scoreCardService.CreateScoreCard(submittedOptionDto));
         }
 
         [Test]

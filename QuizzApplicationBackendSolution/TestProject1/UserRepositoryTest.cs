@@ -1,46 +1,40 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using Moq;
+using NUnit.Framework;
+using QuizzApplicationBackend.Context;
 using QuizzApplicationBackend.Exceptions;
 using QuizzApplicationBackend.Models;
 using QuizzApplicationBackend.Repositories;
 using QuizzApplicationBackend.Services;
-using QuizzApplicationBackend.Context;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.Extensions.Options;
-using Castle.Core.Smtp;
 
 namespace TestProject1
 {
-    class UserRepositoryTest
+    [TestFixture]
+    public class UserRepositoryTest
     {
-        DbContextOptions options;
-        QuizContext context;
-        UserRepository repository;
-        Mock<ILogger<UserRepository>> logger;
-        Mock<IEmailSender> mockEmailSender;
-        Mock<ILogger<EmailService>> mockLogger;
-        Mock<IOptions<SmtpSettings>> smtpSettingsMock;
+        private DbContextOptions<QuizContext> options;
+        private QuizContext context;
+        private UserRepository repository;
+        private Mock<ILogger<UserRepository>> logger;
+        private Mock<ILogger<EmailService>> mockLogger;
+        private Mock<IOptions<SmtpSettings>> smtpSettingsMock;
 
         [SetUp]
         public void Setup()
         {
-            
             options = new DbContextOptionsBuilder<QuizContext>()
-                .UseInMemoryDatabase("TestAdd")
+                .UseInMemoryDatabase("TestDatabase")
                 .Options;
 
             context = new QuizContext(options);
-
-            // Mock dependencies
             logger = new Mock<ILogger<UserRepository>>();
             mockLogger = new Mock<ILogger<EmailService>>();
-            mockEmailSender = new Mock<IEmailSender>();
-
             smtpSettingsMock = new Mock<IOptions<SmtpSettings>>();
             smtpSettingsMock.Setup(x => x.Value).Returns(new SmtpSettings
             {
@@ -53,37 +47,18 @@ namespace TestProject1
                 EnableSsl = true
             });
 
-            
-            var mockEmailService = new EmailService(smtpSettingsMock.Object, mockLogger.Object);
-
-            // Create UserRepository instance
-            repository = new UserRepository(context, logger.Object, mockEmailService);
+            var emailService = new EmailService(smtpSettingsMock.Object, mockLogger.Object);
+            repository = new UserRepository(context, logger.Object, emailService);
         }
 
         [Test]
-        public async Task TestAdd()
+        public async Task Add_ShouldThrowCouldNotAddException_WhenEmailIsInvalid()
         {
             var user = new User
             {
-                Name = "TestUser",
-                Password = Encoding.UTF8.GetBytes("TestPassword"),
-                Email = "testuser@example.com",
-                HashKey = Encoding.UTF8.GetBytes("TestHashKey"),
-                Role = Roles.QuizzCreator
-            };
-
-            var addedUser = await repository.Add(user);
-            Assert.IsTrue(addedUser.Name == user.Name);
-        }
-
-        [Test]
-        public async Task ExceptionTestAdd()
-        {
-            var user = new User
-            {
-                Name = "TestUser",
-                Password = Encoding.UTF8.GetBytes("TestPassword"),
-                Email = "invalidemail",  // Invalid email to trigger error
+                Name = "InvalidUser",
+                Email = "invalidemail",
+                Password = Encoding.UTF8.GetBytes("Password"),
                 HashKey = Encoding.UTF8.GetBytes("TestHashKey"),
                 Role = Roles.QuizzCreator
             };
@@ -92,81 +67,141 @@ namespace TestProject1
         }
 
         [Test]
-        public async Task TestGet()
+        public async Task Get_ShouldThrowNotFoundException_WhenUserDoesNotExist()
+        {
+            Assert.ThrowsAsync<NotFoundException>(async () => await repository.Get("NonExistentUser"));
+        }
+
+        [Test]
+        public async Task Update_ShouldThrowNotFoundException_WhenUserDoesNotExist()
+        {
+            var user = new User
+            {
+                Name = "NonExistentUser",
+                Email = "newemail@example.com",
+                Password = Encoding.UTF8.GetBytes("UpdatedPassword"),
+                HashKey = Encoding.UTF8.GetBytes("TestHashKey"),
+                Role = Roles.QuizzCreator
+            };
+
+            Assert.ThrowsAsync<NotFoundException>(async () => await repository.Update("NonExistentUser", user));
+        }
+
+        [Test]
+        public async Task Delete_ShouldThrowNotFoundException_WhenUserDoesNotExist()
+        {
+            Assert.ThrowsAsync<NotFoundException>(async () => await repository.Delete("NonExistentUser"));
+        }
+
+        [Test]
+        public async Task GetAll_ShouldThrowNotFoundException_WhenNoUsersExist()
+        {
+            Assert.ThrowsAsync<NotFoundException>(async () => await repository.GetAll());
+        }
+
+        [Test]
+        public async Task Add_ShouldAddUser_WhenUserIsValid()
         {
             var user = new User
             {
                 Name = "TestUser",
-                Password = Encoding.UTF8.GetBytes("TestPassword"),
                 Email = "testuser@example.com",
+                Password = Encoding.UTF8.GetBytes("Password"),
+                HashKey = Encoding.UTF8.GetBytes("TestHashKey"),
+                Role = Roles.QuizzCreator
+            };
+
+            var addedUser = await repository.Add(user);
+            Assert.AreEqual(user.Name, addedUser.Name);
+        }
+
+        [Test]
+        public async Task Get_ShouldReturnUser_WhenUserExists()
+        {
+            var user = new User
+            {
+                Name = "TestUser",
+                Email = "testuser@example.com",
+                Password = Encoding.UTF8.GetBytes("Password"),
                 HashKey = Encoding.UTF8.GetBytes("TestHashKey"),
                 Role = Roles.QuizzCreator
             };
 
             await repository.Add(user);
-
-            var getUser = await repository.Get(user.Name);
-            Assert.IsNotNull(getUser);
+            var fetchedUser = await repository.Get(user.Name);
+            Assert.IsNotNull(fetchedUser);
+            Assert.AreEqual(user.Name, fetchedUser.Name);
         }
 
         [Test]
-        public async Task TestDelete()
+        public async Task Update_ShouldUpdateUser_WhenUserExists()
         {
             var user = new User
             {
-                Name = "abc",
-                Email = "abc@example.com",
-                Password = Encoding.UTF8.GetBytes("TestPassword"),
-                HashKey = Encoding.UTF8.GetBytes("TestHashKey"),
-                Role = Roles.QuizzCreator
-            };
-
-            await repository.Add(user);
-
-            var deletedUser = await repository.Delete(user.Name);
-            Assert.IsNotNull(deletedUser);
-        }
-
-        [Test]
-        public async Task TestUpdate()
-        {
-            var user = new User
-            {
-                Name = "abc",
-                Email = "abc@example.com",
-                Password = Encoding.UTF8.GetBytes("TestPassword"),
+                Name = "TestUser",
+                Email = "oldemail@example.com",
+                Password = Encoding.UTF8.GetBytes("Password"),
                 HashKey = Encoding.UTF8.GetBytes("TestHashKey"),
                 Role = Roles.QuizzCreator
             };
 
             var newUser = new User
             {
-                Name = "abc",
-                Email = "newabc@example.com",
+                Name = "TestUser",
+                Email = "newemail@example.com",
                 Password = Encoding.UTF8.GetBytes("UpdatedPassword"),
-                HashKey = Encoding.UTF8.GetBytes("UpdatedHashKey"),
-                Role = Roles.QuizzCreator
-            };
-
-            await repository.Add(user);
-
-            var updatedUser = await repository.Update("abc", newUser);
-            Assert.IsNotNull(updatedUser);
-        }
-
-        [Test]
-        public async Task ExceptionTestGet()
-        {
-            var user = new User
-            {
-                Name = "NonExistentUser",
-                Password = Encoding.UTF8.GetBytes("TestPassword"),
-                Email = "nonexistent@example.com",
                 HashKey = Encoding.UTF8.GetBytes("TestHashKey"),
                 Role = Roles.QuizzCreator
             };
 
-            Assert.ThrowsAsync<NotFoundException>(async () => await repository.Get(user.Name));
+            await repository.Add(user);
+            var updatedUser = await repository.Update(user.Name, newUser);
+            Assert.AreEqual(newUser.Email, updatedUser.Email);
+        }
+
+        [Test]
+        public async Task Delete_ShouldDeleteUser_WhenUserExists()
+        {
+            var user = new User
+            {
+                Name = "TestUser",
+                Email = "testuser@example.com",
+                Password = Encoding.UTF8.GetBytes("Password"),
+                HashKey = Encoding.UTF8.GetBytes("TestHashKey"),
+                Role = Roles.QuizzCreator
+            };
+
+            await repository.Add(user);
+            var deletedUser = await repository.Delete(user.Name);
+            Assert.AreEqual(user.Name, deletedUser.Name);
+        }
+
+        [Test]
+        public async Task GetAll_ShouldReturnAllUsers_WhenUsersExist()
+        {
+            var user1 = new User
+            {
+                Name = "User1",
+                Email = "user1@example.com",
+                Password = Encoding.UTF8.GetBytes("Password"),
+                HashKey = Encoding.UTF8.GetBytes("TestHashKey"),
+                Role = Roles.QuizzCreator
+            };
+            var user2 = new User
+            {
+                Name = "User2",
+                Email = "user2@example.com",
+                HashKey = Encoding.UTF8.GetBytes("TestHashKey"),
+                Password = Encoding.UTF8.GetBytes("Password"),
+                Role = Roles.QuizzCreator
+            };
+
+            await repository.Add(user1);
+            await repository.Add(user2);
+
+            var users = await repository.GetAll();
+            Assert.IsNotNull(users);
+            Assert.AreEqual(2, users.Count());
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using QuizzApplicationBackend.DTO;
 using QuizzApplicationBackend.Exceptions;
 using QuizzApplicationBackend.Interfaces;
@@ -21,6 +22,7 @@ namespace QuizzApplicationBackend.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "QuizzCreator")]
         public async Task<IActionResult> CreateQuiz(QuizDTO quizDto)
         {
             if (quizDto == null)
@@ -37,6 +39,7 @@ namespace QuizzApplicationBackend.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "QuizzCreator")]
         public async Task<IActionResult> DeleteQuiz(int id)
         {
             try
@@ -44,7 +47,7 @@ namespace QuizzApplicationBackend.Controllers
                 var result = await _quizService.DeleteQuiz(id);
                 if (result)
                 {
-                    return Ok(result); // Successfully deleted
+                    return Ok(result);
                 }
                 return NotFound($"Quiz with ID {id} not found.");
             }
@@ -59,7 +62,8 @@ namespace QuizzApplicationBackend.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> EditQuiz(int id, [FromBody] QuizDTO quizDto)
+        [Authorize(Roles = "QuizzCreator")]
+        public async Task<IActionResult> EditQuiz(int id,QuizDTO quizDto)
         {
             if (quizDto == null)
             {
@@ -71,7 +75,7 @@ namespace QuizzApplicationBackend.Controllers
                 var result = await _quizService.EditQuiz(id, quizDto);
                 if (result)
                 {
-                    return NoContent(); // Successfully edited
+                    return NoContent();
                 }
                 return NotFound($"Quiz with ID {id} not found.");
             }
@@ -94,6 +98,24 @@ namespace QuizzApplicationBackend.Controllers
                 return Ok(quiz);
             }
             catch (NotFoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Internal server error: " + ex.Message);
+            }
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllQuizzes()
+        {
+            try
+            {
+                var quizzes = await _quizService.GetAllQuizzesWithQuestions();
+                return Ok(quizzes);
+            }
+            catch (CollectionEmptyException ex)
             {
                 return NotFound(ex.Message);
             }

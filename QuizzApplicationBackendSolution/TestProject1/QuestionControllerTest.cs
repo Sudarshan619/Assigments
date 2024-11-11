@@ -27,7 +27,7 @@ namespace TestProject1
         }
 
         [Test]
-        public async Task CreateQuestion_ShouldReturnOk_WhenQuestionCreatedSuccessfully()
+        public async Task CreateQuestion_ShouldReturnOk()
         {
             // Arrange
             var questionDto = new QuestionDTO { QuestionName = "Sample question?" };
@@ -45,7 +45,7 @@ namespace TestProject1
         }
 
         [Test]
-        public async Task CreateQuestion_ShouldReturnBadRequest_WhenQuestionCreationFails()
+        public async Task CreateQuestion_ShouldReturnBadRequest()
         {
             // Arrange
             var questionDto = new QuestionDTO { QuestionName = "Sample question?" };
@@ -63,7 +63,7 @@ namespace TestProject1
         }
 
         [Test]
-        public async Task GetQuestion_ShouldReturnOk_WhenQuestionExists()
+        public async Task GetQuestion_ShouldReturnOk()
         {
             // Arrange
             int questionId = 1;
@@ -103,11 +103,11 @@ namespace TestProject1
         public async Task GetAllQuestions_ShouldReturnOk_WhenQuestionsExist()
         {
             // Arrange
-            var questions = new List<QuestionDTO> { new QuestionDTO { QuestionName = "Sample question?" } };
-            _mockQuestionService.Setup(service => service.GetAllQuestions()).ReturnsAsync(questions);
+            var questions = new List<QuestionResponseDTO> { new QuestionResponseDTO { QuestionName = "Sample question?" } };
+            _mockQuestionService.Setup(service => service.GetAllQuestions(1)).ReturnsAsync(questions);
 
             // Act
-            var result = await _controller.GetAllQuestions();
+            var result = await _controller.GetAllQuestions(1);
 
             // Assert
             Assert.IsNotNull(result);
@@ -121,10 +121,10 @@ namespace TestProject1
         public async Task GetAllQuestions_ShouldReturnNotFound_WhenQuestionsDoNotExist()
         {
             // Arrange
-            _mockQuestionService.Setup(service => service.GetAllQuestions()).ThrowsAsync(new CollectionEmptyException("No questions available."));
+            _mockQuestionService.Setup(service => service.GetAllQuestions(1)).ThrowsAsync(new CollectionEmptyException("No questions available."));
 
             // Act
-            var result = await _controller.GetAllQuestions();
+            var result = await _controller.GetAllQuestions(1);
 
             // Assert
             Assert.IsNotNull(result);
@@ -241,5 +241,155 @@ namespace TestProject1
             Assert.AreEqual(400, badRequestResult.StatusCode);
             Assert.AreEqual("Failed to add options to question", badRequestResult.Value);
         }
+
+        [Test]
+        public async Task GetQuestion_ShouldReturnInternalServerError_WhenExceptionThrown()
+        {
+            // Arrange
+            int questionId = 1;
+            _mockQuestionService.Setup(service => service.GetQuestion(questionId)).ThrowsAsync(new Exception("Unexpected error"));
+
+            // Act
+            var result = await _controller.GetQuestion(questionId);
+
+            // Assert
+            Assert.IsNotNull(result);
+            var objectResult = result as ObjectResult;
+            Assert.IsNotNull(objectResult);
+            Assert.AreEqual(500, objectResult.StatusCode);
+            Assert.AreEqual("Internal server error: Unexpected error", objectResult.Value);
+        }
+
+        [Test]
+        public async Task GetAllQuestions_ShouldReturnInternalServerError_WhenExceptionThrown()
+        {
+            // Arrange
+            _mockQuestionService.Setup(service => service.GetAllQuestions(1)).ThrowsAsync(new Exception("Unexpected error"));
+
+            // Act
+            var result = await _controller.GetAllQuestions(1);
+
+            // Assert
+            Assert.IsNotNull(result);
+            var objectResult = result as ObjectResult;
+            Assert.IsNotNull(objectResult);
+            Assert.AreEqual(500, objectResult.StatusCode);
+            Assert.AreEqual("Internal server error: Unexpected error", objectResult.Value);
+        }
+
+        [Test]
+        public async Task EditQuestion_ShouldReturnInternalServerError_WhenExceptionThrown()
+        {
+            // Arrange
+            int questionId = 1;
+            var questionDto = new QuestionDTO { QuestionName = "Updated question?" };
+            _mockQuestionService.Setup(service => service.EditQuestion(questionId, questionDto)).ThrowsAsync(new Exception("Unexpected error"));
+
+            // Act
+            var result = await _controller.EditQuestion(questionId, questionDto);
+
+            // Assert
+            Assert.IsNotNull(result);
+            var objectResult = result as ObjectResult;
+            Assert.IsNotNull(objectResult);
+            Assert.AreEqual(500, objectResult.StatusCode);
+            Assert.AreEqual("Internal server error: Unexpected error", objectResult.Value);
+        }
+
+        [Test]
+        public async Task DeleteQuestion_ShouldReturnInternalServerError_WhenExceptionThrown()
+        {
+            // Arrange
+            int questionId = 1;
+            _mockQuestionService.Setup(service => service.DeleteQuestion(questionId)).ThrowsAsync(new Exception("Unexpected error"));
+
+            // Act
+            var result = await _controller.DeleteQuestion(questionId);
+
+            // Assert
+            Assert.IsNotNull(result);
+            var objectResult = result as ObjectResult;
+            Assert.IsNotNull(objectResult);
+            Assert.AreEqual(500, objectResult.StatusCode);
+            Assert.AreEqual("Internal server error: Unexpected error", objectResult.Value);
+        }
+
+        [Test]
+        public async Task AddOptionsToQuestion_ShouldReturnInternalServerError_WhenExceptionThrown()
+        {
+            // Arrange
+            int questionId = 1;
+            _mockQuestionService.Setup(service => service.AddOptionsToQuestion(questionId)).ThrowsAsync(new Exception("Unexpected error"));
+
+            // Act
+            var result = await _controller.AddOptionsToQuestion(questionId);
+
+            // Assert
+            Assert.IsNotNull(result);
+            var objectResult = result as ObjectResult;
+            Assert.IsNotNull(objectResult);
+            Assert.AreEqual(500, objectResult.StatusCode);
+            Assert.AreEqual("Internal server error: Unexpected error", objectResult.Value);
+        }
+
+        [Test]
+        public async Task EditQuestion_ShouldReturnNotFound_WhenQuestionDoesNotExist()
+        {
+            // Arrange
+            int questionId = 1;
+            var questionDto = new QuestionDTO { QuestionName = "Updated question?" };
+            _mockQuestionService.Setup(service => service.EditQuestion(questionId, questionDto))
+                                .ThrowsAsync(new NotFoundException("Question not found."));
+
+            // Act
+            var result = await _controller.EditQuestion(questionId, questionDto);
+
+            // Assert
+            Assert.IsNotNull(result);
+            var notFoundResult = result as NotFoundObjectResult;
+            Assert.IsNotNull(notFoundResult);
+            Assert.AreEqual(404, notFoundResult.StatusCode);
+            Assert.AreEqual("Question not found.", notFoundResult.Value);
+        }
+
+        [Test]
+        public async Task DeleteQuestion_ShouldReturnNotFound_WhenQuestionDoesNotExist()
+        {
+            // Arrange
+            int questionId = 1;
+            _mockQuestionService.Setup(service => service.DeleteQuestion(questionId))
+                                .ThrowsAsync(new NotFoundException("Question not found."));
+
+            // Act
+            var result = await _controller.DeleteQuestion(questionId);
+
+            // Assert
+            Assert.IsNotNull(result);
+            var notFoundResult = result as NotFoundObjectResult;
+            Assert.IsNotNull(notFoundResult);
+            Assert.AreEqual(404, notFoundResult.StatusCode);
+            Assert.AreEqual("Question not found.", notFoundResult.Value);
+        }
+
+        [Test]
+        public async Task AddOptionsToQuestion_ShouldReturnNotFound_WhenQuestionDoesNotExist()
+        {
+            // Arrange
+            int questionId = 1;
+            _mockQuestionService.Setup(service => service.AddOptionsToQuestion(questionId))
+                                .ThrowsAsync(new NotFoundException("Question not found."));
+
+            // Act
+            var result = await _controller.AddOptionsToQuestion(questionId);
+
+            // Assert
+            Assert.IsNotNull(result);
+            var notFoundResult = result as NotFoundObjectResult;
+            Assert.IsNotNull(notFoundResult);
+            Assert.AreEqual(404, notFoundResult.StatusCode);
+            Assert.AreEqual("Question not found.", notFoundResult.Value);
+        }
+
+
     }
 }

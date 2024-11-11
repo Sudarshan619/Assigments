@@ -36,7 +36,6 @@ namespace TestProject1
         [Test]
         public async Task TestAddOption()
         {
-          
             Option option = new Option()
             {
                 QuestionId = 1,
@@ -51,7 +50,6 @@ namespace TestProject1
         [Test]
         public async Task ExceptionTestAddOption()
         {
-            
             Option option = new Option()
             {
                 QuestionId = 999,
@@ -64,8 +62,6 @@ namespace TestProject1
         [Test]
         public async Task TestGet()
         {
-            
-
             Option option = new Option()
             {
                 QuestionId = 1,
@@ -83,21 +79,18 @@ namespace TestProject1
         [Test]
         public void ExceptionTestGet()
         {
-            // Test retrieval of a non-existent OptionId to trigger exception
             Assert.ThrowsAsync<NotFoundException>(async () => await repository.Get(999));
         }
 
         [Test]
         public async Task GetAllOptionTest()
         {
-            
             Option option = new Option()
             {
                 QuestionId = 1,
                 Text = "Test",
                 IsCorrect = true
             };
-
             await repository.Add(option);
 
             var options = await repository.GetAll();
@@ -107,8 +100,36 @@ namespace TestProject1
         [Test]
         public async Task ExceptionGetAllOptionTest()
         {
-            // Ensure no options are added
             Assert.ThrowsAsync<CollectionEmptyException>(async () => await repository.GetAll());
+        }
+
+        [Test]
+        public async Task TestDeleteOption()
+        {
+            Option option = new Option()
+            {
+                QuestionId = 1,
+                Text = "Test Delete",
+                IsCorrect = false
+            };
+            var addedOption = await repository.Add(option);
+            await context.SaveChangesAsync();
+
+            var deletedOption = await repository.Delete(addedOption.OptionId);
+            Assert.AreEqual(addedOption.OptionId, deletedOption.OptionId);
+            Assert.ThrowsAsync<NotFoundException>(async () => await repository.Get(deletedOption.OptionId));
+        }
+
+        [Test]
+        public void ExceptionTestDeleteOption()
+        {
+            Assert.ThrowsAsync<NotFoundException>(async () => await repository.Delete(999));
+        }
+
+        [Test]
+        public async Task ExceptionTestUpdateOption()
+        {
+            Assert.ThrowsAsync<NotImplementedException>(async () => await repository.Update(1, new Option()));
         }
     }
 }

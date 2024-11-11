@@ -98,19 +98,24 @@ public class QuizService : IQuizService<IEnumerable<Question>, int>
 
             var questionDtos = quizQuestions.Select(question => new QuestionResponseDTO()
             {
+                QuestionId = question.QuestionId,
                 QuestionName = question.QuestionName,
                 Category = question.Category,
+                Points = question.Points,
                 Options = options.Where(option => option.QuestionId == question.QuestionId)
-                                 .Select(option => new OptionDTO()
+                                 .Select(option => new OptionResponseDTO()
                                  {
+                                     OptionId = option.OptionId,
                                      Text = option.Text,
-                                     IsCorrect = option.IsCorrect
+                                    
                                  })
                                  .ToList()
             }).ToList();
 
             return new QuizQuestionReponseDTO()
             {
+                QuizId = quiz.QuizId,
+                Title = quiz.Title,
                 questions = questionDtos,
                 MaxPoints = quiz.MaxPoint,
             };
@@ -150,4 +155,64 @@ public class QuizService : IQuizService<IEnumerable<Question>, int>
             throw new Exception("Error while retrieving random questions by category: " + ex.Message);
         }
     }
+
+    public async Task<IEnumerable<QuizQuestionReponseDTO>> GetAllQuizzesWithQuestions()
+    {
+        try
+        {
+            var quizzes = await _quizRepository.GetAll();
+
+            if (!quizzes.Any())
+            {
+                throw new CollectionEmptyException("No quizzes available.");
+            }
+
+            var questions = await _questionRepository.GetAll();
+            var options = await _optionRepository.GetAll();
+
+            var quizResponseDtos = quizzes.Select(quiz =>
+            {
+                var quizQuestions = questions
+                    .Where(q => q.Category == quiz.Category)
+                    .Take(quiz.NoOfQuestions)
+                    .ToList();
+
+                var questionDtos = quizQuestions.Select(question => new QuestionResponseDTO()
+                {
+                    QuestionId = question.QuestionId,
+                    QuestionName = question.QuestionName,
+                    Category = question.Category,
+                    Points = question.Points,
+                    Options = options
+                        .Where(option => option.QuestionId == question.QuestionId)
+                        .Select(option => new OptionResponseDTO()
+                        {
+                            OptionId = option.OptionId,
+                            Text = option.Text
+                        })
+                        .ToList()
+                }).ToList();
+
+                return new QuizQuestionReponseDTO()
+                {
+                    QuizId = quiz.QuizId,
+                    Title = quiz.Title,
+                    MaxPoints = quiz.MaxPoint,
+                    questions = questionDtos
+                };
+            });
+
+            return quizResponseDtos;
+        }
+        catch (CollectionEmptyException)
+        {
+            throw;
+        }
+        catch (Exception ex)
+        {
+            throw new Exception("Error while retrieving quizzes: " + ex.Message);
+        }
+    }
+
+
 }

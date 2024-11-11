@@ -9,6 +9,8 @@ namespace QuizzApplicationBackend.Mappers
         public OptionProfile() {
             CreateMap<Option, OptionDTO>();
             CreateMap<OptionDTO, Option>();
+            CreateMap<OptionResponseDTO, Option>();
+            CreateMap<Option, OptionResponseDTO>();
         }
             
     }

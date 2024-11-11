@@ -4,6 +4,7 @@ using QuizzApplicationBackend.Interfaces;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using QuizzApplicationBackend.Exceptions;
+using Microsoft.AspNetCore.Authorization;
 
 namespace QuizzApplicationBackend.Controllers
 {
@@ -19,6 +20,7 @@ namespace QuizzApplicationBackend.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "QuizzCreator")]
         public async Task<IActionResult> CreateQuestion(QuestionDTO questionDto)
         {
             var result = await _questionService.CreateQuestion(questionDto);
@@ -31,6 +33,7 @@ namespace QuizzApplicationBackend.Controllers
 
 
         [HttpGet("{id}")]
+        [Authorize(Roles = "QuizzCreator")]
         public async Task<IActionResult> GetQuestion(int id)
         {
             try
@@ -50,11 +53,12 @@ namespace QuizzApplicationBackend.Controllers
 
 
         [HttpGet]
-        public async Task<IActionResult> GetAllQuestions()
+        [Authorize(Roles = "QuizzCreator")]
+        public async Task<IActionResult> GetAllQuestions(int pageNumber)
         {
             try
             {
-                var questions = await _questionService.GetAllQuestions();
+                var questions = await _questionService.GetAllQuestions(pageNumber);
                 return Ok(questions);
             }
             catch (CollectionEmptyException ex)
@@ -67,8 +71,8 @@ namespace QuizzApplicationBackend.Controllers
             }
         }
 
-        // PUT: api/Question/{id}
         [HttpPut("{id}")]
+        [Authorize(Roles = "QuizzCreator")]
         public async Task<IActionResult> EditQuestion(int id, [FromBody] QuestionDTO questionDto)
         {
             try
@@ -90,8 +94,9 @@ namespace QuizzApplicationBackend.Controllers
             }
         }
 
-        // DELETE: api/Question/{id}
+
         [HttpDelete("{id}")]
+        [Authorize(Roles = "QuizzCreator")]
         public async Task<IActionResult> DeleteQuestion(int id)
         {
             try
@@ -113,8 +118,8 @@ namespace QuizzApplicationBackend.Controllers
             }
         }
 
-        // POST: api/Question/{id}/AddOptions
         [HttpPost("{id}/AddOptions")]
+        [Authorize(Roles = "QuizzCreator")]
         public async Task<IActionResult> AddOptionsToQuestion(int id)
         {
             try

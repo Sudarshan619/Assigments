@@ -4,7 +4,6 @@ using QuizzApplicationBackend.Context;
 using QuizzApplicationBackend.Exceptions;
 using QuizzApplicationBackend.Interfaces;
 using QuizzApplicationBackend.Models;
-using TestProject1;
 
 namespace QuizzApplicationBackend.Repositories
 {

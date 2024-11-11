@@ -2,7 +2,8 @@
 {
     public class ScoreCardResponseDTO
     {
-        public int ScoreCardId { get; set; } 
+        public int ScoreCardId { get; set; }
+        
         public int QuizId { get; set; }
 
         public string Username { get; set; }

@@ -3,6 +3,7 @@ using QuizzApplicationBackend.DTO;
 using QuizzApplicationBackend.Interfaces;
 using QuizzApplicationBackend.Exceptions;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace QuizzApplicationBackend.Controllers
 {
@@ -18,10 +19,15 @@ namespace QuizzApplicationBackend.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "QuizzCreator")]
         public async Task<IActionResult> CreateLeaderBoard( LeaderBoardDTO leaderBoardDto)
         {
             try
             {
+
+                if (leaderBoardDto == null) {
+                    return BadRequest("LeaderBoardDTo is required");
+                }
                 var isCreated = await _leaderBoardService.CreateLeaderBoard(leaderBoardDto);
                 if (isCreated)
                 {
@@ -43,7 +49,7 @@ namespace QuizzApplicationBackend.Controllers
                 var leaderBoard = await _leaderBoardService.GetLeaderBoard(id);
                 return Ok(leaderBoard);
             }
-            catch (CollectionEmptyException ex)
+            catch (NotFoundException ex)
             {
                 return NotFound(ex.Message);
             }
@@ -68,11 +74,11 @@ namespace QuizzApplicationBackend.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllLeaderBoards()
+        public async Task<IActionResult> GetAllLeaderBoards(int pageNumber,int pageSize)
         {
             try
             {
-                var leaderBoards = await _leaderBoardService.GetAllLeaderBoard();
+                var leaderBoards = await _leaderBoardService.GetAllLeaderBoard(pageNumber,pageSize);
                 return Ok(leaderBoards);
             }
             catch (CollectionEmptyException ex)
@@ -84,5 +90,51 @@ namespace QuizzApplicationBackend.Controllers
                 return StatusCode(500, ex.Message);
             }
         }
+
+        [HttpPut("{id}")]
+        [Authorize(Roles = "QuizzCreator")]
+        public async Task<IActionResult> UpdateLeaderBoard(int id,LeaderBoardDTO leaderBoardDto)
+        {
+            try
+            {
+                if (leaderBoardDto == null)
+                {
+                    return BadRequest("LeaderBoardDTO is required");
+                }
+
+                var isUpdated = await _leaderBoardService.UpdateLeaderBoard(id, leaderBoardDto);
+                if (isUpdated)
+                {
+                    return NoContent();
+                }
+
+                return NotFound($"LeaderBoard with ID {id} not found.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
+
+        [HttpDelete("{id}")]
+        [Authorize(Roles = "QuizzCreator")]
+        public async Task<IActionResult> DeleteLeaderBoard(int id)
+        {
+            try
+            {
+                var isDeleted = await _leaderBoardService.DeleteLeaderBoard(id);
+                if (isDeleted)
+                {
+                    return Ok($"LeaderBoard with ID {id} successfully deleted.");
+                }
+
+                return NotFound($"LeaderBoard with ID {id} not found.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
+
     }
 }

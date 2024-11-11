@@ -18,26 +18,24 @@ namespace QuizzApplicationBackend.Controllers
             _scoreCardService = scoreCardService;
         }
 
-        // POST: api/ScoreCard
         [HttpPost]
-        public async Task<IActionResult> CreateScoreCard(ScoreCardDTO scoreCardDto)
+        public async Task<IActionResult> CreateScoreCard(SubmittedOptionDTO submittedOptionDTO)
         {
-            if (scoreCardDto == null)
+            if (submittedOptionDTO == null)
             {
                 return BadRequest("ScoreCard data is required.");
             }
 
-            var result = await _scoreCardService.CreateScoreCard(scoreCardDto);
+            var result = await _scoreCardService.CreateScoreCard(submittedOptionDTO);
             if (result)
             {
-                return Ok(result);
+                return Ok("Succesfully created");
             }
             return BadRequest("Error while creating score card.");
         }
 
-        // PUT: api/ScoreCard/{id}
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateScoreCard(int id, [FromBody] ScoreCardDTO scoreCardDto)
+        public async Task<IActionResult> UpdateScoreCard(int id,ScoreCardDTO scoreCardDto)
         {
             if (scoreCardDto == null)
             {
@@ -47,26 +45,25 @@ namespace QuizzApplicationBackend.Controllers
             var result = await _scoreCardService.UpdateScoreCard(id, scoreCardDto);
             if (result)
             {
-                return NoContent(); // Successfully updated
+                return NoContent();
             }
 
             return NotFound($"ScoreCard with ID {id} not found.");
         }
 
-        // DELETE: api/ScoreCard/{id}
+        
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteScoreCard(int id)
         {
             var result = await _scoreCardService.DeleteScoreCard(id);
             if (result)
             {
-                return Ok($"successfull deleted for id {id}"); // Successfully deleted
+                return Ok($"successfull deleted for id {id}");
             }
 
             return NotFound($"ScoreCard with ID {id} not found.");
         }
 
-        // GET: api/ScoreCard/{id}
         [HttpGet("{id}")]
         public async Task<IActionResult> GetScoreCard(int id)
         {
