@@ -35,13 +35,7 @@ namespace TestProject1
             smtpSettingsMock = new Mock<IOptions<SmtpSettings>>();
             smtpSettingsMock.Setup(x => x.Value).Returns(new SmtpSettings
             {
-                Server= "smtp.gmail.com",
-               Port= 587,
-               SenderEmail="pujarsudarshan@gmail.com",
-               SenderName= "Florence DuBuque",
-               Username= "pujarsudarshan@gmail.com",
-               Password= "bxzj tegx uzoq gjgb",
-               EnableSsl= true
+               
             });
 
             var emailService = new EmailService(smtpSettingsMock.Object, mockLogger.Object);
