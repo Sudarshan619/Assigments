@@ -38,11 +38,16 @@ namespace QuizzApplicationBackend.Repositories
                 var res = await Get(id);
                 QueryContext.Queries.Remove(res);
                 await QueryContext.SaveChangesAsync();
-                return res;
+                if(res != null)
+                {
+                    return res;
+
+                }
+                throw new Exception("Not able to delete Question");
             }
             catch (Exception ex)
             {
-                throw new Exception("Not able to delete Question");
+                throw new Exception(ex.Message);
             }
         }
 
@@ -71,7 +76,7 @@ namespace QuizzApplicationBackend.Repositories
             {
                 var policy = await QueryContext.Queries.ToListAsync();
                 await QueryContext.SaveChangesAsync();
-                if (policy != null)
+                if (policy.Count>0)
                 {
                     return policy;
                 }
@@ -84,9 +89,25 @@ namespace QuizzApplicationBackend.Repositories
             }
         }
 
-        public Task<Query> Update(int id, Query entity)
+        public async Task<Query> Update(int id, Query entity)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var query = await Get(id);
+                if(query != null)
+                {
+                    query.ReportedBy = entity.ReportedBy;
+                    query.QueryType = entity.QueryType;
+                    query.Description = entity.Description;
+                    return query;
+                }
+                throw new Exception("Query does not exist");
+                
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
     }
 }

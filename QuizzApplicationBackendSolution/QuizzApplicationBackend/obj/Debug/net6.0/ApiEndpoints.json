@@ -376,6 +376,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "QuizzApplicationBackend.Controllers.QuizController",
+    "Method": "GetAllQuizzes",
+    "RelativePath": "api/Quiz/by category",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "category",
+        "Type": "QuizzApplicationBackend.Models.Categories",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "QuizzApplicationBackend.Controllers.ScoreCardController",
     "Method": "CreateScoreCard",
     "RelativePath": "api/ScoreCard",

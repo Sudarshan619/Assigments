@@ -80,12 +80,7 @@ namespace QuizzApplicationBackend.Repositories
             catch (CollectionEmptyException ex)
             {
                 throw new CollectionEmptyException(ex.Message);
-            }
-            catch (Exception ex)
-            {
-                // Log the exception or handle it as needed
-                throw new Exception("An error occurred while retrieving scorecards: " + ex.Message);
-            }
+            } 
         }
         public async Task<ScoreCard> Update(int id, ScoreCard entity)
         {

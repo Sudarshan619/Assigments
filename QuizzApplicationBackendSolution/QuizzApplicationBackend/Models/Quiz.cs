@@ -4,7 +4,7 @@ namespace QuizzApplicationBackend.Models
 {
     public enum Categories
     {
-        GeberalKnowledge,
+        GeneralKnowledge,
         Sports,
         Politics,
         Geography,

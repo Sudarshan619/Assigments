@@ -121,7 +121,7 @@ namespace TestProject1
         [Test]
         public async Task GetLeaderBoard_ReturnsOk()
         {
-            var leaderBoardResponseDto = new LeaderBoardResponseDTO { LeaderBoardName = "GK", Category = 0 };
+            var leaderBoardResponseDto = new LeaderBoardResponseDTO { LeaderBoardName = "GK", Category = "Political"};
             _mockLeaderBoardService.Setup(service => service.GetLeaderBoard(1)).ReturnsAsync(leaderBoardResponseDto);
 
             var result = await _LeaderBoardController.GetLeaderBoard(1);
@@ -148,7 +148,7 @@ namespace TestProject1
         {
             var leaderBoardResponseDtos = new List<LeaderBoardResponseDTO>
             {
-                new LeaderBoardResponseDTO { LeaderBoardName = "GK", Category = 0 }
+                new LeaderBoardResponseDTO { LeaderBoardName = "GK", Category = "Geography" }
             };
             _mockLeaderBoardService.Setup(service => service.GetAllLeaderBoard(1,5)).ReturnsAsync(leaderBoardResponseDtos);
 
@@ -174,7 +174,7 @@ namespace TestProject1
         [Test]
         public async Task SortLeaderBoard_ReturnsOk()
         {
-            var sortedLeaderBoard =  new LeaderBoardResponseDTO { LeaderBoardName = "GK", Category = 0 };
+            var sortedLeaderBoard =  new LeaderBoardResponseDTO { LeaderBoardName = "GK", Category = "Geography" };
             
             _mockLeaderBoardService.Setup(service => service.SortLeaderBoard(Choice.Score, 1)).ReturnsAsync(sortedLeaderBoard);
 

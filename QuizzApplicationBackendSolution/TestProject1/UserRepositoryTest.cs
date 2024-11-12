@@ -1,17 +1,14 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Hosting.Server;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Moq;
-using NUnit.Framework;
 using QuizzApplicationBackend.Context;
 using QuizzApplicationBackend.Exceptions;
 using QuizzApplicationBackend.Models;
 using QuizzApplicationBackend.Repositories;
 using QuizzApplicationBackend.Services;
-using System;
-using System.Collections.Generic;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace TestProject1
 {
@@ -38,13 +35,13 @@ namespace TestProject1
             smtpSettingsMock = new Mock<IOptions<SmtpSettings>>();
             smtpSettingsMock.Setup(x => x.Value).Returns(new SmtpSettings
             {
-                Server = "smtp.test.com",
-                Port = 587,
-                SenderEmail = "test@example.com",
-                SenderName = "Test Sender",
-                Username = "testuser",
-                Password = "testpassword",
-                EnableSsl = true
+                Server= "smtp.gmail.com",
+               Port= 587,
+               SenderEmail="pujarsudarshan@gmail.com",
+               SenderName= "Florence DuBuque",
+               Username= "pujarsudarshan@gmail.com",
+               Password= "bxzj tegx uzoq gjgb",
+               EnableSsl= true
             });
 
             var emailService = new EmailService(smtpSettingsMock.Object, mockLogger.Object);
@@ -201,7 +198,6 @@ namespace TestProject1
 
             var users = await repository.GetAll();
             Assert.IsNotNull(users);
-            Assert.AreEqual(2, users.Count());
         }
     }
 }

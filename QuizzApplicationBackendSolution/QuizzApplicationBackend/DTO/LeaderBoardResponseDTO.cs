@@ -6,7 +6,7 @@ namespace QuizzApplicationBackend.DTO
     {
         public string LeaderBoardName { get; set; }= string.Empty;
 
-        public Categories Category { get; set; } = 0;
+        public string Category { get; set; } 
         public IEnumerable<ScoreCardResponseDTO> ScoreCards { get; set; }
     }
 }

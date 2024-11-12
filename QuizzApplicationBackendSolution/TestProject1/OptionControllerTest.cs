@@ -24,7 +24,7 @@ namespace TestProject1
         }
 
         [Test]
-        public async Task GetAllOptions_ShouldReturnOk_WhenOptionsExist()
+        public async Task GetAllOptions_ShouldReturnOk()
         {
             // Arrange
             var options = new List<OptionResponseDTO> { new OptionResponseDTO { Text = "Option 1" } };
@@ -168,7 +168,7 @@ namespace TestProject1
         }
 
         [Test]
-        public async Task DeleteOption_ShouldReturnNoContent_WhenOptionDeletedSuccessfully()
+        public async Task DeleteOption_ShouldReturnNoContent()
         {
             // Arrange
             int optionId = 1;
@@ -185,11 +185,11 @@ namespace TestProject1
         }
 
         [Test]
-        public async Task DeleteOption_ShouldReturnNotFound_WhenOptionDeleteFails()
+        public async Task DeleteOption_ShouldReturnNotFound()
         {
             // Arrange
             int optionId = 1;
-            _mockOptionService.Setup(service => service.DeleteOption(optionId)).ReturnsAsync(false);
+            _mockOptionService.Setup(service => service.DeleteOption(optionId)).ThrowsAsync(new NotFoundException("Option with ID 1 not found."));
 
             // Act
             var result = await _controller.DeleteOption(optionId);
@@ -240,7 +240,7 @@ namespace TestProject1
         }
 
         [Test]
-        public async Task DeleteOption_ShouldReturnInternalServerError_WhenExceptionOccurs()
+        public async Task DeleteOption_ShouldReturnInternalServerError()
         {
             // Arrange
             int optionId = 1;
@@ -256,7 +256,8 @@ namespace TestProject1
             Assert.AreEqual(500, internalServerErrorResult.StatusCode);
             Assert.AreEqual("Unexpected error", internalServerErrorResult.Value.ToString());
         }
+       
+     }
+    
 
-
-    }
 }
