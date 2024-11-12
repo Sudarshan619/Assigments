@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Moq;
 using QuizzApplicationBackend.DTO;
+using QuizzApplicationBackend.Exceptions;
 using QuizzApplicationBackend.Interfaces;
 using QuizzApplicationBackend.Models;
 using QuizzApplicationBackend.Services;
@@ -160,5 +161,113 @@ namespace TestProject1
             Assert.NotNull(result);
             Assert.AreEqual("Alice", result.ScoreCards.First().Username);  
         }
+
+        [Test]
+        public async Task CreateLeaderBoard_NullLeaderBoardDTO_ThrowsException()
+        {
+            // Act & Assert
+             Assert.ThrowsAsync<Exception>(async () =>
+                await _leaderBoardService.CreateLeaderBoard(null));
+        }
+
+        [Test]
+        public async Task CreateLeaderBoard_AddFails_ThrowsException()
+        {
+            // Arrange
+            var leaderBoardDto = new LeaderBoardDTO();
+            var leaderBoard = new LeaderBoard();
+
+            _mockMapper.Setup(m => m.Map<LeaderBoard>(leaderBoardDto)).Returns(leaderBoard);
+            _mockLeaderBoardRepository.Setup(repo => repo.Add(It.IsAny<LeaderBoard>())).ThrowsAsync(new Exception());
+
+            // Act & Assert
+            Assert.ThrowsAsync<Exception>(async () =>
+                await _leaderBoardService.CreateLeaderBoard(leaderBoardDto));
+        }
+
+        [Test]
+        public async Task GetLeaderBoard_InvalidId_ThrowsCollectionEmptyException()
+        {
+            // Arrange
+            int invalidId = 999;
+            _mockLeaderBoardRepository.Setup(repo => repo.Get(invalidId)).ReturnsAsync((LeaderBoard)null);
+
+            // Act & Assert
+            var ex = Assert.ThrowsAsync<CollectionEmptyException>(async () =>
+                await _leaderBoardService.GetLeaderBoard(invalidId));
+            Assert.AreEqual("No leaderBoard found", ex.Message);
+        }
+
+        [Test]
+        public async Task GetLeaderBoard_QuizCategoryNotFound_ThrowsException()
+        {
+            // Arrange
+            int leaderBoardId = 1;
+            var leaderBoard = new LeaderBoard { LeaderBoardId = leaderBoardId, Categories = 0 };
+
+            _mockLeaderBoardRepository.Setup(repo => repo.Get(leaderBoardId)).ReturnsAsync(leaderBoard);
+            _mockQuizRepository.Setup(repo => repo.GetAll()).ReturnsAsync(new List<Quiz>());
+
+            // Act & Assert
+            var ex = Assert.ThrowsAsync<Exception>(async () =>
+                await _leaderBoardService.GetLeaderBoard(leaderBoardId));
+            Assert.AreEqual("Quiz with specified category not found", ex.Message);
+        }
+
+        [Test]
+        public async Task GetAllLeaderBoard_NoLeaderBoardsFound_ThrowsCollectionEmptyException()
+        {
+            // Arrange
+            _mockLeaderBoardRepository.Setup(repo => repo.GetAll()).ReturnsAsync(new List<LeaderBoard>());
+
+            // Act & Assert
+            var ex =  Assert.ThrowsAsync<CollectionEmptyException>(async () =>
+                await _leaderBoardService.GetAllLeaderBoard(1, 5));
+            Assert.AreEqual("No leaderBoard found", ex.Message);
+        }
+
+        [Test]
+        public async Task DeleteLeaderBoard_InvalidId_ThrowsCollectionEmptyException()
+        {
+            // Arrange
+            int invalidId = 999;
+            _mockLeaderBoardRepository.Setup(repo => repo.Get(invalidId)).ReturnsAsync((LeaderBoard)null);
+
+            // Act & Assert
+            var ex = Assert.ThrowsAsync<CollectionEmptyException>(async () =>
+                await _leaderBoardService.DeleteLeaderBoard(invalidId));
+            Assert.AreEqual($"LeaderBoard with ID {invalidId} not found.", ex.Message);
+        }
+
+        [Test]
+        public async Task UpdateLeaderBoard_InvalidId_ThrowsCollectionEmptyException()
+        {
+            // Arrange
+            int invalidId = 999;
+            var leaderBoardDto = new LeaderBoardDTO();
+
+            _mockLeaderBoardRepository.Setup(repo => repo.Get(invalidId)).ReturnsAsync((LeaderBoard)null);
+
+            // Act & Assert
+            var ex =  Assert.ThrowsAsync<CollectionEmptyException>(async () =>
+                await _leaderBoardService.UpdateLeaderBoard(invalidId, leaderBoardDto));
+            Assert.AreEqual($"LeaderBoard with ID {invalidId} not found.", ex.Message);
+        }
+
+        [Test]
+        public async Task SortLeaderBoard_InvalidChoice_ThrowsException()
+        {
+            // Arrange
+            int leaderBoardId = 1;
+            var leaderBoard = new LeaderBoard { LeaderBoardId = leaderBoardId };
+
+            _mockLeaderBoardRepository.Setup(repo => repo.Get(leaderBoardId)).ReturnsAsync(leaderBoard);
+            _mockScoreCardRepository.Setup(repo => repo.GetAll()).ReturnsAsync(new List<ScoreCard>());
+
+            // Act & Assert
+            Assert.ThrowsAsync<Exception>(async () =>
+                await _leaderBoardService.SortLeaderBoard((Choice)999, leaderBoardId));
+        }
+
     }
 }

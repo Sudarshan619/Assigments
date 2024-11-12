@@ -5,6 +5,7 @@ using QuizzApplicationBackend.Exceptions;
 using QuizzApplicationBackend.Interfaces;
 using QuizzApplicationBackend.Models;
 using QuizzApplicationBackend.Services;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -49,7 +50,7 @@ namespace QuizzApplicationBackend.Controllers
                 {
                     return Ok(result);
                 }
-                return NotFound($"Quiz with ID {id} not found.");
+                throw new NotFoundException($"Quiz with ID {id} not found.");
             }
             catch (NotFoundException ex)
             {
@@ -77,7 +78,7 @@ namespace QuizzApplicationBackend.Controllers
                 {
                     return NoContent();
                 }
-                return NotFound($"Quiz with ID {id} not found.");
+                throw new NotFoundException($"Quiz with ID {id} not found.");
             }
             catch (NotFoundException ex)
             {
@@ -117,7 +118,25 @@ namespace QuizzApplicationBackend.Controllers
             }
             catch (CollectionEmptyException ex)
             {
-                return NotFound(ex.Message);
+                return NotFound("No quizzes found.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Internal server error: " + ex.Message);
+            }
+        }
+
+        [HttpGet("by category")]
+        public async Task<IActionResult> GetAllQuizzes(Categories category)
+        {
+            try
+            {
+                var quizzes = await _quizService.GetAllQuizzesWithQuestionsByCategory(category);
+                return Ok(quizzes);
+            }
+            catch (CollectionEmptyException ex)
+            {
+                return NotFound("No quizzes found in this category.");
             }
             catch (Exception ex)
             {

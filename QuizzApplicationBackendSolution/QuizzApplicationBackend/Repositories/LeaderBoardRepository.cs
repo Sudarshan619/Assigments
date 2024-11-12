@@ -90,9 +90,34 @@ namespace QuizzApplicationBackend.Repositories
             }
         }
 
-        public Task<LeaderBoard> Update(int id, LeaderBoard entity)
+        public async Task<LeaderBoard> Update(int id, LeaderBoard entity)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var existingLeaderBoard = await Get(id);
+
+                if (entity == null)
+                {
+                    throw new CouldNotAddException("LeaderBoard entity is null.");
+                }
+
+                existingLeaderBoard.LeaderBoardName = entity.LeaderBoardName;
+                existingLeaderBoard.Categories = entity.Categories;
+                existingLeaderBoard.ScoreCard = entity.ScoreCard;
+
+                LeaderBoardContext.LeaderBoards.Update(existingLeaderBoard);
+                await LeaderBoardContext.SaveChangesAsync();
+                return existingLeaderBoard;
+            }
+            catch (NotFoundException)
+            {
+                throw;
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, $"Failed to update LeaderBoard with ID {id}.");
+                throw new CouldNotAddException($"Could not update LeaderBoard with ID {id}.");
+            }
         }
     }
 }

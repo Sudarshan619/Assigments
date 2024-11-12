@@ -11,13 +11,14 @@ namespace QuizzApplicationBackend.Services.Tests
     [TestFixture]
     public class QuizServiceTest
     {
-        private readonly Mock<IRepository<int, Quiz>> _quizRepositoryMock;
-        private readonly Mock<IRepository<int, Question>> _questionRepositoryMock;
-        private readonly Mock<IRepository<int, Option>> _optionRepositoryMock;
-        private readonly Mock<IMapper> _mapperMock;
-        private readonly QuizService _service;
+        private Mock<IRepository<int, Quiz>> _quizRepositoryMock;
+        private Mock<IRepository<int, Question>> _questionRepositoryMock;
+        private Mock<IRepository<int, Option>> _optionRepositoryMock;
+        private Mock<IMapper> _mapperMock;
+        private QuizService _service;
 
-        public QuizServiceTest()
+        [SetUp]
+        public void Setup()
         {
             _quizRepositoryMock = new Mock<IRepository<int, Quiz>>();
             _questionRepositoryMock = new Mock<IRepository<int, Question>>();
@@ -29,7 +30,6 @@ namespace QuizzApplicationBackend.Services.Tests
         [Test]
         public async Task CreateQuiz_ReturnsTrue()
         {
-            // Arrange
             var quizDto = new QuizDTO { CreatorId = 1, Title = "Sample Quiz", Category = 0, NoOfQuestions = 5 };
             var quiz = new Quiz { QuizId = 1, Title = "Sample Quiz", Category = 0, NoOfQuestions = 5 };
             var questions = new List<Question>
@@ -42,41 +42,50 @@ namespace QuizzApplicationBackend.Services.Tests
             _questionRepositoryMock.Setup(r => r.GetAll()).ReturnsAsync(questions);
             _quizRepositoryMock.Setup(r => r.Add(It.IsAny<Quiz>())).ReturnsAsync(quiz);
 
-            // Act
             var result = await _service.CreateQuiz(quizDto);
 
-            // Assert
             Assert.True(result);
+        }
+
+        [Test]
+        public async Task CreateQuiz_ThrowsException()
+        {
+            var quizDto = new QuizDTO { Title = "Sample Quiz" };
+            _quizRepositoryMock.Setup(r => r.Add(It.IsAny<Quiz>())).ThrowsAsync(new Exception("Internal server error"));
+
+            Assert.ThrowsAsync<Exception>(async () => await _service.CreateQuiz(quizDto));
         }
 
         [Test]
         public async Task DeleteQuiz_WhenQuizIsDeleted_ReturnsTrue()
         {
-            // Arrange
             var quiz = new Quiz { QuizId = 1 };
             _quizRepositoryMock.Setup(r => r.Delete(1)).ReturnsAsync(quiz);
 
-            // Act
             var result = await _service.DeleteQuiz(1);
 
-            // Assert
             Assert.True(result);
         }
 
         [Test]
-        public async Task DeleteQuiz_ThrowsNotFoundException()
+        public void DeleteQuiz_ThrowsNotFoundException()
         {
-            // Arrange
             _quizRepositoryMock.Setup(r => r.Delete(It.IsAny<int>())).ThrowsAsync(new NotFoundException("Quiz not found"));
 
-            // Act & Assert
             Assert.ThrowsAsync<NotFoundException>(async () => await _service.DeleteQuiz(999));
+        }
+
+        [Test]
+        public void DeleteQuiz_ThrowsException()
+        {
+            _quizRepositoryMock.Setup(r => r.Delete(It.IsAny<int>())).ThrowsAsync(new Exception("Internal server error"));
+
+            Assert.ThrowsAsync<Exception>(async () => await _service.DeleteQuiz(1));
         }
 
         [Test]
         public async Task GetQuiz_ReturnsQuizQuestionResponseDTO()
         {
-            // Arrange
             var quiz = new Quiz { QuizId = 1, Title = "Sample Quiz", Category = 0, NoOfQuestions = 1, MaxPoint = 10 };
             var questions = new List<Question>
             {
@@ -91,18 +100,31 @@ namespace QuizzApplicationBackend.Services.Tests
             _questionRepositoryMock.Setup(r => r.GetAll()).ReturnsAsync(questions);
             _optionRepositoryMock.Setup(r => r.GetAll()).ReturnsAsync(options);
 
-            // Act
             var result = await _service.GetQuiz(1);
 
-            // Assert
             Assert.AreEqual("Sample Question", result.questions.First().QuestionName);
             Assert.AreEqual(10, result.MaxPoints);
         }
 
         [Test]
+        public void GetQuiz_ThrowsNotFoundException()
+        {
+            _quizRepositoryMock.Setup(r => r.Get(It.IsAny<int>())).ReturnsAsync((Quiz)null);
+
+            Assert.ThrowsAsync<NotFoundException>(async () => await _service.GetQuiz(999));
+        }
+
+        [Test]
+        public void GetQuiz_ThrowsException()
+        {
+            _quizRepositoryMock.Setup(r => r.Get(It.IsAny<int>())).ThrowsAsync(new Exception("Internal server error"));
+
+            Assert.ThrowsAsync<Exception>(async () => await _service.GetQuiz(1));
+        }
+
+        [Test]
         public async Task EditQuiz_ReturnsTrue()
         {
-            // Arrange
             var quizDto = new QuizDTO { Title = "Updated Quiz" };
             var quiz = new Quiz { QuizId = 1, Title = "Original Quiz" };
 
@@ -110,17 +132,30 @@ namespace QuizzApplicationBackend.Services.Tests
             _mapperMock.Setup(m => m.Map(quizDto, quiz)).Returns(quiz);
             _quizRepositoryMock.Setup(r => r.Update(1, quiz)).ReturnsAsync(quiz);
 
-            // Act
             var result = await _service.EditQuiz(1, quizDto);
 
-            // Assert
             Assert.True(result);
+        }
+
+        [Test]
+        public void EditQuiz_ThrowsNotFoundException()
+        {
+            _quizRepositoryMock.Setup(r => r.Get(It.IsAny<int>())).ThrowsAsync(new NotFoundException("Quiz not found"));
+
+            Assert.ThrowsAsync<NotFoundException>(async () => await _service.EditQuiz(999, new QuizDTO()));
+        }
+
+        [Test]
+        public void EditQuiz_ThrowsException()
+        {
+            _quizRepositoryMock.Setup(r => r.Update(It.IsAny<int>(), It.IsAny<Quiz>())).ThrowsAsync(new Exception("Internal server error"));
+
+            Assert.ThrowsAsync<Exception>(async () => await _service.EditQuiz(1, new QuizDTO()));
         }
 
         [Test]
         public async Task GetRandomQuestionsByCategory_ReturnsRandomQuestions()
         {
-            // Arrange
             var category = Categories.Geography;
             var questions = new List<Question>
             {
@@ -129,10 +164,8 @@ namespace QuizzApplicationBackend.Services.Tests
             };
             _questionRepositoryMock.Setup(r => r.GetAll()).ReturnsAsync(questions);
 
-            // Act
             var result = await _service.GetRandomQuestionsByCategory(category, 1);
 
-            // Assert
             Assert.AreEqual(1, result.Count());
             Assert.IsTrue(result.First().Category == category);
         }
@@ -140,103 +173,126 @@ namespace QuizzApplicationBackend.Services.Tests
         [Test]
         public void GetRandomQuestionsByCategory_ThrowsCollectionEmptyException()
         {
-            // Arrange
             _questionRepositoryMock.Setup(r => r.GetAll()).ReturnsAsync(new List<Question>());
 
-            // Act & Assert
             Assert.ThrowsAsync<CollectionEmptyException>(async () =>
                 await _service.GetRandomQuestionsByCategory(Categories.Politics, 1));
         }
 
         [Test]
-        public void GetQuiz_ThrowsException()
+        public async Task GetAllQuizzesWithQuestions_ReturnsQuizList()
+        {
+            var quizzes = new List<Quiz>
+            {
+                new Quiz { QuizId = 1, Title = "Sample Quiz", Category = 0, NoOfQuestions = 1, MaxPoint = 10 }
+            };
+            var questions = new List<Question>
+            {
+                new Question { QuestionId = 1, Category = 0, Points = 10, QuestionName = "Sample Question" }
+            };
+            var options = new List<Option>
+            {
+                new Option { OptionId = 1, QuestionId = 1, Text = "Option 1" }
+            };
+
+            _quizRepositoryMock.Setup(r => r.GetAll()).ReturnsAsync(quizzes);
+            _questionRepositoryMock.Setup(r => r.GetAll()).ReturnsAsync(questions);
+            _optionRepositoryMock.Setup(r => r.GetAll()).ReturnsAsync(options);
+
+            var result = await _service.GetAllQuizzesWithQuestions();
+
+            Assert.AreEqual(1, result.Count());
+            Assert.AreEqual("Sample Quiz", result.First().Title);
+        }
+
+        [Test]
+        public void GetAllQuizzesWithQuestions_ThrowsCollectionEmptyException()
+        {
+            _quizRepositoryMock.Setup(r => r.GetAll()).ReturnsAsync(new List<Quiz>());
+
+            Assert.ThrowsAsync<CollectionEmptyException>(async () => await _service.GetAllQuizzesWithQuestions());
+        }
+
+        [Test]
+        public void GetAllQuizzesWithQuestions_ThrowsException()
+        {
+            _quizRepositoryMock.Setup(r => r.GetAll()).ThrowsAsync(new Exception("Internal server error"));
+
+            Assert.ThrowsAsync<Exception>(async () => await _service.GetAllQuizzesWithQuestions());
+        }
+
+        [Test]
+        public async Task GetAllQuizzesWithQuestionsByCategory_ValidCategory_ReturnsQuizzesWithQuestionsAndOptions()
         {
             // Arrange
-            int quizId = 1;
-            _quizRepositoryMock.Setup(r => r.Get(1)).ThrowsAsync(new Exception("Internal server error"));
+            var category = Categories.Geography;
 
-            // Act & Assert
-            Assert.ThrowsAsync<Exception>(async () =>
-                await _service.GetQuiz(1));
+            var quizzes = new List<Quiz>
+            {
+                new Quiz { QuizId = 1, Title = "Science Quiz", Category = category, NoOfQuestions = 2, MaxPoint = 100, Difficulty = 0},
+            };
+
+            var questions = new List<Question>
+            {
+                new Question { QuestionId = 1, QuestionName = "What is H2O?", Category = category, Points = 50 },
+                new Question { QuestionId = 2, QuestionName = "What is CO2?", Category = category, Points = 50 }
+            };
+
+            var options = new List<Option>
+            {
+                new Option { OptionId = 1, QuestionId = 1, Text = "Water" },
+                new Option { OptionId = 2, QuestionId = 1, Text = "Oxygen" },
+                new Option { OptionId = 3, QuestionId = 2, Text = "Carbon Dioxide" },
+                new Option { OptionId = 4, QuestionId = 2, Text = "Nitrogen" }
+            };
+
+            _quizRepositoryMock.Setup(repo => repo.GetAll()).ReturnsAsync(quizzes);
+            _questionRepositoryMock.Setup(repo => repo.GetAll()).ReturnsAsync(questions);
+            _optionRepositoryMock.Setup(repo => repo.GetAll()).ReturnsAsync(options);
+
+            // Act
+            var result = await _service.GetAllQuizzesWithQuestionsByCategory(category);
+
+            // Assert
+            Assert.IsNotNull(result);
+            Assert.AreEqual(1, result.Count());
+            var quizResult = result.First();
+            Assert.AreEqual("Science Quiz", quizResult.Title);
+            Assert.AreEqual(100, quizResult.MaxPoints);
+            Assert.AreEqual(2, quizResult.questions.Count);
+
+            var firstQuestion = quizResult.questions.First();
+            Assert.AreEqual("What is H2O?", firstQuestion.QuestionName);
+            Assert.AreEqual(2, firstQuestion.Options.Count);
+            Assert.AreEqual("Water", firstQuestion.Options.First().Text);
         }
 
         [Test]
-        public void DeleteQuiz_ThrowsException()
+        public void GetAllQuizzesWithQuestionsByCategory_NoQuizzesAvailable_ThrowsCollectionEmptyException()
         {
             // Arrange
-            int quizId = 1;
-            _quizRepositoryMock.Setup(r => r.Get(1)).ThrowsAsync(new Exception("Internal server error"));
+            var category = Categories.Geography;
+            var emptyQuizList = new List<Quiz>();
+
+            _quizRepositoryMock.Setup(repo => repo.GetAll()).ReturnsAsync(emptyQuizList);
 
             // Act & Assert
-            Assert.ThrowsAsync<Exception>(async () =>
-                await _service.GetQuiz(1));
+            Assert.ThrowsAsync<CollectionEmptyException>(async () =>
+                await _service.GetAllQuizzesWithQuestionsByCategory(category));
         }
 
         [Test]
-        public void CreateQuiz_ThrowsException()
+        public void GetAllQuizzesWithQuestionsByCategory_UnexpectedException_ThrowsException()
         {
             // Arrange
-            var quizDto = new QuizDTO { Title = "Updated Quiz" };
-            var quiz = new Quiz { QuizId = 1, Title = "Sample Quiz", Category = 0, NoOfQuestions = 5 };
-            _quizRepositoryMock.Setup(r => r.Add(quiz)).ThrowsAsync(new Exception("Internal server error"));
+            var category = Categories.Geography;
+            _quizRepositoryMock.Setup(repo => repo.GetAll()).ThrowsAsync(new Exception("Database error"));
 
             // Act & Assert
-            Assert.ThrowsAsync<Exception>(async () =>
-                await _service.CreateQuiz(quizDto));
-        }
-
-        [Test]
-        public async Task DeleteQuiz_ThrowsInternalServerError()
-        {
-            //Arrange
-            int quizId = 1;
-            var quizDto = new QuizDTO { Title = "Test" };
-            var quiz = new Quiz { QuizId = 1, Title = "Sample Quiz", Category = 0, NoOfQuestions = 5 };
-            _quizRepositoryMock.Setup(e => e.Delete(1)).ThrowsAsync(new Exception("Internal server error"));
-
-            //Assert
-            Assert.ThrowsAsync<Exception>(async () => await _service.DeleteQuiz(quizId));
-        }
-
-        [Test]
-
-        public async Task EditQuiz_ThrowsAsync()
-        {
-            //Arrange
-            int quizId = 1;
-            var quizDto = new QuizDTO { Title = "Sample Quiz", Category = 0, NoOfQuestions = 5 };
-            var quiz = new Quiz { QuizId = 1, Title = "Sample Quiz", Category = 0, NoOfQuestions = 5 };
-
-            _quizRepositoryMock.Setup(e => e.Update(quizId, quiz)).ThrowsAsync(new Exception("Internal server error"));
-
-            //Assert
-            Assert.ThrowsAsync<Exception>(async () => await _service.EditQuiz(quizId, quizDto));
-        }
-
-        public async Task EditQuiz_ThrowsNotFound()
-        {
-
-            //Arrange
-            int quizId = 1;
-            var quizDto = new QuizDTO { Title = "Sample Quiz", Category = 0, NoOfQuestions = 5 };
-            var quiz = new Quiz { QuizId = 1, Title = "Sample Quiz", Category = 0, NoOfQuestions = 5 };
-
-            _quizRepositoryMock.Setup(e => e.Get(quizId)).ThrowsAsync(new NotFoundException("Quiz not found"));
-
-
-            //Assert
-            Assert.ThrowsAsync<NotFoundException>(async () => await _service.EditQuiz(999,quizDto));
-        }
-
-        [Test]
-        public async Task GetQuiz_ThrowsNotFound()
-        {
-            //Arrange
-            int quizId = 1;
-            _quizRepositoryMock.Setup(e=>e.Get(quizId)).ThrowsAsync(new NotFoundException("Quiz not found"));
-
-            //Assert
-            Assert.ThrowsAsync<NotFoundException>(async ()=> await _service.GetQuiz(999));
+            var ex = Assert.ThrowsAsync<Exception>(async () =>
+                await _service.GetAllQuizzesWithQuestionsByCategory(category));
+            Assert.AreEqual("Error while retrieving quizzes: Database error", ex.Message);
         }
     }
+
 }

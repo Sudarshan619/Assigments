@@ -76,7 +76,6 @@ namespace QuizzApplicationBackend.Services
                     {
                         totalScore += question.Points;
                     }
-                     Console.WriteLine("Inside the if statement - Correct answer found.");
                 }
             }
 
@@ -97,7 +96,7 @@ namespace QuizzApplicationBackend.Services
             var result = await _scoreCardRepository.Update(id, updatedScoreCard);
             return result != null;
         }
-        private async Task<double> CalculateAccuracy(SubmittedOptionDTO submittedOptionDTO, int score)
+        public async Task<double> CalculateAccuracy(SubmittedOptionDTO submittedOptionDTO, int score)
         {
             try
             {
@@ -139,6 +138,7 @@ namespace QuizzApplicationBackend.Services
             }
 
             catch (Exception ex) { 
+
                 throw new Exception("Could not get scorecard");
             }
             

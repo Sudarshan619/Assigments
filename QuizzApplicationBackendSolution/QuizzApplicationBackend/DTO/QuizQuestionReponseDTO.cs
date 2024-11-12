@@ -7,6 +7,8 @@ namespace QuizzApplicationBackend.DTO
         public int QuizId { get; set; }
 
         public string  Title { get; set; }
+
+        public string  Difficulty { get; set; } 
         public ICollection<QuestionResponseDTO> questions { get; set; }
 
         public int MaxPoints { get; set; }

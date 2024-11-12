@@ -10,7 +10,11 @@ namespace QuizzApplicationBackend.Interfaces
         public Task<bool> EditQuiz(T id, QuizDTO question);
 
         public Task<IEnumerable<QuizQuestionReponseDTO>> GetAllQuizzesWithQuestions();
+
+        public Task<IEnumerable<QuizQuestionReponseDTO>> GetAllQuizzesWithQuestionsByCategory(Categories category);
         public Task<K> GetRandomQuestionsByCategory(Categories category, int noOfQuestions);
         public Task<QuizQuestionReponseDTO> GetQuiz(int id);
+
+        
     }
 }

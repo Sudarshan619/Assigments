@@ -11,11 +11,13 @@ using Microsoft.Extensions.Logging;
 using System.Text;
 using MailKit;
 using static QuizzApplicationBackend.Services.EmailService;
+using System.Diagnostics.CodeAnalysis;
 
 
 
 namespace QuizzApplicationBackend
 {
+    [ExcludeFromCodeCoverage]
     public class Program
     {
         public static void Main(string[] args)

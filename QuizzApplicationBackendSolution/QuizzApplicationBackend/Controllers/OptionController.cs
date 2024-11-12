@@ -31,10 +31,6 @@ namespace QuizzApplicationBackend.Controllers
             {
                 return NotFound( ex.Message );
             }
-            catch (Exception ex)
-            {
-                return StatusCode(500, ex.Message);
-            }
         }
 
         // GET: api/Option/{id}
@@ -51,10 +47,7 @@ namespace QuizzApplicationBackend.Controllers
             {
                 return NotFound(ex.Message);
             }
-            catch (Exception ex)
-            {
-                return StatusCode(500, ex.Message);
-            }
+           
         }
 
         // POST: api/Option
@@ -72,6 +65,7 @@ namespace QuizzApplicationBackend.Controllers
                 var success = await _optionService.CreateOption(optionDto);
                 if (success)
                     return Ok(success) ;
+
                 return BadRequest("Could not create option.");
             }
             catch (Exception ex)
@@ -94,11 +88,12 @@ namespace QuizzApplicationBackend.Controllers
                 var success = await _optionService.EditOption(id, optionDto);
                 if (success)
                     return NoContent();
-                return NotFound($"Option with ID {id} not found.");
+
+                throw new NotFoundException($"Option with ID {id} not found.");
             }
             catch (NotFoundException ex)
             {
-                return NotFound(new { message = ex.Message });
+                return NotFound(ex.Message);
             }
             catch (Exception ex)
             {
@@ -115,16 +110,14 @@ namespace QuizzApplicationBackend.Controllers
                 var success = await _optionService.DeleteOption(id);
                 if (success)
                     return NoContent();
-                return NotFound($"Option with ID {id} not found.");
+                throw new NotFoundException("Not found");
+
             }
             catch (NotFoundException ex)
             {
-                return NotFound(new { message = ex.Message });
+                return NotFound(ex.Message);
             }
-            catch (Exception ex)
-            {
-                return StatusCode(500, ex.Message);
-            }
+           
         }
     }
 }

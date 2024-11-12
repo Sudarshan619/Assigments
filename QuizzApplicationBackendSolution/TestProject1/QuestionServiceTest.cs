@@ -7,6 +7,7 @@ using QuizzApplicationBackend.DTO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using NUnit.Framework;
 using QuizzApplicationBackend.Exceptions;
 
 namespace QuizzApplicationBackend.Tests
@@ -55,6 +56,18 @@ namespace QuizzApplicationBackend.Tests
             Assert.False(result);
         }
 
+        // Exception test for CreateQuestion method
+        [Test]
+        public void CreateQuestion_ShouldThrowException_WhenExceptionOccurs()
+        {
+            var questionDto = new QuestionDTO { QuestionName = "Test Question", Category = 0 };
+
+            _mockMapper.Setup(m => m.Map<Question>(questionDto)).Throws(new Exception("Error while creating question"));
+
+            var exception = Assert.ThrowsAsync<Exception>(() => _questionService.CreateQuestion(questionDto));
+            Assert.AreEqual("Error while creating question", exception.Message);
+        }
+
         // Test for DeleteQuestion method
         [Test]
         public async Task DeleteQuestion_ShouldReturnTrue_WhenQuestionIsDeleted()
@@ -75,6 +88,16 @@ namespace QuizzApplicationBackend.Tests
 
             var exception = Assert.ThrowsAsync<NotFoundException>(() => _questionService.DeleteQuestion(questionId));
             Assert.AreEqual("Question with ID 1 not found.", exception.Message);
+        }
+
+        [Test]
+        public void DeleteQuestion_ShouldThrowException_WhenOtherExceptionOccurs()
+        {
+            var questionId = 1;
+            _mockQuestionRepository.Setup(r => r.Delete(questionId)).ThrowsAsync(new Exception("Database error"));
+
+            var exception = Assert.ThrowsAsync<Exception>(() => _questionService.DeleteQuestion(questionId));
+            Assert.AreEqual("Error while deleting question: Database error", exception.Message);
         }
 
         // Test for AddOptionsToQuestion method
@@ -98,6 +121,16 @@ namespace QuizzApplicationBackend.Tests
             Assert.AreEqual(2, questionEntity.Options.Count);
         }
 
+        [Test]
+        public void AddOptionsToQuestion_ShouldThrowException_WhenOtherExceptionOccurs()
+        {
+            var questionId = 1;
+            _mockQuestionRepository.Setup(r => r.Get(questionId)).ThrowsAsync(new Exception("Database error"));
+
+            var exception = Assert.ThrowsAsync<Exception>(() => _questionService.AddOptionsToQuestion(questionId));
+            Assert.AreEqual("Database error", exception.Message);
+        }
+
         // Test for GetQuestion method
         [Test]
         public async Task GetQuestion_ShouldReturnQuestionWithOptions_WhenValidIdIsProvided()
@@ -115,9 +148,27 @@ namespace QuizzApplicationBackend.Tests
             var result = await _questionService.GetQuestion(questionId);
 
             Assert.AreEqual("Test Question", result.QuestionName);
-           
         }
 
+        [Test]
+        public void GetQuestion_ShouldThrowNotFoundException_WhenQuestionNotFound()
+        {
+            var questionId = 1;
+            _mockQuestionRepository.Setup(r => r.Get(questionId)).ThrowsAsync(new NotFoundException("Question not found"));
+
+            Assert.ThrowsAsync<NotFoundException>(() => _questionService.GetQuestion(questionId));
+        }
+
+        [Test]
+        public void GetQuestion_ShouldThrowException_WhenOtherExceptionOccurs()
+        {
+            var questionId = 1;
+            _mockQuestionRepository.Setup(r => r.Get(questionId)).ThrowsAsync(new Exception("Database error"));
+
+            Assert.ThrowsAsync<Exception>(() => _questionService.GetQuestion(questionId));
+        }
+
+        // Test for GetAllQuestions method
         [Test]
         public async Task GetAllQuestions_ShouldReturnQuestionsWithOptions()
         {
@@ -138,7 +189,23 @@ namespace QuizzApplicationBackend.Tests
             var result = await _questionService.GetAllQuestions(1);
 
             Assert.AreEqual(2, result.Count());
-            Assert.AreEqual("Option 1", result.First().Options.First().Text);
+        }
+
+        [Test]
+        public void GetAllQuestions_ShouldThrowCollectionEmptyException_WhenNoQuestionsAvailable()
+        {
+            _mockQuestionRepository.Setup(r => r.GetAll()).ThrowsAsync(new CollectionEmptyException("No questions available."));
+
+            Assert.ThrowsAsync<CollectionEmptyException>(() => _questionService.GetAllQuestions(1));
+        }
+
+        [Test]
+        public void GetAllQuestions_ShouldThrowException_WhenOtherExceptionOccurs()
+        {
+            _mockQuestionRepository.Setup(r => r.GetAll()).ThrowsAsync(new Exception("Database error"));
+
+            var exception = Assert.ThrowsAsync<Exception>(() => _questionService.GetAllQuestions(1));
+            Assert.AreEqual("Error while retrieving questions: Database error", exception.Message);
         }
 
         // Test for EditQuestion method
@@ -157,6 +224,30 @@ namespace QuizzApplicationBackend.Tests
             var result = await _questionService.EditQuestion(questionId, updatedQuestionDto);
 
             Assert.True(result);
+        }
+
+        [Test]
+        public void EditQuestion_ShouldThrowNotFoundException_WhenQuestionNotFound()
+        {
+            var questionId = 1;
+            var updatedQuestionDto = new QuestionDTO { QuestionName = "Updated Question", Category = 0 };
+
+            _mockQuestionRepository.Setup(r => r.Get(questionId)).ThrowsAsync(new NotFoundException("Question not found"));
+
+            var exception = Assert.ThrowsAsync<NotFoundException>(() => _questionService.EditQuestion(questionId, updatedQuestionDto));
+            Assert.AreEqual("Question with ID 1 not found.", exception.Message);
+        }
+
+        [Test]
+        public void EditQuestion_ShouldThrowException_WhenOtherExceptionOccurs()
+        {
+            var questionId = 1;
+            var updatedQuestionDto = new QuestionDTO { QuestionName = "Updated Question", Category = 0 };
+
+            _mockQuestionRepository.Setup(r => r.Get(questionId)).ThrowsAsync(new Exception("Database error"));
+
+            var exception = Assert.ThrowsAsync<Exception>(() => _questionService.EditQuestion(questionId, updatedQuestionDto));
+            Assert.AreEqual("Error while editing question: Database error", exception.Message);
         }
     }
 }

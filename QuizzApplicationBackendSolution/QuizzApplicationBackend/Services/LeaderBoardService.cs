@@ -71,7 +71,7 @@ namespace QuizzApplicationBackend.Services
                 return new LeaderBoardResponseDTO()
                 {
                     LeaderBoardName = leaderBoard.LeaderBoardName,
-                    Category = leaderBoard.Categories,
+                    Category = leaderBoard.Categories.ToString(),
                     ScoreCards = scoreCardDtos
                 };
             }
@@ -131,7 +131,7 @@ namespace QuizzApplicationBackend.Services
                     return new LeaderBoardResponseDTO
                     {
                         LeaderBoardName = leaderBoard.LeaderBoardName,
-                        Category = leaderBoard.Categories,
+                        Category = leaderBoard.Categories.ToString(),
                         ScoreCards = scoreCardDtos
                     };
                 }).ToList();
@@ -173,7 +173,7 @@ namespace QuizzApplicationBackend.Services
             return new LeaderBoardResponseDTO
             {
                 LeaderBoardName = leaderBoard.LeaderBoardName,
-                Category = leaderBoard.Categories,
+                Category = leaderBoard.Categories.ToString(),
                 ScoreCards = sortedScoreCards
                     .Select(sc => _mapper.Map<ScoreCardResponseDTO>(sc))
                     .ToList()
@@ -209,7 +209,6 @@ namespace QuizzApplicationBackend.Services
                     throw new CollectionEmptyException($"LeaderBoard with ID {id} not found.");
                 }
 
-                // Map the updated values from DTO to the existing entity
                 existingLeaderBoard.LeaderBoardName = leaderBoardDto.LeaderBoardName;
                 existingLeaderBoard.Categories = leaderBoardDto.Category;
 
