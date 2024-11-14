@@ -15,6 +15,8 @@ namespace QuizzApplicationBackend.Interfaces
         public Task<K> GetRandomQuestionsByCategory(Categories category, int noOfQuestions);
         public Task<QuizQuestionReponseDTO> GetQuiz(int id);
 
-        
+        public Task<IEnumerable<String>> GetAllCategory();
+
+
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using QuizzApplicationBackend.DTO;
 using QuizzApplicationBackend.Exceptions;
@@ -9,6 +10,7 @@ namespace QuizzApplicationBackend.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("AllowAll")]
     public class OptionController : ControllerBase
     {
         private readonly IOptionService _optionService;

@@ -163,7 +163,7 @@ namespace QuizzApplicationBackend.Services
 
             if (choice == Choice.Score)
             {
-                sortedScoreCards = sortedScoreCards.OrderBy(sc => sc.Score).ToList();
+                sortedScoreCards = sortedScoreCards.OrderByDescending(sc => sc.Score).ToList();
             }
             else if (choice == Choice.Username)
             {

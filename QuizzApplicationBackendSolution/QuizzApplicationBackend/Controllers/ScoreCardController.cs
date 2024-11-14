@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
 using QuizzApplicationBackend.DTO;
 using QuizzApplicationBackend.Exceptions;
 using QuizzApplicationBackend.Interfaces;
@@ -9,6 +10,7 @@ namespace QuizzApplicationBackend.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("AllowAll")]
     public class ScoreCardController : ControllerBase
     {
         private readonly IScoreCardService _scoreCardService;

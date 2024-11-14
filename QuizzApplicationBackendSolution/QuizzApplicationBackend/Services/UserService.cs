@@ -81,7 +81,10 @@ namespace QuizzApplicationBackend.Services
             }
         }
 
-        
-
+        public Task<IEnumerable<string>> GetRoles()
+        {
+            var roles = Enum.GetNames(typeof(Roles)).ToList();
+            return Task.FromResult<IEnumerable<string>>(roles);
+        }
     }
 }

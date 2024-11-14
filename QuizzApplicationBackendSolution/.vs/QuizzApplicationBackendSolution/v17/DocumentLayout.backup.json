@@ -3,6 +3,110 @@
   "WorkspaceRootPath": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\controllers\\quizcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\controllers\\quizcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\services\\quizservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\services\\quizservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\interfaces\\iauthentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\interfaces\\iauthentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\interfaces\\iquizservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\interfaces\\iquizservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\services\\leaderboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\services\\leaderboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\services\\questionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\services\\questionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\repositories\\questionreporitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\repositories\\questionreporitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\dto\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\dto\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\repositories\\quizrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\repositories\\quizrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\services\\scorecardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\services\\scorecardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\repositories\\scorecardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\repositories\\scorecardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\controllers\\scorecardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\controllers\\scorecardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\dto\\scorecardresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\dto\\scorecardresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\models\\quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\models\\quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\dto\\questiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\dto\\questiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\controllers\\optioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\controllers\\optioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\controllers\\leaderboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\controllers\\leaderboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\dto\\leaderboardresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\dto\\leaderboardresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\dto\\leaderboarddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\dto\\leaderboarddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C75BEC55-D941-4CB4-998F-F3AC02E4790E}|TestProject1\\TestProject1.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\testproject1\\userrepositorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C75BEC55-D941-4CB4-998F-F3AC02E4790E}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\userrepositorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C75BEC55-D941-4CB4-998F-F3AC02E4790E}|TestProject1\\TestProject1.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\testproject1\\queryrepositorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C75BEC55-D941-4CB4-998F-F3AC02E4790E}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\queryrepositorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,28 +127,12 @@
       "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\models\\query.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\services\\leaderboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\services\\leaderboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C75BEC55-D941-4CB4-998F-F3AC02E4790E}|TestProject1\\TestProject1.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\testproject1\\userrepositorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C75BEC55-D941-4CB4-998F-F3AC02E4790E}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\userrepositorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C75BEC55-D941-4CB4-998F-F3AC02E4790E}|TestProject1\\TestProject1.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\testproject1\\usercontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,16 +143,8 @@
       "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C75BEC55-D941-4CB4-998F-F3AC02E4790E}|TestProject1\\TestProject1.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\testproject1\\tokenservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C75BEC55-D941-4CB4-998F-F3AC02E4790E}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\tokenservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\controllers\\optioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\controllers\\optioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\repositories\\leaderboardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -75,16 +155,8 @@
       "RelativeMoniker": "D:0:0:{C75BEC55-D941-4CB4-998F-F3AC02E4790E}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\questionservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\services\\questionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\services\\questionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C75BEC55-D941-4CB4-998F-F3AC02E4790E}|TestProject1\\TestProject1.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\testproject1\\scorecardservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C75BEC55-D941-4CB4-998F-F3AC02E4790E}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\scorecardservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\services\\scorecardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\services\\scorecardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\dto\\submittedoptiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -103,28 +175,12 @@
       "RelativeMoniker": "D:0:0:{C75BEC55-D941-4CB4-998F-F3AC02E4790E}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\quizcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\controllers\\quizcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\controllers\\quizcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\controllers\\scorecardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\controllers\\scorecardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\dto\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\dto\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\dto\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\dto\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\mappers\\scorecardprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\mappers\\scorecardprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\services\\quizservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\services\\quizservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\interfaces\\iscorecardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -133,10 +189,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C75BEC55-D941-4CB4-998F-F3AC02E4790E}|TestProject1\\TestProject1.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\testproject1\\quizservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C75BEC55-D941-4CB4-998F-F3AC02E4790E}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\quizservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\controllers\\leaderboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\controllers\\leaderboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C75BEC55-D941-4CB4-998F-F3AC02E4790E}|TestProject1\\TestProject1.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\testproject1\\leaderboardservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -151,16 +203,8 @@
       "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\models\\leaderboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\repositories\\quizrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\repositories\\quizrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C75BEC55-D941-4CB4-998F-F3AC02E4790E}|TestProject1\\TestProject1.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\testproject1\\quizrepositorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C75BEC55-D941-4CB4-998F-F3AC02E4790E}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\quizrepositorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\repositories\\scorecardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\repositories\\scorecardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C75BEC55-D941-4CB4-998F-F3AC02E4790E}|TestProject1\\TestProject1.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\testproject1\\scorecardrepositorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -179,28 +223,12 @@
       "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\dto\\scorecarddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\models\\quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\models\\quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\services\\optionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\services\\optionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C75BEC55-D941-4CB4-998F-F3AC02E4790E}|TestProject1\\TestProject1.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\testproject1\\leaderboardcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C75BEC55-D941-4CB4-998F-F3AC02E4790E}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\leaderboardcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\dto\\leaderboardresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\dto\\leaderboardresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\interfaces\\iquizservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\interfaces\\iquizservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\dto\\questiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\dto\\questiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\dto\\paginationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -219,14 +247,6 @@
       "RelativeMoniker": "D:0:0:{C75BEC55-D941-4CB4-998F-F3AC02E4790E}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\questioncontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C75BEC55-D941-4CB4-998F-F3AC02E4790E}|TestProject1\\TestProject1.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\testproject1\\testproject1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{C75BEC55-D941-4CB4-998F-F3AC02E4790E}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\testproject1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -241,14 +261,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\repositories\\optionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\repositories\\optionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\repositories\\questionreporitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\repositories\\questionreporitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C75BEC55-D941-4CB4-998F-F3AC02E4790E}|TestProject1\\TestProject1.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\testproject1\\questionrepositorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -315,20 +327,8 @@
       "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\dto\\answersubmitdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\dto\\leaderboarddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\dto\\leaderboarddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\dto\\scorecardresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\dto\\scorecardresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\models\\scorecard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\models\\scorecard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\interfaces\\iauthentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|solutionrelative:quizzapplicationbackend\\interfaces\\iauthentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F2C10CF4-AF30-483C-9C9D-8C18B776F655}|QuizzApplicationBackend\\QuizzApplicationBackend.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\quizzapplicationbackendsolution\\quizzapplicationbackend\\context\\quizcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -438,7 +438,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -446,106 +446,132 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "QueryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Repositories\\QueryRepository.cs",
-              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Repositories\\QueryRepository.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Repositories\\QueryRepository.cs",
-              "RelativeToolTip": "QuizzApplicationBackend\\Repositories\\QueryRepository.cs",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAuwGwAAAAwAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Controllers\\UserController.cs",
+              "RelativeToolTip": "QuizzApplicationBackend\\Controllers\\UserController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAawDMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T09:12:44.581Z",
+              "WhenOpened": "2024-11-04T11:19:28.914Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "LeaderBoardService.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Services\\LeaderBoardService.cs",
               "RelativeDocumentMoniker": "QuizzApplicationBackend\\Services\\LeaderBoardService.cs",
               "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Services\\LeaderBoardService.cs",
               "RelativeToolTip": "QuizzApplicationBackend\\Services\\LeaderBoardService.cs",
-              "ViewState": "AgIAAJYAAAAAAAAAAAAqwKoAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAmwIAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-05T08:31:54.715Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "QueryRepositoryTest.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\TestProject1\\QueryRepositoryTest.cs",
-              "RelativeDocumentMoniker": "TestProject1\\QueryRepositoryTest.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\TestProject1\\QueryRepositoryTest.cs",
-              "RelativeToolTip": "TestProject1\\QueryRepositoryTest.cs",
-              "ViewState": "AgIAAKwAAAAAAAAAAADwv7oAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Services\\UserService.cs",
+              "RelativeToolTip": "QuizzApplicationBackend\\Services\\UserService.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T09:20:26.747Z",
+              "WhenOpened": "2024-11-04T09:29:01.292Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "QueryServiceTest.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\TestProject1\\QueryServiceTest.cs",
-              "RelativeDocumentMoniker": "TestProject1\\QueryServiceTest.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\TestProject1\\QueryServiceTest.cs",
-              "RelativeToolTip": "TestProject1\\QueryServiceTest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "IQuizService.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Interfaces\\IQuizService.cs",
+              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Interfaces\\IQuizService.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Interfaces\\IQuizService.cs",
+              "RelativeToolTip": "QuizzApplicationBackend\\Interfaces\\IQuizService.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBEAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T11:08:42.588Z",
+              "WhenOpened": "2024-11-05T06:14:48.396Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Query.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Models\\Query.cs",
-              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Models\\Query.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Models\\Query.cs",
-              "RelativeToolTip": "QuizzApplicationBackend\\Models\\Query.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAUwBYAAAAAAAAAAAAAAA==",
+              "Title": "IAuthentication.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Interfaces\\IAuthentication.cs",
+              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Interfaces\\IAuthentication.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Interfaces\\IAuthentication.cs",
+              "RelativeToolTip": "QuizzApplicationBackend\\Interfaces\\IAuthentication.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T06:23:00.357Z",
+              "WhenOpened": "2024-11-04T09:29:49.607Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Interfaces\\IRepository.cs",
-              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Interfaces\\IRepository.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Interfaces\\IRepository.cs",
-              "RelativeToolTip": "QuizzApplicationBackend\\Interfaces\\IRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
+              "Title": "QuizService.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Services\\QuizService.cs",
+              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Services\\QuizService.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Services\\QuizService.cs",
+              "RelativeToolTip": "QuizzApplicationBackend\\Services\\QuizService.cs",
+              "ViewState": "AgIAABIBAAAAAAAAAAAuwB4BAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T09:15:28.534Z",
+              "WhenOpened": "2024-11-05T06:14:28.386Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserRepositoryTest.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\TestProject1\\UserRepositoryTest.cs",
-              "RelativeDocumentMoniker": "TestProject1\\UserRepositoryTest.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\TestProject1\\UserRepositoryTest.cs",
-              "RelativeToolTip": "TestProject1\\UserRepositoryTest.cs",
-              "ViewState": "AgIAALYAAAAAAAAAAAAAwMcAAAAkAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "QuizController.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Controllers\\QuizController.cs",
+              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Controllers\\QuizController.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Controllers\\QuizController.cs",
+              "RelativeToolTip": "QuizzApplicationBackend\\Controllers\\QuizController.cs",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAuwIIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T02:22:09.613Z",
+              "WhenOpened": "2024-11-05T16:35:36.556Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "QuizzApplicationBackend\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAgwC8AAAAsAAAAAAAAAA==",
+              "Title": "QuestionController.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Controllers\\QuestionController.cs",
+              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Controllers\\QuestionController.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Controllers\\QuestionController.cs",
+              "RelativeToolTip": "QuizzApplicationBackend\\Controllers\\QuestionController.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAAABkAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T09:11:30.695Z",
+              "WhenOpened": "2024-11-05T16:35:12.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "QuestionReporitory.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Repositories\\QuestionReporitory.cs",
+              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Repositories\\QuestionReporitory.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Repositories\\QuestionReporitory.cs",
+              "RelativeToolTip": "QuizzApplicationBackend\\Repositories\\QuestionReporitory.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAA2wB8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T09:11:45.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "QuizRepository.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Repositories\\QuizRepository.cs",
+              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Repositories\\QuizRepository.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Repositories\\QuizRepository.cs",
+              "RelativeToolTip": "QuizzApplicationBackend\\Repositories\\QuizRepository.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBkAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T09:13:27.929Z",
               "EditorCaption": ""
             },
             {
@@ -554,7 +580,263 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginResponseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\DTO\\LoginResponseDTO.cs",
+              "RelativeDocumentMoniker": "QuizzApplicationBackend\\DTO\\LoginResponseDTO.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\DTO\\LoginResponseDTO.cs",
+              "RelativeToolTip": "QuizzApplicationBackend\\DTO\\LoginResponseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T09:30:54.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "QuestionService.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Services\\QuestionService.cs",
+              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Services\\QuestionService.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Services\\QuestionService.cs",
+              "RelativeToolTip": "QuizzApplicationBackend\\Services\\QuestionService.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAiwBwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:44:49.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ScorecardRepository.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Repositories\\ScorecardRepository.cs",
+              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Repositories\\ScorecardRepository.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Repositories\\ScorecardRepository.cs",
+              "RelativeToolTip": "QuizzApplicationBackend\\Repositories\\ScorecardRepository.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAkwBQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T09:12:11.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ScoreCardController.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Controllers\\ScoreCardController.cs",
+              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Controllers\\ScoreCardController.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Controllers\\ScoreCardController.cs",
+              "RelativeToolTip": "QuizzApplicationBackend\\Controllers\\ScoreCardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T16:35:48.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ScoreCardService.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Services\\ScoreCardService.cs",
+              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Services\\ScoreCardService.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Services\\ScoreCardService.cs",
+              "RelativeToolTip": "QuizzApplicationBackend\\Services\\ScoreCardService.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwCIAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T08:32:15.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "QuizzApplicationBackend\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBwAAACEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T09:11:30.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ScoreCardResponseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\DTO\\ScoreCardResponseDTO.cs",
+              "RelativeDocumentMoniker": "QuizzApplicationBackend\\DTO\\ScoreCardResponseDTO.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\DTO\\ScoreCardResponseDTO.cs",
+              "RelativeToolTip": "QuizzApplicationBackend\\DTO\\ScoreCardResponseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T14:06:14.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Models\\User.cs",
+              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Models\\User.cs",
+              "RelativeToolTip": "QuizzApplicationBackend\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T05:05:52.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Quiz.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Models\\Quiz.cs",
+              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Models\\Quiz.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Models\\Quiz.cs",
+              "RelativeToolTip": "QuizzApplicationBackend\\Models\\Quiz.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T05:06:02.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "QuestionDTO.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\DTO\\QuestionDTO.cs",
+              "RelativeDocumentMoniker": "QuizzApplicationBackend\\DTO\\QuestionDTO.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\DTO\\QuestionDTO.cs",
+              "RelativeToolTip": "QuizzApplicationBackend\\DTO\\QuestionDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T10:04:56.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Program.cs",
+              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Program.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Program.cs",
+              "RelativeToolTip": "QuizzApplicationBackend\\Program.cs",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAQwIoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T07:06:50.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "OptionController.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Controllers\\OptionController.cs",
+              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Controllers\\OptionController.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Controllers\\OptionController.cs",
+              "RelativeToolTip": "QuizzApplicationBackend\\Controllers\\OptionController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T16:35:22.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "LeaderBoardController.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Controllers\\LeaderBoardController.cs",
+              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Controllers\\LeaderBoardController.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Controllers\\LeaderBoardController.cs",
+              "RelativeToolTip": "QuizzApplicationBackend\\Controllers\\LeaderBoardController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T16:36:01.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LeaderBoardResponseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\DTO\\LeaderBoardResponseDTO.cs",
+              "RelativeDocumentMoniker": "QuizzApplicationBackend\\DTO\\LeaderBoardResponseDTO.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\DTO\\LeaderBoardResponseDTO.cs",
+              "RelativeToolTip": "QuizzApplicationBackend\\DTO\\LeaderBoardResponseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T16:27:10.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "LeaderBoardDTO.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\DTO\\LeaderBoardDTO.cs",
+              "RelativeDocumentMoniker": "QuizzApplicationBackend\\DTO\\LeaderBoardDTO.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\DTO\\LeaderBoardDTO.cs",
+              "RelativeToolTip": "QuizzApplicationBackend\\DTO\\LeaderBoardDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T10:07:30.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "UserRepositoryTest.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\TestProject1\\UserRepositoryTest.cs",
+              "RelativeDocumentMoniker": "TestProject1\\UserRepositoryTest.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\TestProject1\\UserRepositoryTest.cs",
+              "RelativeToolTip": "TestProject1\\UserRepositoryTest.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAwwCUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T02:22:09.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Interfaces\\IRepository.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "QuizzApplicationBackend\\Interfaces\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T09:15:28.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Query.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Models\\Query.cs",
+              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Models\\Query.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Models\\Query.cs",
+              "RelativeToolTip": "QuizzApplicationBackend\\Models\\Query.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAUwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T06:23:00.357Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "QueryServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\TestProject1\\QueryServiceTest.cs",
+              "RelativeDocumentMoniker": "TestProject1\\QueryServiceTest.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\TestProject1\\QueryServiceTest.cs",
+              "RelativeToolTip": "TestProject1\\QueryServiceTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T11:08:42.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "QueryRepositoryTest.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\TestProject1\\QueryRepositoryTest.cs",
+              "RelativeDocumentMoniker": "TestProject1\\QueryRepositoryTest.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\TestProject1\\QueryRepositoryTest.cs",
+              "RelativeToolTip": "TestProject1\\QueryRepositoryTest.cs",
+              "ViewState": "AgIAAKwAAAAAAAAAAADwv7oAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T09:20:26.747Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "QueryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Repositories\\QueryRepository.cs",
+              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Repositories\\QueryRepository.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Repositories\\QueryRepository.cs",
+              "RelativeToolTip": "QuizzApplicationBackend\\Repositories\\QueryRepository.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAuwGwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T09:12:44.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\appsettings.json",
               "RelativeDocumentMoniker": "QuizzApplicationBackend\\appsettings.json",
@@ -562,12 +844,11 @@
               "RelativeToolTip": "QuizzApplicationBackend\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-04T07:09:19.946Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T07:09:19.946Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 32,
               "Title": "EmailService.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Services\\EmailService.cs",
               "RelativeDocumentMoniker": "QuizzApplicationBackend\\Services\\EmailService.cs",
@@ -575,25 +856,11 @@
               "RelativeToolTip": "QuizzApplicationBackend\\Services\\EmailService.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAwwA8AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T10:56:44.743Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T10:56:44.743Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Services\\UserService.cs",
-              "RelativeToolTip": "QuizzApplicationBackend\\Services\\UserService.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAAAFMAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T09:29:01.292Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 33,
               "Title": "UserControllerTest.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\TestProject1\\UserControllerTest.cs",
               "RelativeDocumentMoniker": "TestProject1\\UserControllerTest.cs",
@@ -601,12 +868,11 @@
               "RelativeToolTip": "TestProject1\\UserControllerTest.cs",
               "ViewState": "AgIAADEAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T09:51:20.867Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T09:51:20.867Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 34,
               "Title": "TokenService.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Services\\TokenService.cs",
               "RelativeDocumentMoniker": "QuizzApplicationBackend\\Services\\TokenService.cs",
@@ -614,25 +880,11 @@
               "RelativeToolTip": "QuizzApplicationBackend\\Services\\TokenService.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAAACcAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T09:02:11.732Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T09:02:11.732Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Program.cs",
-              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Program.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Program.cs",
-              "RelativeToolTip": "QuizzApplicationBackend\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T07:06:50.215Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 35,
               "Title": "TokenServiceTest.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\TestProject1\\TokenServiceTest.cs",
               "RelativeDocumentMoniker": "TestProject1\\TokenServiceTest.cs",
@@ -640,25 +892,11 @@
               "RelativeToolTip": "TestProject1\\TokenServiceTest.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAAADIAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T09:02:35.111Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T09:02:35.111Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "OptionController.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Controllers\\OptionController.cs",
-              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Controllers\\OptionController.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Controllers\\OptionController.cs",
-              "RelativeToolTip": "QuizzApplicationBackend\\Controllers\\OptionController.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAqwCAAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T16:35:22.307Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 36,
               "Title": "LeaderBoardRepository.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Repositories\\LeaderBoardRepository.cs",
               "RelativeDocumentMoniker": "QuizzApplicationBackend\\Repositories\\LeaderBoardRepository.cs",
@@ -671,7 +909,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 37,
               "Title": "QuestionServiceTest.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\TestProject1\\QuestionServiceTest.cs",
               "RelativeDocumentMoniker": "TestProject1\\QuestionServiceTest.cs",
@@ -679,25 +917,11 @@
               "RelativeToolTip": "TestProject1\\QuestionServiceTest.cs",
               "ViewState": "AgIAAJYAAAAAAAAAAAAQwKcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T11:07:10.572Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-05T11:07:10.572Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "QuestionService.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Services\\QuestionService.cs",
-              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Services\\QuestionService.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Services\\QuestionService.cs",
-              "RelativeToolTip": "QuizzApplicationBackend\\Services\\QuestionService.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAmwDoAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T14:44:49.36Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 38,
               "Title": "ScoreCardServiceTest.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\TestProject1\\ScoreCardServiceTest.cs",
               "RelativeDocumentMoniker": "TestProject1\\ScoreCardServiceTest.cs",
@@ -705,25 +929,11 @@
               "RelativeToolTip": "TestProject1\\ScoreCardServiceTest.cs",
               "ViewState": "AgIAAD0AAAAAAAAAAAAAAEEAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T11:08:03.75Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-05T11:08:03.75Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ScoreCardService.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Services\\ScoreCardService.cs",
-              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Services\\ScoreCardService.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Services\\ScoreCardService.cs",
-              "RelativeToolTip": "QuizzApplicationBackend\\Services\\ScoreCardService.cs",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAuwH8AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T08:32:15.274Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 39,
               "Title": "SubmittedOptionDTO.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\DTO\\SubmittedOptionDTO.cs",
               "RelativeDocumentMoniker": "QuizzApplicationBackend\\DTO\\SubmittedOptionDTO.cs",
@@ -731,12 +941,11 @@
               "RelativeToolTip": "QuizzApplicationBackend\\DTO\\SubmittedOptionDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T07:16:44.931Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-07T07:16:44.931Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 40,
               "Title": "UserServiceTest.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\TestProject1\\UserServiceTest.cs",
               "RelativeDocumentMoniker": "TestProject1\\UserServiceTest.cs",
@@ -744,12 +953,11 @@
               "RelativeToolTip": "TestProject1\\UserServiceTest.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAmwCkAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T09:43:00.193Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T09:43:00.193Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 41,
               "Title": "LeaderBoardRepositoryTest.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\TestProject1\\LeaderBoardRepositoryTest.cs",
               "RelativeDocumentMoniker": "TestProject1\\LeaderBoardRepositoryTest.cs",
@@ -757,12 +965,11 @@
               "RelativeToolTip": "TestProject1\\LeaderBoardRepositoryTest.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAgwD8AAABiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T05:23:45.582Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-05T05:23:45.582Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 42,
               "Title": "QuizControllerTest.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\TestProject1\\QuizControllerTest.cs",
               "RelativeDocumentMoniker": "TestProject1\\QuizControllerTest.cs",
@@ -770,38 +977,11 @@
               "RelativeToolTip": "TestProject1\\QuizControllerTest.cs",
               "ViewState": "AgIAALYAAAAAAAAAAAAAAMEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T09:31:57.412Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T09:31:57.412Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "QuizController.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Controllers\\QuizController.cs",
-              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Controllers\\QuizController.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Controllers\\QuizController.cs",
-              "RelativeToolTip": "QuizzApplicationBackend\\Controllers\\QuizController.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAiwIoAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T16:35:36.556Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "ScoreCardController.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Controllers\\ScoreCardController.cs",
-              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Controllers\\ScoreCardController.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Controllers\\ScoreCardController.cs",
-              "RelativeToolTip": "QuizzApplicationBackend\\Controllers\\ScoreCardController.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAuwCIAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T16:35:48.508Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 43,
               "Title": "LoginRequestDTO.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\DTO\\LoginRequestDTO.cs",
               "RelativeDocumentMoniker": "QuizzApplicationBackend\\DTO\\LoginRequestDTO.cs",
@@ -809,25 +989,11 @@
               "RelativeToolTip": "QuizzApplicationBackend\\DTO\\LoginRequestDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T09:32:17.545Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T09:32:17.545Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "LoginResponseDTO.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\DTO\\LoginResponseDTO.cs",
-              "RelativeDocumentMoniker": "QuizzApplicationBackend\\DTO\\LoginResponseDTO.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\DTO\\LoginResponseDTO.cs",
-              "RelativeToolTip": "QuizzApplicationBackend\\DTO\\LoginResponseDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T09:30:54.967Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 44,
               "Title": "ScoreCardProfile.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Mappers\\ScoreCardProfile.cs",
               "RelativeDocumentMoniker": "QuizzApplicationBackend\\Mappers\\ScoreCardProfile.cs",
@@ -835,24 +1001,11 @@
               "RelativeToolTip": "QuizzApplicationBackend\\Mappers\\ScoreCardProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T14:53:09.321Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T14:53:09.321Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "QuizService.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Services\\QuizService.cs",
-              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Services\\QuizService.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Services\\QuizService.cs",
-              "RelativeToolTip": "QuizzApplicationBackend\\Services\\QuizService.cs",
-              "ViewState": "AgIAAM8AAAAAAAAAAAAuwNkAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T06:14:28.386Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 45,
               "Title": "IScoreCardService.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Interfaces\\IScoreCardService.cs",
               "RelativeDocumentMoniker": "QuizzApplicationBackend\\Interfaces\\IScoreCardService.cs",
@@ -864,7 +1017,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 46,
               "Title": "QuizServiceTest.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\TestProject1\\QuizServiceTest.cs",
               "RelativeDocumentMoniker": "TestProject1\\QuizServiceTest.cs",
@@ -876,19 +1029,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "LeaderBoardController.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Controllers\\LeaderBoardController.cs",
-              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Controllers\\LeaderBoardController.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Controllers\\LeaderBoardController.cs",
-              "RelativeToolTip": "QuizzApplicationBackend\\Controllers\\LeaderBoardController.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAiwHgAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T16:36:01.532Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 47,
               "Title": "LeaderBoardServiceTest.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\TestProject1\\LeaderBoardServiceTest.cs",
               "RelativeDocumentMoniker": "TestProject1\\LeaderBoardServiceTest.cs",
@@ -900,7 +1041,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 48,
               "Title": "OptionControllerTest.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\TestProject1\\OptionControllerTest.cs",
               "RelativeDocumentMoniker": "TestProject1\\OptionControllerTest.cs",
@@ -912,7 +1053,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 49,
               "Title": "LeaderBoard.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Models\\LeaderBoard.cs",
               "RelativeDocumentMoniker": "QuizzApplicationBackend\\Models\\LeaderBoard.cs",
@@ -924,20 +1065,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "QuizRepository.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Repositories\\QuizRepository.cs",
-              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Repositories\\QuizRepository.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Repositories\\QuizRepository.cs",
-              "RelativeToolTip": "QuizzApplicationBackend\\Repositories\\QuizRepository.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwBkAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T09:13:27.929Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 50,
               "Title": "QuizRepositoryTest.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\TestProject1\\QuizRepositoryTest.cs",
               "RelativeDocumentMoniker": "TestProject1\\QuizRepositoryTest.cs",
@@ -949,20 +1077,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "ScorecardRepository.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Repositories\\ScorecardRepository.cs",
-              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Repositories\\ScorecardRepository.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Repositories\\ScorecardRepository.cs",
-              "RelativeToolTip": "QuizzApplicationBackend\\Repositories\\ScorecardRepository.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAAwFUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T09:12:11.896Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 51,
               "Title": "ScoreCardRepositoryTest.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\TestProject1\\ScoreCardRepositoryTest.cs",
               "RelativeDocumentMoniker": "TestProject1\\ScoreCardRepositoryTest.cs",
@@ -974,7 +1089,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 52,
               "Title": "OptionDTO.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\DTO\\OptionDTO.cs",
               "RelativeDocumentMoniker": "QuizzApplicationBackend\\DTO\\OptionDTO.cs",
@@ -986,7 +1101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 53,
               "Title": "QuizQuestionReponseDTO.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\DTO\\QuizQuestionReponseDTO.cs",
               "RelativeDocumentMoniker": "QuizzApplicationBackend\\DTO\\QuizQuestionReponseDTO.cs",
@@ -998,7 +1113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 54,
               "Title": "ScoreCardDTO.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\DTO\\ScoreCardDTO.cs",
               "RelativeDocumentMoniker": "QuizzApplicationBackend\\DTO\\ScoreCardDTO.cs",
@@ -1010,19 +1125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "Quiz.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Models\\Quiz.cs",
-              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Models\\Quiz.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Models\\Quiz.cs",
-              "RelativeToolTip": "QuizzApplicationBackend\\Models\\Quiz.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T05:06:02.117Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 56,
               "Title": "LeaderBoardControllerTest.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\TestProject1\\LeaderBoardControllerTest.cs",
               "RelativeDocumentMoniker": "TestProject1\\LeaderBoardControllerTest.cs",
@@ -1034,19 +1137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "LeaderBoardResponseDTO.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\DTO\\LeaderBoardResponseDTO.cs",
-              "RelativeDocumentMoniker": "QuizzApplicationBackend\\DTO\\LeaderBoardResponseDTO.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\DTO\\LeaderBoardResponseDTO.cs",
-              "RelativeToolTip": "QuizzApplicationBackend\\DTO\\LeaderBoardResponseDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T16:27:10.091Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 55,
               "Title": "OptionService.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Services\\OptionService.cs",
               "RelativeDocumentMoniker": "QuizzApplicationBackend\\Services\\OptionService.cs",
@@ -1058,31 +1149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "IQuizService.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Interfaces\\IQuizService.cs",
-              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Interfaces\\IQuizService.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Interfaces\\IQuizService.cs",
-              "RelativeToolTip": "QuizzApplicationBackend\\Interfaces\\IQuizService.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAYwA0AAAByAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T06:14:48.396Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "QuestionDTO.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\DTO\\QuestionDTO.cs",
-              "RelativeDocumentMoniker": "QuizzApplicationBackend\\DTO\\QuestionDTO.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\DTO\\QuestionDTO.cs",
-              "RelativeToolTip": "QuizzApplicationBackend\\DTO\\QuestionDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T10:04:56.957Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 57,
               "Title": "PaginationDTO.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\DTO\\PaginationDTO.cs",
               "RelativeDocumentMoniker": "QuizzApplicationBackend\\DTO\\PaginationDTO.cs",
@@ -1094,7 +1161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 58,
               "Title": "CreateUserDTO.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\DTO\\CreateUserDTO.cs",
               "RelativeDocumentMoniker": "QuizzApplicationBackend\\DTO\\CreateUserDTO.cs",
@@ -1106,7 +1173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 59,
               "Title": "QueryService.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Services\\QueryService.cs",
               "RelativeDocumentMoniker": "QuizzApplicationBackend\\Services\\QueryService.cs",
@@ -1118,7 +1185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 60,
               "Title": "QuestionControllerTest.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\TestProject1\\QuestionControllerTest.cs",
               "RelativeDocumentMoniker": "TestProject1\\QuestionControllerTest.cs",
@@ -1130,33 +1197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Controllers\\UserController.cs",
-              "RelativeToolTip": "QuizzApplicationBackend\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T11:19:28.914Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "QuestionController.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Controllers\\QuestionController.cs",
-              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Controllers\\QuestionController.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Controllers\\QuestionController.cs",
-              "RelativeToolTip": "QuizzApplicationBackend\\Controllers\\QuestionController.cs",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAYwIsAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T16:35:12.484Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 61,
               "Title": "TestProject1.csproj",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\TestProject1\\TestProject1.csproj",
               "RelativeDocumentMoniker": "TestProject1\\TestProject1.csproj",
@@ -1168,7 +1209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 62,
               "Title": "QuestionResponseDTO.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\DTO\\QuestionResponseDTO.cs",
               "RelativeDocumentMoniker": "QuizzApplicationBackend\\DTO\\QuestionResponseDTO.cs",
@@ -1180,7 +1221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 64,
               "Title": "OptionRepository.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Repositories\\OptionRepository.cs",
               "RelativeDocumentMoniker": "QuizzApplicationBackend\\Repositories\\OptionRepository.cs",
@@ -1192,20 +1233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
-              "Title": "QuestionReporitory.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Repositories\\QuestionReporitory.cs",
-              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Repositories\\QuestionReporitory.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Repositories\\QuestionReporitory.cs",
-              "RelativeToolTip": "QuizzApplicationBackend\\Repositories\\QuestionReporitory.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAcwB8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T09:11:45.311Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 63,
               "Title": "OptionResponseDTO.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\DTO\\OptionResponseDTO.cs",
               "RelativeDocumentMoniker": "QuizzApplicationBackend\\DTO\\OptionResponseDTO.cs",
@@ -1217,19 +1245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Models\\User.cs",
-              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Models\\User.cs",
-              "RelativeToolTip": "QuizzApplicationBackend\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T05:05:52.54Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 65,
               "Title": "QuestionRepositoryTest.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\TestProject1\\QuestionRepositoryTest.cs",
               "RelativeDocumentMoniker": "TestProject1\\QuestionRepositoryTest.cs",
@@ -1241,7 +1257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 66,
               "Title": "OptionRepositoryTest.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\TestProject1\\OptionRepositoryTest.cs",
               "RelativeDocumentMoniker": "TestProject1\\OptionRepositoryTest.cs",
@@ -1253,7 +1269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 67,
               "Title": "OptionServiceTest.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\TestProject1\\OptionServiceTest.cs",
               "RelativeDocumentMoniker": "TestProject1\\OptionServiceTest.cs",
@@ -1265,7 +1281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 68,
               "Title": "IQuestionService.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Interfaces\\IQuestionService.cs",
               "RelativeDocumentMoniker": "QuizzApplicationBackend\\Interfaces\\IQuestionService.cs",
@@ -1277,7 +1293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 69,
               "Title": "IOptionService.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Interfaces\\IOptionService.cs",
               "RelativeDocumentMoniker": "QuizzApplicationBackend\\Interfaces\\IOptionService.cs",
@@ -1289,7 +1305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 70,
               "Title": "ILeaderBoardService.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Interfaces\\ILeaderBoardService.cs",
               "RelativeDocumentMoniker": "QuizzApplicationBackend\\Interfaces\\ILeaderBoardService.cs",
@@ -1301,7 +1317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 71,
               "Title": "CollectionEmptyException.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Exceptions\\CollectionEmptyException.cs",
               "RelativeDocumentMoniker": "QuizzApplicationBackend\\Exceptions\\CollectionEmptyException.cs",
@@ -1313,7 +1329,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 72,
               "Title": "CouldNotAddException.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Exceptions\\CouldNotAddException.cs",
               "RelativeDocumentMoniker": "QuizzApplicationBackend\\Exceptions\\CouldNotAddException.cs",
@@ -1325,7 +1341,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 73,
               "Title": "NotFoundException.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Exceptions\\NotFoundException.cs",
               "RelativeDocumentMoniker": "QuizzApplicationBackend\\Exceptions\\NotFoundException.cs",
@@ -1337,7 +1353,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 74,
               "Title": "QuizDTO.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\DTO\\QuizDTO.cs",
               "RelativeDocumentMoniker": "QuizzApplicationBackend\\DTO\\QuizDTO.cs",
@@ -1349,7 +1365,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 75,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\TestProject1\\UnitTest1.cs",
               "RelativeDocumentMoniker": "TestProject1\\UnitTest1.cs",
@@ -1361,7 +1377,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 76,
               "Title": "SelectedOptionDTO.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\DTO\\SelectedOptionDTO.cs",
               "RelativeDocumentMoniker": "QuizzApplicationBackend\\DTO\\SelectedOptionDTO.cs",
@@ -1373,7 +1389,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 77,
               "Title": "QuestionParameterDTO.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\DTO\\QuestionParameterDTO.cs",
               "RelativeDocumentMoniker": "QuizzApplicationBackend\\DTO\\QuestionParameterDTO.cs",
@@ -1385,7 +1401,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 78,
               "Title": "OptionProfile.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Mappers\\OptionProfile.cs",
               "RelativeDocumentMoniker": "QuizzApplicationBackend\\Mappers\\OptionProfile.cs",
@@ -1397,7 +1413,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 79,
               "Title": "ScoreCardControllerTest.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\TestProject1\\ScoreCardControllerTest.cs",
               "RelativeDocumentMoniker": "TestProject1\\ScoreCardControllerTest.cs",
@@ -1409,7 +1425,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 80,
               "Title": "AnswerSubmitDTO.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\DTO\\AnswerSubmitDTO.cs",
               "RelativeDocumentMoniker": "QuizzApplicationBackend\\DTO\\AnswerSubmitDTO.cs",
@@ -1421,31 +1437,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
-              "Title": "LeaderBoardDTO.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\DTO\\LeaderBoardDTO.cs",
-              "RelativeDocumentMoniker": "QuizzApplicationBackend\\DTO\\LeaderBoardDTO.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\DTO\\LeaderBoardDTO.cs",
-              "RelativeToolTip": "QuizzApplicationBackend\\DTO\\LeaderBoardDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T10:07:30.74Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 79,
-              "Title": "ScoreCardResponseDTO.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\DTO\\ScoreCardResponseDTO.cs",
-              "RelativeDocumentMoniker": "QuizzApplicationBackend\\DTO\\ScoreCardResponseDTO.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\DTO\\ScoreCardResponseDTO.cs",
-              "RelativeToolTip": "QuizzApplicationBackend\\DTO\\ScoreCardResponseDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T14:06:14.89Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 81,
               "Title": "ScoreCard.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Models\\ScoreCard.cs",
               "RelativeDocumentMoniker": "QuizzApplicationBackend\\Models\\ScoreCard.cs",
@@ -1454,18 +1446,6 @@
               "ViewState": "AgIAAAUAAAAAAAAAAAAxwBAAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T05:06:38.122Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 81,
-              "Title": "IAuthentication.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Interfaces\\IAuthentication.cs",
-              "RelativeDocumentMoniker": "QuizzApplicationBackend\\Interfaces\\IAuthentication.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\Interfaces\\IAuthentication.cs",
-              "RelativeToolTip": "QuizzApplicationBackend\\Interfaces\\IAuthentication.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T09:29:49.607Z"
             },
             {
               "$type": "Document",

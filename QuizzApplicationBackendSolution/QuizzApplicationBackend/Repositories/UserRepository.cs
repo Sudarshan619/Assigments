@@ -26,7 +26,7 @@ namespace QuizzApplicationBackend.Repositories
                 _context.Users.Add(entity);
                 await _context.SaveChangesAsync();
 
-                await _mailService.SendEmailAsync(entity.Email, "Account Updated", "Your account details have been updated.");
+                await _mailService.SendEmailAsync(entity.Email, "Account created", $"Your account details have been created for user {entity.Name}.");
                 return entity;
             }
             catch (CouldNotAddException ex) {
