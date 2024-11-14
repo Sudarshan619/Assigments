@@ -2,11 +2,13 @@
 using QuizzApplicationBackend.DTO;
 using QuizzApplicationBackend.Services;
 using QuizzApplicationBackend.Interfaces;
+using Microsoft.AspNetCore.Cors;
 
 namespace QuizzApplicationBackend.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [EnableCors("AllowAll")]
     public class UserController : ControllerBase
     {
         private readonly IAuthentication _userService;
@@ -32,8 +34,19 @@ namespace QuizzApplicationBackend.Controllers
         {
             var user = await _userService.Autheticate(requestDTO);
             return Ok(user);
-        }  
+        }
 
+        [HttpGet]
+        public async Task<IEnumerable<string>> GetRoles()
+        {
+            try
+            {
+                return await _userService.GetRoles();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
-
 }

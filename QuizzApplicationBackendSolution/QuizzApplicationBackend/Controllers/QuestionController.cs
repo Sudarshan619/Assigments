@@ -5,11 +5,13 @@ using System.Threading.Tasks;
 using System.Collections.Generic;
 using QuizzApplicationBackend.Exceptions;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 
 namespace QuizzApplicationBackend.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("AllowAll")]
     public class QuestionController : ControllerBase
     {
         private readonly IQuestionService _questionService;
@@ -73,7 +75,7 @@ namespace QuizzApplicationBackend.Controllers
 
         [HttpPut("{id}")]
         [Authorize(Roles = "QuizzCreator")]
-        public async Task<IActionResult> EditQuestion(int id, [FromBody] QuestionDTO questionDto)
+        public async Task<IActionResult> EditQuestion(int id, QuestionDTO questionDto)
         {
             try
             {

@@ -4,11 +4,13 @@ using QuizzApplicationBackend.Interfaces;
 using QuizzApplicationBackend.Exceptions;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 
 namespace QuizzApplicationBackend.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("AllowAll")]
     public class LeaderBoardController : ControllerBase
     {
         private readonly ILeaderBoardService _leaderBoardService;

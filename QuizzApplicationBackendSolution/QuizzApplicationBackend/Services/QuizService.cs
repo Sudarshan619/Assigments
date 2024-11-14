@@ -111,7 +111,7 @@ namespace QuizzApplicationBackend.Services
                     Options = options.Where(option => option.QuestionId == question.QuestionId)
                                      .OrderByDescending(option => option.IsCorrect)
                                      .Take(4)
-                                     // used to randamize the option 
+                                     // used to randomize the option 
                                      .OrderBy(_ => Guid.NewGuid())
                                      .Select(option => new OptionResponseDTO()
                                      {
@@ -280,6 +280,13 @@ namespace QuizzApplicationBackend.Services
                 throw new Exception("Error while retrieving quizzes: " + ex.Message);
             }
         }
+
+        public Task<IEnumerable<String>> GetAllCategory()
+        {
+            var categories = Enum.GetNames(typeof(Categories)).ToList();
+            return Task.FromResult<IEnumerable<string>>(categories);
+        }
+    
     }
 
 }

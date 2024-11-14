@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using QuizzApplicationBackend.DTO;
 using QuizzApplicationBackend.Exceptions;
@@ -13,6 +14,7 @@ namespace QuizzApplicationBackend.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [EnableCors("AllowAll")]
     public class QuizController : ControllerBase
     {
         private readonly IQuizService<IEnumerable<Question>, int> _quizService;
@@ -133,6 +135,24 @@ namespace QuizzApplicationBackend.Controllers
             {
                 var quizzes = await _quizService.GetAllQuizzesWithQuestionsByCategory(category);
                 return Ok(quizzes);
+            }
+            catch (CollectionEmptyException ex)
+            {
+                return NotFound("No quizzes found in this category.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Internal server error: " + ex.Message);
+            }
+        }
+
+        [HttpGet("Getallcategory")]
+        public async Task<IActionResult> GetAllCategory()
+        {
+            try
+            {
+                var category = await _quizService.GetAllCategory();
+                return Ok(category);
             }
             catch (CollectionEmptyException ex)
             {
