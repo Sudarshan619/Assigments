@@ -1,13 +1,23 @@
 <template>
-  <h1></h1>
+  <h1>Hello {{ un }}</h1>
    
 </template>
 
 <script>
+import { useLoginStore } from '@/stores/loginStore';
+import {ref } from 'vue'
+
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  setup(){
+    const loginStore = useLoginStore();
+
+    const un = ref(loginStore.username);
+    console.log('hello'+un.value);
+    return {un};
   }
 }
 </script>

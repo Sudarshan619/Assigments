@@ -8,5 +8,7 @@ namespace QuizzApplicationBackend.DTO
 
         public Categories Category { get; set; }
 
+        public int QuizId { get; set; }
+
     }
 }

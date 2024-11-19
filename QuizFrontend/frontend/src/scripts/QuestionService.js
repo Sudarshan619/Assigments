@@ -11,3 +11,8 @@ export function addQuestion(questionName,category,points){
 export function getQuestions(){
    return axios.get("http://localhost:5193/api/Question?pageNumber=1")    
 }
+
+export function searchQuestions(questionName){
+  return axios.get(`http://localhost:5193/api/Question/Search?question=${questionName}`)    
+}
+

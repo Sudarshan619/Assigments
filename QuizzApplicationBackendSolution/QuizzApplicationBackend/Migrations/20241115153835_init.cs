@@ -10,20 +10,6 @@ namespace QuizzApplicationBackend.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "LeaderBoards",
-                columns: table => new
-                {
-                    LeaderBoardId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    LeaderBoardName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Categories = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_LeaderBoards", x => x.LeaderBoardId);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "QuizScores",
                 columns: table => new
                 {
@@ -88,6 +74,8 @@ namespace QuizzApplicationBackend.Migrations
                     Difficulty = table.Column<int>(type: "int", nullable: false),
                     MaxPoint = table.Column<int>(type: "int", nullable: false),
                     NoOfQuestions = table.Column<int>(type: "int", nullable: false),
+                    DateOfCreation = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    isEnded = table.Column<bool>(type: "bit", nullable: false),
                     QuizScoreCardNo = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
@@ -104,6 +92,27 @@ namespace QuizzApplicationBackend.Migrations
                         column: x => x.QuizScoreCardNo,
                         principalTable: "QuizScores",
                         principalColumn: "QuizScoreCardNo");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "LeaderBoards",
+                columns: table => new
+                {
+                    LeaderBoardId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    LeaderBoardName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    QuizId = table.Column<int>(type: "int", nullable: false),
+                    Categories = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_LeaderBoards", x => x.LeaderBoardId);
+                    table.ForeignKey(
+                        name: "FK_LeaderBoards_Quizes_QuizId",
+                        column: x => x.QuizId,
+                        principalTable: "Quizes",
+                        principalColumn: "QuizId",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -187,6 +196,12 @@ namespace QuizzApplicationBackend.Migrations
                         principalColumn: "QuestionId",
                         onDelete: ReferentialAction.Restrict);
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_LeaderBoards_QuizId",
+                table: "LeaderBoards",
+                column: "QuizId",
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_Options_QuestionId",

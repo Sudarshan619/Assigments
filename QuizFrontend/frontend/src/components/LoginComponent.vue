@@ -1,29 +1,26 @@
-<script>
+<script setup>
 import {login} from '@/scripts/LoginService'
+import { useLoginStore } from '@/stores/loginStore';
+import { ref } from 'vue';
+import { useRouter } from 'vue-router'; 
 
 
-export default {
-  name: 'LoginComponent',
-  data() {
-    return {
-      email: '',
-      password: '',
-      login:()=>{
-        event.preventDefault();
-        login(this.email, this.password)
-        .then((response)=>{
-            console.log(response.data.username);  
-            sessionStorage.setItem('Token',response.data.token);
-            window.location.href= "/"       
-        //   alert(response.data.username + ' is logged in');
-        },err=>{
-            console.log(err);      
-        //   alert(err.response.data.errorMessage);
-        })    
-      },    
-    }
-  }
-}   
+const email = ref('');
+const password = ref('');
+const loginStrote = useLoginStore();
+const router = useRouter();
+
+const logon = () => {
+  event.preventDefault();
+  login(email.value, password.value).then(response => {
+    console.log(response.data);
+    sessionStorage.setItem('Token', response.data.token);
+    loginStrote.login(response.data.username);
+    router.push('/quiz')
+  });
+}
+
+ 
 </script>
 <template>
   <div class="sign-in">
@@ -35,7 +32,7 @@ export default {
         <input class="form-control" type="text" id="email" v-model="email">
         <label  for="password">Password</label>
         <input class="form-control" type="password" id="password" v-model="password">
-      <button class="btn-login" @click="login()" type="submit">Login</button>
+      <button class="btn-login" @click="logon()" type="submit">Login</button>
       <router-link to="/register">Register</router-link>
     </form>
     </div>

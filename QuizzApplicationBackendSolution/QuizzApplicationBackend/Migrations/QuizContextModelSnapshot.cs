@@ -37,7 +37,13 @@ namespace QuizzApplicationBackend.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("QuizId")
+                        .HasColumnType("int");
+
                     b.HasKey("LeaderBoardId");
+
+                    b.HasIndex("QuizId")
+                        .IsUnique();
 
                     b.ToTable("LeaderBoards");
                 });
@@ -138,6 +144,9 @@ namespace QuizzApplicationBackend.Migrations
                     b.Property<int>("CreatorId")
                         .HasColumnType("int");
 
+                    b.Property<DateTime>("DateOfCreation")
+                        .HasColumnType("datetime2");
+
                     b.Property<int>("Difficulty")
                         .HasColumnType("int");
 
@@ -153,6 +162,9 @@ namespace QuizzApplicationBackend.Migrations
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("isEnded")
+                        .HasColumnType("bit");
 
                     b.HasKey("QuizId");
 
@@ -253,6 +265,18 @@ namespace QuizzApplicationBackend.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("QuizzApplicationBackend.Models.LeaderBoard", b =>
+                {
+                    b.HasOne("QuizzApplicationBackend.Models.Quiz", "Quiz")
+                        .WithOne("LeaderBoard")
+                        .HasForeignKey("QuizzApplicationBackend.Models.LeaderBoard", "QuizId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired()
+                        .HasConstraintName("FK_Quiz_leaderboard");
+
+                    b.Navigation("Quiz");
+                });
+
             modelBuilder.Entity("QuizzApplicationBackend.Models.Option", b =>
                 {
                     b.HasOne("QuizzApplicationBackend.Models.Question", "Question")
@@ -339,6 +363,9 @@ namespace QuizzApplicationBackend.Migrations
 
             modelBuilder.Entity("QuizzApplicationBackend.Models.Quiz", b =>
                 {
+                    b.Navigation("LeaderBoard")
+                        .IsRequired();
+
                     b.Navigation("Questions");
                 });
 

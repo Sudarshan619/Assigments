@@ -106,5 +106,28 @@ namespace QuizzApplicationBackend.Services
                 throw new Exception("Error while retrieving options: " + ex.Message);
             }
         }
+
+        public async Task<bool> CreateOptionBulk(IEnumerable<OptionDTO> options)
+        {
+            try
+            {
+                bool isAdded = true;
+                foreach(var option in options)
+                {
+                    var requiredOption = _mapper.Map<Option>(option);
+                    var result = await _repository.Add(requiredOption);
+
+                    if (result == null) {
+                        return !isAdded;
+                    }
+                } 
+                return isAdded;
+                
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error while creating option: " + ex.Message);
+            }
+        }
     }
 }

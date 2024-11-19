@@ -7,5 +7,7 @@
         public string QueryType { get; set; }
 
         public string Description { get; set; } = string.Empty;
+
+        public bool isResolved { get; set; } = false;
     }
 }

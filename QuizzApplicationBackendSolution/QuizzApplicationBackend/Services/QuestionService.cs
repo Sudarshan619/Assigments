@@ -84,6 +84,26 @@ namespace QuizzApplicationBackend.Services
             }
         }
 
+        public async Task<IEnumerable<QuestionResponseDTO>> Search(string question)
+        {
+            try
+            {
+                var questions = await _repository.GetAll();
+                var requiredQuestions = questions.Where(q => !string.IsNullOrEmpty(q.QuestionName) &&
+                        q.QuestionName.Contains(question, StringComparison.OrdinalIgnoreCase));
+                var questionDTOs = requiredQuestions.Select(q => new QuestionResponseDTO
+                {
+                    QuestionId = q.QuestionId,
+                    QuestionName = q.QuestionName,
+                });
+                return questionDTOs;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         public async Task<IEnumerable<QuestionResponseDTO>> GetAllQuestions(int pageNumber)
         {
             try
@@ -121,6 +141,8 @@ namespace QuizzApplicationBackend.Services
                 throw new Exception("Error while retrieving questions: " + ex.Message);
             }
         }
+
+       
 
         public async Task<bool> EditQuestion(int id, QuestionDTO question)
         {

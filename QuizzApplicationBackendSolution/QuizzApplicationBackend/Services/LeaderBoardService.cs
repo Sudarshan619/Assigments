@@ -30,7 +30,7 @@ namespace QuizzApplicationBackend.Services
             {
                 var scoreCards = await _scoreCardRepository.GetAll();
                 var quiz = await _quizRepository.GetAll();
-                var requiredquiz = quiz.FirstOrDefault(e => e.Category == _leaderBoard.Category);
+                var requiredquiz = quiz.FirstOrDefault(e => e.QuizId == _leaderBoard.QuizId);
                 var requiredScores = scoreCards.Where(e => e.QuizId == requiredquiz.QuizId);
                 var leaderBoard = _mapper.Map<LeaderBoard>(_leaderBoard);
                 leaderBoard.ScoreCard = scoreCards;
@@ -55,15 +55,27 @@ namespace QuizzApplicationBackend.Services
                 }
 
                 var scoreCards = await _scoreCardRepository.GetAll();
+                var users = await _userRepo.GetAll();
                 var quiz = await _quizRepository.GetAll();
-                var requiredQuiz = quiz.FirstOrDefault(e => e.Category == leaderBoard.Categories);
+                var requiredQuiz = quiz.FirstOrDefault(e => e.QuizId == leaderBoard.QuizId);
 
                 if (requiredQuiz == null)
                 {
                     throw new Exception("Quiz with specified category not found");
                 }
+                var sortedScoreCards = scoreCards
+                .Select(sc => new ScoreCardResponseDTO
+                {
+                    ScoreCardId = sc.ScoreCardId,
+                    Username = users.FirstOrDefault(u => u.Id == sc.UserId)?.Name ?? "Unknown User",
+                    Score = sc.Score,
+                    QuizId = sc.QuizId,
+                    Acuuracy = sc.Acuuracy
+                });
 
-                var scoreCardDtos = scoreCards
+                sortedScoreCards = sortedScoreCards.OrderByDescending(sc => sc.Score).ToList();
+
+                var scoreCardDtos = sortedScoreCards
                     .Where(e => e.QuizId == requiredQuiz.QuizId)
                     .Select(sc => _mapper.Map<ScoreCardResponseDTO>(sc))
                     .ToList();
@@ -107,7 +119,7 @@ namespace QuizzApplicationBackend.Services
                 var leaderBoardDTOs = pagedLeaderBoards.Select(leaderBoard =>
                 {
                
-                    var requiredQuiz = quizzes.FirstOrDefault(q => q.Category == leaderBoard.Categories);
+                    var requiredQuiz = quizzes.FirstOrDefault(q => q.QuizId == leaderBoard.QuizId);
                     if (requiredQuiz == null)
                     {
                         throw new Exception("Quiz with specified category not found");

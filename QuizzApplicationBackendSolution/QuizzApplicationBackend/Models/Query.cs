@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace QuizzApplicationBackend.Models
 {
@@ -6,7 +7,7 @@ namespace QuizzApplicationBackend.Models
     {
         [Key]
         public int QueryId { get; set; }
-
+ 
         public int ReportedBy { get; set; }
 
         public string QueryType { get; set; }

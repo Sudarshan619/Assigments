@@ -34,9 +34,15 @@ namespace QuizzApplicationBackend.Models
 
         public int NoOfQuestions { get; set; }
 
+        public DateTime DateOfCreation { get; set; } = DateTime.Now;
+
+        public bool isEnded  { get; set; } = false;
+
         public ICollection<Question> Questions { get; set; } = new List<Question>();
 
         public User User { get; set; }
+
+        public LeaderBoard LeaderBoard { get; set; }
 
 
     }

@@ -5,6 +5,8 @@ import { createRouter,createWebHistory } from "vue-router";
 import QuizComponent from "@/components/QuizComponent.vue";
 import QuizStartComponent from "@/components/QuizStartComponent.vue";
 import RegisterComponent from "@/components/RegisterComponent.vue";
+import ProfileComponent from "@/components/ProfileComponent.vue";
+import LeaderBoardComponent from "@/components/LeaderBoardComponent.vue";
 
 const routes=[
     {path: '/', component: HelloWorld},
@@ -12,7 +14,9 @@ const routes=[
     {path: '/questions', component: QuestionsComponent},
     {path: '/quiz', component: QuizComponent},
     {path:'/takequiz',component:QuizStartComponent},
-    {path:'/register',component:RegisterComponent}
+    {path:'/register',component:RegisterComponent},
+    {path:'/profile',component:ProfileComponent},
+    {path:'/leaderboard',component:LeaderBoardComponent}
 ];
 
 const router = createRouter({
