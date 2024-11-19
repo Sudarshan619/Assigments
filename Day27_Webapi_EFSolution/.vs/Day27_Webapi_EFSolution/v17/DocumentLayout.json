@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A51943B0-58CC-47DF-AAB2-9237F8CE7780}|Day27_Webapi_EF\\Day27_Webapi_EF.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day27_webapi_efsolution\\day27_webapi_ef\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A51943B0-58CC-47DF-AAB2-9237F8CE7780}|Day27_Webapi_EF\\Day27_Webapi_EF.csproj|solutionrelative:day27_webapi_ef\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7501D512-A163-4A8E-990A-A858FEC9299E}|FirstTest\\FirstTest.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day27_webapi_efsolution\\firsttest\\productrepositorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7501D512-A163-4A8E-990A-A858FEC9299E}|FirstTest\\FirstTest.csproj|solutionrelative:firsttest\\productrepositorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -193,10 +197,6 @@
       "RelativeMoniker": "D:0:0:{7501D512-A163-4A8E-990A-A858FEC9299E}|FirstTest\\FirstTest.csproj|solutionrelative:firsttest\\cartrepositorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A51943B0-58CC-47DF-AAB2-9237F8CE7780}|Day27_Webapi_EF\\Day27_Webapi_EF.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day27_webapi_efsolution\\day27_webapi_ef\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A51943B0-58CC-47DF-AAB2-9237F8CE7780}|Day27_Webapi_EF\\Day27_Webapi_EF.csproj|solutionrelative:day27_webapi_ef\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A51943B0-58CC-47DF-AAB2-9237F8CE7780}|Day27_Webapi_EF\\Day27_Webapi_EF.csproj|c:\\users\\sudarshan\\source\\repos\\assignment\\day27_webapi_efsolution\\day27_webapi_ef\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A51943B0-58CC-47DF-AAB2-9237F8CE7780}|Day27_Webapi_EF\\Day27_Webapi_EF.csproj|solutionrelative:day27_webapi_ef\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -372,7 +372,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -381,19 +381,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "UsernameValidator.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Misc\\UsernameValidator.cs",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Misc\\UsernameValidator.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Misc\\UsernameValidator.cs",
-              "RelativeToolTip": "Day27_Webapi_EF\\Misc\\UsernameValidator.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBUAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T05:02:59.698Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "CustomeExceptionFilter.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Misc\\CustomeExceptionFilter.cs",
               "RelativeDocumentMoniker": "Day27_Webapi_EF\\Misc\\CustomeExceptionFilter.cs",
@@ -401,12 +388,11 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Misc\\CustomeExceptionFilter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T05:23:08.152Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T05:23:08.152Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CartItemRepositoryTest.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\CartItemRepositoryTest.cs",
               "RelativeDocumentMoniker": "FirstTest\\CartItemRepositoryTest.cs",
@@ -414,12 +400,11 @@
               "RelativeToolTip": "FirstTest\\CartItemRepositoryTest.cs",
               "ViewState": "AgIAALUAAAAAAAAAAAAswN0AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T12:26:08.035Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T12:26:08.035Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ProductServiceTest.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\ProductServiceTest.cs",
               "RelativeDocumentMoniker": "FirstTest\\ProductServiceTest.cs",
@@ -427,12 +412,11 @@
               "RelativeToolTip": "FirstTest\\ProductServiceTest.cs",
               "ViewState": "AgIAAIQAAAAAAAAAAAAowI0AAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T04:35:01.473Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T04:35:01.473Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ProductRepositoryTest.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\ProductRepositoryTest.cs",
               "RelativeDocumentMoniker": "FirstTest\\ProductRepositoryTest.cs",
@@ -445,7 +429,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Day27_Webapi_EF\\Controllers\\UserController.cs",
@@ -453,582 +437,11 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Controllers\\UserController.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwCgAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T07:33:28.966Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T07:33:28.966Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "Day27_Webapi_EF\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACQAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T11:57:03.146Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Services\\UserService.cs",
-              "RelativeToolTip": "Day27_Webapi_EF\\Services\\UserService.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAswEEAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T06:51:12.387Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Models\\User.cs",
-              "RelativeToolTip": "Day27_Webapi_EF\\Models\\User.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBIAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T04:54:55.999Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ProductDTO.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\DTO\\ProductDTO.cs",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\DTO\\ProductDTO.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\DTO\\ProductDTO.cs",
-              "RelativeToolTip": "Day27_Webapi_EF\\DTO\\ProductDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T11:31:29.043Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UserCreateDTO.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\DTO\\UserCreateDTO.cs",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\DTO\\UserCreateDTO.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\DTO\\UserCreateDTO.cs",
-              "RelativeToolTip": "Day27_Webapi_EF\\DTO\\UserCreateDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T05:00:35.871Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "TokenService.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Services\\TokenService.cs",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Services\\TokenService.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Services\\TokenService.cs",
-              "RelativeToolTip": "Day27_Webapi_EF\\Services\\TokenService.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwAsAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T05:20:40.486Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IProductService.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Interface\\IProductService.cs",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Interface\\IProductService.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Interface\\IProductService.cs",
-              "RelativeToolTip": "Day27_Webapi_EF\\Interface\\IProductService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T11:42:35.81Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ProductRepository.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Repositories\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Repositories\\ProductRepository.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Repositories\\ProductRepository.cs",
-              "RelativeToolTip": "Day27_Webapi_EF\\Repositories\\ProductRepository.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAADgvyAAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T09:43:34.519Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "CartController.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Controllers\\CartController.cs",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Controllers\\CartController.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Controllers\\CartController.cs",
-              "RelativeToolTip": "Day27_Webapi_EF\\Controllers\\CartController.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAAAE0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T04:31:09.724Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Services\\ProductService.cs",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Services\\ProductService.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Services\\ProductService.cs",
-              "RelativeToolTip": "Day27_Webapi_EF\\Services\\ProductService.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAEwBgAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T11:13:04.433Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "UserControllerTest.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\UserControllerTest.cs",
-              "RelativeDocumentMoniker": "FirstTest\\UserControllerTest.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\UserControllerTest.cs",
-              "RelativeToolTip": "FirstTest\\UserControllerTest.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAAAGcAAABSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T09:12:28.942Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "UserServiceTest.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\UserServiceTest.cs",
-              "RelativeDocumentMoniker": "FirstTest\\UserServiceTest.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\UserServiceTest.cs",
-              "RelativeToolTip": "FirstTest\\UserServiceTest.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAswE8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T06:54:10.551Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "UserRepositoryTest.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\UserRepositoryTest.cs",
-              "RelativeDocumentMoniker": "FirstTest\\UserRepositoryTest.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\UserRepositoryTest.cs",
-              "RelativeToolTip": "FirstTest\\UserRepositoryTest.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAswEAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T06:50:39.592Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "CollectionEmptyException.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Repositories\\CollectionEmptyException.cs",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Repositories\\CollectionEmptyException.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Repositories\\CollectionEmptyException.cs",
-              "RelativeToolTip": "Day27_Webapi_EF\\Repositories\\CollectionEmptyException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T09:51:35.108Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Program.cs",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Program.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Program.cs",
-              "RelativeToolTip": "Day27_Webapi_EF\\Program.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAwwG0AAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T06:08:08.586Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Interface\\IUserService.cs",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Interface\\IUserService.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Interface\\IUserService.cs",
-              "RelativeToolTip": "Day27_Webapi_EF\\Interface\\IUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T06:51:30.318Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "Day27_Webapi_EF\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFgAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T06:49:06.526Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "LoginResponseDTO.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\DTO\\LoginResponseDTO.cs",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\DTO\\LoginResponseDTO.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\DTO\\LoginResponseDTO.cs",
-              "RelativeToolTip": "Day27_Webapi_EF\\DTO\\LoginResponseDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T05:01:05.122Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "LoginRequestDTO.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\DTO\\LoginRequestDTO.cs",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\DTO\\LoginRequestDTO.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\DTO\\LoginRequestDTO.cs",
-              "RelativeToolTip": "Day27_Webapi_EF\\DTO\\LoginRequestDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T06:51:56.392Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Models\\Customer.cs",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Models\\Customer.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Models\\Customer.cs",
-              "RelativeToolTip": "Day27_Webapi_EF\\Models\\Customer.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAsAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T05:23:04.026Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "ITokenService.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Interface\\ITokenService.cs",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Interface\\ITokenService.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Interface\\ITokenService.cs",
-              "RelativeToolTip": "Day27_Webapi_EF\\Interface\\ITokenService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T05:18:46.292Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "UserTokenDTO.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\DTO\\UserTokenDTO.cs",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\DTO\\UserTokenDTO.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\DTO\\UserTokenDTO.cs",
-              "RelativeToolTip": "Day27_Webapi_EF\\DTO\\UserTokenDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T05:19:04.947Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\appsettings.json",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\appsettings.json",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\appsettings.json",
-              "RelativeToolTip": "Day27_Webapi_EF\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-16T06:05:46.237Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "ProductControllerTest.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\ProductControllerTest.cs",
-              "RelativeDocumentMoniker": "FirstTest\\ProductControllerTest.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\ProductControllerTest.cs",
-              "RelativeToolTip": "FirstTest\\ProductControllerTest.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAkwFYAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T06:27:55.899Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Day27_Webapi_EF.csproj",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Day27_Webapi_EF.csproj",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Day27_Webapi_EF.csproj",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Day27_Webapi_EF.csproj",
-              "RelativeToolTip": "Day27_Webapi_EF\\Day27_Webapi_EF.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-16T07:16:54.537Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "ProductProfile.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Mapper\\ProductProfile.cs",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Mapper\\ProductProfile.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Mapper\\ProductProfile.cs",
-              "RelativeToolTip": "Day27_Webapi_EF\\Mapper\\ProductProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T11:29:58.905Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "ShoppingContext.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Context\\ShoppingContext.cs",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Context\\ShoppingContext.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Context\\ShoppingContext.cs",
-              "RelativeToolTip": "Day27_Webapi_EF\\Context\\ShoppingContext.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAywD4AAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T05:29:05.03Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "CartItemProfile.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Mapper\\CartItemProfile.cs",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Mapper\\CartItemProfile.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Mapper\\CartItemProfile.cs",
-              "RelativeToolTip": "Day27_Webapi_EF\\Mapper\\CartItemProfile.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAA+wAwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T04:48:26.695Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "PoicyItemDTO.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day29_BackendPlanSolution\\Day29_BackendPlan\\DTO\\PoicyItemDTO.cs",
-              "RelativeDocumentMoniker": "..\\Day29_BackendPlanSolution\\Day29_BackendPlan\\DTO\\PoicyItemDTO.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day29_BackendPlanSolution\\Day29_BackendPlan\\DTO\\PoicyItemDTO.cs",
-              "RelativeToolTip": "..\\Day29_BackendPlanSolution\\Day29_BackendPlan\\DTO\\PoicyItemDTO.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T06:59:14.082Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "Day29_BackendPlan.csproj",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day29_BackendPlanSolution\\Day29_BackendPlan\\Day29_BackendPlan.csproj",
-              "RelativeDocumentMoniker": "..\\Day29_BackendPlanSolution\\Day29_BackendPlan\\Day29_BackendPlan.csproj",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day29_BackendPlanSolution\\Day29_BackendPlan\\Day29_BackendPlan.csproj",
-              "RelativeToolTip": "..\\Day29_BackendPlanSolution\\Day29_BackendPlan\\Day29_BackendPlan.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-23T06:59:13.508Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 89,
-              "Title": "20241022050702_addeduser.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Migrations\\20241022050702_addeduser.cs",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Migrations\\20241022050702_addeduser.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Migrations\\20241022050702_addeduser.cs",
-              "RelativeToolTip": "Day27_Webapi_EF\\Migrations\\20241022050702_addeduser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T05:07:02.66Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "CustomerDTO.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\DTO\\CustomerDTO.cs",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\DTO\\CustomerDTO.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\DTO\\CustomerDTO.cs",
-              "RelativeToolTip": "Day27_Webapi_EF\\DTO\\CustomerDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T07:14:54.404Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "CustomerRepositoryTest.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\CustomerRepositoryTest.cs",
-              "RelativeDocumentMoniker": "FirstTest\\CustomerRepositoryTest.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\CustomerRepositoryTest.cs",
-              "RelativeToolTip": "FirstTest\\CustomerRepositoryTest.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAIBQwAEBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T16:14:52.553Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "CustomerRepository.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Repositories\\CustomerRepository.cs",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Repositories\\CustomerRepository.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Repositories\\CustomerRepository.cs",
-              "RelativeToolTip": "Day27_Webapi_EF\\Repositories\\CustomerRepository.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA+wAwAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T06:56:18.519Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 90,
-              "Title": "ErrorResponseDTO.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\DTO\\ErrorResponseDTO.cs",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\DTO\\ErrorResponseDTO.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\DTO\\ErrorResponseDTO.cs",
-              "RelativeToolTip": "Day27_Webapi_EF\\DTO\\ErrorResponseDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T05:01:48.12Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "OrderProfile.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Mapper\\OrderProfile.cs",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Mapper\\OrderProfile.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Mapper\\OrderProfile.cs",
-              "RelativeToolTip": "Day27_Webapi_EF\\Mapper\\OrderProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T04:47:47.002Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Interface\\IRepository.cs",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Interface\\IRepository.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Interface\\IRepository.cs",
-              "RelativeToolTip": "Day27_Webapi_EF\\Interface\\IRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T06:55:22.891Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "Cart.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Models\\Cart.cs",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Models\\Cart.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Models\\Cart.cs",
-              "RelativeToolTip": "Day27_Webapi_EF\\Models\\Cart.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T05:27:21.474Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "OrderDetail.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Models\\OrderDetail.cs",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Models\\OrderDetail.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Models\\OrderDetail.cs",
-              "RelativeToolTip": "Day27_Webapi_EF\\Models\\OrderDetail.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAwAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T05:26:12.6Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Models\\Product.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Models\\Product.cs",
-              "RelativeToolTip": "Day27_Webapi_EF\\Models\\Product.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAmwAkAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T05:26:36.255Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "OrderDetailRepositoryTest.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\OrderDetailRepositoryTest.cs",
-              "RelativeDocumentMoniker": "FirstTest\\OrderDetailRepositoryTest.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\OrderDetailRepositoryTest.cs",
-              "RelativeToolTip": "FirstTest\\OrderDetailRepositoryTest.cs",
-              "ViewState": "AgIAAM0AAAAAAAAAAAAswOUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T12:25:46.68Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "OrderRepositoryTest.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\OrderRepositoryTest.cs",
-              "RelativeDocumentMoniker": "FirstTest\\OrderRepositoryTest.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\OrderRepositoryTest.cs",
-              "RelativeToolTip": "FirstTest\\OrderRepositoryTest.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAQwNwAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T12:25:27.777Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "CartRepositoryTest.cs",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\CartRepositoryTest.cs",
-              "RelativeDocumentMoniker": "FirstTest\\CartRepositoryTest.cs",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\CartRepositoryTest.cs",
-              "RelativeToolTip": "FirstTest\\CartRepositoryTest.cs",
-              "ViewState": "AgIAAMwAAAAAAAAAAAAswOQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T12:25:56.175Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "FirstTest.csproj",
-              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\FirstTest.csproj",
-              "RelativeDocumentMoniker": "FirstTest\\FirstTest.csproj",
-              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\FirstTest.csproj",
-              "RelativeToolTip": "FirstTest\\FirstTest.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-17T06:02:24.716Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 0,
               "Title": "CartItem.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Models\\CartItem.cs",
               "RelativeDocumentMoniker": "Day27_Webapi_EF\\Models\\CartItem.cs",
@@ -1041,6 +454,545 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsernameValidator.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Misc\\UsernameValidator.cs",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Misc\\UsernameValidator.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Misc\\UsernameValidator.cs",
+              "RelativeToolTip": "Day27_Webapi_EF\\Misc\\UsernameValidator.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T05:02:59.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Day27_Webapi_EF\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T11:57:03.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Services\\UserService.cs",
+              "RelativeToolTip": "Day27_Webapi_EF\\Services\\UserService.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAswEEAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T06:51:12.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Models\\User.cs",
+              "RelativeToolTip": "Day27_Webapi_EF\\Models\\User.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T04:54:55.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProductDTO.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\DTO\\ProductDTO.cs",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\DTO\\ProductDTO.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\DTO\\ProductDTO.cs",
+              "RelativeToolTip": "Day27_Webapi_EF\\DTO\\ProductDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T11:31:29.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserCreateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\DTO\\UserCreateDTO.cs",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\DTO\\UserCreateDTO.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\DTO\\UserCreateDTO.cs",
+              "RelativeToolTip": "Day27_Webapi_EF\\DTO\\UserCreateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T05:00:35.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Services\\TokenService.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Services\\TokenService.cs",
+              "RelativeToolTip": "Day27_Webapi_EF\\Services\\TokenService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T05:20:40.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Interface\\IProductService.cs",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Interface\\IProductService.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Interface\\IProductService.cs",
+              "RelativeToolTip": "Day27_Webapi_EF\\Interface\\IProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T11:42:35.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Repositories\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "Day27_Webapi_EF\\Repositories\\ProductRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAADgvyAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T09:43:34.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Day27_Webapi_EF\\Controllers\\CartController.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAAAE0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T04:31:09.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Services\\ProductService.cs",
+              "RelativeToolTip": "Day27_Webapi_EF\\Services\\ProductService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAEwBgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T11:13:04.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UserControllerTest.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\UserControllerTest.cs",
+              "RelativeDocumentMoniker": "FirstTest\\UserControllerTest.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\UserControllerTest.cs",
+              "RelativeToolTip": "FirstTest\\UserControllerTest.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAGcAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T09:12:28.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UserServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\UserServiceTest.cs",
+              "RelativeDocumentMoniker": "FirstTest\\UserServiceTest.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\UserServiceTest.cs",
+              "RelativeToolTip": "FirstTest\\UserServiceTest.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAswE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T06:54:10.551Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UserRepositoryTest.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\UserRepositoryTest.cs",
+              "RelativeDocumentMoniker": "FirstTest\\UserRepositoryTest.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\UserRepositoryTest.cs",
+              "RelativeToolTip": "FirstTest\\UserRepositoryTest.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAswEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T06:50:39.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CollectionEmptyException.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Repositories\\CollectionEmptyException.cs",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Repositories\\CollectionEmptyException.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Repositories\\CollectionEmptyException.cs",
+              "RelativeToolTip": "Day27_Webapi_EF\\Repositories\\CollectionEmptyException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T09:51:35.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Program.cs",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Program.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Program.cs",
+              "RelativeToolTip": "Day27_Webapi_EF\\Program.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAwwG0AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T06:08:08.586Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Interface\\IUserService.cs",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Interface\\IUserService.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Interface\\IUserService.cs",
+              "RelativeToolTip": "Day27_Webapi_EF\\Interface\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T06:51:30.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "Day27_Webapi_EF\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T06:49:06.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "LoginResponseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\DTO\\LoginResponseDTO.cs",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\DTO\\LoginResponseDTO.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\DTO\\LoginResponseDTO.cs",
+              "RelativeToolTip": "Day27_Webapi_EF\\DTO\\LoginResponseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T05:01:05.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "LoginRequestDTO.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\DTO\\LoginRequestDTO.cs",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\DTO\\LoginRequestDTO.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\DTO\\LoginRequestDTO.cs",
+              "RelativeToolTip": "Day27_Webapi_EF\\DTO\\LoginRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T06:51:56.392Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Models\\Customer.cs",
+              "RelativeToolTip": "Day27_Webapi_EF\\Models\\Customer.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAsAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T05:23:04.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ITokenService.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Interface\\ITokenService.cs",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Interface\\ITokenService.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Interface\\ITokenService.cs",
+              "RelativeToolTip": "Day27_Webapi_EF\\Interface\\ITokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T05:18:46.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UserTokenDTO.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\DTO\\UserTokenDTO.cs",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\DTO\\UserTokenDTO.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\DTO\\UserTokenDTO.cs",
+              "RelativeToolTip": "Day27_Webapi_EF\\DTO\\UserTokenDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T05:19:04.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\appsettings.json",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\appsettings.json",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\appsettings.json",
+              "RelativeToolTip": "Day27_Webapi_EF\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-16T06:05:46.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ProductControllerTest.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\ProductControllerTest.cs",
+              "RelativeDocumentMoniker": "FirstTest\\ProductControllerTest.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\ProductControllerTest.cs",
+              "RelativeToolTip": "FirstTest\\ProductControllerTest.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAkwFYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T06:27:55.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Day27_Webapi_EF.csproj",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Day27_Webapi_EF.csproj",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Day27_Webapi_EF.csproj",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Day27_Webapi_EF.csproj",
+              "RelativeToolTip": "Day27_Webapi_EF\\Day27_Webapi_EF.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-16T07:16:54.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ProductProfile.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Mapper\\ProductProfile.cs",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Mapper\\ProductProfile.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Mapper\\ProductProfile.cs",
+              "RelativeToolTip": "Day27_Webapi_EF\\Mapper\\ProductProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T11:29:58.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ShoppingContext.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Context\\ShoppingContext.cs",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Context\\ShoppingContext.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Context\\ShoppingContext.cs",
+              "RelativeToolTip": "Day27_Webapi_EF\\Context\\ShoppingContext.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAywD4AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T05:29:05.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "CartItemProfile.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Mapper\\CartItemProfile.cs",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Mapper\\CartItemProfile.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Mapper\\CartItemProfile.cs",
+              "RelativeToolTip": "Day27_Webapi_EF\\Mapper\\CartItemProfile.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA+wAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T04:48:26.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "PoicyItemDTO.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day29_BackendPlanSolution\\Day29_BackendPlan\\DTO\\PoicyItemDTO.cs",
+              "RelativeDocumentMoniker": "..\\Day29_BackendPlanSolution\\Day29_BackendPlan\\DTO\\PoicyItemDTO.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day29_BackendPlanSolution\\Day29_BackendPlan\\DTO\\PoicyItemDTO.cs",
+              "RelativeToolTip": "..\\Day29_BackendPlanSolution\\Day29_BackendPlan\\DTO\\PoicyItemDTO.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T06:59:14.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Day29_BackendPlan.csproj",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day29_BackendPlanSolution\\Day29_BackendPlan\\Day29_BackendPlan.csproj",
+              "RelativeDocumentMoniker": "..\\Day29_BackendPlanSolution\\Day29_BackendPlan\\Day29_BackendPlan.csproj",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day29_BackendPlanSolution\\Day29_BackendPlan\\Day29_BackendPlan.csproj",
+              "RelativeToolTip": "..\\Day29_BackendPlanSolution\\Day29_BackendPlan\\Day29_BackendPlan.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-23T06:59:13.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "20241022050702_addeduser.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Migrations\\20241022050702_addeduser.cs",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Migrations\\20241022050702_addeduser.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Migrations\\20241022050702_addeduser.cs",
+              "RelativeToolTip": "Day27_Webapi_EF\\Migrations\\20241022050702_addeduser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T05:07:02.66Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "CustomerDTO.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\DTO\\CustomerDTO.cs",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\DTO\\CustomerDTO.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\DTO\\CustomerDTO.cs",
+              "RelativeToolTip": "Day27_Webapi_EF\\DTO\\CustomerDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T07:14:54.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "CustomerRepositoryTest.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\CustomerRepositoryTest.cs",
+              "RelativeDocumentMoniker": "FirstTest\\CustomerRepositoryTest.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\CustomerRepositoryTest.cs",
+              "RelativeToolTip": "FirstTest\\CustomerRepositoryTest.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAIBQwAEBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T16:14:52.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Repositories\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Repositories\\CustomerRepository.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Repositories\\CustomerRepository.cs",
+              "RelativeToolTip": "Day27_Webapi_EF\\Repositories\\CustomerRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA+wAwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T06:56:18.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": "ErrorResponseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\DTO\\ErrorResponseDTO.cs",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\DTO\\ErrorResponseDTO.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\DTO\\ErrorResponseDTO.cs",
+              "RelativeToolTip": "Day27_Webapi_EF\\DTO\\ErrorResponseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T05:01:48.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "OrderProfile.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Mapper\\OrderProfile.cs",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Mapper\\OrderProfile.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Mapper\\OrderProfile.cs",
+              "RelativeToolTip": "Day27_Webapi_EF\\Mapper\\OrderProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T04:47:47.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Interface\\IRepository.cs",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Interface\\IRepository.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Interface\\IRepository.cs",
+              "RelativeToolTip": "Day27_Webapi_EF\\Interface\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T06:55:22.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Models\\Cart.cs",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Models\\Cart.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Models\\Cart.cs",
+              "RelativeToolTip": "Day27_Webapi_EF\\Models\\Cart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T05:27:21.474Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Models\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Models\\OrderDetail.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Models\\OrderDetail.cs",
+              "RelativeToolTip": "Day27_Webapi_EF\\Models\\OrderDetail.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T05:26:12.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Day27_Webapi_EF\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Models\\Product.cs",
+              "RelativeToolTip": "Day27_Webapi_EF\\Models\\Product.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAmwAkAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T05:26:36.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "OrderDetailRepositoryTest.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\OrderDetailRepositoryTest.cs",
+              "RelativeDocumentMoniker": "FirstTest\\OrderDetailRepositoryTest.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\OrderDetailRepositoryTest.cs",
+              "RelativeToolTip": "FirstTest\\OrderDetailRepositoryTest.cs",
+              "ViewState": "AgIAAM0AAAAAAAAAAAAswOUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T12:25:46.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "OrderRepositoryTest.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\OrderRepositoryTest.cs",
+              "RelativeDocumentMoniker": "FirstTest\\OrderRepositoryTest.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\OrderRepositoryTest.cs",
+              "RelativeToolTip": "FirstTest\\OrderRepositoryTest.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAQwNwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T12:25:27.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "CartRepositoryTest.cs",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\CartRepositoryTest.cs",
+              "RelativeDocumentMoniker": "FirstTest\\CartRepositoryTest.cs",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\CartRepositoryTest.cs",
+              "RelativeToolTip": "FirstTest\\CartRepositoryTest.cs",
+              "ViewState": "AgIAAMwAAAAAAAAAAAAswOQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T12:25:56.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "FirstTest.csproj",
+              "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\FirstTest.csproj",
+              "RelativeDocumentMoniker": "FirstTest\\FirstTest.csproj",
+              "ToolTip": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\FirstTest\\FirstTest.csproj",
+              "RelativeToolTip": "FirstTest\\FirstTest.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-17T06:02:24.716Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 49,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\Day27_Webapi_EFSolution\\Day27_Webapi_EF\\Models\\Order.cs",
@@ -1049,8 +1001,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Models\\Order.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T05:25:13.321Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T05:25:13.321Z"
             },
             {
               "$type": "Document",
@@ -1062,8 +1013,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Services\\OrderService.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAQwAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T04:06:01.82Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T04:06:01.82Z"
             },
             {
               "$type": "Document",
@@ -1075,8 +1025,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Repositories\\OrderRepository.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAwAwAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T03:50:10.511Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T03:50:10.511Z"
             },
             {
               "$type": "Document",
@@ -1088,8 +1037,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Repositories\\CouldNotAddException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T06:49:24.408Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T06:49:24.408Z"
             },
             {
               "$type": "Document",
@@ -1101,8 +1049,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Repositories\\CartRepository.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAwBYAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T03:49:14.347Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T03:49:14.347Z"
             },
             {
               "$type": "Document",
@@ -1114,8 +1061,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\DTO\\CartDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T03:59:43.83Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T03:59:43.83Z"
             },
             {
               "$type": "Document",
@@ -1127,8 +1073,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Interface\\ICartService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T04:02:54.826Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T04:02:54.826Z"
             },
             {
               "$type": "Document",
@@ -1140,8 +1085,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Services\\CartService.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAYwBcAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T04:06:32.002Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T04:06:32.002Z"
             },
             {
               "$type": "Document",
@@ -1153,8 +1097,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Services\\CustomerBasicService.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwBcAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T07:17:12.741Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T07:17:12.741Z"
             },
             {
               "$type": "Document",
@@ -1166,8 +1109,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Repositories\\OrderDetailRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T03:50:47.387Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T03:50:47.387Z"
             },
             {
               "$type": "Document",
@@ -1179,8 +1121,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Mapper\\OrderDetailProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T04:47:59.894Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T04:47:59.894Z"
             },
             {
               "$type": "Document",
@@ -1192,8 +1133,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Mapper\\ImageItemProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T13:58:28.938Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T13:58:28.938Z"
             },
             {
               "$type": "Document",
@@ -1205,8 +1145,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Mapper\\CartProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T04:48:13.682Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T04:48:13.682Z"
             },
             {
               "$type": "Document",
@@ -1218,8 +1157,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Mapper\\CustomerProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T09:23:03.525Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T09:23:03.525Z"
             },
             {
               "$type": "Document",
@@ -1231,8 +1169,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\DTO\\OrderDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T03:59:22.162Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T03:59:22.162Z"
             },
             {
               "$type": "Document",
@@ -1244,8 +1181,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\DTO\\OrderDetailDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T03:59:32.767Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T03:59:32.767Z"
             },
             {
               "$type": "Document",
@@ -1257,8 +1193,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\DTO\\ImageItemDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T13:58:56.942Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T13:58:56.942Z"
             },
             {
               "$type": "Document",
@@ -1270,8 +1205,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\DTO\\CartItemDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T03:59:56.286Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T03:59:56.286Z"
             },
             {
               "$type": "Document",
@@ -1283,8 +1217,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Controllers\\OrderDetailController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T04:30:59.564Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T04:30:59.564Z"
             },
             {
               "$type": "Document",
@@ -1296,8 +1229,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Controllers\\CartItemController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T04:31:21.35Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T04:31:21.35Z"
             },
             {
               "$type": "Document",
@@ -1309,8 +1241,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Controllers\\OrderController.cs",
               "ViewState": "AgIAADwAAAAAAAAAAAAswFQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T04:30:44.852Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T04:30:44.852Z"
             },
             {
               "$type": "Document",
@@ -1322,8 +1253,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Repositories\\CartItemRepository.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAswDEAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T03:49:42.157Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T03:49:42.157Z"
             },
             {
               "$type": "Document",
@@ -1335,8 +1265,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Services\\CartItemService.cs",
               "ViewState": "AgIAAEkAAAAAAAAAAAAkwCAAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T04:06:42.678Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T04:06:42.678Z"
             },
             {
               "$type": "Document",
@@ -1348,8 +1277,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Controllers\\CustomerController.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAxwA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T07:19:09.578Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T07:19:09.578Z"
             },
             {
               "$type": "Document",
@@ -1361,8 +1289,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Services\\OrderDetailService.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAA1wCQAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T04:06:15.001Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T04:06:15.001Z"
             },
             {
               "$type": "Document",
@@ -1374,8 +1301,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Interface\\ICartItemService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T04:03:15.115Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T04:03:15.115Z"
             },
             {
               "$type": "Document",
@@ -1387,8 +1313,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Interface\\IOrderDetailService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T04:02:39.135Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T04:02:39.135Z"
             },
             {
               "$type": "Document",
@@ -1400,8 +1325,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Interface\\IOrderService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T04:02:22.099Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T04:02:22.099Z"
             },
             {
               "$type": "Document",
@@ -1413,8 +1337,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Services\\ImageItemService.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAkwBEAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T13:53:32.463Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T13:53:32.463Z"
             },
             {
               "$type": "Document",
@@ -1426,8 +1349,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Controllers\\ImageItemController.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAowCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T14:48:52.736Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T14:48:52.736Z"
             },
             {
               "$type": "Document",
@@ -1439,8 +1361,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Repositories\\ImageItemRepository.cs",
               "ViewState": "AgIAADcAAAAAAAAAAAA7wEAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T13:42:01.572Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T13:42:01.572Z"
             },
             {
               "$type": "Document",
@@ -1452,8 +1373,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Models\\ImageItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T10:38:09.066Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T10:38:09.066Z"
             },
             {
               "$type": "Document",
@@ -1465,8 +1385,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Migrations\\20241017145545_init.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T14:55:46.574Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T14:55:46.574Z"
             },
             {
               "$type": "Document",
@@ -1500,8 +1419,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Repositories\\NotFoundException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T10:01:34.634Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T10:01:34.634Z"
             },
             {
               "$type": "Document",
@@ -1513,8 +1431,7 @@
               "RelativeToolTip": "FirstTest\\UnitTest1.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAkwBIAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T04:32:41.646Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T04:32:41.646Z"
             },
             {
               "$type": "Document",
@@ -1526,8 +1443,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Interface\\ICalculate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T04:47:54.355Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T04:47:54.355Z"
             },
             {
               "$type": "Document",
@@ -1539,8 +1455,7 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Calculate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T04:50:37.204Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T04:50:37.204Z"
             },
             {
               "$type": "Document",
@@ -1552,8 +1467,11 @@
               "RelativeToolTip": "Day27_Webapi_EF\\Interface\\ICustomerBasicService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T07:14:14.391Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T07:14:14.391Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             }
           ]
         }

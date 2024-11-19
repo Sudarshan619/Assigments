@@ -1,13 +1,20 @@
 <template>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#" style="font-family: Sour Gummy">
+      <img width="60px" src="../assets/quiz2.png" />
+      QuizTime
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-       
+        <li class="nav-item">
+          <a class="nav-link" href="#"> 
+          <router-link to="/">Home</router-link>
+          </a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="#"> 
           <router-link to="/quiz">Quiz</router-link>
@@ -33,6 +40,17 @@
         <li class="nav-item">
           <a class="nav-link" aria-disabled="true" >
             <router-link to="/login">Login</router-link>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" aria-disabled="true" >
+            <router-link to="/profile">Profile</router-link>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-disabled="true" >
+            <router-link to="/leaderboard">Board</router-link>
           </a>
         </li>
         <li @click="toggleMusic" v-if="isPlaying">
@@ -77,7 +95,11 @@
 
  }
 </script>
-<style>
+<style scoped>
+ a{
+  text-decoration: none;
+  font-family: Sour Gummy;
+ }
  .nav-item{
   border: 2px solid;
     border-radius: 20px;

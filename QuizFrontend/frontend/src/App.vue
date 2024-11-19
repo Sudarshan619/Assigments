@@ -1,6 +1,6 @@
 <template>
    <NavBarComponent></NavBarComponent>
-   <svg preserveAspectRatio="xMidYMid slice" viewBox="10 10 80 80" height="100vh" width="100%">
+   <svg preserveAspectRatio="xMidYMid slice" viewBox="10 10 80 80" min-height="100vh" width="100%">
     <defs>
         
     </defs>
@@ -48,7 +48,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -57,9 +57,7 @@ export default {
   color: #2c3e50;
 
 }
-body{
-    background-color: aliceblue !important;
-}
+
 @keyframes rotate {
   0% {
            transform: rotate(0deg);

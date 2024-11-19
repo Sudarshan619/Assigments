@@ -58,6 +58,7 @@ namespace QuizzApplicationBackend
             builder.Services.AddAutoMapper(typeof(Question));
             builder.Services.AddAutoMapper(typeof(ScoreCard));
             builder.Services.AddAutoMapper(typeof(LeaderBoard));
+            builder.Services.AddAutoMapper(typeof(Query));
             //builder.Services.AddAutoMapper(typeof(PolicyHolder));
             #endregion
 
@@ -65,6 +66,7 @@ namespace QuizzApplicationBackend
             builder.Services.AddScoped<IRepository<int, Quiz>, QuizRepository>();
             builder.Services.AddScoped<IRepository<int, Question>, QuestionRepository>();
             builder.Services.AddScoped<IRepository<int, Option>, OptionRepository>();
+            builder.Services.AddScoped<IRepository<int, Query>, QueryRepository>();
             builder.Services.AddScoped<IRepository<int, ScoreCard>, ScorecardRepository>();
             builder.Services.AddScoped<IRepository<int, LeaderBoard>, LeaderBoardRepository>();
             builder.Services.AddScoped<IRepository<string, User>, UserRepository>();
@@ -76,6 +78,7 @@ namespace QuizzApplicationBackend
             builder.Services.AddScoped<IAuthentication, UserService>();
             builder.Services.AddScoped<ITokenService, TokenService>();
             builder.Services.AddScoped<IQuestionService, QuestionService>();
+            builder.Services.AddScoped<IQueryService, QueryService>();
             builder.Services.AddScoped<IOptionService, OptionService>();
             builder.Services.AddScoped<ILeaderBoardService, LeaderBoardService>();
             builder.Services.AddScoped<IScoreCardService, ScoreCardService>();

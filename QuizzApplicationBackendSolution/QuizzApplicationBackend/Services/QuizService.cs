@@ -196,12 +196,17 @@ namespace QuizzApplicationBackend.Services
                         Points = question.Points,
                         Options = options
                             .Where(option => option.QuestionId == question.QuestionId)
-                            .Select(option => new OptionResponseDTO()
-                            {
-                                OptionId = option.OptionId,
-                                Text = option.Text
-                            })
-                            .ToList()
+                            .OrderByDescending(option => option.IsCorrect)
+                                     .Take(4)
+                                     // used to randomize the option 
+                                     .OrderBy(_ => Guid.NewGuid())
+                                     .Select(option => new OptionResponseDTO()
+                                     {
+                                         OptionId = option.OptionId,
+                                         Text = option.Text,
+
+                                     })
+                                     .ToList()
                     }).ToList();
 
                     return new QuizQuestionReponseDTO()

@@ -52,6 +52,14 @@ namespace QuizzApplicationBackend.Context
                 .HasConstraintName("FK_Quiz_creator")
                 .OnDelete(DeleteBehavior.Restrict);
 
+            modelBuilder.Entity<LeaderBoard>()
+                .HasOne(e=> e.Quiz)
+                .WithOne(e=> e.LeaderBoard)
+                .HasForeignKey<LeaderBoard>(e => e.QuizId)
+                .HasConstraintName("FK_Quiz_leaderboard")
+                .OnDelete(DeleteBehavior.Restrict);
+
+
 
         }
     }

@@ -52,7 +52,6 @@ namespace QuizzApplicationBackend.Controllers
            
         }
 
-        // POST: api/Option
         [HttpPost]
         [Authorize(Roles = "QuizzCreator")]
         public async Task<IActionResult> CreateOption(OptionDTO optionDto)
@@ -67,6 +66,29 @@ namespace QuizzApplicationBackend.Controllers
                 var success = await _optionService.CreateOption(optionDto);
                 if (success)
                     return Ok(success) ;
+
+                return BadRequest("Could not create option.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
+
+        [HttpPost("CreateMultipleOption")]
+        [Authorize(Roles = "QuizzCreator")]
+        public async Task<IActionResult> CreateMultipleOption(IEnumerable<OptionDTO> optionDto)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            try
+            {
+                var success = await _optionService.CreateOptionBulk(optionDto);
+                if (success)
+                    return Ok(success);
 
                 return BadRequest("Could not create option.");
             }

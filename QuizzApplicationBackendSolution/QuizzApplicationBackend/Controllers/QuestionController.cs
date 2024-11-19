@@ -73,6 +73,25 @@ namespace QuizzApplicationBackend.Controllers
             }
         }
 
+        [HttpGet("Search")]
+        [Authorize(Roles = "QuizzCreator")]
+        public async Task<IActionResult> SearchQuestions(string question)
+        {
+            try
+            {
+                var questions = await _questionService.Search(question);
+                return Ok(questions);
+            }
+            catch (CollectionEmptyException ex)
+            {
+                return NotFound(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Internal server error: " + ex.Message);
+            }
+        }
+
         [HttpPut("{id}")]
         [Authorize(Roles = "QuizzCreator")]
         public async Task<IActionResult> EditQuestion(int id, QuestionDTO questionDto)

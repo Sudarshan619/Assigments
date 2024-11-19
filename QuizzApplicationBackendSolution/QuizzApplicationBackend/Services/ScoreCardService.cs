@@ -33,16 +33,24 @@ namespace QuizzApplicationBackend.Services
         public async Task<bool> CreateScoreCard(SubmittedOptionDTO submittedOptionDTO)
         {
             var user = await _userRepository.GetAll();
+            //var scorecard = await _scoreCardRepository.GetAll();
+
             if(user == null)
             {
                 throw new NotFoundException("User not found while gettinf scorecard");
-            }         
+            }
+            
                 var scoreCard = _mapper.Map<ScoreCard>(submittedOptionDTO);
-                scoreCard.Score =await  CalculateScore(submittedOptionDTO);
+                scoreCard.Score = await CalculateScore(submittedOptionDTO);
                 var accuracy = await CalculateAccuracy(submittedOptionDTO, scoreCard.Score);
                 scoreCard.Acuuracy = accuracy;
                 var result = await _scoreCardRepository.Add(scoreCard);
                 return result != null;
+            
+            //if(scorecard.Any(e=>e.UserId == submittedOptionDTO.UserId && e.QuizId == submittedOptionDTO.QuizId)){
+            //    throw new Exception("User already have attempted the quiz");
+            //}
+            //return false;
             
         }
 

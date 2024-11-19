@@ -18,6 +18,8 @@ namespace QuizzApplicationBackend.Interfaces
 
         public Task<QuestionResponseDTO> GetQuestion(int id);
 
+        public  Task<IEnumerable<QuestionResponseDTO>> Search(string question);
+
 
     }
 }
