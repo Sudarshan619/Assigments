@@ -2,6 +2,7 @@
 {
     public class SubmittedOptionDTO
     {
+        
         public int QuizId { get; set; }
 
         public int UserId { get; set; }

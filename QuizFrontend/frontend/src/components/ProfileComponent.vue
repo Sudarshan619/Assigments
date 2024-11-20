@@ -151,6 +151,7 @@
                      <option value="quiz">Quiz</option>
                 </select>               
             </div>
+            
             <form class="create-form" v-if=" this.selectedCategory === 'question' ">
             <div>
                 <label for="QuestionName">Question Text</label>
@@ -213,6 +214,22 @@
             </form>
             
             <form class="create-form" v-if=" this.selectedCategory === 'option'">
+                <form >
+                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" v-model="searchQuestion">
+                 <button @click="searchQuestions()" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+               </form>
+           <section class="create-form" v-if="searchResults.length>0">
+                <h5>Available questions</h5>
+                <div v-for="searchResult in searchResults" :key="searchResult.id" class="search-result">
+                    <aside>
+                        {{ searchResult.questionName }}
+                    </aside>
+                    <button @click="onSelect" class="btn btn-primary" :value="searchResult.questionId">
+                        Select
+                    </button>
+                </div>
+               
+            </section>
             <div>
                 <label for="QuestionName">Question Id</label>
                 <input class="form-control" type="text" id="QuestionName" v-model="QuestionId">
