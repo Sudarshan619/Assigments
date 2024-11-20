@@ -73,7 +73,7 @@ namespace QuizzApplicationBackend.Services
             foreach (var selectedOption in submittedOptionDTO.Options)
             {
                 var question = questions.FirstOrDefault(q => q.Options.Any(o => o.OptionId == selectedOption.OptionId));
-                Console.WriteLine("question" + question.QuestionId);
+                
 
                 if (question != null)
                 {

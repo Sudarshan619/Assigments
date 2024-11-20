@@ -1,6 +1,6 @@
 <template>
    <NavBarComponent></NavBarComponent>
-   <svg preserveAspectRatio="xMidYMid slice" viewBox="10 10 80 80" min-height="100vh" width="100%">
+   <svg preserveAspectRatio="xMidYMid slice" viewBox="10 10 80 80" min-height="100vh" height="auto" width="100%">
     <defs>
         
     </defs>
@@ -18,6 +18,7 @@
 // import LoginComponent from './components/LoginComponent.vue'
 // import QuestionComponent from './components/QuestionComponent.vue'
 import NavBarComponent from './components/NavBarComponent.vue'
+
 
 export default {
   name: 'App',
@@ -55,7 +56,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-
+  height: 100vh !important;
+  overflow: hidden;
 }
 
 @keyframes rotate {

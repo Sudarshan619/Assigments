@@ -13,10 +13,13 @@ const routes=[
     {path: '/login', component: LoginComponent},
     {path: '/questions', component: QuestionsComponent},
     {path: '/quiz', component: QuizComponent},
-    {path:'/takequiz',component:QuizStartComponent},
     {path:'/register',component:RegisterComponent},
     {path:'/profile',component:ProfileComponent},
-    {path:'/leaderboard',component:LeaderBoardComponent}
+    {path:'/leaderboard',component:LeaderBoardComponent},
+    {path: '/takequiz/:quizId',
+        name:'takequiz',
+        component: QuizStartComponent
+    }
 ];
 
 const router = createRouter({

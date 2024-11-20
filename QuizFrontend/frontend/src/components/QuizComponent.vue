@@ -18,7 +18,7 @@
     </section>
     <!-- <a href="#" class="btn btn-primary" @click="getQuiz()"> -->
         <!-- <router-link to="/takequiz">Take Quiz</router-link> -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        <button @click="startQuiz(quiz.quizId)" type="button" class="btn btn-primary" >
             Start Quiz
         </button>
 
@@ -42,40 +42,64 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button"  class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
 </div>
 </template>
-
 <script>
-import { getAllQuiz } from '@/scripts/QuizService';
+import { ref, onMounted } from 'vue'; // Importing ref and onMounted for Composition API
+import { useRouter } from 'vue-router';
+import { getAllQuiz } from '@/scripts/QuizService'; // Make sure the import path is correct
 
- export default{
-    name:'QuizComponent',
-    data(){
-        return{
-            categoryMap:{
-                "0":"GeneralKnowledge",
-                "1":"Sports",
-                "2":"Politics",
-                "3":"Geography",
-                "4":"History"
-            },
-            imageMap:{
-                0:"gk.jpg",
-                1:"",
-                2:"political.jpg",
-                3:"geography.jpg",
-                4:"hostory.jpg"
-            },
-            quizes:[],
-            getQuiz(){
-               console.log("hello")
-            }
-        }
-    },
+export default {
+  name: 'QuizComponent',
+  setup() {
+    const router = useRouter();
+
+    // Define the reactive state using ref
+    const quizes = ref([]);
+    const categoryMap = {
+      "0": "GeneralKnowledge",
+      "1": "Sports",
+      "2": "Politics",
+      "3": "Geography",
+      "4": "History"
+    };
+    const imageMap = {
+      0: "gk.jpg",
+      1: "political.jpg",
+      2: "political.jpg",
+      3: "geography.jpg",
+      4: "history.jpg"
+    };
+
+    // Define the method to start the quiz
+    const startQuiz = (quizId) => {
+      router.push({ name: 'takequiz', params: { quizId } });
+    };
+
+    // Fetch the quizzes when the component is mounted
+    onMounted(() => {
+      getAllQuiz()
+        .then(response => {
+          quizes.value = response.data;
+          console.log(response.data);
+        })
+        .catch(error => {
+          console.error('Error fetching quizzes:', error);
+        });
+    });
+
+    // Return the state and methods to be used in the template
+    return {
+      quizes,
+      categoryMap,
+      imageMap,
+      startQuiz
+    };
+  },
     created(){
         getAllQuiz()
         .then(response =>{
