@@ -1,0 +1,69 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\wwwroot\\uploads\\user_images\\3015ca1c-7bc6-4be0-a275-4a7543dab465.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\user_images\\3015ca1c-7bc6-4be0-a275-4a7543dab465.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\wwwroot\\uploads\\user_images\\374a3e45-958e-43db-bcc3-71874f37d057.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\user_images\\374a3e45-958e-43db-bcc3-71874f37d057.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\wwwroot\\uploads\\user_images\\37a7dc93-c8c6-4b28-a9b7-683019466c4e.png",
+      "PackagePath": "staticwebassets\\uploads\\user_images\\37a7dc93-c8c6-4b28-a9b7-683019466c4e.png"
+    },
+    {
+      "Id": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\wwwroot\\uploads\\user_images\\3a665abc-d860-4ad2-91e8-f957da3f0d70.png",
+      "PackagePath": "staticwebassets\\uploads\\user_images\\3a665abc-d860-4ad2-91e8-f957da3f0d70.png"
+    },
+    {
+      "Id": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\wwwroot\\uploads\\user_images\\3b7cdb0c-f7ca-4810-9bfe-dadfe34da8d6.png",
+      "PackagePath": "staticwebassets\\uploads\\user_images\\3b7cdb0c-f7ca-4810-9bfe-dadfe34da8d6.png"
+    },
+    {
+      "Id": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\wwwroot\\uploads\\user_images\\44a883f0-5b51-4b33-8987-a8078b7c4dac.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\user_images\\44a883f0-5b51-4b33-8987-a8078b7c4dac.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\wwwroot\\uploads\\user_images\\452a43b0-15af-4c22-8683-85590f2a2d56.png",
+      "PackagePath": "staticwebassets\\uploads\\user_images\\452a43b0-15af-4c22-8683-85590f2a2d56.png"
+    },
+    {
+      "Id": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\wwwroot\\uploads\\user_images\\662715df-72e3-40b3-a08c-b1c54278e3bc.png",
+      "PackagePath": "staticwebassets\\uploads\\user_images\\662715df-72e3-40b3-a08c-b1c54278e3bc.png"
+    },
+    {
+      "Id": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\wwwroot\\uploads\\user_images\\78771739-6445-4b91-a896-ea50d1dca1d0.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\user_images\\78771739-6445-4b91-a896-ea50d1dca1d0.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\wwwroot\\uploads\\user_images\\8592c28f-cf8d-499a-bb7e-fe6f6e6a564f.png",
+      "PackagePath": "staticwebassets\\uploads\\user_images\\8592c28f-cf8d-499a-bb7e-fe6f6e6a564f.png"
+    },
+    {
+      "Id": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\wwwroot\\uploads\\user_images\\bf188708-4304-4219-880c-f156b56a88b1.png",
+      "PackagePath": "staticwebassets\\uploads\\user_images\\bf188708-4304-4219-880c-f156b56a88b1.png"
+    },
+    {
+      "Id": "C:\\Users\\sudarshan\\source\\repos\\Assignment\\QuizzApplicationBackendSolution\\QuizzApplicationBackend\\wwwroot\\uploads\\user_images\\e4f39505-578a-40dd-85d8-8b0a88cb2a56.png",
+      "PackagePath": "staticwebassets\\uploads\\user_images\\e4f39505-578a-40dd-85d8-8b0a88cb2a56.png"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.QuizzApplicationBackend.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.QuizzApplicationBackend.props",
+      "PackagePath": "build\\QuizzApplicationBackend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.QuizzApplicationBackend.props",
+      "PackagePath": "buildMultiTargeting\\QuizzApplicationBackend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.QuizzApplicationBackend.props",
+      "PackagePath": "buildTransitive\\QuizzApplicationBackend.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

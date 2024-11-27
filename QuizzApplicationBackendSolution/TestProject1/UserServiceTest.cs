@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Moq;
 using NETCore.MailKit.Core;
@@ -25,7 +26,7 @@ namespace TestProject1
         private Mock<ILogger<UserService>> loggerUserService;
         private Mock<ITokenService> mockTokenService;
         private Mock<QuizzApplicationBackend.Services.EmailService> mockEmailService;
-
+        private Mock<IMapper> _mockMapper;
         [SetUp]
         public void Setup()
         {
@@ -41,6 +42,7 @@ namespace TestProject1
             loggerUserService = new Mock<ILogger<UserService>>();
             mockEmailService = new Mock<QuizzApplicationBackend.Services.EmailService>();
             mockTokenService = new Mock<ITokenService>();
+            _mockMapper = new Mock<IMapper>();
 
             // Configure the mock TokenService to return a fixed token
             mockTokenService
@@ -55,7 +57,7 @@ namespace TestProject1
         public async Task Register_ShouldAddUser_WhenUserIsValid()
         {
             // Arrange
-            var userService = new UserService(repository, mockTokenService.Object, loggerUserService.Object);
+            var userService = new UserService(repository, mockTokenService.Object, loggerUserService.Object, _mockMapper.Object);
             var newUser = new CreateUserDTO
             {
                 Username = "TestUser",
@@ -76,7 +78,7 @@ namespace TestProject1
         public async Task Authenticate_ShouldReturnLoginResponse_WhenCredentialsAreValid()
         {
             // Arrange
-            var userService = new UserService(repository, mockTokenService.Object, loggerUserService.Object);
+            var userService = new UserService(repository, mockTokenService.Object, loggerUserService.Object, _mockMapper.Object);
 
             // Register a user for testing
             var newUser = new CreateUserDTO
@@ -107,7 +109,7 @@ namespace TestProject1
         public void Authenticate_ShouldThrowNotFoundException_WhenUserDoesNotExist()
         {
             // Arrange
-            var userService = new UserService(repository, mockTokenService.Object, loggerUserService.Object);
+            var userService = new UserService(repository, mockTokenService.Object, loggerUserService.Object, _mockMapper.Object);
 
             // Act & Assert
             Assert.ThrowsAsync<NotFoundException>(async () =>

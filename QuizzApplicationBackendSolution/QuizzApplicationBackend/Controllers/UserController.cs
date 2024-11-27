@@ -48,5 +48,34 @@ namespace QuizzApplicationBackend.Controllers
                 throw new Exception(ex.Message);
             }
         }
+
+        [HttpGet("search")]
+        public async Task<IEnumerable<LoginResponseDTO>> Search(string name)
+        {
+            try
+            {
+                var result = await _userService.Search(name);
+                return result;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        [HttpPut("update/{username}")]
+        public async Task<IActionResult> UpdateUser(string username, [FromBody] UpdateUserDTO updateUserDTO)
+        {
+            var response = await _userService.UpdateUser(username, updateUserDTO);
+            return Ok(response);
+        }
+
+        [HttpPost("upload-image/{username}")]
+        public async Task<IActionResult> UploadImage(string username, IFormFile imageFile)
+        {
+            var imagePath = await _userService.UploadImage(username, imageFile);
+            return Ok(new { ImagePath = imagePath });
+        }
+
     }
 }

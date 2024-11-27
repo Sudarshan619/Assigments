@@ -91,6 +91,22 @@
   },
   {
     "ContainingType": "QuizzApplicationBackend.Controllers.LeaderBoardController",
+    "Method": "Search",
+    "RelativePath": "api/LeaderBoard/Search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuizzApplicationBackend.Controllers.LeaderBoardController",
     "Method": "SortLeaderBoard",
     "RelativePath": "api/LeaderBoard/sort/{id}",
     "HttpMethod": "GET",
@@ -105,6 +121,11 @@
       {
         "Name": "choice",
         "Type": "QuizzApplicationBackend.Interfaces.Choice",
+        "IsRequired": false
+      },
+      {
+        "Name": "order",
+        "Type": "System.Int32",
         "IsRequired": false
       }
     ],
@@ -503,6 +524,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "QuizzApplicationBackend.Controllers.QuizController",
+    "Method": "Search",
+    "RelativePath": "api/Quiz/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "quizTitle",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "QuizzApplicationBackend.Controllers.ScoreCardController",
     "Method": "CreateScoreCard",
     "RelativePath": "api/ScoreCard",
@@ -516,6 +553,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuizzApplicationBackend.Controllers.ScoreCardController",
+    "Method": "GetAllScoreCard",
+    "RelativePath": "api/ScoreCard",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -642,5 +689,73 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "QuizzApplicationBackend.Controllers.UserController",
+    "Method": "Search",
+    "RelativePath": "User/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[QuizzApplicationBackend.DTO.LoginResponseDTO, QuizzApplicationBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "QuizzApplicationBackend.Controllers.UserController",
+    "Method": "UpdateUser",
+    "RelativePath": "User/update/{username}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateUserDTO",
+        "Type": "QuizzApplicationBackend.DTO.UpdateUserDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuizzApplicationBackend.Controllers.UserController",
+    "Method": "UploadImage",
+    "RelativePath": "User/upload-image/{username}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "imageFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

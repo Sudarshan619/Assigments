@@ -17,10 +17,12 @@ namespace QuizzApplicationBackend.Interfaces
 
         public Task<LeaderBoardResponseDTO> GetLeaderBoard(int id);
 
-        public Task<LeaderBoardResponseDTO> SortLeaderBoard(Choice choice, int id);
+        public Task<LeaderBoardResponseDTO> SortLeaderBoard(Choice choice, int id, int order);
 
         public Task<bool> UpdateLeaderBoard(int id, LeaderBoardDTO leaderBoard);
 
         public Task<bool> DeleteLeaderBoard(int id);
+
+        public Task<IEnumerable<LeaderBoardResponseDTO>> Search(string leaderBoardName);
     }
 }

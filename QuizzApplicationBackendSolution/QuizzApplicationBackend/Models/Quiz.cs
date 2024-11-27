@@ -36,9 +36,9 @@ namespace QuizzApplicationBackend.Models
 
         public DateTime DateOfCreation { get; set; } = DateTime.Now;
 
-        public bool isEnded  { get; set; } = false;
+        public int Duration { get; set; }
 
-        public ICollection<Question> Questions { get; set; } = new List<Question>();
+        public bool isEnded  { get; set; } = false;
 
         public User User { get; set; }
 

@@ -26,8 +26,7 @@ namespace QuizzApplicationBackend.Services
             {
                 var quiz = _mapper.Map<Quiz>(quizDto);
 
-                var question = await GetRandomQuestionsByCategory(quiz.Category, quizDto.NoOfQuestions);
-                quiz.Questions = question.ToList();
+                var question = await GetRandomQuestionsByCategory(quiz.Category, quizDto.NoOfQuestions, quizDto.Difficulty);
                 quiz.NoOfQuestions = quizDto.NoOfQuestions;
                 quiz.MaxPoint = question.Select(q => q.Points).Sum();
 
@@ -63,7 +62,7 @@ namespace QuizzApplicationBackend.Services
             {
                 var existingQuiz = await _quizRepository.Get(id);
                 var updatedQuiz = _mapper.Map(quizDto, existingQuiz);
-                var question = await GetRandomQuestionsByCategory(updatedQuiz.Category, quizDto.NoOfQuestions);
+                var question = await GetRandomQuestionsByCategory(updatedQuiz.Category, quizDto.NoOfQuestions,quizDto.Difficulty);
                 updatedQuiz.MaxPoint = question.Select(e => e.Points).Sum();
 
                 var result = await _quizRepository.Update(id, updatedQuiz);
@@ -92,10 +91,10 @@ namespace QuizzApplicationBackend.Services
 
                 var questions = await _questionRepository.GetAll();
 
-                var quizQuestions = questions
-                .Where(q => q.Category == quiz.Category)
-                .Take(quiz.NoOfQuestions)
-                .ToList();
+                var quizQuestions = await GetRandomQuestionsByCategory(quiz.Category, quiz.NoOfQuestions, quiz.Difficulty);
+                //.Where(q => q.Category == quiz.Category && q.Difficulty == quiz.Difficulty)
+                //.Take(quiz.NoOfQuestions)
+                //.ToList();
 
                 var options = await _optionRepository.GetAll();
 
@@ -126,6 +125,7 @@ namespace QuizzApplicationBackend.Services
                 {
                     QuizId = quiz.QuizId,
                     Title = quiz.Title,
+                    Duration = quiz.Duration,
                     Difficulty = quiz.Difficulty.ToString(),
                     questions = questionDtos,
                     MaxPoints = quiz.MaxPoint,
@@ -138,12 +138,12 @@ namespace QuizzApplicationBackend.Services
         }
 
         // Other than CRUD
-        public async Task<IEnumerable<Question>> GetRandomQuestionsByCategory(Categories category, int noOfQuestions)
+        public async Task<IEnumerable<Question>> GetRandomQuestionsByCategory(Categories category, int noOfQuestions, Difficulties difficulty)
         {
             try
             {
                 var questions = await _questionRepository.GetAll();
-                var filteredQuestions = questions.Where(q => q.Category == category).ToList();
+                var filteredQuestions = questions.Where(q => q.Category == category && q.Difficulty == difficulty).ToList();
 
                 if (!filteredQuestions.Any())
                 {
@@ -167,13 +167,15 @@ namespace QuizzApplicationBackend.Services
             }
         }
 
-        public async Task<IEnumerable<QuizQuestionReponseDTO>> GetAllQuizzesWithQuestions()
+        public async Task<IEnumerable<QuizQuestionReponseDTO>> Search(string quizTitle)
         {
             try
             {
                 var quizzes = await _quizRepository.GetAll();
+                var requiredQuiz = quizzes.Where(q => !string.IsNullOrEmpty(q.Title) &&
+                        q.Title.Contains(quizTitle, StringComparison.OrdinalIgnoreCase));
 
-                if (!quizzes.Any())
+                if (!requiredQuiz.Any())
                 {
                     throw new CollectionEmptyException("No quizzes available.");
                 }
@@ -181,7 +183,7 @@ namespace QuizzApplicationBackend.Services
                 var questions = await _questionRepository.GetAll();
                 var options = await _optionRepository.GetAll();
 
-                var quizResponseDtos = quizzes.Select(quiz =>
+                var quizResponseDtos = requiredQuiz.Select(quiz =>
                 {
                     var quizQuestions = questions
                         .Where(q => q.Category == quiz.Category)
@@ -212,6 +214,68 @@ namespace QuizzApplicationBackend.Services
                     return new QuizQuestionReponseDTO()
                     {
                         QuizId = quiz.QuizId,
+                        Duration = quiz.Duration,
+                        Title = quiz.Title,
+                        Difficulty = quiz.Difficulty.ToString(),
+                        MaxPoints = quiz.MaxPoint,
+                        questions = questionDtos
+                    };
+                });
+
+                return quizResponseDtos;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public async Task<IEnumerable<QuizQuestionReponseDTO>> GetAllQuizzesWithQuestions()
+        {
+            try
+            {
+                var quizzes = await _quizRepository.GetAll();
+
+                if (!quizzes.Any())
+                {
+                    throw new CollectionEmptyException("No quizzes available.");
+                }
+
+                var questions = await _questionRepository.GetAll();
+                var options = await _optionRepository.GetAll();
+
+                var quizResponseDtos = quizzes.Select(quiz =>
+                {
+                    var quizQuestions = questions
+                        .Where(q => q.Category == quiz.Category && q.Difficulty == quiz.Difficulty)
+                        .Take(quiz.NoOfQuestions)
+                        .ToList();
+
+                    var questionDtos = quizQuestions.Select(question => new QuestionResponseDTO()
+                    {
+                        QuestionId = question.QuestionId,
+                        QuestionName = question.QuestionName,
+                        Category = question.Category,
+                        Points = question.Points,
+                        Options = options
+                            .Where(option => option.QuestionId == question.QuestionId)
+                            .OrderByDescending(option => option.IsCorrect)
+                                     .Take(4)
+                                     // used to randomize the option 
+                                     .OrderBy(_ => Guid.NewGuid())
+                                     .Select(option => new OptionResponseDTO()
+                                     {
+                                         OptionId = option.OptionId,
+                                         Text = option.Text,
+
+                                     })
+                                     .ToList()
+                    }).ToList();
+
+                    return new QuizQuestionReponseDTO()
+                    {
+                        QuizId = quiz.QuizId,
+                        Duration = quiz.Duration,
                         Title = quiz.Title,
                         Difficulty = quiz.Difficulty.ToString(),
                         MaxPoints = quiz.MaxPoint,
@@ -244,7 +308,7 @@ namespace QuizzApplicationBackend.Services
                 var quizResponseDtos = filteredQuiz.Select(quiz =>
                 {
                     var quizQuestions = questions
-                        .Where(q => q.Category == quiz.Category)
+                        .Where(q => q.Category == quiz.Category && q.Difficulty == quiz.Difficulty)
                         .Take(quiz.NoOfQuestions)
                         .ToList();
 
@@ -267,6 +331,7 @@ namespace QuizzApplicationBackend.Services
                     return new QuizQuestionReponseDTO()
                     {
                         QuizId = quiz.QuizId,
+                        Duration  = quiz.Duration,
                         Title = quiz.Title,
                         Difficulty = quiz.Difficulty.ToString(),
                         MaxPoints = quiz.MaxPoint,

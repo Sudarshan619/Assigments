@@ -33,7 +33,7 @@ namespace QuizzApplicationBackend.Services
                 var requiredquiz = quiz.FirstOrDefault(e => e.QuizId == _leaderBoard.QuizId);
                 var requiredScores = scoreCards.Where(e => e.QuizId == requiredquiz.QuizId);
                 var leaderBoard = _mapper.Map<LeaderBoard>(_leaderBoard);
-                leaderBoard.ScoreCard = scoreCards;
+                //leaderBoard.ScoreCard = requiredScores.ToList();
                 var result =  await _leaderBoardRepository.Add(leaderBoard);
                 return result != null;
             }
@@ -67,6 +67,7 @@ namespace QuizzApplicationBackend.Services
                 .Select(sc => new ScoreCardResponseDTO
                 {
                     ScoreCardId = sc.ScoreCardId,
+                    Image = users.FirstOrDefault(u => u.Id == sc.UserId)?.Image ?? "user.jpg",
                     Username = users.FirstOrDefault(u => u.Id == sc.UserId)?.Name ?? "Unknown User",
                     Score = sc.Score,
                     QuizId = sc.QuizId,
@@ -82,6 +83,9 @@ namespace QuizzApplicationBackend.Services
 
                 return new LeaderBoardResponseDTO()
                 {
+                    LeaderBoardId = leaderBoard.LeaderBoardId,
+                    StartingFrom = leaderBoard.StartingFrom,
+                    Ending = leaderBoard.Ending,
                     LeaderBoardName = leaderBoard.LeaderBoardName,
                     Category = leaderBoard.Categories.ToString(),
                     ScoreCards = scoreCardDtos
@@ -90,6 +94,70 @@ namespace QuizzApplicationBackend.Services
             catch (Exception ex)
             {
                 throw new Exception("Could not get leader board: " + ex.Message);
+            }
+        }
+
+        public async Task<IEnumerable<LeaderBoardResponseDTO>> Search(string leaderBoardName)
+        {
+            try
+            {
+                var leaderBoards = await _leaderBoardRepository.GetAll();
+
+                if (!leaderBoards.Any())
+                {
+                    throw new CollectionEmptyException("No leaderBoard found");
+                }
+
+
+                var scoreCards = await _scoreCardRepository.GetAll();
+                var quizzes = await _quizRepository.GetAll();
+
+                var users = await _userRepo.GetAll();
+
+                var requiredLeaderBoard = leaderBoards.Where(q => 
+                        q.LeaderBoardName.Contains(leaderBoardName, StringComparison.OrdinalIgnoreCase));
+
+                var leaderBoardDTOs = requiredLeaderBoard.Select(leaderBoard =>
+                {
+
+                    var requiredQuiz = quizzes.FirstOrDefault(q => q.QuizId == leaderBoard.QuizId);
+                    if (requiredQuiz == null)
+                    {
+                        throw new Exception("Quiz with specified category not found");
+                    }
+                    var sortedScoreCards = scoreCards
+                   .Select(sc => new ScoreCardResponseDTO
+                   {
+                       ScoreCardId = sc.ScoreCardId,
+                       Image = users.FirstOrDefault(u=> u.Id == sc.UserId)?.Image ?? "user.jpg",
+                       Username = users.FirstOrDefault(u => u.Id == sc.UserId)?.Name ?? "Unknown User",
+                       Score = sc.Score,
+                       QuizId = sc.QuizId,
+                       Acuuracy = sc.Acuuracy
+                   });
+
+                    var scoreCardDtos = sortedScoreCards
+                        .Where(sc => sc.QuizId == requiredQuiz.QuizId)
+                        .Select(sc => _mapper.Map<ScoreCardResponseDTO>(sc))
+                        .ToList();
+
+
+                    return new LeaderBoardResponseDTO
+                    {
+                        LeaderBoardId = leaderBoard.LeaderBoardId,
+                        StartingFrom = leaderBoard.StartingFrom,
+                        Ending = leaderBoard.Ending,
+                        LeaderBoardName = leaderBoard.LeaderBoardName,
+                        Category = leaderBoard.Categories.ToString(),
+                        ScoreCards = scoreCardDtos
+                    };
+                }).ToList();
+
+                return leaderBoardDTOs;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Could not retrieve leader boards: " + ex.Message);
             }
         }
 
@@ -128,6 +196,7 @@ namespace QuizzApplicationBackend.Services
                 .Select(sc => new ScoreCardResponseDTO
                 {
                     ScoreCardId = sc.ScoreCardId,
+                    Image = users.FirstOrDefault(u => u.Id == sc.UserId)?.Image ?? "user.jpg",
                     Username = users.FirstOrDefault(u => u.Id == sc.UserId)?.Name ?? "Unknown User",
                     Score = sc.Score,
                     QuizId = sc.QuizId,
@@ -142,6 +211,9 @@ namespace QuizzApplicationBackend.Services
 
                     return new LeaderBoardResponseDTO
                     {
+                        LeaderBoardId = leaderBoard.LeaderBoardId,
+                        StartingFrom = leaderBoard.StartingFrom,
+                        Ending = leaderBoard.Ending,
                         LeaderBoardName = leaderBoard.LeaderBoardName,
                         Category = leaderBoard.Categories.ToString(),
                         ScoreCards = scoreCardDtos
@@ -156,17 +228,20 @@ namespace QuizzApplicationBackend.Services
             }
         }
 
-        public async Task<LeaderBoardResponseDTO> SortLeaderBoard(Choice choice,int id)
+        public async Task<LeaderBoardResponseDTO> SortLeaderBoard(Choice choice,int id,int order)
         {
             var scoreCards = await _scoreCardRepository.GetAll();
             var leaderBoard = await _leaderBoardRepository.Get(id);
      
             var users = await _userRepo.GetAll();
 
+            
+
             var sortedScoreCards = scoreCards
                 .Select(sc => new ScoreCardResponseDTO
                 {
                     ScoreCardId = sc.ScoreCardId,
+                    Image = users.FirstOrDefault(u => u.Id == sc.UserId)?.Image ?? "user.jpg",
                     Username = users.FirstOrDefault(u => u.Id == sc.UserId)?.Name ?? "Unknown User",
                     Score = sc.Score,
                     QuizId = sc.QuizId,
@@ -175,20 +250,42 @@ namespace QuizzApplicationBackend.Services
 
             if (choice == Choice.Score)
             {
-                sortedScoreCards = sortedScoreCards.OrderByDescending(sc => sc.Score).ToList();
+                if(order == 1)
+                {
+                    sortedScoreCards = sortedScoreCards.OrderByDescending(sc => sc.Score).ToList();
+                }
+                else
+                {
+                    sortedScoreCards = sortedScoreCards.OrderBy(sc => sc.Score).ToList();
+                }
+                
             }
             else if (choice == Choice.Username)
             {
-                sortedScoreCards = sortedScoreCards.OrderBy(sc => sc.Username).ToList();
+                if(order == 1)
+                {
+                    sortedScoreCards = sortedScoreCards.OrderByDescending(sc => sc.Username).ToList();
+                }
+                else
+                {
+                    sortedScoreCards = sortedScoreCards.OrderBy(sc => sc.Username).ToList();
+                }
+               
             }
+
+            var scoreCardDtos = sortedScoreCards
+                        .Where(sc => sc.QuizId == leaderBoard.QuizId)
+                        .Select(sc => _mapper.Map<ScoreCardResponseDTO>(sc))
+                        .ToList();
 
             return new LeaderBoardResponseDTO
             {
+                LeaderBoardId = leaderBoard.LeaderBoardId,
+                StartingFrom = leaderBoard.StartingFrom,
+                Ending = leaderBoard.Ending,
                 LeaderBoardName = leaderBoard.LeaderBoardName,
                 Category = leaderBoard.Categories.ToString(),
-                ScoreCards = sortedScoreCards
-                    .Select(sc => _mapper.Map<ScoreCardResponseDTO>(sc))
-                    .ToList()
+                ScoreCards = scoreCardDtos
             };
 
         }

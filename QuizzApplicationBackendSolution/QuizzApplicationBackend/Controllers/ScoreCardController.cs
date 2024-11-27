@@ -83,5 +83,23 @@ namespace QuizzApplicationBackend.Controllers
                 return StatusCode(500, "Internal server error.");
             }
         }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllScoreCard()
+        {
+            try
+            {
+                var scoreCard = await _scoreCardService.GetAllScoreCards();
+                return Ok(scoreCard);
+            }
+            catch (NotFoundException)
+            {
+                return NotFound($"ScoreCard is empty");
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "Internal server error.");
+            }
+        }
     }
 }

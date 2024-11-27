@@ -103,7 +103,6 @@ namespace QuizzApplicationBackend.Repositories
 
                 existingLeaderBoard.LeaderBoardName = entity.LeaderBoardName;
                 existingLeaderBoard.Categories = entity.Categories;
-                existingLeaderBoard.ScoreCard = entity.ScoreCard;
 
                 LeaderBoardContext.LeaderBoards.Update(existingLeaderBoard);
                 await LeaderBoardContext.SaveChangesAsync();

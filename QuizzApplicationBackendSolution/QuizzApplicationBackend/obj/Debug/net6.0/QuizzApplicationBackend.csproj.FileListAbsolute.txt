@@ -76,3 +76,4 @@ C:\Users\sudarshan\source\repos\Assignment\QuizzApplicationBackendSolution\Quizz
 C:\Users\sudarshan\source\repos\Assignment\QuizzApplicationBackendSolution\QuizzApplicationBackend\bin\Debug\net6.0\MimeKit.dll
 C:\Users\sudarshan\source\repos\Assignment\QuizzApplicationBackendSolution\QuizzApplicationBackend\bin\Debug\net6.0\NETCore.MailKit.dll
 C:\Users\sudarshan\source\repos\Assignment\QuizzApplicationBackendSolution\QuizzApplicationBackend\bin\Debug\net6.0\BouncyCastle.Crypto.dll
+C:\Users\sudarshan\source\repos\Assignment\QuizzApplicationBackendSolution\QuizzApplicationBackend\bin\Debug\net6.0\QuizzApplicationBackend.staticwebassets.runtime.json
