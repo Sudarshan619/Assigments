@@ -5,6 +5,7 @@ namespace QuizzApplicationBackend.Models
 {
     public class ScoreCard
     {
+
         [Key]
         public int ScoreCardId { get; set; }
 
@@ -18,7 +19,10 @@ namespace QuizzApplicationBackend.Models
 
         public Quiz Quiz { get; set; }
 
-        public User User { get; set; }   
+        public User User { get; set; }
+
+        [NotMapped]
+        public LeaderBoard LeaderBoard { get; set; }
 
     }
 }

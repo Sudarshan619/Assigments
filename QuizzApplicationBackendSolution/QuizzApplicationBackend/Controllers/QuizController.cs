@@ -128,6 +128,24 @@ namespace QuizzApplicationBackend.Controllers
             }
         }
 
+        [HttpGet("search")]
+        public async Task<IActionResult> Search(string quizTitle)
+        {
+            try
+            {
+                var quizzes = await _quizService.Search(quizTitle);
+                return Ok(quizzes);
+            }
+            catch (CollectionEmptyException ex)
+            {
+                return NotFound("No quizzes found.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Internal server error: " + ex.Message);
+            }
+        }
+
         [HttpGet("by category")]
         public async Task<IActionResult> GetAllQuizzes(Categories category)
         {

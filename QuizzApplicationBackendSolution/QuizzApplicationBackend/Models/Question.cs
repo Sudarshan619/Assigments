@@ -15,6 +15,10 @@ namespace QuizzApplicationBackend.Models
 
         public int Points { get; set; }
 
+        public Difficulties Difficulty { get; set; }
+
         public ICollection<Option> Options { get; set; } = new List<Option>();
+
+
     }
 }

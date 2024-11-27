@@ -62,11 +62,11 @@ namespace QuizzApplicationBackend.Controllers
         }
 
         [HttpGet("sort/{id}")]
-        public async Task<IActionResult> SortLeaderBoard(int id, Choice choice)
+        public async Task<IActionResult> SortLeaderBoard(int id, Choice choice,int order)
         {
             try
             {
-                var sortedLeaderBoard = await _leaderBoardService.SortLeaderBoard(choice, id);
+                var sortedLeaderBoard = await _leaderBoardService.SortLeaderBoard(choice, id,order);
                 return Ok(sortedLeaderBoard);
             }
             catch (Exception ex)
@@ -81,6 +81,24 @@ namespace QuizzApplicationBackend.Controllers
             try
             {
                 var leaderBoards = await _leaderBoardService.GetAllLeaderBoard(pageNumber,pageSize);
+                return Ok(leaderBoards);
+            }
+            catch (CollectionEmptyException ex)
+            {
+                return NotFound(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
+
+        [HttpGet("Search")]
+        public async Task<IActionResult> Search(string name)
+        {
+            try
+            {
+                var leaderBoards = await _leaderBoardService.Search(name);
                 return Ok(leaderBoards);
             }
             catch (CollectionEmptyException ex)

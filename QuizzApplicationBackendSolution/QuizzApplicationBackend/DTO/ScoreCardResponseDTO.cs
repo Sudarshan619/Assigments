@@ -6,6 +6,10 @@
         
         public int QuizId { get; set; }
 
+        public string QuizName { get; set; }
+
+        public string Image { get; set; }
+
         public string Username { get; set; }
 
         public int Score { get; set; }

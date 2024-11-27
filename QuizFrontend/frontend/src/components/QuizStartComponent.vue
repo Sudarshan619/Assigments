@@ -3,28 +3,56 @@
 <template>
  
  <header class="quiz-header">
-<h1 style="text-align: center;">{{ quizes.title }}</h1>
+  <div class="report-holder">
+     <h1 style="text-align: center;" class="title">{{ quizes.title }}</h1>
+     <div>
+       <button class="btn btn-warning report" >Report</button>
+     </div> 
+    </div>
  
  <div class="container">
 	<section class="quiz-section" :key="currentQuestion.id" :id="currentQuestion.questionId"> 
+    <TimerComponent v-if="duration > 0" :duration="duration"  @expired="handleTimeExpiry"  />
+     
     <aside class="question-text">
       {{currentQuestion.questionName }}
     </aside>
     <aside class="option-holder">    
-            <label :for="option.optionId" class="option-input" v-for="option in currentQuestion.options" v-bind:key="option.id" >
+            <label :for="option.optionId" class="option-input" :class="{ active1: isContainsOption(option.optionId)}" v-for="option in currentQuestion.options" v-bind:key="option.id" >
                 <span>{{ option.text }}</span>
-                <input @click="onclick" class="form-control" type="radio" :id="option.optionId" v-model="QuestionId" :value="option.optionId" v-bind:style="{ background:isSelected?'green':'' }">
-            </label>   
-            <div>
-               Submitted Option: {{}}
-            </div>      
+                <input v-if="!isSelected(option.optionId)" @click="onclick" class="form-control" type="radio" :id="option.optionId"  v-model="QuestionId" :value="option.optionId" >
+                <span v-if="isSelected(option.optionId)"
+                  @click="onclick" class="form-control" type="radio" :id="option.optionId" :value="option.optionId" :class="{ selected: isSelected(option.optionId)}">
+                  <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                </span>
+            </label>        
     </aside>
     
     <div class="next-prev-div">
         <button class="btn btn-warning" @click="submit(currentQuestion.questionId)" type="submit">Save and submit</button>
-        <button v-if="currentPage == quizQuestions.length" class="btn btn-success" @click="submitQuiz" type="submit">Submit Quiz</button>
+        <button v-if="currentPage == quizQuestions.length" class="btn btn-success" type="submit" data-toggle="modal" data-target="#exampleModal">Submit Quiz</button>
     </div>
     
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Are you sure you want to submit the test</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" v-if="quiz">
+       
+         <p></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button"  class="btn btn-danger" data-dismiss="modal">Go back</button>
+        <button type="button" class="btn btn-primary" @click="submitQuiz"  data-dismiss="modal">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
  </section>
 			
 		</div>
@@ -32,7 +60,7 @@
   <button 
     class="page-btn page-step" 
     :class="{ active: currentPage === 1 }" 
-    @click="changePage(1)">
+    @click="changePage(currentPage-1)">
     «
   </button>
   <a 
@@ -46,7 +74,7 @@
   <button 
     class="page-btn page-step" 
     :class="{ active: currentPage === quizQuestions.length }" 
-    @click="changePage(quizQuestions.length)">
+    @click="changePage(currentPage+1)">
     »
   </button>
 </div>
@@ -56,12 +84,17 @@
 
 <script>
 import { getQuiz,submitQuiz } from '@/scripts/QuizService';
+import TimerComponent from './TimerComponent.vue';
+import { toast } from 'vue3-toastify';
+import 'vue3-toastify/dist/index.css';
+import router from '@/scripts/router';
+// import localforage from 'localforage';
 // import {Paginate} from 'vuejs-paginate-next';
 //Registration using vue is not supported in vue3 needs to be added in components
 
 export default {
     name:'QuizStartComponent',
-
+    components:{TimerComponent},
     data(){
         return{
             quizes:[],
@@ -69,23 +102,55 @@ export default {
             currentPage:1,
             currentOption:'',
             currentQuestion:'',
+            duration:0,
             QuizId:'',
             response:{              
-                quizId:1,
-                userId:1,
+                quizId:6,
+                userId:sessionStorage.getItem('Id'),
                 options:[]           
             },
         }
     },
     methods:{
+              initializeQuiz(quizData) {
+                this.quizes = quizData;
+                this.duration = quizData.duration;
+                this.quizQuestions = quizData.questions;
+                this.currentQuestion = this.quizQuestions[0];
+                console.log(this.quizQuestions);
+            },
+            handleTimeExpiry(){
+                toast("Your time is completed submitting the quix",{
+                  autoClose:4000
+                   }  
+                )
+                this.submitQuiz();
+               
+            },
             changePage(page) {
-                this.currentPage = page;
+                 this.currentPage = page;
                  this.currentQuestion = this.quizQuestions[page - 1]; // Update question
             },
             onclick(event){
               console.log(event.target.value);
               this.currentOption = event.target.value;
               console.log(this.response.options)
+            },
+            isContainsOption(optionId){
+              const storedAnswers = sessionStorage.getItem('Answers');
+               if (!storedAnswers) return false; // Return false if no data is stored
+         
+               const answers = JSON.parse(storedAnswers) || [] ;
+              //  if (!answers.options || !Array.isArray(answers.options)) {
+              //   console.log(answers.options)
+              //   console.log("false")
+              //   return false
+              // } 
+         
+               return answers.find((respOption) => respOption.optionId === optionId);
+            },
+            isSelected(optionId) {
+                return this.currentOption === optionId.toString();
             },
             submit(questionId) {
                 let answers = JSON.parse(sessionStorage.getItem('Answers') || '[]');
@@ -109,7 +174,7 @@ export default {
                     obj.optionId = parseInt(this.currentOption, 10); // Update existing option
             
                     // Reflect changes in response.Options
-                    let existingResponseOption = this.response[0].options.find(
+                    let existingResponseOption = this.response.options.find(
                         (opt) => opt.questionId === questionId
                     );
                     if (existingResponseOption) {
@@ -136,24 +201,45 @@ export default {
               console.log(this.currentQuestion[0]);
             },
             submitQuiz(){
-              event.preventDefault();
+              console.log(JSON.parse(sessionStorage.getItem('Answers')))
+              this.response.options = JSON.parse(sessionStorage.getItem('Answers') || [])
                submitQuiz(this.response)
                .then(data => {
-                console.log(data)
+                console.log(data);
+                toast(`${data.data} ,do not refresh automatically redirecting to home page`, {
+                    autoClose: 4000,
+                 });
+                 setTimeout(() => {
+                  router.push("/")
+                 }, 4000);
+                 
                })
+               sessionStorage.removeItem('Answers')
             }
           },
-            
-    created(){
-        let quizId = this.$route.params.quizId;
+          created() {
+    let quizId = this.$route.params.quizId;
+    this.response.quizId = quizId;
+
+    const cachedQuiz = sessionStorage.getItem(`quiz_${quizId}`);
+    
+    if (cachedQuiz) {
+        // Parse and use the cached data
+        const quizData = JSON.parse(cachedQuiz);
+        this.initializeQuiz(quizData);
+    } else {
         getQuiz(quizId)
-            .then(response =>{
-                this.quizes = response.data;
-                this.quizQuestions = response.data.questions
-                this.currentQuestion = this.quizQuestions[0];
-                console.log(this.currentQuestion);
+            .then(response => {
+                const quizData = response.data;
+                this.initializeQuiz(quizData);
+                sessionStorage.setItem(`quiz_${quizId}`, JSON.stringify(quizData));
             })
-         }  
+            .catch(error => {
+                console.error("Error fetching quiz:", error);
+            });
+    }
+},
+
 }
   
 </script>
@@ -169,10 +255,27 @@ export default {
     background: #65b3f8;
     padding: 20px;
   }
+  .form-control{
+    position: relative;
+  }
+  .selected{
+    background-color: green;
+  }
+  .active1{
+    background-color: rgb(171, 229, 171) !important;
+  }
   
   .next-prev-div{
     display: flex;
     justify-content: space-between;
+  }
+  svg{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    fill: white;
   }
   .quiz-section{
     width: 80%;
@@ -217,6 +320,10 @@ export default {
     flex-wrap: wrap;
     gap: 8px;
     justify-content: center;
+  }
+  .container{
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 700;
   }
   h1{
     font-family: Sour Gummy;
@@ -285,39 +392,40 @@ html {
 .page-step {
   display: none;
 }
-
-.container:has(#page-1:target) > .vegetables > .list {
-  transform: translateX(0%);
-}
-.container:has(#page-1:target) .page-step[data-shown="1"] {
-  display: inline-flex;
-}
-
-.container:has(#page-2:target) > .vegetables > .list {
-  transform: translateX(-100%);
-}
-.container:has(#page-2:target) .page-step[data-shown="2"] {
-  display: inline-flex;
+.report-holder{
+  display: flex;
+  width: 80%;
+  align-items: center;
+  margin: auto
 }
 
-.container:has(#page-3:target) > .vegetables > .list {
-  transform: translateX(-200%);
-}
-.container:has(#page-3:target) .page-step[data-shown="3"] {
-  display: inline-flex;
+.title{
+  width: 100%;
 }
 
-.container:has(#page-4:target) > .vegetables > .list {
-  transform: translateX(-300%);
-}
-.container:has(#page-4:target) .page-step[data-shown="4"] {
-  display: inline-flex;
+@media screen and (max-width: 760px) {
+  .quiz-header{
+    width: 100%;
+    margin: 0
+  }
 }
 
-.container:has(#page-5:target) > .vegetables > .list {
-  transform: translateX(-400%);
+@media screen and (max-width: 560px) {
+  .option-input{
+    width: 100%;
+  }
+  .quiz-section{
+    width: 100%;
+  }
+  
 }
-.container:has(#page-5:target) .page-step[data-shown="5"] {
-  display: inline-flex;
+
+@media  screen and (max-width:380px) {
+  .next-prev-div{
+    flex-direction: column;
+    gap: 8px;
+  }
 }
+
+
 </style>

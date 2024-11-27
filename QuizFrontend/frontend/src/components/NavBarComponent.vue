@@ -20,50 +20,51 @@
           <router-link to="/quiz">Quiz</router-link>
           </a>
         </li>
-    
-        <li class="nav-item">
-          <a class="nav-link" href="#"> 
-            <router-link to="/questions">Products</router-link>
-          </a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
+
+        <!-- <li class="nav-item" v-if="role== 1">
           <a class="nav-link" aria-disabled="true" >
-            <router-link to="/login">Login</router-link>
+            <router-link to="/profile">Creator Profile</router-link>
           </a>
         </li>
 
-        <li class="nav-item">
+        <li class="nav-item" v-if="role== 0">
           <a class="nav-link" aria-disabled="true" >
-            <router-link to="/profile">Profile</router-link>
+            <router-link to="/userprofile">User Profile</router-link>
           </a>
-        </li>
+        </li> -->
+
         <li class="nav-item">
           <a class="nav-link" aria-disabled="true" >
             <router-link to="/leaderboard">Board</router-link>
           </a>
         </li>
-        <li @click="toggleMusic" v-if="isPlaying">
-          <svg width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M48 64C21.5 64 0 85.5 0 112L0 400c0 26.5 21.5 48 48 48l32 0c26.5 0 48-21.5 48-48l0-288c0-26.5-21.5-48-48-48L48 64zm192 0c-26.5 0-48 21.5-48 48l0 288c0 26.5 21.5 48 48 48l32 0c26.5 0 48-21.5 48-48l0-288c0-26.5-21.5-48-48-48l-32 0z"/></svg>
+        
+        <div>
+        <li class="nav-item dropdown" v-if="isLoggedin">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dashboard
+            <img width="52px" style="border-radius:50%"  :src="image">
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li v-if="role== 0"><a class="dropdown-item" href="#"><router-link to="/profile">Creator Profile</router-link></a></li>
+            <li v-if="role == 1"><a class="dropdown-item" href="#">  <router-link to="/userprofile">User Profile</router-link></a></li>
+            <li v-if="isLoggedin"><a class="dropdown-item" href="#"><router-link to="/login" @click="logout">Logout</router-link></a></li>
+            <!-- <li><hr class="dropdown-divider"></li> -->
+          </ul>
         </li>
-        <li @click="toggleMusic" v-if="!isPlaying">
-          <svg width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+        <li class="nav-item" v-if="!isLoggedin">
+          <a class="nav-link" aria-disabled="true">
+            <router-link to="/login">Login</router-link>
+          </a>
         </li>
+      </div>
       </ul>
       <!-- <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form> -->
+      
     </div>
   </div>
  
@@ -75,7 +76,10 @@
     name:'NavBarComponent',
     data(){
       return{
+        image:"http://localhost:5193"+sessionStorage.getItem('Image'),
         isPlaying: false,
+        isLoggedin :false,
+        role:1,
       }
     },
     mounted() {
@@ -91,8 +95,22 @@
         this.audio.pause();
       }
     },
+    isLogged(){
+          if(sessionStorage.getItem('Token')){
+            this.isLoggedin = true;
+            this.role = sessionStorage.getItem("Role")
+          }
+    },
+     logout(){
+      sessionStorage.removeItem('Token');
+      sessionStorage.removeItem('Answers');
+      sessionStorage.clear();
+      this.isLoggedin = false
+     }
   },
-
+  created(){
+    this.isLogged();
+  }
  }
 </script>
 <style scoped>
@@ -100,10 +118,32 @@
   text-decoration: none;
   font-family: Sour Gummy;
  }
- .nav-item{
-  border: 2px solid;
+ .nav-item {
     border-radius: 20px;
- }
+    font-size: 24px;
+    position: relative; /* Needed for positioning the pseudo-element */
+    display: inline-block; /* Ensure it respects content width */
+}
+.logout{
+  display: flex;
+    width: 12%;
+}
+
+.nav-item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    height: 4px; 
+    width: 0; 
+    background-color: rgb(138, 163, 247);
+    transition: width 0.3s ease;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
  .navbar-nav{
     display: flex;
     justify-content: center;

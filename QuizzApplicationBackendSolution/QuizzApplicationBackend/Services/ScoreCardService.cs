@@ -53,6 +53,7 @@ namespace QuizzApplicationBackend.Services
             //return false;
             
         }
+        
 
         public async Task<int> CalculateScore(SubmittedOptionDTO submittedOptionDTO)
         {
@@ -141,6 +142,7 @@ namespace QuizzApplicationBackend.Services
                 var user = await _userRepository.GetAll();
                 var requiredUser = user.FirstOrDefault(e => e.Id == scoreCard.UserId);
                 score.Username = requiredUser.Name;
+               
 
                 return score;
             }
@@ -151,6 +153,33 @@ namespace QuizzApplicationBackend.Services
             }
             
         }
+
+        public async Task<IEnumerable<ScoreCardResponseDTO>> GetAllScoreCards()
+        {
+            var scoreCards = await _scoreCardRepository.GetAll();
+            if (scoreCards == null || !scoreCards.Any())
+            {
+                throw new NotFoundException("No scorecards found.");
+            }
+
+            var users = await _userRepository.GetAll();
+            var quizes = await _quizRepository.GetAll();
+
+            var response = scoreCards.Select(scoreCard =>
+            {
+                var scoreCardDto = _mapper.Map<ScoreCardResponseDTO>(scoreCard);
+
+                var user = users.FirstOrDefault(u => u.Id == scoreCard.UserId);
+                var quiz = quizes.FirstOrDefault(q => q.QuizId == scoreCard.QuizId);
+                scoreCardDto.Username = user?.Name ?? "Unknown";
+                scoreCardDto.QuizName = quiz?.Title ?? "Unkown";
+
+                return scoreCardDto;
+            });
+
+            return response;
+        }
+
 
     }
 }

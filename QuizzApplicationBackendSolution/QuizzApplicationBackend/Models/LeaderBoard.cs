@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace QuizzApplicationBackend.Models
 {
@@ -11,10 +12,15 @@ namespace QuizzApplicationBackend.Models
 
         public int QuizId { get; set; }
 
+        public DateTime StartingFrom { get; set; } = DateTime.Now;
+
+        public DateTime Ending { get; set; } = DateTime.Now.AddDays(7);
+
         public Categories Categories {  get; set; }
 
-        public IEnumerable<ScoreCard> ScoreCard { get; set; }
+        //public ICollection<ScoreCard> ScoreCard { get; set; } = new List<ScoreCard>();
 
         public Quiz Quiz { get; set; }
+
     }
 }

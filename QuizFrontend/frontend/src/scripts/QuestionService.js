@@ -1,6 +1,7 @@
 import axios from "axios";
 
 export function addQuestion(questionName,category,points){
+  console.log(questionName,category,points)
     return axios.post('http://localhost:5193/api/Question', {
         "QuestionName": questionName,
         "Category": category,

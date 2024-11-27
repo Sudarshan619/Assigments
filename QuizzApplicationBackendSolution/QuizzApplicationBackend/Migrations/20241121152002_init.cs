@@ -10,20 +10,6 @@ namespace QuizzApplicationBackend.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "QuizScores",
-                columns: table => new
-                {
-                    QuizScoreCardNo = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    QuizId = table.Column<int>(type: "int", nullable: false),
-                    ScoreCardId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_QuizScores", x => x.QuizScoreCardNo);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Users",
                 columns: table => new
                 {
@@ -75,8 +61,7 @@ namespace QuizzApplicationBackend.Migrations
                     MaxPoint = table.Column<int>(type: "int", nullable: false),
                     NoOfQuestions = table.Column<int>(type: "int", nullable: false),
                     DateOfCreation = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    isEnded = table.Column<bool>(type: "bit", nullable: false),
-                    QuizScoreCardNo = table.Column<int>(type: "int", nullable: true)
+                    isEnded = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -87,11 +72,6 @@ namespace QuizzApplicationBackend.Migrations
                         principalTable: "Users",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Quizes_QuizScores_QuizScoreCardNo",
-                        column: x => x.QuizScoreCardNo,
-                        principalTable: "QuizScores",
-                        principalColumn: "QuizScoreCardNo");
                 });
 
             migrationBuilder.CreateTable(
@@ -108,7 +88,7 @@ namespace QuizzApplicationBackend.Migrations
                 {
                     table.PrimaryKey("PK_LeaderBoards", x => x.LeaderBoardId);
                     table.ForeignKey(
-                        name: "FK_LeaderBoards_Quizes_QuizId",
+                        name: "FK_Quiz_leaderboard",
                         column: x => x.QuizId,
                         principalTable: "Quizes",
                         principalColumn: "QuizId",
@@ -146,8 +126,7 @@ namespace QuizzApplicationBackend.Migrations
                     UserId = table.Column<int>(type: "int", nullable: false),
                     Score = table.Column<int>(type: "int", nullable: false),
                     Acuuracy = table.Column<double>(type: "float", nullable: false),
-                    LeaderBoardId = table.Column<int>(type: "int", nullable: true),
-                    QuizScoreCardNo = table.Column<int>(type: "int", nullable: true)
+                    LeaderBoardId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -163,11 +142,6 @@ namespace QuizzApplicationBackend.Migrations
                         principalTable: "Quizes",
                         principalColumn: "QuizId",
                         onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_ScoreCards_QuizScores_QuizScoreCardNo",
-                        column: x => x.QuizScoreCardNo,
-                        principalTable: "QuizScores",
-                        principalColumn: "QuizScoreCardNo");
                     table.ForeignKey(
                         name: "FK_ScoreCards_Users_UserId",
                         column: x => x.UserId,
@@ -190,7 +164,7 @@ namespace QuizzApplicationBackend.Migrations
                 {
                     table.PrimaryKey("PK_Options", x => x.OptionId);
                     table.ForeignKey(
-                        name: "FK_Question_option",
+                        name: "FK_Question_Option",
                         column: x => x.QuestionId,
                         principalTable: "Questions",
                         principalColumn: "QuestionId",
@@ -224,11 +198,6 @@ namespace QuizzApplicationBackend.Migrations
                 column: "CreatorId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Quizes_QuizScoreCardNo",
-                table: "Quizes",
-                column: "QuizScoreCardNo");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_ScoreCards_LeaderBoardId",
                 table: "ScoreCards",
                 column: "LeaderBoardId");
@@ -237,11 +206,6 @@ namespace QuizzApplicationBackend.Migrations
                 name: "IX_ScoreCards_QuizId",
                 table: "ScoreCards",
                 column: "QuizId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_ScoreCards_QuizScoreCardNo",
-                table: "ScoreCards",
-                column: "QuizScoreCardNo");
 
             migrationBuilder.CreateIndex(
                 name: "IX_ScoreCards_UserId",
@@ -271,9 +235,6 @@ namespace QuizzApplicationBackend.Migrations
 
             migrationBuilder.DropTable(
                 name: "Users");
-
-            migrationBuilder.DropTable(
-                name: "QuizScores");
         }
     }
 }

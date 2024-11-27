@@ -10,5 +10,7 @@ namespace QuizzApplicationBackend.Interfaces
         Task<double> CalculateAccuracy(SubmittedOptionDTO submittedOptionDTO, int score);
         Task<bool> DeleteScoreCard(int id);
         Task<ScoreCardResponseDTO> GetScoreCard(int id);
+
+        Task<IEnumerable<ScoreCardResponseDTO>> GetAllScoreCards();
     }
 }

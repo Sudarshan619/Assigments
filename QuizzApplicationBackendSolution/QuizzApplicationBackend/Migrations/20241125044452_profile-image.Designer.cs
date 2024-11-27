@@ -12,8 +12,8 @@ using QuizzApplicationBackend.Context;
 namespace QuizzApplicationBackend.Migrations
 {
     [DbContext(typeof(QuizContext))]
-    [Migration("20241115153835_init")]
-    partial class init
+    [Migration("20241125044452_profile-image")]
+    partial class profileimage
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -35,12 +35,18 @@ namespace QuizzApplicationBackend.Migrations
                     b.Property<int>("Categories")
                         .HasColumnType("int");
 
+                    b.Property<DateTime>("Ending")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("LeaderBoardName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("QuizId")
                         .HasColumnType("int");
+
+                    b.Property<DateTime>("StartingFrom")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("LeaderBoardId");
 
@@ -115,6 +121,9 @@ namespace QuizzApplicationBackend.Migrations
                     b.Property<int>("Category")
                         .HasColumnType("int");
 
+                    b.Property<int>("Difficulty")
+                        .HasColumnType("int");
+
                     b.Property<int>("Points")
                         .HasColumnType("int");
 
@@ -122,12 +131,7 @@ namespace QuizzApplicationBackend.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("QuizId")
-                        .HasColumnType("int");
-
                     b.HasKey("QuestionId");
-
-                    b.HasIndex("QuizId");
 
                     b.ToTable("Questions");
                 });
@@ -152,13 +156,13 @@ namespace QuizzApplicationBackend.Migrations
                     b.Property<int>("Difficulty")
                         .HasColumnType("int");
 
+                    b.Property<int>("Duration")
+                        .HasColumnType("int");
+
                     b.Property<int>("MaxPoint")
                         .HasColumnType("int");
 
                     b.Property<int>("NoOfQuestions")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("QuizScoreCardNo")
                         .HasColumnType("int");
 
                     b.Property<string>("Title")
@@ -172,28 +176,7 @@ namespace QuizzApplicationBackend.Migrations
 
                     b.HasIndex("CreatorId");
 
-                    b.HasIndex("QuizScoreCardNo");
-
                     b.ToTable("Quizes");
-                });
-
-            modelBuilder.Entity("QuizzApplicationBackend.Models.QuizScorecard", b =>
-                {
-                    b.Property<int>("QuizScoreCardNo")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("QuizScoreCardNo"), 1L, 1);
-
-                    b.Property<int>("QuizId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ScoreCardId")
-                        .HasColumnType("int");
-
-                    b.HasKey("QuizScoreCardNo");
-
-                    b.ToTable("QuizScores");
                 });
 
             modelBuilder.Entity("QuizzApplicationBackend.Models.ScoreCard", b =>
@@ -207,13 +190,7 @@ namespace QuizzApplicationBackend.Migrations
                     b.Property<double>("Acuuracy")
                         .HasColumnType("float");
 
-                    b.Property<int?>("LeaderBoardId")
-                        .HasColumnType("int");
-
                     b.Property<int>("QuizId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("QuizScoreCardNo")
                         .HasColumnType("int");
 
                     b.Property<int>("Score")
@@ -224,11 +201,7 @@ namespace QuizzApplicationBackend.Migrations
 
                     b.HasKey("ScoreCardId");
 
-                    b.HasIndex("LeaderBoardId");
-
                     b.HasIndex("QuizId");
-
-                    b.HasIndex("QuizScoreCardNo");
 
                     b.HasIndex("UserId");
 
@@ -250,6 +223,10 @@ namespace QuizzApplicationBackend.Migrations
                     b.Property<byte[]>("HashKey")
                         .IsRequired()
                         .HasColumnType("varbinary(max)");
+
+                    b.Property<string>("Image")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -273,7 +250,8 @@ namespace QuizzApplicationBackend.Migrations
                         .WithOne("LeaderBoard")
                         .HasForeignKey("QuizzApplicationBackend.Models.LeaderBoard", "QuizId")
                         .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .IsRequired()
+                        .HasConstraintName("FK_Quiz_leaderboard");
 
                     b.Navigation("Quiz");
                 });
@@ -285,7 +263,7 @@ namespace QuizzApplicationBackend.Migrations
                         .HasForeignKey("QuestionId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired()
-                        .HasConstraintName("FK_Question_option");
+                        .HasConstraintName("FK_Question_Option");
 
                     b.Navigation("Question");
                 });
@@ -302,13 +280,6 @@ namespace QuizzApplicationBackend.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("QuizzApplicationBackend.Models.Question", b =>
-                {
-                    b.HasOne("QuizzApplicationBackend.Models.Quiz", null)
-                        .WithMany("Questions")
-                        .HasForeignKey("QuizId");
-                });
-
             modelBuilder.Entity("QuizzApplicationBackend.Models.Quiz", b =>
                 {
                     b.HasOne("QuizzApplicationBackend.Models.User", "User")
@@ -318,28 +289,16 @@ namespace QuizzApplicationBackend.Migrations
                         .IsRequired()
                         .HasConstraintName("FK_Quiz_creator");
 
-                    b.HasOne("QuizzApplicationBackend.Models.QuizScorecard", null)
-                        .WithMany("Quizes")
-                        .HasForeignKey("QuizScoreCardNo");
-
                     b.Navigation("User");
                 });
 
             modelBuilder.Entity("QuizzApplicationBackend.Models.ScoreCard", b =>
                 {
-                    b.HasOne("QuizzApplicationBackend.Models.LeaderBoard", null)
-                        .WithMany("ScoreCard")
-                        .HasForeignKey("LeaderBoardId");
-
                     b.HasOne("QuizzApplicationBackend.Models.Quiz", "Quiz")
                         .WithMany()
                         .HasForeignKey("QuizId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.HasOne("QuizzApplicationBackend.Models.QuizScorecard", null)
-                        .WithMany("ScoreCards")
-                        .HasForeignKey("QuizScoreCardNo");
 
                     b.HasOne("QuizzApplicationBackend.Models.User", "User")
                         .WithMany()
@@ -352,11 +311,6 @@ namespace QuizzApplicationBackend.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("QuizzApplicationBackend.Models.LeaderBoard", b =>
-                {
-                    b.Navigation("ScoreCard");
-                });
-
             modelBuilder.Entity("QuizzApplicationBackend.Models.Question", b =>
                 {
                     b.Navigation("Options");
@@ -366,15 +320,6 @@ namespace QuizzApplicationBackend.Migrations
                 {
                     b.Navigation("LeaderBoard")
                         .IsRequired();
-
-                    b.Navigation("Questions");
-                });
-
-            modelBuilder.Entity("QuizzApplicationBackend.Models.QuizScorecard", b =>
-                {
-                    b.Navigation("Quizes");
-
-                    b.Navigation("ScoreCards");
                 });
 
             modelBuilder.Entity("QuizzApplicationBackend.Models.User", b =>

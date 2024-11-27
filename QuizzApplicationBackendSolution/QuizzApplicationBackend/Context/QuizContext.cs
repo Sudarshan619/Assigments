@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using QuizzApplicationBackend.Models;
+using System;
 
 namespace QuizzApplicationBackend.Context
 {
@@ -24,12 +25,10 @@ namespace QuizzApplicationBackend.Context
 
         public DbSet<Query> Queries { get; set; }
 
-        public DbSet<QuizScorecard> QuizScores { get; set; }
-
 
         override protected void OnModelCreating(ModelBuilder modelBuilder)
         {
-
+            // Query and User Relationship
             modelBuilder.Entity<Query>()
                 .HasOne(e => e.User)
                 .WithMany(a => a.Queries)
@@ -37,14 +36,15 @@ namespace QuizzApplicationBackend.Context
                 .HasConstraintName("FK_Query_Report")
                 .OnDelete(DeleteBehavior.Restrict);
 
+            // Option and Question Relationship
             modelBuilder.Entity<Option>()
                 .HasOne(e => e.Question)
                 .WithMany(a => a.Options)
                 .HasForeignKey(e => e.QuestionId)
-                .HasConstraintName("FK_Question_option")
+                .HasConstraintName("FK_Question_Option")
                 .OnDelete(DeleteBehavior.Restrict);
 
-
+            // Quiz and User Relationship
             modelBuilder.Entity<Quiz>()
                 .HasOne(e => e.User)
                 .WithMany(a => a.Quiz)
@@ -52,17 +52,18 @@ namespace QuizzApplicationBackend.Context
                 .HasConstraintName("FK_Quiz_creator")
                 .OnDelete(DeleteBehavior.Restrict);
 
+            // LeaderBoard and Quiz Relationship
             modelBuilder.Entity<LeaderBoard>()
-                .HasOne(e=> e.Quiz)
-                .WithOne(e=> e.LeaderBoard)
+                .HasOne(e => e.Quiz)
+                .WithOne(e => e.LeaderBoard)
                 .HasForeignKey<LeaderBoard>(e => e.QuizId)
                 .HasConstraintName("FK_Quiz_leaderboard")
-                .OnDelete(DeleteBehavior.Restrict);
+                .OnDelete(DeleteBehavior.Cascade);
 
 
-
+            base.OnModelCreating(modelBuilder);
         }
+
     }
 
-    
 }

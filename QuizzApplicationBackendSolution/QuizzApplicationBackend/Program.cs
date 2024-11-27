@@ -12,6 +12,7 @@ using System.Text;
 using MailKit;
 using static QuizzApplicationBackend.Services.EmailService;
 using System.Diagnostics.CodeAnalysis;
+using Microsoft.Extensions.FileProviders;
 
 
 
@@ -32,6 +33,7 @@ namespace QuizzApplicationBackend
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
             #endregion
+
 
             #region Smtp setting
             builder.Services.Configure<SmtpSettings>(builder.Configuration.GetSection("SmtpSettings"));
@@ -138,6 +140,18 @@ namespace QuizzApplicationBackend
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+
+            #region
+            app.UseStaticFiles(); // Enables serving static files
+
+            // Optional: Configure static files for a specific folder
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", "user_images")),
+                RequestPath = "/uploads/user_images"
+            });
+
+            #endregion
 
             app.UseCors("AllowAll");
             app.UseAuthentication();

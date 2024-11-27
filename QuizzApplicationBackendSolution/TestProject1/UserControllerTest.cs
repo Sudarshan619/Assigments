@@ -44,7 +44,7 @@ namespace TestProject1
             userLoggerService = new Mock<ILogger<UserService>>();
             mockConfiguration = new Mock<IConfiguration>();
             mockTokenService = new Mock<TokenService>(mockConfiguration.Object);
-            UserService = new UserService(repository, mockTokenService.Object, userLoggerService.Object);
+            UserService = new UserService(repository, mockTokenService.Object, userLoggerService.Object, mapper.Object);
             userLoggerController = new Mock<ILogger<UserController>>();
         }
 
