@@ -20,26 +20,29 @@ export default {
       register: (event) => {
         event.preventDefault();
         register(this.username, this.password, this.email, this.rolesMap[this.role])
-          .then((response) => {
+          .then(() => {
             toast.success("User registration succesfull",{
               autoClose:5000          
             })
             router.push("/login")
-            console.log(response.data);
           })
           .catch((err) => {
-            if(err.response.data.errors.Password)   {
+            if(err.response.status == 500){
+              toast.error("User already exist with this name and email",{
+              autoClose:5000
+              })
+            }
+            else if(err.response.data.errors.Password)   {
               toast.error(err.response.data.errors.Password,{
               autoClose:5000
               })
             }
-            if(err.response.data.errors.Username){
+            else if(err.response.data.errors.Username){
               toast.error(err.response.data.errors.Username,{
                 autoClose:5000
               })
             }        
-           
-            console.log(err.response);
+
           })
       },
       onchange(event) {
@@ -95,6 +98,7 @@ export default {
 </template>
 
 <style scoped>
+
 .register-page {
   position: absolute;
   top: 10%;
@@ -104,7 +108,7 @@ export default {
   align-items: center;
   height: 100vh;
   background: linear-gradient(135deg, #4facfe, #00f2fe);
-  font-family: 'Poppins', sans-serif;
+  font-family: Sour Gummy;
 }
 
 .image-section {

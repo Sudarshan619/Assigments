@@ -176,9 +176,9 @@ namespace TestProject1
         {
             var sortedLeaderBoard =  new LeaderBoardResponseDTO { LeaderBoardName = "GK", Category = "Geography" };
             
-            _mockLeaderBoardService.Setup(service => service.SortLeaderBoard(Choice.Score, 1)).ReturnsAsync(sortedLeaderBoard);
+            _mockLeaderBoardService.Setup(service => service.SortLeaderBoard(Choice.Score, 1,1)).ReturnsAsync(sortedLeaderBoard);
 
-            var result = await _LeaderBoardController.SortLeaderBoard(1, Choice.Score);
+            var result = await _LeaderBoardController.SortLeaderBoard(1, Choice.Score,1);
 
             Assert.IsInstanceOf<OkObjectResult>(result);
             var okResult = result as OkObjectResult;
@@ -255,9 +255,9 @@ namespace TestProject1
         [Test]
         public async Task SortLeaderBoard_ReturnsInternalServerError()
         {
-            _mockLeaderBoardService.Setup(service => service.SortLeaderBoard(Choice.Score, 1)).ThrowsAsync(new Exception("Internal server error"));
+            _mockLeaderBoardService.Setup(service => service.SortLeaderBoard(Choice.Score, 1,1)).ThrowsAsync(new Exception("Internal server error"));
 
-            var result = await _LeaderBoardController.SortLeaderBoard(1, Choice.Score);
+            var result = await _LeaderBoardController.SortLeaderBoard(1, Choice.Score,1);
 
             Assert.IsInstanceOf<ObjectResult>(result);
             var objectResult = result as ObjectResult;

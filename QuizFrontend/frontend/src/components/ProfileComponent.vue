@@ -35,21 +35,26 @@
            
             <!-- Delete question -->
             <form class="create-form" v-if="this.selectedCategory === 'question'">
-                <section class="create-form w-100" v-if="searchResultsDelete.length>0">
-                <h5>Available questions</h5>
-                <div v-for="searchResult in searchResultsDelete" :key="searchResult.id" class="search-result">
-                    <aside>
-                        {{ searchResult.questionName }}
-                    </aside>
-                    <button @click="onSelectDelete" class="btn btn-primary" :value="searchResult.questionId">
-                        Select
-                    </button>
-                </div>
-               
-            </section>
+                <div>
+                <section class="create-form w-100" v-if="showSearchResults && searchResults.length > 0">
+                   <h5>Available questions</h5>
+                   <div v-for="searchResult in searchResults" :key="searchResult.id" class="search-result">
+                       <aside>
+                           {{ searchResult.questionName }}
+                       </aside>
+                       <button @click="onSelect" class="btn btn-primary" :value="searchResult.questionId">
+                           Select
+                       </button>
+                   </div>
+                   <button @click="hideResults" class="btn btn-secondary">
+                      <span aria-hidden="true">&times;</span>
+                   </button>
+               </section>
+              </div>
+            <label>Search question</label>
             <form class="d-flex-8">
               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" v-model="searchQuestion">
-              <button @click="searchQuestionsDelete" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              <button @click="searchQuestionsDelete" class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#exampleModal" type="submit">Search</button>
             </form>
                <div>
                 <label for="QuestionId">Question Id</label>
@@ -61,12 +66,13 @@
             <form class="create-form" v-if="this.selectedCategory === 'option'">
                <div>
                 <label for="QuestionId">Option Id</label>
-                <input class="form-control" type="number" id="QuestionId" v-model="QuestionId">
+                <input class="form-control" type="number" id="QuestionId" v-model="optionId">
                </div>
-               <button class="btn btn-success" type="submit">Delete Option</button>
+               <button class="btn btn-success" type="submit" @click="deleteOption">Delete Option</button>
             </form>
             <!-- Delete leaderboard -->
             <form class="create-form" v-if="this.selectedCategory === 'leaderboard'">
+            <label>Search leaderboard</label>
             <form class="d-flex-8">
               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" v-model="searchBoard">
               <button @click="searchBoardByName" class="btn btn-outline-success my-2 my-sm-0">Search</button>
@@ -91,6 +97,7 @@
             </form>
             <!-- Delete quiz -->
             <form class="create-form" v-if="this.selectedCategory === 'quiz'">
+                <label>Search quiz</label>
                 <form class="d-flex-8">
                   <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" v-model="searchQuiz">
                   <button @click="searchQuizByTitle" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -116,9 +123,9 @@
              <form class="create-form" v-if="this.selectedCategory === 'scorecard'">
                <div>
                 <label for="QuestionId">Scorecard Id</label>
-                <input class="form-control" type="number" id="QuestionId" v-model="QuestionId">
+                <input class="form-control" type="number" id="QuestionId" v-model="ScoreCardId">
                </div>
-               <button class="btn btn-success" type="submit">Delete ScoreCard</button>
+               <button class="btn btn-success" type="submit" @click="deleteScoreCard">Delete ScoreCard</button>
             </form>
          </div>
          <aside>
@@ -135,44 +142,56 @@
                 <label for="Category">Category</label>
                 <select @change="selectCategory" class="category-selection">
                     <option style="display:none">Select option</option>
-                     <option value="option">Option</option>
+                     <!-- <option value="option">Option</option> -->
                      <option value="question">Question</option>
                      <option value="leaderboard">LeaderBoard</option>
                      <option value="quiz">Quiz</option>
-                     <option value="scorecard">ScoreCard</option>
+                     <!-- <option value="scorecard">ScoreCard</option> -->
                 </select>               
             </div>
            
             <!-- Edit question -->
-        <div v-if="this.selectedCategory === 'question'">
-           <form class="create-form" >
+        <div >
+         <form class="create-form" v-if="this.selectedCategory === 'question'">
+            <label>Search qustion</label>
+           <form class="d-flex-8" >
               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" v-model="searchQuestion">
               <button @click="searchQuestions()" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
            </form>
 
-           <section class="create-form w-100" v-if="searchResults.length>0">
-                <h5>Available questions</h5>
-                <div v-for="searchResult in searchResults" :key="searchResult.id" class="search-result">
-                    <aside>
-                        {{ searchResult.questionName }}
-                    </aside>
-                    <button @click="onSelect" class="btn btn-primary" :value="searchResult.questionId">
-                        Select
-                    </button>
-                </div>
-               
-            </section>
+           <section class="create-form w-100" v-if="showSearchResults && searchResults.length > 0">
+                   <h5>Available questions</h5>
+                   <div v-for="searchResult in searchResults" :key="searchResult.id" class="search-result">
+                       <aside>
+                           {{ searchResult.questionName }}
+                       </aside>
+                       <button @click="onSelect" class="btn btn-primary" :value="searchResult.questionId">
+                           Select
+                       </button>
+                   </div>
+                   <button @click="hideResults" class="btn btn-secondary">
+                      <span aria-hidden="true">&times;</span>
+                   </button>
+               </section>
             <section v-else>
                 No result found
             </section>
-            <form class="create-form">
             <div>
                 <label for="QuestionId">Question Id</label>
-                <input class="form-control" type="number" id="QuestionId" v-model="QuestionId">
+                <input class="form-control" type="number" id="QuestionId" v-model="QuestionId" required/>
             </div>
             <div>
                 <label for="QuestionName">Question Text</label>
-                <input class="form-control" type="text" id="QuestionName" v-model="QuestionName">
+                <input class="form-control" type="text" id="QuestionName" v-model="QuestionName" required/>
+            </div>
+            <div style="display: flex;flex-direction: column;">
+                <label for="Category">Difficulty</label>
+                <select @change="onclickDifficulty" class="category-selection">
+                     <option style="display:none">Select option</option>
+                     <option value="easy">Easy</option>
+                     <option value="medium">Medium</option>
+                     <option value="hard">Hard</option>
+                </select>               
             </div>
             <div style="display: flex;flex-direction: column;">
                 <label for="Category">Category</label>
@@ -183,38 +202,51 @@
             </div>
             <div>
                 <label for="Points">Score</label>
-                <input class="form-control" type="number" id="Points" v-model="Points">
+                <input class="form-control" type="number" id="Points" v-model="Points" required/>
             </div>
-            <button class="btn btn-success" @click="addQuestion" type="submit">Edit Question</button>
-            </form>
+            <button class="btn btn-success" @click="editQuestion" type="submit">Edit Question</button>
+            
+        </form>
         </div>
 
         <!-- Edit quiz -->
         <div>
-            <form class="create-form" v-if=" this.selectedCategory === 'quiz' ">
-                <form class="d-flex-8">
-                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" v-model="searchUser">
-                  <button @click="searchUserByName" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <form class="create-form" v-if=" this.selectedCategory === 'quiz'">
+                <label>Search quiz</label>
+                <form class="d-flex-8">                
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" v-model="searchQuiz">
+                  <button @click="searchQuizByTitle" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
-                <section class="create-form w-100" v-if="searchResultUser.length>0">
-                <h5>Available Users</h5>
-                <div v-for="searchResult in searchResultUser" :key="searchResult.id" class="search-result">
+                <section class="create-form w-100" v-if="showSearchResults && searchResultQuiz.length > 0">
+                <h5>Available Quiz</h5>
+                <div v-for="searchResult in searchResultQuiz" :key="searchResult.id" class="search-result">
                     <aside>
-                        {{ searchResult.username }}
+                        {{ searchResult.title }}
                     </aside>
-                    <button @click="onSelectQuiz" class="btn btn-primary" :value="searchResult.id">
+                    <button @click="onSelectQuiz" class="btn btn-primary" :value="searchResult.quizId">
                         Select
                     </button>
                 </div>
+                <button @click="hideResults" class="btn btn-secondary">
+                      <span aria-hidden="true">&times;</span>
+                </button>
                
             </section>
+            <div>
+                <label for="QuestionName">Quiz Id</label>
+                <input class="form-control" type="text" id="QuestionName" v-model="quizId">
+            </div>
             <div>
                 <label for="QuestionName">Creator Id</label>
                 <input class="form-control" type="text" id="QuestionName" v-model="CreatorId">
             </div>
             <div>
                 <label for="QuestionName">Qtitle</label>
-                <input class="form-control" type="text" id="QuestionName" v-model="QuestionName">
+                <input class="form-control" type="text" id="QuestionName" v-model="title">
+            </div>
+            <div>
+                <label for="QuestionName">Duration</label>
+                <input class="form-control" type="number" id="QuestionName" v-model="duration">
             </div>
             <div style="display: flex;flex-direction: column;">
                 <label for="Category">Category</label>
@@ -223,21 +255,27 @@
                      <option v-for="category in Categories" :key="category.id" :value="category">{{ category }}</option>
                 </select>               
             </div>
-            <div>
-                <label for="Points">Difficulty</label>
-                <input class="form-control" type="number" id="Points" v-model="Points">
+            <div style="display: flex;flex-direction: column;">
+                <label for="Category">Difficulty</label>
+                <select @change="onclickDifficulty" class="category-selection">
+                     <option style="display:none">Select option</option>
+                     <option value="easy">Easy</option>
+                     <option value="medium">Medium</option>
+                     <option value="hard">Hard</option>
+                </select>               
             </div>
             <div>
                 <label for="Points">No of Questions</label>
-                <input class="form-control" type="number" id="Points" v-model="Points">
+                <input class="form-control" type="number" id="Points" v-model="NoOfQuestions">
             </div>
-            <button class="btn btn-warning" @click="addQuestion" type="submit">Edit Quiz</button>
+            <button class="btn btn-warning" @click="editQuiz" type="submit">Edit Quiz</button>
             </form>
         </div>
 
         <!-- Edit leaderboard -->
         <div>
                <form class="create-form" v-if=" this.selectedCategory === 'leaderboard' ">
+                <label>Search leaderboard</label>
                 <form class="d-flex-8">
                   <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" v-model="searchBoard">
                   <button @click="searchBoardByName" class="btn btn-outline-success my-2 my-sm-0">Search</button>
@@ -248,12 +286,16 @@
                     <aside>
                         {{ searchResult.leaderBoardName }}
                     </aside>
-                    <button @click="onSelectQuiz" class="btn btn-primary" :value="searchResult.leaderBoardId">
+                    <button @click="onSelectBoard" class="btn btn-primary" :value="searchResult.leaderBoardId">
                         Select
                     </button>
                 </div>
                
             </section>
+            <div>
+                <label for="Points">LeaderBoard Id</label>
+                <input class="form-control" type="number" id="Points" v-model="boardId">
+            </div>
             <div>
                 <label for="QuestionName">LeaderBoard Title</label>
                 <input class="form-control" type="text" id="QuestionName" v-model="LeaderBoardName">
@@ -269,7 +311,7 @@
                 <label for="Points">Quiz Id</label>
                 <input class="form-control" type="number" id="Points" v-model="quizId">
             </div>
-            <button class="btn btn-primary" @click="addLeaderBoard" type="submit">Update LeaderBoard</button>
+            <button class="btn btn-primary" @click="editLeaderBoard" type="submit">Update LeaderBoard</button>
             </form>
         </div>
 
@@ -279,10 +321,7 @@
          </aside>
        </section>
 
-      
-       
-
-       <!-- Create Option -->
+       <!-- Create section-->
        <section>
         <div class="create-div">
             <h4 >Create section</h4>
@@ -297,6 +336,7 @@
                 </select>               
             </div>
             
+            <!-- Create questions -->
             <form class="create-form" v-if=" this.selectedCategory === 'question' ">
             <div>
                 <label for="QuestionName">Question Text</label>
@@ -309,6 +349,15 @@
                      <option v-for="category in Categories" :key="category.id" :value="category">{{ category }}</option>
                 </select>               
             </div>
+            <div style="display: flex;flex-direction: column;">
+                <label for="Category">Difficulty</label>
+                <select @change="onclickDifficulty" class="category-selection">
+                     <option style="display:none">Select option</option>
+                     <option value="easy">Easy</option>
+                     <option value="medium">Medium</option>
+                     <option value="hard">Hard</option>
+                </select>               
+            </div>
             <div>
                 <label for="Points">Score</label>
                 <input class="form-control" type="number" id="Points" v-model="Points">
@@ -316,6 +365,7 @@
             <button class="btn btn-success" @click="addQuestion" type="submit">Create Question</button>
             </form>
 
+            <!-- Create quiz -->
             <form class="create-form" v-if=" this.selectedCategory === 'quiz' ">
                 <form class="d-flex-8">
                   <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" v-model="searchUser">
@@ -327,7 +377,7 @@
                     <aside>
                         {{ searchResult.username }}
                     </aside>
-                    <button @click="onSelectQuiz" class="btn btn-primary" :value="searchResult.id">
+                    <button @click="onSelectUser" class="btn btn-primary" :value="searchResult.id">
                         Select
                     </button>
                 </div>
@@ -338,8 +388,12 @@
                 <input class="form-control" type="text" id="QuestionName" v-model="CreatorId">
             </div>
             <div>
+                <label for="QuestionName">Duration</label>
+                <input class="form-control" type="number" id="QuestionName" v-model="duration">
+            </div>
+            <div>
                 <label for="QuestionName">Qtitle</label>
-                <input class="form-control" type="text" id="QuestionName" v-model="QuestionName">
+                <input class="form-control" type="text" id="QuestionName" v-model="title">
             </div>
             <div style="display: flex;flex-direction: column;">
                 <label for="Category">Category</label>
@@ -348,17 +402,24 @@
                      <option v-for="category in Categories" :key="category.id" :value="category">{{ category }}</option>
                 </select>               
             </div>
-            <div>
-                <label for="Points">Difficulty</label>
-                <input class="form-control" type="number" id="Points" v-model="Points">
+            <div style="display: flex;flex-direction: column;">
+                <label for="Category">Difficulty</label>
+                <select @change="onclickDifficulty" class="category-selection">
+                     <option style="display:none">Select option</option>
+                     <option value="easy">Easy</option>
+                     <option value="medium">Medium</option>
+                     <option value="hard">Hard</option>
+                </select>               
             </div>
             <div>
                 <label for="Points">No of Questions</label>
-                <input class="form-control" type="number" id="Points" v-model="Points">
+                <input class="form-control" type="number" id="Points" v-model="NoOfQuestions">
             </div>
-            <button class="btn btn-warning" @click="addQuestion" type="submit">Create Quiz</button>
+            <button class="btn btn-warning" @click="createQuiz" type="submit">Create Quiz</button>
             </form>
 
+
+            <!-- Create leaderboard -->
             <form class="create-form" v-if=" this.selectedCategory === 'leaderboard' ">
                 <form class="d-flex-8">
                   <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" v-model="searchQuiz">
@@ -378,7 +439,7 @@
             </section>
             <div>
                 <label for="QuestionName">LeaderBoard Title</label>
-                <input class="form-control" type="text" id="QuestionName" v-model="LeaderBoardName">
+                <input class="form-control" type="text" id="QuestionName" v-model="LeaderBoardName" required/>
             </div>
             <div style="display: flex;flex-direction: column;">
                 <label for="Category">Category</label>
@@ -389,15 +450,16 @@
             </div>
             <div>
                 <label for="Points">Quiz Id</label>
-                <input class="form-control" type="number" id="Points" v-model="quizId">
+                <input class="form-control" type="number" id="Points" v-model="quizId" required/>
             </div>
             <button class="btn btn-primary" @click="addLeaderBoard" type="submit">Create LeaderBoard</button>
             </form>
             
+            <!-- Create options -->
             <form class="create-form" v-if=" this.selectedCategory === 'option'">
             <form class="d-flex-8">
               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" v-model="searchQuestion">
-              <button @click="searchQuestionsDelete" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              <button @click="searchQuestions" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
             <section class="create-form w-100" v-if="searchResults.length>0">
                 <h5>Available questions</h5>
@@ -466,7 +528,7 @@
     </footer>
 </template>
 <script>
-import { updateImage,addQuestion ,addOptions,getAllQuiz,getUserByName,getLeaderBoardByName,addLeaderBoard,deleteQuiz, deleteLeaderBoard, deleteQuestion} from '@/scripts/ProfileService';
+import {updateQuiz,addQuiz, updateImage,addQuestion ,addOptions,getAllQuiz,getUserByName,getLeaderBoardByName,addLeaderBoard,deleteQuiz, deleteLeaderBoard, deleteQuestion,updateQuestion, deleteScoreCard, deleteOption, updateLeaderBoard} from '@/scripts/ProfileService';
 import { searchQuestions } from '@/scripts/QuestionService';
 import { toast } from 'vue3-toastify';
 import 'vue3-toastify/dist/index.css';
@@ -478,6 +540,11 @@ export default{
             map:{
               "true": true,
               "false":false
+            },
+            difficultyMap:{
+               "easy":0,
+               "medium":1,
+               "hard":2
             },
             categoryMap :{
                 "GeneralKnowledge":0,
@@ -491,27 +558,106 @@ export default{
             role :'Admin',
             selectedCategory:'question',
             QuestionId:'', 
-            CreatorId:'',                    
+            optionId:'',
+            ScoreCardId:'',
+            NoOfQuestions:'',
+            title:'',
+            CreatorId:'',
+            duration:'',     
+            Category:'',               
             QuestionName:'',
             LeaderBoardName:'',
-            Category:'',
             Points:'',  
+            difficulty:'',
             searchQuestion:'',
             searchQuiz:'',
             searchUser:'',
             searchBoard:'',
-            isCorrect:'',
+            isCorrect:'false',
             optionText:'',
             quizId:'',
             boardId:'',
             Categories:[],
-            searchResultsDelete:[],
             searchResultBoard:[],
             searchResultCreate:[],
             searchResultQuiz:[],
             searchResultUser:[],
             searchResults:[],
             options:[],
+            showSearchResults: true,
+            hideResults() {
+            this.showSearchResults = false; // Hides the section
+            },
+            editQuestion(){
+                event.preventDefault()
+                console.log(this.Category)
+               updateQuestion(this.QuestionId,this.QuestionName,this.difficultyMap[this.difficulty],this.categoryMap[this.Category],this.Points)
+               .then(response => {
+                 toast.success("Edit succesfull",{
+                    autoClose:4000
+                 })
+                 this.QuestionId ='',
+                 this.QuestionName = '',
+                 this.difficulty = '',
+                 this.Category = '',
+                 this.Points = ''
+                 this.showSearchResults = false
+                 console.log(response)
+               })
+               .catch(()=>{
+                 toast.error("Could not edit check if all the fields are filled",{
+                    autoClose:4000
+                 })
+               })
+            },
+            editLeaderBoard(){
+                event.preventDefault()
+                console.log(this.Category)
+                console.log(this.boardId,this.LeaderBoardName,this.categoryMap[this.Category],this.quizId)
+                updateLeaderBoard(this.boardId,this.LeaderBoardName,this.categoryMap[this.Category],this.quizId)
+               .then(response => {
+                 toast.success("Edit succesfull for the leaderboard",{
+                    autoClose:4000
+                 })
+                 this.boardId = '',
+                 this.LeaderBoardName = '',
+                 this.Category = '',
+                 this.quizId = '',
+                 this.showSearchResults = false
+                 console.log(response)
+               })
+               .catch(()=>{
+                 toast.error("Could not edit check if all the fields are filled",{
+                    autoClose:4000
+                 })
+               })
+            },
+            editQuiz(){
+                event.preventDefault();
+                console.log(parseInt(this.quizId),parseInt(this.CreatorId),this.categoryMap[this.Category],this.duration,this.title,this.difficultyMap[this.difficulty],this.NoOfQuestions)
+                updateQuiz(parseInt(this.quizId),parseInt(this.CreatorId),this.categoryMap[this.Category],this.duration,this.title,this.difficultyMap[this.difficulty],this.NoOfQuestions)
+                .then(response =>{
+                    toast.success("Edit succesfull for quiz",{
+                        autoClose:4000
+                    })
+                    this.quizId = '',
+                    this.CreatorId ='',
+                    this.Category ='',
+                    this.duration = '',
+                    this.title = '',
+                    this.difficulty = '',
+                    this.NoOfQuestions = '',
+                    this.showSearchResults = false
+                    console.log(response)
+                })
+                .catch(()=>{
+                     toast.error("Could not update the quiz one or more field is missing",{
+                        autoClose:4000
+                     })
+                })
+
+            },
+            
             selectCategory(event){
                console.log(event.target.value);
                this.selectedCategory = event.target.value
@@ -530,54 +676,131 @@ export default{
                 event.preventDefault();
                 console.log(this.QuestionName,this.Category,this.Points)
                  const question = async()=>{
-                    let data =  await addQuestion(this.QuestionName,this.categoryMap[this.Category],this.Points);
-                    if(data.status == 200){
-                        toast.success("Succesfully added question",{
-                            autoClose:4000
-                        })
-                    }
-                    else{
-                        toast.error("Could not add question",{
-                            autoClose:4000
-                        })
-                    }
-                 }
+                    try {
+                         await addQuestion(
+                            this.QuestionName,
+                            this.difficultyMap[this.difficulty],
+                            this.categoryMap[this.Category],
+                            this.Points
+                        );
+                        toast.success("Successfully added question", {
+                            autoClose: 4000
+                        });
+                        this.QuestionName = '',
+                        this.Category = '',
+                        this.Points = ''
 
+                    } catch (error) {
+                        console.error("Error adding question:", error);
+                        if(error.response.data.errors.QuestionName){
+                            toast.error(error.response.data.errors.QuestionName, {
+                            autoClose: 4000
+                          });
+                        }
+                        toast.error("Could not add question", {
+                            autoClose: 4000
+                        });
+                    }
+                    }
                  question();
+                
             },
+
             addLeaderBoard(){
                  event.preventDefault();
                  console.log(this.LeaderBoardName,this.categoryMap[this.Category],this.quizId)
                  addLeaderBoard(this.LeaderBoardName,this.categoryMap[this.Category],this.quizId)
                  .then(response => {
-                    console.log(response.data)
+                    toast.success("Leaderboard added", {
+                        autoClose:4000
+                    })
+                    this.LeaderBoardName ='',
+                    this.Category = '',
+                    this.quizId=''
+                    console.log(response);
                  })
-                    
+                 .catch(()=>{
+                     toast.error("Could not create leader board",{
+                        autoClose:4000
+                     })
+                 })               
                 
+            },
+
+            createQuiz(){
+            //    event.preventDefault();
+               console.log(this.CreatorId,this.categoryMap[this.Category],this.duration,this.title,this.difficultyMap[this.difficulty],this.NoOfQuestions)
+               addQuiz(parseInt(this.CreatorId),this.categoryMap[this.Category],this.duration,this.title,this.difficultyMap[this.difficulty],this.NoOfQuestions)
+               .then( () => {
+                 toast.success("Quiz created Succesfully",{
+                    autoClose:4000
+                 })
+                  
+                    this.CreatorId ='',
+                    this.Category ='',
+                    this.duration = '',
+                    this.title = '',
+                    this.difficulty = '',
+                    this.NoOfQuestions = ''
+                    this.showSearchResults = false
+                })
+                 .catch(()=>{
+                    toast.error("Could not create quiz one or more fields are missing",{
+                        autoClose:4000
+                    })
+                 })
+               
             },
             correctSelection(event){
                 console.log(this.map[event.target.value]);
-               this.isCorrect = this.map[event.target.value];
+                this.isCorrect = this.map[event.target.value];
             },
             addMoreOption(){
                 event.preventDefault();
-                this.options.push({
-                    isCorrect:this.isCorrect,                  
-                    text:this.optionText,
-                    questionId:this.QuestionId                  
-                })
-                console.log(this.options);
-                this.questionId = '',
-                this.optionText = '',
-                this.isCorrect = false
+                try{
+                    if(this.optionText && this.QuestionId ){
+                        this.options.push({
+                        isCorrect:this.isCorrect,                  
+                        text:this.optionText,
+                        questionId:this.QuestionId 
+                    })
+
+                    }
+                    else{
+                        toast.error("Options fields are empty, please fill and submit",{
+                            autoClose:4000
+                        })
+                    }
+                    console.log(this.options);
+                    this.questionId = '',
+                    this.optionText = '',
+                    this.isCorrect = false
+                }
+                catch(error){
+                    toast.error("Options is empty",{
+                        autoClose:4000
+                    })
+                }
+                
             },
             submitOption(){
-                event.preventDefault();
+                // event.preventDefault();
                 console.log(this.options);
                 this.addMoreOption();
                  const question = async()=>{
-                    let data =  await addOptions(this.options);
-                    console.log(data);
+                    try{
+                        await addOptions(this.options);
+                        toast.success("Options added succesfully",{
+                            autoClose:4000
+                        })
+                        this.options = []
+                    }
+                    catch(error){
+                        toast.error("Could not add options one or more field is empty",{
+                            autoClose:4000
+                        })
+                    }
+                    
                  }
 
                  question();
@@ -589,6 +812,7 @@ export default{
                      console.log(this.searchQuestion)
                      let question = await searchQuestions(this.searchQuestion);
                      this.searchResults = question.data;
+                     this.showSearchResults = true;
                      console.log(question);
 
                 }
@@ -600,19 +824,30 @@ export default{
                 const question = async()=>{
                      console.log(this.searchQuestion)
                      let question = await searchQuestions(this.searchQuestion);
-                     this.searchResultsDelete = question.data;
+                     this.showSearchResults = true;
+                     this.searchResults = question.data;
                      console.log(question);
 
                 }
                 question()
+            },
+            onclickDifficulty(event){
+                this.difficulty = event.target.value
             },
             onclick(event){
                 console.log(event.target.value)
                 this.Category = event.target.value
             },
             onSelect(event){
+               event.preventDefault()
                console.log(event.target.value)
                this.QuestionId = event.target.value
+               let result = this.searchResults.find((question)=>{
+                   return question.questionId == this.QuestionId
+               })
+               console.log(result);
+               this.QuestionName = result.questionName
+               
             },
             onSelectDelete(event){
                 event.preventDefault();
@@ -630,11 +865,46 @@ export default{
                 getAllQuiz(this.searchQuiz)
                 .then(response => {
                     this.searchResultQuiz  = response.data
+                    this.showSearchResults = true
                     console.log(response);
                 })
+                .catch(()=>{
+                     toast.error("Some fields are empty please add try submitting ", {
+                        autoClose:4000
+                     })
+                  })
+            },
+            deleteScoreCard(){
+                 event.preventDefault();
+                  deleteScoreCard(this.ScoreCardId)
+                  .then((response) =>{
+                     toast.success(response.data,{
+                        autoClose:4000
+                     })
+                  })
+                  .catch(()=>{
+                     toast.error("Some fields are empty please add try submitting ", {
+                        autoClose:4000
+                     })
+                  })
+            },
+            deleteOption(){
+                 event.preventDefault();
+                  deleteOption(this.optionId)
+                  .then(() =>{
+                     toast.success("Option deleted successully",{
+                        autoClose:4000
+                     })
+                  })
+                  .catch(()=>{
+                     toast.error("Some fields are empty please add try submitting ", {
+                        autoClose:4000
+                     })
+                  })
             },
             searchUserByName(){
                 event.preventDefault();
+                console.log("searching//")
                 getUserByName(this.searchUser)
                 .then(response =>{
                     this.searchResultUser = response.data
@@ -658,6 +928,19 @@ export default{
             onSelectQuiz(event){
                 event.preventDefault();
                 this.quizId = event.target.value
+                let result = this.searchResultQuiz.find((quiz)=>{
+                    return quiz.quizId == this.quizId;
+                })
+                this.duration = result.duration
+                this.title = result.title
+                this.difficulty = result.difficulty
+                this.NoOfQuestions = result.questions.length;
+                console.log(result);
+
+            },
+            onSelectUser(event){
+                event.preventDefault();
+                this.CreatorId = event.target.value
             },
             deleteQuestion1(){
                 event.preventDefault()
@@ -666,6 +949,8 @@ export default{
                     toast.success("Succesfully deleted question",{
                         autoClose:4000
                     })
+                    this.showSearchResults = false
+                    this.QuestionId = ''
                 })
                 .catch(()=>{
                    toast.error("Could not delete question",{
@@ -698,7 +983,8 @@ export default{
                      autoClose:4000
                    })
                 })
-            }
+            },
+            
             
     
         }

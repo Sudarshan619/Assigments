@@ -67,6 +67,7 @@ namespace QuizzApplicationBackend.Services
                 .Select(sc => new ScoreCardResponseDTO
                 {
                     ScoreCardId = sc.ScoreCardId,
+                    SubmittedTime = sc.SubmittedTime,
                     Image = users.FirstOrDefault(u => u.Id == sc.UserId)?.Image ?? "user.jpg",
                     Username = users.FirstOrDefault(u => u.Id == sc.UserId)?.Name ?? "Unknown User",
                     Score = sc.Score,
@@ -74,7 +75,8 @@ namespace QuizzApplicationBackend.Services
                     Acuuracy = sc.Acuuracy
                 });
 
-                sortedScoreCards = sortedScoreCards.OrderByDescending(sc => sc.Score).ToList();
+                sortedScoreCards = sortedScoreCards.OrderByDescending(sc => sc.Score)
+                    .ThenBy(sc => sc.SubmittedTime); ;
 
                 var scoreCardDtos = sortedScoreCards
                     .Where(e => e.QuizId == requiredQuiz.QuizId)
@@ -114,8 +116,8 @@ namespace QuizzApplicationBackend.Services
 
                 var users = await _userRepo.GetAll();
 
-                var requiredLeaderBoard = leaderBoards.Where(q => 
-                        q.LeaderBoardName.Contains(leaderBoardName, StringComparison.OrdinalIgnoreCase));
+                var requiredLeaderBoard = leaderBoards.Where(q => !string.IsNullOrEmpty(q.LeaderBoardName) &&
+                q.LeaderBoardName.Contains(leaderBoardName, StringComparison.OrdinalIgnoreCase));
 
                 var leaderBoardDTOs = requiredLeaderBoard.Select(leaderBoard =>
                 {
@@ -129,12 +131,14 @@ namespace QuizzApplicationBackend.Services
                    .Select(sc => new ScoreCardResponseDTO
                    {
                        ScoreCardId = sc.ScoreCardId,
+                       SubmittedTime = sc.SubmittedTime,
                        Image = users.FirstOrDefault(u=> u.Id == sc.UserId)?.Image ?? "user.jpg",
                        Username = users.FirstOrDefault(u => u.Id == sc.UserId)?.Name ?? "Unknown User",
                        Score = sc.Score,
                        QuizId = sc.QuizId,
                        Acuuracy = sc.Acuuracy
-                   });
+                   }).OrderByDescending(sc => sc.Score)
+                   .ThenBy(sc => sc.SubmittedTime);
 
                     var scoreCardDtos = sortedScoreCards
                         .Where(sc => sc.QuizId == requiredQuiz.QuizId)
@@ -180,9 +184,9 @@ namespace QuizzApplicationBackend.Services
                 var users = await _userRepo.GetAll();
 
                 var pagedLeaderBoards = leaderBoards
-           .Skip((pageNumber - 1) * pageSize)
-           .Take(pageSize)
-           .ToList();
+               .Skip((pageNumber - 1) * pageSize)
+               .Take(pageSize)
+               .ToList();
 
                 var leaderBoardDTOs = pagedLeaderBoards.Select(leaderBoard =>
                 {
@@ -196,12 +200,15 @@ namespace QuizzApplicationBackend.Services
                 .Select(sc => new ScoreCardResponseDTO
                 {
                     ScoreCardId = sc.ScoreCardId,
+                    SubmittedTime = sc.SubmittedTime,
                     Image = users.FirstOrDefault(u => u.Id == sc.UserId)?.Image ?? "user.jpg",
                     Username = users.FirstOrDefault(u => u.Id == sc.UserId)?.Name ?? "Unknown User",
                     Score = sc.Score,
                     QuizId = sc.QuizId,
                     Acuuracy = sc.Acuuracy
-                });
+                })
+                .OrderByDescending(sc => sc.Score)
+                .ThenBy(sc => sc.SubmittedTime);
 
                     var scoreCardDtos = sortedScoreCards
                         .Where(sc => sc.QuizId == requiredQuiz.QuizId)
@@ -241,22 +248,25 @@ namespace QuizzApplicationBackend.Services
                 .Select(sc => new ScoreCardResponseDTO
                 {
                     ScoreCardId = sc.ScoreCardId,
+                    SubmittedTime = sc.SubmittedTime,
                     Image = users.FirstOrDefault(u => u.Id == sc.UserId)?.Image ?? "user.jpg",
                     Username = users.FirstOrDefault(u => u.Id == sc.UserId)?.Name ?? "Unknown User",
                     Score = sc.Score,
                     QuizId = sc.QuizId,
                     Acuuracy = sc.Acuuracy
-                });
+                })
+                .OrderByDescending(sc => sc.Score)
+                .ThenBy(sc => sc.SubmittedTime); ;
 
             if (choice == Choice.Score)
             {
                 if(order == 1)
                 {
-                    sortedScoreCards = sortedScoreCards.OrderByDescending(sc => sc.Score).ToList();
+                    sortedScoreCards = sortedScoreCards.OrderByDescending(sc => sc.Score);
                 }
                 else
                 {
-                    sortedScoreCards = sortedScoreCards.OrderBy(sc => sc.Score).ToList();
+                    sortedScoreCards = sortedScoreCards.OrderBy(sc => sc.Score);
                 }
                 
             }
@@ -264,11 +274,11 @@ namespace QuizzApplicationBackend.Services
             {
                 if(order == 1)
                 {
-                    sortedScoreCards = sortedScoreCards.OrderByDescending(sc => sc.Username).ToList();
+                    sortedScoreCards = sortedScoreCards.OrderByDescending(sc => sc.Username);
                 }
                 else
                 {
-                    sortedScoreCards = sortedScoreCards.OrderBy(sc => sc.Username).ToList();
+                    sortedScoreCards = sortedScoreCards.OrderBy(sc => sc.Username);
                 }
                
             }

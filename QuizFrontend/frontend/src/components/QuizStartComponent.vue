@@ -6,13 +6,13 @@
   <div class="report-holder">
      <h1 style="text-align: center;" class="title">{{ quizes.title }}</h1>
      <div>
-       <button class="btn btn-warning report" >Report</button>
+       <button class="btn btn-warning report" type="submit" data-toggle="modal" data-target="#exampleModals">Report</button>
      </div> 
     </div>
  
  <div class="container">
 	<section class="quiz-section" :key="currentQuestion.id" :id="currentQuestion.questionId"> 
-    <TimerComponent v-if="duration > 0" :duration="duration"  @expired="handleTimeExpiry"  />
+    <TimerComponent v-if="duration > 0" :duration="duration"  @expired="handleTimeExpiry" />
      
     <aside class="question-text">
       {{currentQuestion.questionName }}
@@ -29,11 +29,11 @@
     </aside>
     
     <div class="next-prev-div">
-        <button class="btn btn-warning" @click="submit(currentQuestion.questionId)" type="submit">Save and submit</button>
-        <button v-if="currentPage == quizQuestions.length" class="btn btn-success" type="submit" data-toggle="modal" data-target="#exampleModal">Submit Quiz</button>
+        <button class="btn btn-warning" @click="submit(currentQuestion.questionId)" type="submit" :class="{submitted: isSubmitted}">Save and submit</button>
+        <button v-if="currentPage == quizQuestions.length" class="btn btn-success" type="submit" data-toggle="modal" data-target="#exampleModal" :class="{submitted: isSubmitted}">Submit Quiz</button>
     </div>
     
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -49,6 +49,30 @@
       <div class="modal-footer">
         <button type="button"  class="btn btn-danger" data-dismiss="modal">Go back</button>
         <button type="button" class="btn btn-primary" @click="submitQuiz"  data-dismiss="modal">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Report modal -->
+<div class="modal fade" id="exampleModals" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel1">Do you want to report</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <label for="type">Query type</label>   
+        <input type="text" name="type" v-model="type">
+        <label for="description">description</label>
+        <input type="text" name="description" v-model="description">
+      </div>
+      <div class="modal-footer">
+        <button type="button"  class="btn btn-danger" data-dismiss="modal">Go back</button>
+        <button type="button" class="btn btn-primary" @click="addQuery"  data-dismiss="modal">Submit</button>
       </div>
     </div>
   </div>
@@ -83,7 +107,7 @@
 </template>
 
 <script>
-import { getQuiz,submitQuiz } from '@/scripts/QuizService';
+import { getQuiz,submitQuiz, submitQuery } from '@/scripts/QuizService';
 import TimerComponent from './TimerComponent.vue';
 import { toast } from 'vue3-toastify';
 import 'vue3-toastify/dist/index.css';
@@ -101,10 +125,14 @@ export default {
             quizQuestions:[],
             currentPage:1,
             currentOption:'',
+            type:'',
+            description:'',
             currentQuestion:'',
             duration:0,
+            isSubmitted:false,
             QuizId:'',
-            response:{              
+            response:{         
+                submittedTime:'',     
                 quizId:6,
                 userId:sessionStorage.getItem('Id'),
                 options:[]           
@@ -119,6 +147,30 @@ export default {
                 this.currentQuestion = this.quizQuestions[0];
                 console.log(this.quizQuestions);
             },
+            addQuery(){
+               submitQuery(this.response.userId,this.type,this.description)
+               .then(response =>{
+                 toast.success("Query added succesfully",{
+                  autoClose:4000
+                 })
+                 console.log(response.data)
+               }).catch((err) =>{
+                  console.log(err)
+                  if(err.response.data.errors.Description ){
+                    toast.error("Description cannot be empty",{
+                    autoClose:4000
+                   })
+                  }
+                  if(err.response.data.errors.QueryType){
+                    toast.error("Query type cannot be empty",{
+                    autoClose:4000
+                   })
+                  }
+                   toast.error("Could not add query try after sometime",{
+                   autoClose:4000
+                 })
+               })
+            },
             handleTimeExpiry(){
                 toast("Your time is completed submitting the quix",{
                   autoClose:4000
@@ -129,7 +181,7 @@ export default {
             },
             changePage(page) {
                  this.currentPage = page;
-                 this.currentQuestion = this.quizQuestions[page - 1]; // Update question
+                 this.currentQuestion = this.quizQuestions[page - 1];
             },
             onclick(event){
               console.log(event.target.value);
@@ -138,14 +190,10 @@ export default {
             },
             isContainsOption(optionId){
               const storedAnswers = sessionStorage.getItem('Answers');
-               if (!storedAnswers) return false; // Return false if no data is stored
+               if (!storedAnswers) return false;
          
                const answers = JSON.parse(storedAnswers) || [] ;
-              //  if (!answers.options || !Array.isArray(answers.options)) {
-              //   console.log(answers.options)
-              //   console.log("false")
-              //   return false
-              // } 
+
          
                return answers.find((respOption) => respOption.optionId === optionId);
             },
@@ -153,8 +201,8 @@ export default {
                 return this.currentOption === optionId.toString();
             },
             submit(questionId) {
-                let answers = JSON.parse(sessionStorage.getItem('Answers') || '[]');
-                let exist = answers.some((option) => option.questionId === questionId);
+                let answers = JSON.parse(sessionStorage.getItem('Answers')||'[]');
+                let exist = answers.find((option) => option.questionId === questionId);
             
                 if (!exist) {
                     let newOption = {
@@ -169,6 +217,7 @@ export default {
                     if (this.currentPage !== this.quizQuestions.length) {
                         this.changePage(this.currentPage + 1);
                     }
+
                 } else {
                     let obj = answers.find((option) => option.questionId === questionId);
                     obj.optionId = parseInt(this.currentOption, 10); // Update existing option
@@ -186,6 +235,7 @@ export default {
                     if (this.currentPage !== this.quizQuestions.length) {
                         this.changePage(this.currentPage + 1);
                     }
+                    
                 }
             
                 console.log("Updated Response:", this.response.options);
@@ -201,10 +251,25 @@ export default {
               console.log(this.currentQuestion[0]);
             },
             submitQuiz(){
-              console.log(JSON.parse(sessionStorage.getItem('Answers')))
-              this.response.options = JSON.parse(sessionStorage.getItem('Answers') || [])
+                this.response.options = JSON.parse(sessionStorage.getItem('Answers') || [])
+                let time = new Date();
+                let currTime = new Date(time.getTime() + this.duration*60*1000);
+                const savedEndTime = new Date(sessionStorage.getItem('timerEndTime'));
+                let finalTime = currTime.getTime() - savedEndTime.getTime();
+
+                let totalSeconds = Math.floor(finalTime/1000)
+                let minutes = Math.floor(totalSeconds / 60);
+                let remainingSec = totalSeconds % 60;
+
+                let formattedTime = `${minutes.toString().padStart(2, '0')}:${remainingSec
+                .toString()
+                 .padStart(2, '0')}`;
+                console.log(formattedTime);
+                this.response.submittedTime = formattedTime;
                submitQuiz(this.response)
                .then(data => {
+                
+                this.isSubmitted = true;
                 console.log(data);
                 toast(`${data.data} ,do not refresh automatically redirecting to home page`, {
                     autoClose: 4000,
@@ -217,28 +282,31 @@ export default {
                sessionStorage.removeItem('Answers')
             }
           },
+          mounted(){
+            sessionStorage.setItem('Answers',JSON.stringify(this.response.options))
+          },
           created() {
-    let quizId = this.$route.params.quizId;
-    this.response.quizId = quizId;
-
-    const cachedQuiz = sessionStorage.getItem(`quiz_${quizId}`);
+               let quizId = this.$route.params.quizId;
+               this.response.quizId = quizId;
+           
+               const cachedQuiz = sessionStorage.getItem(`quiz_${quizId}`);
+              
     
-    if (cachedQuiz) {
-        // Parse and use the cached data
-        const quizData = JSON.parse(cachedQuiz);
-        this.initializeQuiz(quizData);
-    } else {
-        getQuiz(quizId)
-            .then(response => {
-                const quizData = response.data;
-                this.initializeQuiz(quizData);
-                sessionStorage.setItem(`quiz_${quizId}`, JSON.stringify(quizData));
-            })
-            .catch(error => {
-                console.error("Error fetching quiz:", error);
-            });
-    }
-},
+                 if (cachedQuiz) {
+                     const quizData = JSON.parse(cachedQuiz);
+                     this.initializeQuiz(quizData);
+                 } else {
+                 getQuiz(quizId)
+                     .then(response => {
+                         const quizData = response.data;
+                         this.initializeQuiz(quizData);
+                         sessionStorage.setItem(`quiz_${quizId}`, JSON.stringify(quizData));
+                     })
+                     .catch(error => {
+                         console.error("Error fetching quiz:", error);
+                     });
+                 }
+             },
 
 }
   
@@ -401,6 +469,17 @@ html {
 
 .title{
   width: 100%;
+}
+
+.submitted{
+  display: none;
+}
+
+.modal-body{
+  display: flex;
+    width: 80%;
+    flex-direction: column;
+    margin: auto;
 }
 
 @media screen and (max-width: 760px) {

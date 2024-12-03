@@ -157,6 +157,7 @@ namespace QuizzApplicationBackend.Services.Tests
         public async Task GetRandomQuestionsByCategory_ReturnsRandomQuestions()
         {
             var category = Categories.Geography;
+            var difficulty = Difficulties.Easy;
             var questions = new List<Question>
             {
                 new Question { QuestionId = 1, Category = category, Points = 10 },
@@ -164,7 +165,7 @@ namespace QuizzApplicationBackend.Services.Tests
             };
             _questionRepositoryMock.Setup(r => r.GetAll()).ReturnsAsync(questions);
 
-            var result = await _service.GetRandomQuestionsByCategory(category, 1);
+            var result = await _service.GetRandomQuestionsByCategory(category, 1,difficulty);
 
             Assert.AreEqual(1, result.Count());
             Assert.IsTrue(result.First().Category == category);
@@ -176,7 +177,7 @@ namespace QuizzApplicationBackend.Services.Tests
             _questionRepositoryMock.Setup(r => r.GetAll()).ReturnsAsync(new List<Question>());
 
             Assert.ThrowsAsync<CollectionEmptyException>(async () =>
-                await _service.GetRandomQuestionsByCategory(Categories.Politics, 1));
+                await _service.GetRandomQuestionsByCategory(Categories.Politics, 1,Difficulties.Easy));
         }
 
         [Test]

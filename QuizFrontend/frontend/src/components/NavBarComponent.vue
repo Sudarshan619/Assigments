@@ -49,8 +49,9 @@
             
             <li v-if="role== 0"><a class="dropdown-item" href="#"><router-link to="/profile">Creator Profile</router-link></a></li>
             <li v-if="role == 1"><a class="dropdown-item" href="#">  <router-link to="/userprofile">User Profile</router-link></a></li>
+            <li v-if="role== 0"><a class="dropdown-item" href="#"><router-link to="/report">Reports</router-link></a></li>
             <li v-if="isLoggedin"><a class="dropdown-item" href="#"><router-link to="/login" @click="logout">Logout</router-link></a></li>
-            <!-- <li><hr class="dropdown-divider"></li> -->
+           
           </ul>
         </li>
         <li class="nav-item" v-if="!isLoggedin">
@@ -72,14 +73,17 @@
 </template>
 
 <script>
+import { useLoginStore } from '@/stores/loginStore';
+import { ref } from 'vue';
  export default{
     name:'NavBarComponent',
     data(){
+      const loginStore = useLoginStore();
       return{
         image:"http://localhost:5193"+sessionStorage.getItem('Image'),
         isPlaying: false,
-        isLoggedin :false,
-        role:1,
+        isLoggedin :ref(loginStore.isLoggedIn),
+        role:1,      
       }
     },
     mounted() {
@@ -102,15 +106,14 @@
           }
     },
      logout(){
-      sessionStorage.removeItem('Token');
-      sessionStorage.removeItem('Answers');
       sessionStorage.clear();
       this.isLoggedin = false
      }
-  },
-  created(){
-    this.isLogged();
-  }
+   },
+   created(){
+     this.isLogged();
+     
+   }
  }
 </script>
 <style scoped>

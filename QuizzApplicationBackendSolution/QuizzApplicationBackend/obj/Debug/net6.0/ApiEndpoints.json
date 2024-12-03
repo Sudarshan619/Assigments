@@ -250,6 +250,16 @@
   },
   {
     "ContainingType": "QuizzApplicationBackend.Controllers.QueryController",
+    "Method": "GetAllQuery",
+    "RelativePath": "api/Query",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuizzApplicationBackend.Controllers.QueryController",
     "Method": "GetQuery",
     "RelativePath": "api/Query/{id}",
     "HttpMethod": "GET",

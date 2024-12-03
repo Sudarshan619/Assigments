@@ -69,7 +69,7 @@ export default {
 .home-page {
   padding: 20px;
   text-align: center;
-  font-family: 'Arial', sans-serif;
+  font-family: Sour Gummy;
 }
 
 /* Header */

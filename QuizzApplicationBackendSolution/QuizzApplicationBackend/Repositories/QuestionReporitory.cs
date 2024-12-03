@@ -84,9 +84,32 @@ namespace QuizzApplicationBackend.Repositories
             }
         }
 
-        public Task<Question> Update(int id, Question entity)
+        public async Task<Question> Update(int id, Question entity)
         {
-            throw new NotImplementedException();
+            try
+            {
+                
+                var existingQuestion = await Get(id);
+
+               
+                existingQuestion.QuestionName = entity.QuestionName;
+                existingQuestion.Difficulty = entity.Difficulty;
+                existingQuestion.Points = entity.Points;
+                existingQuestion.Options = entity.Options; 
+
+                await QuestionContext.SaveChangesAsync();
+
+                return existingQuestion;
+            }
+            catch (NotFoundException ex)
+            {
+                throw new NotFoundException(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Not able to update Question");
+            }
         }
+
     }
 }

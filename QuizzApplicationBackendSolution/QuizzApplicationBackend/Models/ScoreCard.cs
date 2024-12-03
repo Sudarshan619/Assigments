@@ -17,6 +17,8 @@ namespace QuizzApplicationBackend.Models
 
         public double Acuuracy { get; set; }
 
+        public string SubmittedTime { get; set; }
+
         public Quiz Quiz { get; set; }
 
         public User User { get; set; }

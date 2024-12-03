@@ -16,3 +16,16 @@ export function submitQuiz(response){
 export function getByCategory(category){
    return axios.get(`http://localhost:5193/api/Quiz/by category?category=${category}`)
 }
+
+export function submitQuery(id,type,description){
+  return axios.post("http://localhost:5193/api/Query",{
+    "reportedBy": id,
+    "queryType": type,
+    "description": description,
+    "isResolved": false
+  })
+}
+
+export function getAllScorecard(){
+   return axios.get("http://localhost:5193/api/ScoreCard");
+}

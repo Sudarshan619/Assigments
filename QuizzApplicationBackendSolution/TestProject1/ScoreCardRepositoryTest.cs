@@ -9,23 +9,22 @@ using QuizzApplicationBackend.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace TestProject1
 {
     public class ScoreCardRepositoryTest
     {
-        DbContextOptions options;
-        QuizContext context;
-        ScorecardRepository repository;
-        Mock<ILogger<ScorecardRepository>> logger;
+        private DbContextOptions<QuizContext> options;
+        private QuizContext context;
+        private ScorecardRepository repository;
+        private Mock<ILogger<ScorecardRepository>> logger;
 
         [SetUp]
         public void Setup()
         {
             options = new DbContextOptionsBuilder<QuizContext>()
-                .UseInMemoryDatabase("TestScoreCardDb")
+                .UseInMemoryDatabase(Guid.NewGuid().ToString()) // Use unique DB for each test run
                 .Options;
             context = new QuizContext(options);
             logger = new Mock<ILogger<ScorecardRepository>>();
@@ -33,147 +32,143 @@ namespace TestProject1
         }
 
         [Test]
-        public async Task TestAddScoreCard()
+        public async Task Add_ValidScoreCard_ShouldAddSuccessfully()
         {
             var scoreCard = new ScoreCard
             {
                 QuizId = 1,
                 UserId = 1,
                 Score = 100,
-                Acuuracy = 50
+                Acuuracy = 90
             };
-            var addedScoreCard = await repository.Add(scoreCard);
-            Assert.AreEqual(scoreCard.ScoreCardId, addedScoreCard.ScoreCardId);
+
+            var result = await repository.Add(scoreCard);
+
+            Assert.IsNotNull(result);
+            Assert.AreEqual(scoreCard.Score, result.Score);
         }
 
         [Test]
-        public void ExceptionTestAddScoreCard()
+        public async Task Add_NullScoreCard_ShouldThrowException()
         {
-            // Attempting to add a null scoreCard to trigger exception
             Assert.ThrowsAsync<Exception>(async () => await repository.Add(null));
         }
 
         [Test]
-        public async Task TestGetScoreCard()
+        public async Task Get_ValidId_ShouldReturnScoreCard()
         {
             var scoreCard = new ScoreCard
-            {
-                QuizId = 1,
-                UserId = 1,
-                Score = 100,
-                Acuuracy = 50
-            };
-            var addedScoreCard = await repository.Add(scoreCard);
-
-            var retrievedScoreCard = await repository.Get(addedScoreCard.ScoreCardId);
-            Assert.IsNotNull(retrievedScoreCard);
-            Assert.AreEqual(scoreCard.ScoreCardId, retrievedScoreCard.ScoreCardId);
-        }
-
-        [Test]
-        public void ExceptionTestGetScoreCard()
-        {
-            // Attempting to get a ScoreCard with a non-existing ID to trigger NotFoundException
-            Assert.ThrowsAsync<NotFoundException>(async () => await repository.Get(999));
-        }
-
-        [Test]
-        public async Task TestGetAllScoreCards()
-        {
-            var scoreCard1 = new ScoreCard
-            {
-                QuizId = 1,
-                UserId = 1,
-                Score = 100,
-                Acuuracy = 50
-            };
-
-            var scoreCard2 = new ScoreCard
             {
                 QuizId = 2,
                 UserId = 2,
                 Score = 80,
-                Acuuracy = 70
+                Acuuracy = 75
             };
 
-            await repository.Add(scoreCard1);
-            await repository.Add(scoreCard2);
+            var addedScoreCard = await repository.Add(scoreCard);
 
-            var allScoreCards = await repository.GetAll();
-            Assert.IsNotNull(allScoreCards);
+            var retrievedScoreCard = await repository.Get(addedScoreCard.ScoreCardId);
+
+            Assert.IsNotNull(retrievedScoreCard);
+            Assert.AreEqual(addedScoreCard.ScoreCardId, retrievedScoreCard.ScoreCardId);
         }
 
         [Test]
-        public async Task ExceptionTestGetAllScoreCards()
+        public async Task Get_InvalidId_ShouldThrowNotFoundException()
         {
-            // Ensure no scorecards exist to trigger CollectionEmptyException
+            Assert.ThrowsAsync<NotFoundException>(async () => await repository.Get(999));
+        }
+
+        [Test]
+        public async Task GetAll_WhenScoreCardsExist_ShouldReturnAll()
+        {
+            var scoreCards = new List<ScoreCard>
+            {
+                new ScoreCard { QuizId = 1, UserId = 1, Score = 90, Acuuracy = 95 },
+                new ScoreCard { QuizId = 2, UserId = 2, Score = 85, Acuuracy = 88 }
+            };
+
+            await context.ScoreCards.AddRangeAsync(scoreCards);
+            await context.SaveChangesAsync();
+
+            var result = await repository.GetAll();
+
+            Assert.IsNotNull(result);
+            Assert.AreEqual(2, result.Count());
+        }
+
+        [Test]
+        public async Task GetAll_WhenNoScoreCards_ShouldThrowCollectionEmptyException()
+        {
             Assert.ThrowsAsync<CollectionEmptyException>(async () => await repository.GetAll());
         }
 
         [Test]
-        public async Task TestDeleteScoreCard()
+        public async Task Delete_ValidId_ShouldDeleteSuccessfully()
         {
             var scoreCard = new ScoreCard
             {
-                QuizId = 1,
-                UserId = 1,
-                Score = 100,
-                Acuuracy = 50
-            };
-            var addedScoreCard = await repository.Add(scoreCard);
-
-            var deletedScoreCard = await repository.Delete(addedScoreCard.ScoreCardId);
-            Assert.AreEqual(addedScoreCard.ScoreCardId, deletedScoreCard.ScoreCardId);
-
-            // Verify that the deleted scoreCard cannot be retrieved
-            Assert.ThrowsAsync<NotFoundException>(async () => await repository.Get(deletedScoreCard.ScoreCardId));
-        }
-
-        [Test]
-        public void ExceptionTestDeleteScoreCard()
-        {
-            
-            Assert.ThrowsAsync<Exception>(async () => await repository.Delete(999));
-        }
-
-        [Test]
-        public async Task TestUpdateScoreCard()
-        {
-            var scoreCard = new ScoreCard
-            {
-                QuizId = 1,
-                UserId = 1,
-                Score = 100,
-                Acuuracy = 50
-            };
-            var addedScoreCard = await repository.Add(scoreCard);
-
-            // Modify properties
-            addedScoreCard.Score = 90;
-            addedScoreCard.Acuuracy = 80;
-
-            var updatedScoreCard = await repository.Update(addedScoreCard.ScoreCardId, addedScoreCard);
-
-            Assert.IsNotNull(updatedScoreCard);
-            Assert.AreEqual(90, updatedScoreCard.Score);
-            Assert.AreEqual(80, updatedScoreCard.Acuuracy);
-        }
-
-        [Test]
-        public void ExceptionTestUpdateScoreCard()
-        {
-            var nonExistentScoreCard = new ScoreCard
-            {
-                ScoreCardId = 999,
-                QuizId = 1,
-                UserId = 1,
+                QuizId = 3,
+                UserId = 3,
                 Score = 70,
                 Acuuracy = 60
             };
 
-            Assert.ThrowsAsync<Exception>(async () => await repository.Update(999, nonExistentScoreCard));
+            var addedScoreCard = await repository.Add(scoreCard);
+
+            var deletedScoreCard = await repository.Delete(addedScoreCard.ScoreCardId);
+
+            Assert.AreEqual(addedScoreCard.ScoreCardId, deletedScoreCard.ScoreCardId);
+
+            Assert.ThrowsAsync<NotFoundException>(async () => await repository.Get(deletedScoreCard.ScoreCardId));
         }
 
-     
+        [Test]
+        public async Task Delete_InvalidId_ShouldThrowException()
+        {
+            Assert.ThrowsAsync<Exception>(async () => await repository.Delete(999));
+        }
+
+        [Test]
+        public async Task Update_ValidId_ShouldUpdateSuccessfully()
+        {
+            var scoreCard = new ScoreCard
+            {
+                QuizId = 1,
+                UserId = 1,
+                Score = 100,
+                Acuuracy = 95
+            };
+
+            var addedScoreCard = await repository.Add(scoreCard);
+
+            var updatedScoreCard = new ScoreCard
+            {
+                QuizId = 1,
+                UserId = 1,
+                Score = 110,
+                Acuuracy = 97
+            };
+
+            var result = await repository.Update(addedScoreCard.ScoreCardId, updatedScoreCard);
+
+            Assert.IsNotNull(result);
+            Assert.AreEqual(updatedScoreCard.Score, result.Score);
+            Assert.AreEqual(updatedScoreCard.Acuuracy, result.Acuuracy);
+        }
+
+        [Test]
+        public async Task Update_InvalidId_ShouldThrowException()
+        {
+            var updatedScoreCard = new ScoreCard
+            {
+                QuizId = 1,
+                UserId = 1,
+                Score = 100,
+                Acuuracy = 95
+            };
+
+            Assert.ThrowsAsync<Exception>(async () => await repository.Update(999, updatedScoreCard));
+        }
     }
 }

@@ -1,8 +1,8 @@
 <template>
   <div class="quiz-holder-main">
  <div class="search-btn">
-   <form class="d-flex-8">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" v-model="searchQuiz">
+   <form class="d-flex-8" >
+        <input  class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" v-model="searchQuiz">
         <button @click="searchQuizByTitle" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
     <select @change="getQuizByCategory" class="selector">
@@ -11,7 +11,12 @@
           <option value="2">Politics</option>
           <option value="3">Geography</option>
           <option value="4">History</option>
-        </select>
+      </select>
+      <select @change="getQuizByCategory" class="selector">
+          <option value="0">Easy</option>
+          <option value="1">Medium</option>
+          <option value="2">Hard</option>
+      </select>
 </div>
 <div class="card-holder" v-if="quizes.length == 0">
   <img src="../assets/notfound1.gif" class="notfound"/>
@@ -50,9 +55,11 @@
         </button>
       </div>
       <div class="modal-body" v-if="quiz">
-         <p>Quiz Timing:{{ quiz.duration }}</p>
+         <p>Quiz Timing:{{ quiz.duration }}mins</p>
          <p>Quiz Category:{{ quiz.questions[0].category }}</p>
-         <p></p>
+         <p style="color: red;">Note:Once the quiz is started complete before the time or else it will automatically sunmitted </p>
+         <p style="color: green;">If any problem with the browser you can exist and try again your options will be saved</p>
+         <p style="color: orange;">Please do press save and submit before moving to next question or else answer will not be recorded</p>
       </div>
       <div class="modal-footer">
         <button type="button"  class="btn btn-danger" data-dismiss="modal">Cancel</button>
@@ -66,7 +73,7 @@
 <script>
 import { ref, onMounted } from 'vue'; // Importing ref and onMounted for Composition API
 import { useRouter } from 'vue-router';
-import { getQuizAll,getByCategory } from '@/scripts/QuizService'; // Make sure the import path is correct
+import { getQuizAll,getByCategory,getAllScorecard } from '@/scripts/QuizService'; // Make sure the import path is correct
 import { getAllQuiz } from '@/scripts/ProfileService';
 import { toast } from 'vue3-toastify';
 import 'vue3-toastify/dist/index.css';
@@ -79,7 +86,9 @@ export default {
     // Define the reactive state using ref
     const quizes = ref([]);
     const quiz = ref(null);
+    const username = sessionStorage.getItem('Name');
     const quizId = ref('');
+    const scoreCard = ref([]);
     const searchQuiz = ref('');
     const categoryMap = {
       "0": "GeneralKnowledge",
@@ -102,9 +111,41 @@ export default {
     };
 
     // Define the method to start the quiz
-    const startQuiz = (quizId) => {
-      router.push({ name: 'takequiz', params: { quizId } });
+    const startQuiz = async (quizId) => {
+      const result = await hasAttempted(quizId)
+      if(result){
+        toast.error("Quiz already attempted,Try any other quizes",{
+            autoClose:4000
+        })
+      }
+      else{
+        router.push({ name: 'takequiz', params: { quizId } });
+      }
+      
     };
+
+    const hasAttempted = async (quizId)=>{
+      try {
+          const response = await getAllScorecard();
+          scoreCard.value = response.data;
+          console.log(scoreCard.value);
+          console.log(parseInt(quizId), username)
+          const user = scoreCard.value.find((score) => {
+           return  score.quizId == parseInt(quizId) && score.username == username  
+          }
+                    
+         );
+         console.log(user);
+         if(user === undefined){
+          return false
+         }
+         return true;
+         
+         
+       } catch (error) {
+            return false; 
+       }
+    }
     
     const assignQuizId = (event) =>{
        console.log(event.target.value)
@@ -178,7 +219,8 @@ export default {
       searchQuizByTitle,
       getQuizes,
       difficulty,
-      getQuizByCategory
+      getQuizByCategory,
+      username
     };
   },
  }
@@ -208,6 +250,10 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+   }
+
+   .modal-body{
+     font-family: Sour Gummy;
    }
    .card-holder{
     width: 80%;
@@ -253,6 +299,11 @@ export default {
   position: relative;
   overflow: hidden;
   background-color: #f8f9fa;
+}
+
+.modal-header{
+  justify-content: space-between;
+  font-family: Sour Gummy;
 }
 
 .card-body::before {

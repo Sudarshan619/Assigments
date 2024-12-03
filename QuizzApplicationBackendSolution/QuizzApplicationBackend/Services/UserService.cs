@@ -61,6 +61,12 @@ namespace QuizzApplicationBackend.Services
 
         public async Task<LoginResponseDTO> Register(CreateUserDTO  registerUser)
         {
+            var oldUser = await _userRepository.Get(registerUser.Username);
+            if(oldUser != null && oldUser.Email == registerUser.Email)
+            {
+                throw new Exception("User already exist");
+            }
+
             HMACSHA256 hmac = new HMACSHA256();
             byte[] passwordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(registerUser.Password));
             User user = new User()

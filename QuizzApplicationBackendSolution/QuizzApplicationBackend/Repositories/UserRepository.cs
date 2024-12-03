@@ -67,14 +67,10 @@ namespace QuizzApplicationBackend.Repositories
             try
             {
                 var result = _context.Users.FirstOrDefault(e => e.Name == name);
-                if (result != null)
-                {
-                    return result;
-                }
-                else
-                {
-                    throw new NotFoundException("User not found");
-                }
+              
+                 return result;
+                
+                
             }
             catch (NotFoundException ex) { 
                 throw new NotFoundException(ex.Message);         
@@ -86,14 +82,9 @@ namespace QuizzApplicationBackend.Repositories
             try
             {
                 var result = await _context.Users.ToListAsync();
-                if (result != null)
-                {
-                    return result;
-                }
-                else
-                {
-                    throw new NotFoundException("User not found");
-                }
+               
+                return result;
+               
             }
             catch (NotFoundException ex)
             {

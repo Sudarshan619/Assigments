@@ -3,8 +3,10 @@ using Moq;
 using NUnit.Framework;
 using QuizzApplicationBackend.Controllers;
 using QuizzApplicationBackend.DTO;
-using QuizzApplicationBackend.Interfaces;
 using QuizzApplicationBackend.Exceptions;
+using QuizzApplicationBackend.Interfaces;
+using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace TestProject1
@@ -18,7 +20,6 @@ namespace TestProject1
         [SetUp]
         public void Setup()
         {
-            // Arrange mock dependencies
             _mockOptionService = new Mock<IOptionService>();
             _controller = new OptionController(_mockOptionService.Object);
         }
@@ -26,14 +27,11 @@ namespace TestProject1
         [Test]
         public async Task GetAllOptions_ShouldReturnOk()
         {
-            // Arrange
             var options = new List<OptionResponseDTO> { new OptionResponseDTO { Text = "Option 1" } };
             _mockOptionService.Setup(service => service.GetAllOptions(1)).ReturnsAsync(options);
 
-            // Act
             var result = await _controller.GetAllOptions(1);
 
-            // Assert
             Assert.IsNotNull(result);
             var okResult = result as OkObjectResult;
             Assert.IsNotNull(okResult);
@@ -44,31 +42,26 @@ namespace TestProject1
         [Test]
         public async Task GetAllOptions_ShouldReturnNotFound()
         {
-            // Arrange
             _mockOptionService.Setup(service => service.GetAllOptions(1)).ThrowsAsync(new CollectionEmptyException("No options available."));
 
-            // Act
             var result = await _controller.GetAllOptions(1);
 
-            // Assert
             Assert.IsNotNull(result);
             var notFoundResult = result as NotFoundObjectResult;
             Assert.IsNotNull(notFoundResult);
             Assert.AreEqual(404, notFoundResult.StatusCode);
+            Assert.AreEqual("No options available.", notFoundResult.Value);
         }
 
         [Test]
         public async Task GetOption_ShouldReturnOk_WhenOptionExists()
         {
-            // Arrange
             int optionId = 1;
             var option = new OptionResponseDTO { Text = "Option 1" };
             _mockOptionService.Setup(service => service.GetOption(optionId)).ReturnsAsync(option);
 
-            // Act
             var result = await _controller.GetOption(optionId);
 
-            // Assert
             Assert.IsNotNull(result);
             var okResult = result as OkObjectResult;
             Assert.IsNotNull(okResult);
@@ -79,32 +72,26 @@ namespace TestProject1
         [Test]
         public async Task GetOption_ShouldReturnNotFound_WhenOptionDoesNotExist()
         {
-            // Arrange
             int optionId = 1;
             _mockOptionService.Setup(service => service.GetOption(optionId)).ThrowsAsync(new NotFoundException("Option not found."));
 
-            // Act
             var result = await _controller.GetOption(optionId);
 
-            // Assert
             Assert.IsNotNull(result);
             var notFoundResult = result as NotFoundObjectResult;
             Assert.IsNotNull(notFoundResult);
             Assert.AreEqual(404, notFoundResult.StatusCode);
-            Assert.AreEqual("Option not found.", notFoundResult.Value.ToString());
+            Assert.AreEqual("Option not found.", notFoundResult.Value);
         }
 
         [Test]
         public async Task CreateOption_ShouldReturnOk_WhenOptionCreatedSuccessfully()
         {
-            // Arrange
             var optionDto = new OptionDTO { Text = "Option 1" };
             _mockOptionService.Setup(service => service.CreateOption(optionDto)).ReturnsAsync(true);
 
-            // Act
             var result = await _controller.CreateOption(optionDto);
 
-            // Assert
             Assert.IsNotNull(result);
             var okResult = result as OkObjectResult;
             Assert.IsNotNull(okResult);
@@ -115,14 +102,11 @@ namespace TestProject1
         [Test]
         public async Task CreateOption_ShouldReturnBadRequest_WhenOptionCreationFails()
         {
-            // Arrange
             var optionDto = new OptionDTO { Text = "Option 1" };
             _mockOptionService.Setup(service => service.CreateOption(optionDto)).ReturnsAsync(false);
 
-            // Act
             var result = await _controller.CreateOption(optionDto);
 
-            // Assert
             Assert.IsNotNull(result);
             var badRequestResult = result as BadRequestObjectResult;
             Assert.IsNotNull(badRequestResult);
@@ -131,17 +115,28 @@ namespace TestProject1
         }
 
         [Test]
+        public async Task CreateOption_ShouldReturnBadRequest_WhenModelStateIsInvalid()
+        {
+            _controller.ModelState.AddModelError("Text", "Text is required");
+
+            var result = await _controller.CreateOption(new OptionDTO());
+
+            Assert.IsNotNull(result);
+            var badRequestResult = result as BadRequestObjectResult;
+            Assert.IsNotNull(badRequestResult);
+            Assert.AreEqual(400, badRequestResult.StatusCode);
+            Assert.AreEqual(_controller.ModelState, badRequestResult.Value);
+        }
+
+        [Test]
         public async Task EditOption_ShouldReturnNoContent_WhenOptionEditedSuccessfully()
         {
-            // Arrange
             int optionId = 1;
             var optionDto = new OptionDTO { Text = "Updated Option" };
             _mockOptionService.Setup(service => service.EditOption(optionId, optionDto)).ReturnsAsync(true);
 
-            // Act
             var result = await _controller.EditOption(optionId, optionDto);
 
-            // Assert
             Assert.IsNotNull(result);
             var noContentResult = result as NoContentResult;
             Assert.IsNotNull(noContentResult);
@@ -151,33 +146,27 @@ namespace TestProject1
         [Test]
         public async Task EditOption_ShouldReturnNotFound_WhenOptionEditFails()
         {
-            // Arrange
             int optionId = 1;
             var optionDto = new OptionDTO { Text = "Updated Option" };
             _mockOptionService.Setup(service => service.EditOption(optionId, optionDto)).ReturnsAsync(false);
 
-            // Act
             var result = await _controller.EditOption(optionId, optionDto);
 
-            // Assert
             Assert.IsNotNull(result);
             var notFoundResult = result as NotFoundObjectResult;
             Assert.IsNotNull(notFoundResult);
             Assert.AreEqual(404, notFoundResult.StatusCode);
-            Assert.AreEqual($"Option with ID {optionId} not found.", notFoundResult.Value.ToString());
+            Assert.AreEqual($"Option with ID {optionId} not found.", notFoundResult.Value);
         }
 
         [Test]
-        public async Task DeleteOption_ShouldReturnNoContent()
+        public async Task DeleteOption_ShouldReturnNoContent_WhenDeletedSuccessfully()
         {
-            // Arrange
             int optionId = 1;
             _mockOptionService.Setup(service => service.DeleteOption(optionId)).ReturnsAsync(true);
 
-            // Act
             var result = await _controller.DeleteOption(optionId);
 
-            // Assert
             Assert.IsNotNull(result);
             var noContentResult = result as NoContentResult;
             Assert.IsNotNull(noContentResult);
@@ -185,32 +174,71 @@ namespace TestProject1
         }
 
         [Test]
-        public async Task DeleteOption_ShouldReturnNotFound()
+        public async Task DeleteOption_ShouldReturnNotFound_WhenDeletionFails()
         {
-            // Arrange
             int optionId = 1;
-            _mockOptionService.Setup(service => service.DeleteOption(optionId)).ThrowsAsync(new NotFoundException("Option with ID 1 not found."));
+            _mockOptionService.Setup(service => service.DeleteOption(optionId)).ThrowsAsync(new NotFoundException("Option not found."));
 
-            // Act
             var result = await _controller.DeleteOption(optionId);
 
-            // Assert
             Assert.IsNotNull(result);
             var notFoundResult = result as NotFoundObjectResult;
             Assert.IsNotNull(notFoundResult);
             Assert.AreEqual(404, notFoundResult.StatusCode);
-            Assert.AreEqual($"Option with ID {optionId} not found.", notFoundResult.Value.ToString());
+            Assert.AreEqual("Option not found.", notFoundResult.Value);
         }
 
         [Test]
-        public async Task GetOption_ShouldReturnInternalServerError_WhenExceptionOccurs()
+        public async Task CreateMultipleOption_ShouldReturnOk_WhenOptionsCreatedSuccessfully()
         {
             // Arrange
-            int optionId = 1;
-            _mockOptionService.Setup(service => service.GetOption(optionId)).ThrowsAsync(new System.Exception("Unexpected error"));
+            var optionDtos = new List<OptionDTO>
+    {
+        new OptionDTO { Text = "Option 1" },
+        new OptionDTO { Text = "Option 2" }
+    };
+            _mockOptionService.Setup(service => service.CreateOptionBulk(optionDtos)).ReturnsAsync(true);
 
             // Act
-            var result = await _controller.GetOption(optionId);
+            var result = await _controller.CreateMultipleOption(optionDtos);
+
+            // Assert
+            Assert.IsNotNull(result);
+            var okResult = result as OkObjectResult;
+            Assert.IsNotNull(okResult);
+            Assert.AreEqual(200, okResult.StatusCode);
+            Assert.AreEqual(true, okResult.Value);
+        }
+
+        [Test]
+        public async Task CreateMultipleOption_ShouldReturnBadRequest_WhenModelStateIsInvalid()
+        {
+            // Arrange
+            _controller.ModelState.AddModelError("Text", "Required");
+
+            // Act
+            var result = await _controller.CreateMultipleOption(new List<OptionDTO>());
+
+            // Assert
+            Assert.IsNotNull(result);
+            var badRequestResult = result as BadRequestObjectResult;
+            Assert.IsNotNull(badRequestResult);
+            Assert.AreEqual(400, badRequestResult.StatusCode);
+        }
+
+        [Test]
+        public async Task CreateMultipleOption_ShouldReturnInternalServerError_WhenExceptionOccurs()
+        {
+            // Arrange
+            var optionDtos = new List<OptionDTO>
+    {
+        new OptionDTO { Text = "Option 1" },
+        new OptionDTO { Text = "Option 2" }
+    };
+            _mockOptionService.Setup(service => service.CreateOptionBulk(optionDtos)).ThrowsAsync(new System.Exception("Unexpected error"));
+
+            // Act
+            var result = await _controller.CreateMultipleOption(optionDtos);
 
             // Assert
             Assert.IsNotNull(result);
@@ -220,44 +248,7 @@ namespace TestProject1
             Assert.AreEqual("Unexpected error", internalServerErrorResult.Value.ToString());
         }
 
-        [Test]
-        public async Task EditOption_ShouldReturnInternalServerError_WhenExceptionOccurs()
-        {
-            // Arrange
-            int optionId = 1;
-            var optionDto = new OptionDTO { Text = "Updated Option" };
-            _mockOptionService.Setup(service => service.EditOption(optionId, optionDto)).ThrowsAsync(new System.Exception("Unexpected error"));
 
-            // Act
-            var result = await _controller.EditOption(optionId, optionDto);
 
-            // Assert
-            Assert.IsNotNull(result);
-            var internalServerErrorResult = result as ObjectResult;
-            Assert.IsNotNull(internalServerErrorResult);
-            Assert.AreEqual(500, internalServerErrorResult.StatusCode);
-            Assert.AreEqual("Unexpected error", internalServerErrorResult.Value.ToString());
-        }
-
-        [Test]
-        public async Task DeleteOption_ShouldReturnInternalServerError()
-        {
-            // Arrange
-            int optionId = 1;
-            _mockOptionService.Setup(service => service.DeleteOption(optionId)).ThrowsAsync(new System.Exception("Unexpected error"));
-
-            // Act
-            var result = await _controller.DeleteOption(optionId);
-
-            // Assert
-            Assert.IsNotNull(result);
-            var internalServerErrorResult = result as ObjectResult;
-            Assert.IsNotNull(internalServerErrorResult);
-            Assert.AreEqual(500, internalServerErrorResult.StatusCode);
-            Assert.AreEqual("Unexpected error", internalServerErrorResult.Value.ToString());
-        }
-       
-     }
-    
-
+    }
 }

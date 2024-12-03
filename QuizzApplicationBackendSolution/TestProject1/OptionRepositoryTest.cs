@@ -131,5 +131,91 @@ namespace TestProject1
         {
             Assert.ThrowsAsync<NotImplementedException>(async () => await repository.Update(1, new Option()));
         }
+
+        [Test]
+        public async Task TestUpdateOption()
+        {
+            // Arrange
+            Option option = new Option()
+            {
+                QuestionId = 1,
+                Text = "Initial Text",
+                IsCorrect = false
+            };
+            var addedOption = await repository.Add(option);
+
+            Option updatedOptionData = new Option()
+            {
+                OptionId = addedOption.OptionId,
+                Text = "Updated Text",
+                IsCorrect = true
+            };
+
+            // Act
+            var updatedOption = await repository.Update(addedOption.OptionId, updatedOptionData);
+
+            // Assert
+            Assert.AreEqual(updatedOptionData.Text, updatedOption.Text);
+            Assert.AreEqual(updatedOptionData.IsCorrect, updatedOption.IsCorrect);
+        }
+
+        [Test]
+        public void ExceptionTestUpdateOption_NullEntity()
+        {
+            // Arrange
+            Option option = null;
+
+            // Act & Assert
+            Assert.ThrowsAsync<CouldNotAddException>(async () => await repository.Update(1, option));
+        }
+
+        [Test]
+        public void ExceptionTestUpdateOption_IdMismatch()
+        {
+            // Arrange
+            Option option = new Option()
+            {
+                OptionId = 999, // Mismatch ID
+                Text = "Mismatch ID Test",
+                IsCorrect = false
+            };
+
+            // Act & Assert
+            Assert.ThrowsAsync<ArgumentException>(async () => await repository.Update(1, option));
+        }
+
+        [Test]
+        public void ExceptionTestUpdateOption_NotFound()
+        {
+            // Arrange
+            Option option = new Option()
+            {
+                OptionId = 999,
+                Text = "Not Found Test",
+                IsCorrect = false
+            };
+
+            // Act & Assert
+            Assert.ThrowsAsync<NotFoundException>(async () => await repository.Update(999, option));
+        }
+
+        [Test]
+        public async Task ExceptionTestUpdateOption_UnexpectedError()
+        {
+            // Arrange
+            Option option = new Option()
+            {
+                QuestionId = 1,
+                Text = "Initial Text",
+                IsCorrect = false
+            };
+            var addedOption = await repository.Add(option);
+
+            // Simulate unexpected error by disposing the context
+            context.Dispose();
+
+            // Act & Assert
+            Assert.ThrowsAsync<CouldNotAddException>(async () => await repository.Update(addedOption.OptionId, addedOption));
+        }
     }
 }

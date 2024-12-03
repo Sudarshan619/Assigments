@@ -208,5 +208,76 @@ namespace TestProject1
             Assert.IsNotNull(notFoundResult);
             Assert.AreEqual("ScoreCard with ID 1 not found.", notFoundResult.Value);
         }
+
+        [Test]
+        public async Task GetAllScoreCard_ReturnsOk()
+        {
+            // Arrange
+            var scoreCards = new List<ScoreCardResponseDTO>
+        {
+            new ScoreCardResponseDTO { QuizId = 1, Username = "John", Score = 50, Acuuracy = 80 },
+            new ScoreCardResponseDTO { QuizId = 2, Username = "Doe", Score = 70, Acuuracy = 90 }
+        };
+            _mockScoreCardService.Setup(service => service.GetAllScoreCards()).ReturnsAsync(scoreCards);
+
+            // Act
+            var result = await _scoreCardController.GetAllScoreCard();
+
+            // Assert
+            Assert.IsInstanceOf<OkObjectResult>(result);
+            var okResult = result as OkObjectResult;
+            Assert.IsNotNull(okResult);
+            Assert.AreEqual(scoreCards, okResult.Value);
+        }
+
+        [Test]
+        public async Task GetAllScoreCard_ReturnsNotFound()
+        {
+            // Arrange
+            _mockScoreCardService.Setup(service => service.GetAllScoreCards()).ThrowsAsync(new NotFoundException("No score cards found"));
+
+            // Act
+            var result = await _scoreCardController.GetAllScoreCard();
+
+            // Assert
+            Assert.IsInstanceOf<NotFoundObjectResult>(result);
+            var notFoundResult = result as NotFoundObjectResult;
+            Assert.IsNotNull(notFoundResult);
+            Assert.AreEqual("ScoreCard is empty", notFoundResult.Value);
+        }
+
+        [Test]
+        public async Task GetAllScoreCard_InternalServerError()
+        {
+            // Arrange
+            _mockScoreCardService.Setup(service => service.GetAllScoreCards()).ThrowsAsync(new Exception());
+
+            // Act
+            var result = await _scoreCardController.GetAllScoreCard();
+
+            // Assert
+            Assert.IsInstanceOf<ObjectResult>(result);
+            var objectResult = result as ObjectResult;
+            Assert.IsNotNull(objectResult);
+            Assert.AreEqual(500, objectResult.StatusCode);
+            Assert.AreEqual("Internal server error.", objectResult.Value);
+        }
+
+        [Test]
+        public async Task GetScoreCard_InternalServerError()
+        {
+            // Arrange
+            _mockScoreCardService.Setup(service => service.GetScoreCard(1)).ThrowsAsync(new Exception());
+
+            // Act
+            var result = await _scoreCardController.GetScoreCard(1);
+
+            // Assert
+            Assert.IsInstanceOf<ObjectResult>(result);
+            var objectResult = result as ObjectResult;
+            Assert.IsNotNull(objectResult);
+            Assert.AreEqual(500, objectResult.StatusCode);
+            Assert.AreEqual("Internal server error.", objectResult.Value);
+        }
     }
 }

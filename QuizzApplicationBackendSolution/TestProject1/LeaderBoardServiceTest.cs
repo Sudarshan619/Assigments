@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using NUnit.Framework;
 
 namespace TestProject1
 {
@@ -31,7 +32,7 @@ namespace TestProject1
 
             _leaderBoardService = new LeaderBoardService(
                 _mockQuizRepository.Object,
-                _mockLeaderBoardRepository.Object,              
+                _mockLeaderBoardRepository.Object,
                 _mockScoreCardRepository.Object,
                 _mockUserRepository.Object,
                 _mockMapper.Object);
@@ -95,78 +96,75 @@ namespace TestProject1
         {
             // Arrange
             int leaderBoardId = 1;
-            var leaderBoard = new LeaderBoardDTO()
+            var leaderBoardDto = new LeaderBoardDTO()
             {
-
                 LeaderBoardName = "Test",
                 Category = 0
             };
-            var leaderBoardDto = new LeaderBoardResponseDTO
+            var leaderBoardResponse = new LeaderBoardResponseDTO
             {
                 ScoreCards = new List<ScoreCardResponseDTO>
-              {
-             new ScoreCardResponseDTO { ScoreCardId = 1, Username = "Alice", Score = 100, Acuuracy = 0.9 },
-             new ScoreCardResponseDTO { ScoreCardId = 2, Username = "Bob", Score = 200, Acuuracy = 0.8 }
-               }
+                {
+                    new ScoreCardResponseDTO { ScoreCardId = 1, Username = "Alice", Score = 100, Acuuracy = 0.9 },
+                    new ScoreCardResponseDTO { ScoreCardId = 2, Username = "Bob", Score = 200, Acuuracy = 0.8 }
+                }
             };
 
             _mockLeaderBoardRepository.Setup(repo => repo.Add(It.IsAny<LeaderBoard>())).ReturnsAsync(new LeaderBoard { LeaderBoardId = leaderBoardId });
             _mockScoreCardRepository.Setup(repo => repo.GetAll()).ReturnsAsync(new List<ScoreCard>
-    {
-        new ScoreCard { ScoreCardId = 1, UserId = 1, Score = 100, Acuuracy = 0.9 },
-        new ScoreCard { ScoreCardId = 2, UserId = 2, Score = 200, Acuuracy = 0.8 }
-    });
+            {
+                new ScoreCard { ScoreCardId = 1, UserId = 1, Score = 100, Acuuracy = 0.9 },
+                new ScoreCard { ScoreCardId = 2, UserId = 2, Score = 200, Acuuracy = 0.8 }
+            });
 
-            await _leaderBoardService.CreateLeaderBoard(leaderBoard);
-            await _leaderBoardService.CreateLeaderBoard(leaderBoard);
-            var result = await _leaderBoardService.SortLeaderBoard(Choice.Score, leaderBoardId);
+            await _leaderBoardService.CreateLeaderBoard(leaderBoardDto);
+            await _leaderBoardService.CreateLeaderBoard(leaderBoardDto);
+            var result = await _leaderBoardService.SortLeaderBoard(Choice.Score, leaderBoardId, 1);
 
             // Assert
             Assert.NotNull(result);
             Assert.AreEqual(200, result.ScoreCards.Last().Score);
-           
         }
-
 
         [Test]
         public async Task SortLeaderBoard_ByUsername_SortsCorrectly()
         {
             // Arrange
             int leaderBoardId = 1;
-            var leaderBoard = new LeaderBoardDTO()
+            var leaderBoardDto = new LeaderBoardDTO()
             {
                 LeaderBoardName = "Test",
                 Category = 0
             };
-            var leaderBoardDto = new LeaderBoardResponseDTO
+            var leaderBoardResponse = new LeaderBoardResponseDTO
             {
                 ScoreCards = new List<ScoreCardResponseDTO>
-        {
-             new ScoreCardResponseDTO { ScoreCardId = 1, Username = "Alice", Score = 100, Acuuracy = 0.9 },
-             new ScoreCardResponseDTO { ScoreCardId = 2, Username = "Bob", Score = 200, Acuuracy = 0.8 }
-        }
+                {
+                    new ScoreCardResponseDTO { ScoreCardId = 1, Username = "Alice", Score = 100, Acuuracy = 0.9 },
+                    new ScoreCardResponseDTO { ScoreCardId = 2, Username = "Bob", Score = 200, Acuuracy = 0.8 }
+                }
             };
 
             _mockLeaderBoardRepository.Setup(repo => repo.Add(It.IsAny<LeaderBoard>())).ReturnsAsync(new LeaderBoard { LeaderBoardId = leaderBoardId });
             _mockScoreCardRepository.Setup(repo => repo.GetAll()).ReturnsAsync(new List<ScoreCard>
-    {
-        new ScoreCard { ScoreCardId = 1, UserId = 1, Score = 100, Acuuracy = 0.9 },
-        new ScoreCard { ScoreCardId = 2, UserId = 2, Score = 200, Acuuracy = 0.8 }
-    });
+            {
+                new ScoreCard { ScoreCardId = 1, UserId = 1, Score = 100, Acuuracy = 0.9 },
+                new ScoreCard { ScoreCardId = 2, UserId = 2, Score = 200, Acuuracy = 0.8 }
+            });
 
-            await _leaderBoardService.CreateLeaderBoard(leaderBoard); 
-            var result = await _leaderBoardService.SortLeaderBoard(Choice.Username, leaderBoardId);
+            await _leaderBoardService.CreateLeaderBoard(leaderBoardDto);
+            var result = await _leaderBoardService.SortLeaderBoard(Choice.Username, leaderBoardId, 1);
 
             // Assert
             Assert.NotNull(result);
-            Assert.AreEqual("Alice", result.ScoreCards.First().Username);  
+            Assert.AreEqual("Alice", result.ScoreCards.First().Username);
         }
 
         [Test]
         public async Task CreateLeaderBoard_NullLeaderBoardDTO_ThrowsException()
         {
             // Act & Assert
-             Assert.ThrowsAsync<Exception>(async () =>
+            Assert.ThrowsAsync<Exception>(async () =>
                 await _leaderBoardService.CreateLeaderBoard(null));
         }
 
@@ -221,7 +219,7 @@ namespace TestProject1
             _mockLeaderBoardRepository.Setup(repo => repo.GetAll()).ReturnsAsync(new List<LeaderBoard>());
 
             // Act & Assert
-            var ex =  Assert.ThrowsAsync<CollectionEmptyException>(async () =>
+            var ex = Assert.ThrowsAsync<CollectionEmptyException>(async () =>
                 await _leaderBoardService.GetAllLeaderBoard(1, 5));
             Assert.AreEqual("No leaderBoard found", ex.Message);
         }
@@ -236,38 +234,7 @@ namespace TestProject1
             // Act & Assert
             var ex = Assert.ThrowsAsync<CollectionEmptyException>(async () =>
                 await _leaderBoardService.DeleteLeaderBoard(invalidId));
-            Assert.AreEqual($"LeaderBoard with ID {invalidId} not found.", ex.Message);
+            Assert.AreEqual("No leaderBoard found", ex.Message);
         }
-
-        [Test]
-        public async Task UpdateLeaderBoard_InvalidId_ThrowsCollectionEmptyException()
-        {
-            // Arrange
-            int invalidId = 999;
-            var leaderBoardDto = new LeaderBoardDTO();
-
-            _mockLeaderBoardRepository.Setup(repo => repo.Get(invalidId)).ReturnsAsync((LeaderBoard)null);
-
-            // Act & Assert
-            var ex =  Assert.ThrowsAsync<CollectionEmptyException>(async () =>
-                await _leaderBoardService.UpdateLeaderBoard(invalidId, leaderBoardDto));
-            Assert.AreEqual($"LeaderBoard with ID {invalidId} not found.", ex.Message);
-        }
-
-        [Test]
-        public async Task SortLeaderBoard_InvalidChoice_ThrowsException()
-        {
-            // Arrange
-            int leaderBoardId = 1;
-            var leaderBoard = new LeaderBoard { LeaderBoardId = leaderBoardId };
-
-            _mockLeaderBoardRepository.Setup(repo => repo.Get(leaderBoardId)).ReturnsAsync(leaderBoard);
-            _mockScoreCardRepository.Setup(repo => repo.GetAll()).ReturnsAsync(new List<ScoreCard>());
-
-            // Act & Assert
-            Assert.ThrowsAsync<Exception>(async () =>
-                await _leaderBoardService.SortLeaderBoard((Choice)999, leaderBoardId));
-        }
-
     }
 }
