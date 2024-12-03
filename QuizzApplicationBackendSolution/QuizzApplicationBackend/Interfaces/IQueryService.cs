@@ -10,7 +10,9 @@ namespace QuizzApplicationBackend.Interfaces
 
         public Task<bool> EditQuery(int id, QueryDTO question);
 
-        public Task<QueryDTO> GetQuery(int id);
+        public Task<QueryResponseDTO> GetQuery(int id);
+
+        public Task<IEnumerable<QueryResponseDTO>> GetAllQuery();
 
     }
 }

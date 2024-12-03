@@ -28,10 +28,11 @@
                       
                     </a>                     
                      <td class="accuracy">Accuracy</td>
+                     <td class="accuracy">Time</td>
                      <a @click="sortLeaderBoard1" >
                       <td class="points" id="0">Score <svg width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg></td>
                     </a>       
-                     
+                    
                 </tr>
             </th>
            <tr v-for="(scoreCard,index) in currScoreCard" :key="scoreCard.id">
@@ -42,8 +43,12 @@
             <td class="accuracy" v-if="scoreCard.image != '' ">
               <img :src="`${url}${scoreCard.image}`" class="image-holder"/>
             </td>
-            <td class="name" style="text-transform: capitalize;">{{scoreCard.username}}</td>
-            <td >{{scoreCard.acuuracy }}%</td>      
+            <td class="accuracy" style="text-transform: capitalize;">{{scoreCard.username}}</td>
+            <td class="accuracy">{{scoreCard.acuuracy }}%</td>
+            <td class="accuracy">{{scoreCard.submittedTime }} mins</td>  
+            <td class="points" v-if="currScoreCardPage*scoresPerpage - scoresPerpage + index > 3">
+              {{ scoreCard.score }}
+            </td>          
             <td class="points" v-if="currScoreCardPage*scoresPerpage - scoresPerpage + index == 1">
               {{ scoreCard.score }}<img class="gold-medal" src="gold.png" alt="gold medal"/>
             </td>
@@ -53,6 +58,8 @@
             <td class="points" v-if="currScoreCardPage*scoresPerpage - scoresPerpage + index == 3">
               {{ scoreCard.score }}<img class="gold-medal" src="bronze.png" alt="gold medal"/>
             </td>
+            
+
           </tr>
         
         </table>
@@ -182,7 +189,11 @@ export default{
          },
          searchBoardByName(){
                 event.preventDefault();
-                getLeaderBoardByName(this.searchBoard)
+                if(this.searchBoard.length ==0){
+                   getLeaderBoard();
+                }
+                else{
+                  getLeaderBoardByName(this.searchBoard)
                 .then(response =>{
                     
                     if(response.data.length>1){
@@ -207,7 +218,9 @@ export default{
                     }
                     
                     console.log(response.data)
-                })
+                   })
+                }
+                
 
             },  
        }    
@@ -249,9 +262,8 @@ export default{
 .d-flex-8{
   display:flex;
   gap: 8px;
-  position: absolute;
-  top:0%;
   width: 35rem;
+  margin: 12px;
 }
 .image-holder{
     width: 60px;
@@ -278,12 +290,12 @@ font-family: Sour Gummy !important;
 }
 .body {
   height: 100%;
-  position: absolute;
-  top: 16%;
   width: 100%;
   min-height: 100vh;
   background-color:#8585de !important;
   display: flex;
+  flex-direction: column;
+  gap: 8px;
   align-items: center;
   justify-content: center;
 }
@@ -307,8 +319,6 @@ font-family: Sour Gummy !important;
 
 main {
   width: 40rem;
-  top: 8%;
-  position: absolute;
   height: 43rem;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 5px 15px 8px #e4e7fb;
@@ -394,14 +404,14 @@ tr:nth-child(1) {
 
 td {
   font-family: "Rubik", sans-serif;
-  font-size: 1.2rem;
-  padding: 1rem 2rem;
+  font-size: 1rem;
+  padding: 1rem 1.6rem;
   position: relative;
 }
 
 .number {
   width: 1rem;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: bold;
   text-align: left;
   font-family: Sour Gummy !important;
@@ -409,7 +419,7 @@ td {
 
 .name {
   text-align: left;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: Sour Gummy !important;
   display: flex;
   fill: white;
@@ -418,7 +428,7 @@ td {
 
 .points {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: Sour Gummy !important;
   justify-content: flex-end;
   align-items: center;

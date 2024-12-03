@@ -194,6 +194,10 @@ namespace QuizzApplicationBackend.Migrations
                     b.Property<int>("Score")
                         .HasColumnType("int");
 
+                    b.Property<string>("SubmittedTime")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 

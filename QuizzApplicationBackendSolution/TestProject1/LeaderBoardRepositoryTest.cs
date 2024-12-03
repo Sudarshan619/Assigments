@@ -202,5 +202,94 @@ namespace TestProject1
             var ex = Assert.ThrowsAsync<NotFoundException>(async () => await _repository.Update(999, leaderBoard));
             Assert.AreEqual("LeaderBoard not found", ex.Message);
         }
+
+        [Test]
+        public void AddLeaderBoard_ShouldThrowCouldNotAddException_WhenEntityIsNull()
+        {
+            // Arrange & Act & Assert
+            Assert.ThrowsAsync<CouldNotAddException>(async () => await _repository.Add(null));
+        }
+
+        [Test]
+        public void DeleteLeaderBoard_ShouldThrowException_OnFailure()
+        {
+            // Arrange
+            var fakeId = 999;
+
+            // Act & Assert
+            var ex = Assert.ThrowsAsync<Exception>(async () => await _repository.Delete(fakeId));
+            Assert.AreEqual("Not able to delete Question", ex.Message);
+        }
+
+        [Test]
+        public async Task GetLeaderBoard_ShouldThrowNotFoundException_WhenLeaderBoardIsNull()
+        {
+            // Arrange
+            int nonExistentId = 999;
+
+            // Act & Assert
+            var ex = Assert.ThrowsAsync<NotFoundException>(async () => await _repository.Get(nonExistentId));
+            Assert.AreEqual("LeaderBoard not found", ex.Message);
+        }
+
+        [Test]
+        public void UpdateLeaderBoard_ShouldThrowCouldNotAddException_WhenEntityIsNull()
+        {
+            // Arrange
+            int existingId = 1;
+
+            // Act & Assert
+            var ex = Assert.ThrowsAsync<CouldNotAddException>(async () => await _repository.Update(existingId, null));
+            Assert.AreEqual("LeaderBoard entity is null.", ex.Message);
+        }
+
+        [Test]
+        public async Task UpdateLeaderBoard_ShouldThrowCouldNotAddException_OnUnexpectedError()
+        {
+            // Arrange
+            var leaderBoard = new LeaderBoard
+            {
+                LeaderBoardName = "Test LeaderBoard",
+                Categories = 0
+            };
+            var addedLeaderBoard = await _repository.Add(leaderBoard);
+
+            // Simulate unexpected error by disposing the context
+            _context.Dispose();
+
+            // Act & Assert
+            var ex = Assert.ThrowsAsync<CouldNotAddException>(async () =>
+                await _repository.Update(addedLeaderBoard.LeaderBoardId, addedLeaderBoard));
+            Assert.AreEqual($"Could not update LeaderBoard with ID {addedLeaderBoard.LeaderBoardId}.", ex.Message);
+        }
+
+        [Test]
+        public async Task GetAllLeaderBoards_ShouldReturnEmptyCollection_WhenNoLeaderBoardsExist()
+        {
+            // Act
+            var leaderBoards = await _repository.GetAll();
+
+            // Assert
+            Assert.IsNotNull(leaderBoards);
+            Assert.AreEqual(0, ((System.Collections.ICollection)leaderBoards).Count);
+        }
+
+
+        [Test]
+        public void AddLeaderBoard_ShouldThrowCouldNotAddException_OnDatabaseFailure()
+        {
+            // Arrange
+            var invalidLeaderBoard = new LeaderBoard
+            {
+                LeaderBoardName = null // Invalid due to null value
+            };
+
+            // Act & Assert
+            var ex = Assert.ThrowsAsync<CouldNotAddException>(async () => await _repository.Add(invalidLeaderBoard));
+            Assert.AreEqual("could not add leader board", ex.Message);
+        }
+
+
+
     }
 }

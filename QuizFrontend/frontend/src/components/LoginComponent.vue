@@ -65,7 +65,7 @@ const logon = (event) => {
   align-items: center;
   height: 100vh;
   background: linear-gradient(135deg, #4facfe, #00f2fe);
-  font-family: 'Poppins', sans-serif;
+  font-family: Sour Gummy;
 }
 
 .image-section {

@@ -1,27 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using NUnit.Framework;
 using QuizzApplicationBackend.Context;
 using QuizzApplicationBackend.Models;
 using QuizzApplicationBackend.Repositories;
 using QuizzApplicationBackend.Exceptions;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using Moq;
 
 namespace TestProject1
 {
+    [TestFixture]
     public class QueryRepositoryTest
     {
-        private readonly QuizContext _context;
-        private readonly QueryRepository _repository;
+        private QuizContext _context;
+        private QueryRepository _repository;
 
-        public QueryRepositoryTest()
+        [SetUp]
+        public void Setup()
         {
             var options = new DbContextOptionsBuilder<QuizContext>()
-                 .EnableSensitiveDataLogging()
-                .UseInMemoryDatabase(databaseName: "QuizTestDb")
+                .EnableSensitiveDataLogging()
+                .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString())
                 .Options;
 
             _context = new QuizContext(options);
@@ -29,10 +31,16 @@ namespace TestProject1
             _repository = new QueryRepository(_context, logger.Object);
         }
 
+        [TearDown]
+        public void Cleanup()
+        {
+            _context.Dispose();
+        }
+
+        // Add Method Tests
         [Test]
         public async Task Add_ShouldAddQuery()
         {
-            // Arrange
             var query = new Query
             {
                 QueryId = 1,
@@ -42,18 +50,32 @@ namespace TestProject1
                 IsResolved = false
             };
 
-            // Act
             var result = await _repository.Add(query);
 
-            // Assert
             Assert.NotNull(result);
-            Assert.AreEqual("Test Description", result.Description);
+            Assert.AreEqual(query.Description, result.Description);
         }
 
         [Test]
+        public void Add_ShouldThrowException_OnFailure()
+        {
+            _context.Dispose(); // Simulate DbContext failure
+            var query = new Query
+            {
+                QueryId = 1,
+                ReportedBy = 123,
+                QueryType = "Technical",
+                Description = "Test Description",
+                IsResolved = false
+            };
+
+            Assert.ThrowsAsync<Exception>(async () => await _repository.Add(query), "Not able to add Query");
+        }
+
+        // Delete Method Tests
+        [Test]
         public async Task Delete_ShouldDeleteQuery()
         {
-            // Arrange
             var query = new Query
             {
                 QueryId = 2,
@@ -66,25 +88,22 @@ namespace TestProject1
             _context.Queries.Add(query);
             await _context.SaveChangesAsync();
 
-            // Act
-            var result = await _repository.Delete(2);
+            var result = await _repository.Delete(query.QueryId);
 
-            // Assert
             Assert.NotNull(result);
+            Assert.AreEqual(query.QueryId, result.QueryId);
         }
 
         [Test]
-        public async Task Delete_ShouldDeleteQuery_ReturnNotFound()
+        public void Delete_ShouldThrowException_WhenQueryNotFound()
         {
-
-            int id = 1;
-            Assert.ThrowsAsync<Exception>(async () => await _repository.Delete(id));
+            Assert.ThrowsAsync<NotFoundException>(async () => await _repository.Delete(99), "Query not found");
         }
 
+        // Get Method Tests
         [Test]
         public async Task Get_ShouldReturnQuery()
         {
-            // Arrange
             var query = new Query
             {
                 QueryId = 3,
@@ -97,26 +116,22 @@ namespace TestProject1
             _context.Queries.Add(query);
             await _context.SaveChangesAsync();
 
-            // Act
             var result = await _repository.Get(query.QueryId);
 
-            // Assert
             Assert.NotNull(result);
-
+            Assert.AreEqual(query.QueryId, result.QueryId);
         }
 
         [Test]
-        public async Task Get_ShouldGetQuery_ReturnNotFound()
+        public void Get_ShouldThrowNotFoundException_WhenQueryNotFound()
         {
-
-            int id = 1;
-            Assert.ThrowsAsync<NotFoundException>(async () => await _repository.Get(id));
+            Assert.ThrowsAsync<NotFoundException>(async () => await _repository.Get(99), "Query not found");
         }
 
+        // GetAll Method Tests
         [Test]
         public async Task GetAll_ShouldReturnAllQueries()
         {
-            // Arrange
             var queries = new List<Query>
             {
                 new Query { QueryId = 4, ReportedBy = 123, QueryType = "Technical", Description = "Description 1" },
@@ -126,64 +141,62 @@ namespace TestProject1
             _context.Queries.AddRange(queries);
             await _context.SaveChangesAsync();
 
-            // Act
             var result = await _repository.GetAll();
 
-            // Assert
             Assert.NotNull(result);
+            Assert.AreEqual(queries.Count, result.Count());
         }
 
         [Test]
-        public async Task GetAll_ShouldGetallQuery_ReturnNotFound()
+        public void GetAll_ShouldThrowNotFoundException_WhenNoQueriesExist()
         {
-
-            Assert.ThrowsAsync<NotFoundException>(async () => await _repository.GetAll());
+            Assert.ThrowsAsync<NotFoundException>(async () => await _repository.GetAll(), "Collection empty");
         }
 
-        [Test]  
-
-        public async Task Update_ShouldUpdateQuery_ReturnQuery()
+        // Update Method Tests
+        [Test]
+        public async Task Update_ShouldUpdateQuery()
         {
             var query = new Query
             {
-                QueryId = 3,
+                QueryId = 6,
                 ReportedBy = 123,
                 QueryType = "Technical",
                 Description = "Test Description",
                 IsResolved = false
             };
 
-            var newQuery = new Query
-            {
-                QueryId = 3,
-                ReportedBy = 123,
-                QueryType = "Technical",
-                Description = "New Description",
-                IsResolved = false
-            };
-
-
             _context.Queries.Add(query);
             await _context.SaveChangesAsync();
 
-            var result = await _repository.Update(query.QueryId, newQuery);
-            Assert.IsNotNull(result);
-            Assert.AreEqual(result.QueryId,query.QueryId);
+            var updatedQuery = new Query
+            {
+                QueryId = 6,
+                ReportedBy = 123,
+                QueryType = "Technical",
+                Description = "Updated Description",
+                IsResolved = true
+            };
+
+            var result = await _repository.Update(query.QueryId, updatedQuery);
+
+            Assert.NotNull(result);
+            Assert.AreEqual(updatedQuery.Description, result.Description);
         }
 
         [Test]
-
-        public async Task Update_ReturnException()
+        public void Update_ShouldThrowException_WhenQueryNotFound()
         {
-            var newQuery = new Query
+            var updatedQuery = new Query
             {
-                QueryId = 3,
+                QueryId = 99,
                 ReportedBy = 123,
                 QueryType = "Technical",
-                Description = "New Description",
-                IsResolved = false
+                Description = "Updated Description",
+                IsResolved = true
             };
-            Assert.ThrowsAsync<Exception>(async () => await _repository.Update(99,newQuery));
+
+            Assert.ThrowsAsync<Exception>(async () => await _repository.Update(99, updatedQuery), "Query does not exist");
         }
     }
 }

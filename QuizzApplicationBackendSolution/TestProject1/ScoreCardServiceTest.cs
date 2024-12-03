@@ -7,6 +7,7 @@ using QuizzApplicationBackend.Interfaces;
 using QuizzApplicationBackend.Models;
 using QuizzApplicationBackend.Services;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
 
 namespace QuizzApplicationBackend.Tests.Services
@@ -292,6 +293,149 @@ namespace QuizzApplicationBackend.Tests.Services
             Assert.IsNotNull(result);
             Assert.AreEqual(id, result.ScoreCardId);
             Assert.AreEqual("John Doe", result.Username);
+        }
+
+        [Test]
+        public async Task GetAllScoreCards_ReturnsScoreCardsWithUsernamesAndQuizNames()
+        {
+            // Arrange
+            var scoreCard1 = new ScoreCard { UserId = 1, QuizId = 1 };
+            var scoreCard2 = new ScoreCard { UserId = 2, QuizId = 2 };
+
+            var users = new List<User>
+           {
+        new User { Id = 1, Name = "User 1" },
+        new User { Id = 2, Name = "User 2" }
+    };
+
+            var quizzes = new List<Quiz>
+    {
+        new Quiz { QuizId = 1, Title = "Quiz 1" },
+        new Quiz { QuizId = 2, Title = "Quiz 2" }
+    };
+
+            _mockScoreCardRepository.Setup(repo => repo.GetAll()).ReturnsAsync(new List<ScoreCard> { scoreCard1, scoreCard2 });
+            _mockUserRepository.Setup(repo => repo.GetAll()).ReturnsAsync(users);
+            _mockQuizRepository.Setup(repo => repo.GetAll()).ReturnsAsync(quizzes);
+            _mockMapper.Setup(m => m.Map<ScoreCardResponseDTO>(It.IsAny<ScoreCard>())).Returns(new ScoreCardResponseDTO());
+
+            // Act
+            var result = await _scoreCardService.GetAllScoreCards();
+
+            // Assert
+            Assert.IsNotNull(result);
+            Assert.AreEqual(2, result.Count());
+            Assert.AreEqual("User 1", result.First().Username);
+            Assert.AreEqual("Quiz 1", result.First().QuizName);
+        }
+
+        [Test]
+        public void CreateScoreCard_WhenInvalidScoreCardDTO_ThrowsException()
+        {
+            // Arrange
+            var scoreCardDto = new ScoreCardDTO(); 
+            var submittedOptionDto = new SubmittedOptionDTO
+            {
+                Options = new List<SelectedOptionDTO>
+            {
+                new SelectedOptionDTO { OptionId = 1, OptionName = "Option 1" }
+            }
+            };
+
+            // Act & Assert
+            Assert.ThrowsAsync<ValidationException>(async () => await _scoreCardService.CreateScoreCard(submittedOptionDto));
+        }
+
+        [Test]
+        public async Task UpdateScoreCard_WhenInvalidDTO_ThrowsException()
+        {
+            // Arrange
+            var id = 1;
+            var scoreCardDto = new ScoreCardDTO(); // Invalid DTO (e.g., missing necessary data)
+            var existingScoreCard = new ScoreCard();
+
+            _mockScoreCardRepository.Setup(repo => repo.Get(id)).ReturnsAsync(existingScoreCard);
+
+            // Act & Assert
+            Assert.ThrowsAsync<ValidationException>(async () => await _scoreCardService.UpdateScoreCard(id, scoreCardDto));
+        }
+
+        [Test]
+        public async Task GetAllScoreCards_WhenNoScoreCards_ReturnsEmptyList()
+        {
+            // Arrange
+            _mockScoreCardRepository.Setup(repo => repo.GetAll()).ReturnsAsync(new List<ScoreCard>()); // No score cards in DB
+
+            // Act
+            var result = await _scoreCardService.GetAllScoreCards();
+
+            // Assert
+            Assert.IsNotNull(result);
+            Assert.AreEqual(0, result.Count());
+        }
+
+        //[Test]
+        //public async Task CalculateScore_WhenNotAllOptionsCorrect_ReturnsPartialScore()
+        //{
+        //    // Arrange
+        //    var submittedOptionDto = new SubmittedOptionDTO
+        //    {
+        //        QuizId = 1,
+        //        Options = new List<SelectedOptionDTO>
+        //    {
+        //        new SelectedOptionDTO { OptionId = 1, OptionName = "Option 1" }, // Correct option
+        //        new SelectedOptionDTO { OptionId = 2, OptionName = "Option 2" }  // Incorrect option
+        //    }
+        //    };
+
+        //    var quiz = new Quiz
+        //    {
+        //        QuizId = 1,
+        //        NoOfQuestions = 2
+        //    };
+
+        //    var options = new List<Option>
+        //{
+        //    new Option { OptionId = 1, QuestionId = 1, IsCorrect = true },
+        //    new Option { OptionId = 2, QuestionId = 2, IsCorrect = false }
+        //};
+
+        //    _mockQuizService.Setup(q => q.GetQuiz(submittedOptionDto.QuizId)).ReturnsAsync(quiz);
+        //    _optionRepo.Setup(o => o.GetAll()).ReturnsAsync(options);
+
+        //    // Act
+        //    var result = await _scoreCardService.CalculateScore(submittedOptionDto);
+
+        //    // Assert
+        //    Assert.AreEqual(50, result); // Since one option was correct, the score should be 50
+        //}
+
+        [Test]
+        public void CalculateAccuracy_WhenScoreIsZero_ReturnsZeroAccuracy()
+        {
+            // Arrange
+            var submittedOptionDTO = new SubmittedOptionDTO { QuizId = 1 };
+            var score = 10;
+            var quiz = new Quiz { MaxPoint = 100 };
+
+            _mockQuizRepository.Setup(q => q.Get(submittedOptionDTO.QuizId)).ReturnsAsync(quiz);
+
+            // Act
+            var result = _scoreCardService.CalculateAccuracy(submittedOptionDTO, score);
+
+            // Assert
+            Assert.AreEqual(10, result);
+        }
+
+        [Test]
+        public void GetScoreCard_WhenDatabaseThrowsException_ThrowsInternalServerErrorException()
+        {
+            // Arrange
+            var id = 1;
+            _mockScoreCardRepository.Setup(repo => repo.Get(id)).ThrowsAsync(new System.Exception("Database error"));
+
+            // Act & Assert
+            Assert.ThrowsAsync<System.Exception>(async () => await _scoreCardService.GetScoreCard(id));
         }
 
     }

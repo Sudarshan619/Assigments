@@ -54,9 +54,29 @@ namespace QuizzApplicationBackend.Controllers
                 return StatusCode(500, "A problem occurred while retrieving the query.");
             }
         }
+        [HttpGet]
+        public async Task<IActionResult> GetAllQuery()
+        {
+            try
+            {
+                var query = await _queryService.GetAllQuery();
+                if (query == null)
+                    return NotFound($"Queries not found.");
+
+                return Ok(query);
+            }
+            catch (NotFoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
+            catch
+            {
+                return StatusCode(500, "A problem occurred while retrieving the query.");
+            }
+        }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> EditQuery(int id,QueryDTO queryDto)
+        public async Task<IActionResult> EditQuery(int id, QueryDTO queryDto)
         {
             if (queryDto == null)
                 return BadRequest("Query data is null");

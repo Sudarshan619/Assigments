@@ -20,10 +20,10 @@
        </section>
        <div class="table-container">
         <h1>Your Scorecards</h1>
-         <form class="search-btn">
+         <!-- <form class="search-btn">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" v-model="searchQuiz">
             <button @click="searchQuizByTitle" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-         </form>
+         </form> -->
 
         <table class="scorecard-table">
             <thead>
@@ -43,10 +43,20 @@
                     <td>{{ scoreCard.quizName }}</td>
                     <td>{{ scoreCard.score }}</td>                  
                     <td>{{ scoreCard.acuuracy }}</td>                   
-                    <td><button class="btn-view">Report</button> <button class="btn-delete">Delete</button></td>
+                    <td><button class="btn-view" data-toggle="modal" data-target="#exampleModals">Report</button></td>
                 </tr>
             </tbody>
         </table>
+        <div class="responsive-div">
+             <div class="smaller-view-port"  v-for="(scoreCard,index ) in scoreCards" :key="scoreCard.id">
+                 <p>SI NO: {{ ++index  }}</p>
+                 <p>Username: {{ scoreCard.username }}</p>
+                 <p>Quiz Name: {{ scoreCard.quizName  }}</p>
+                 <p>Score: {{ scoreCard.score }}</p>
+                 <p>Accuracy: {{ scoreCard.acuuracy }}</p>
+                 <p><button class="btn btn-warning" data-toggle="modal" data-target="#exampleModals">Report</button></p>
+             </div>
+          </div>
             <div class="pagination">
               <button 
                 class="page-btn page-step" 
@@ -71,9 +81,34 @@
             </div>
     </div>
   </div>
+  <div class="modal fade" id="exampleModals" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel1">Do you want to report</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <label for="type">Query type</label>   
+        <input type="text" name="type" v-model="type">
+        <label for="description">description</label>
+        <input type="text" name="description" v-model="description">
+      </div>
+      <div class="modal-footer">
+        <button type="button"  class="btn btn-danger" data-dismiss="modal">Go back</button>
+        <button type="button" class="btn btn-primary" @click="addQuery"  data-dismiss="modal">Submit</button>
+      </div>
+    </div>
+  </div>
+  </div>
 </template>
 <script>
 import { getAllScoreCard ,updateImage} from '@/scripts/ProfileService';
+import { submitQuery } from '@/scripts/QuizService';
+import { toast } from 'vue3-toastify';
+import 'vue3-toastify/dist/index.css';
 
 export default{
     name:'UserProfile',
@@ -81,7 +116,10 @@ export default{
        return{
          image:'user.jpg',
          username:'Unknown',
+         userId:sessionStorage.getItem('Id'),
          role :'Admin',
+         type:'',
+         description:'',
          scoreCards:[],
          paginatedScoreCard:[],
          currentPage:1,
@@ -90,6 +128,30 @@ export default{
        }
     },
     methods:{
+      addQuery(){
+               submitQuery(this.userId,this.type,this.description)
+               .then(response =>{
+                 toast.success("Query added succesfully",{
+                  autoClose:4000
+                 })
+                 console.log(response.data)
+               }).catch((err) =>{
+                  console.log(err)
+                  if(err.response.data.errors.Description ){
+                    toast.error("Description cannot be empty",{
+                    autoClose:4000
+                   })
+                  }
+                  if(err.response.data.errors.QueryType){
+                    toast.error("Query type cannot be empty",{
+                    autoClose:4000
+                   })
+                  }
+                   toast.error("Could not add query try after sometime",{
+                   autoClose:4000
+                 })
+               })
+            },
      getAllScoreCard1(){
          getAllScoreCard()
          .then(response => {
@@ -167,6 +229,16 @@ body {
   justify-content: center;
   align-items: center;
 }
+.modal-header {
+  justify-content: space-between;
+}
+.modal-body{
+  display: flex;
+    width: 80%;
+    flex-direction: column;
+    margin: auto;
+}
+
 .page-btn:last-child {
   margin-right: 0;
 }
@@ -305,5 +377,29 @@ h1 {
     top: 64px;
     right: 32px;
  }
+ .responsive-div{
+  display: none;
+ }
+
+ @media screen and (max-width:720px ) {
+    .responsive-div{
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .scorecard-table{
+        display: none;
+    }
+    .smaller-view-port{
+      border: 1px solid;
+      width: 100%;
+      margin: auto;
+      padding: 20px;
+        border-radius: 8px;
+    }
+    .profile-holder-main{
+      width: 100%;
+    }
+   }
 
 </style>

@@ -66,16 +66,33 @@ namespace QuizzApplicationBackend.Services
             }
         }
 
-        public async Task<QueryDTO> GetQuery(int id)
+        public async Task<QueryResponseDTO> GetQuery(int id)
         {
             try
             {
                 var query = await _repository.Get(id);
-                return _mapper.Map<QueryDTO>(query);
+                return _mapper.Map<QueryResponseDTO>(query);
             }
             catch (NotFoundException)
             {
                 throw new NotFoundException($"Query with ID {id} not found.");
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error while retrieving query: " + ex.Message);
+            }
+        }
+
+        public async Task<IEnumerable<QueryResponseDTO>> GetAllQuery()
+        {
+            try
+            {
+                var query = await _repository.GetAll();
+                return _mapper.Map<IEnumerable<QueryResponseDTO>>(query);
+            }
+            catch (NotFoundException)
+            {
+                throw new NotFoundException($"Queries not found.");
             }
             catch (Exception ex)
             {

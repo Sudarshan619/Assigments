@@ -28,7 +28,6 @@ namespace QuizzApplicationBackend.Context
 
         override protected void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Query and User Relationship
             modelBuilder.Entity<Query>()
                 .HasOne(e => e.User)
                 .WithMany(a => a.Queries)
@@ -36,7 +35,6 @@ namespace QuizzApplicationBackend.Context
                 .HasConstraintName("FK_Query_Report")
                 .OnDelete(DeleteBehavior.Restrict);
 
-            // Option and Question Relationship
             modelBuilder.Entity<Option>()
                 .HasOne(e => e.Question)
                 .WithMany(a => a.Options)
@@ -44,7 +42,6 @@ namespace QuizzApplicationBackend.Context
                 .HasConstraintName("FK_Question_Option")
                 .OnDelete(DeleteBehavior.Restrict);
 
-            // Quiz and User Relationship
             modelBuilder.Entity<Quiz>()
                 .HasOne(e => e.User)
                 .WithMany(a => a.Quiz)
@@ -52,7 +49,6 @@ namespace QuizzApplicationBackend.Context
                 .HasConstraintName("FK_Quiz_creator")
                 .OnDelete(DeleteBehavior.Restrict);
 
-            // LeaderBoard and Quiz Relationship
             modelBuilder.Entity<LeaderBoard>()
                 .HasOne(e => e.Quiz)
                 .WithOne(e => e.LeaderBoard)

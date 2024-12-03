@@ -9,6 +9,9 @@ namespace QuizzApplicationBackend.Mappers
         public QueryProfile()
         {
             CreateMap<Query, QueryDTO>();
+            CreateMap<QueryResponseDTO, Query>();
+            CreateMap<Query, QueryResponseDTO>();
+
             CreateMap<QueryDTO, Query>();
         }
     }

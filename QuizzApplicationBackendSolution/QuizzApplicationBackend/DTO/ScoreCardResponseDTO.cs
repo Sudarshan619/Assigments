@@ -8,6 +8,8 @@
 
         public string QuizName { get; set; }
 
+        public string SubmittedTime { get; set; }
+
         public string Image { get; set; }
 
         public string Username { get; set; }
