@@ -145,13 +145,11 @@ export default{
          return date.toLocaleDateString();
          },
          sortLeaderBoard1(event){
-            console.log(event.target.id)
+
             let choice = event.target.id;
-            console.log(this.currLeaderBoard.leaderBoardId)
             sortLeaderBoard(parseInt(choice),this.currLeaderBoard.leaderBoardId,this.order)
             .then(response =>{
                this.paginatedScoreCard = response.data.scoreCards
-               console.log(response.data.scoreCards);
                if(this.order == 0){
                  this.order =1;
                }
@@ -169,7 +167,6 @@ export default{
 
          },
          changePage(page) {
-                 console.log(page);
                  this.currentPage = page;
                  this.pages.length = 0;
                  this.currScoreCardPage = 1;
@@ -183,7 +180,6 @@ export default{
               this.currScoreCard = this.paginatedScoreCard.slice(this.currScoreCardPage*this.scoresPerpage- this.scoresPerpage,this.currScoreCardPage*this.scoresPerpage)
          },
          changePageScoreCard(index){
-            console.log(index)
              this.currScoreCardPage = index;
              this.currScoreCard = this.paginatedScoreCard.slice(index*this.scoresPerpage- this.scoresPerpage,index*this.scoresPerpage);
          },
@@ -216,8 +212,7 @@ export default{
                          autoClose:4000
                        })
                     }
-                    
-                    console.log(response.data)
+
                    })
                 }
                 
@@ -228,7 +223,6 @@ export default{
     created(){
        getLeaderBoard()
        .then(response => {
-         console.log(response.data);
          this.leaderBoard = response.data;
          this.currLeaderBoard= this.leaderBoard[0]
          this.paginatedScoreCard = this.currLeaderBoard.scoreCards

@@ -117,10 +117,10 @@ namespace TestProject1
             // Arrange
             var queryId = 1;
             var query = new Query { QueryId = 1, Description = "Test Query" };
-            var queryDto = new QueryDTO {  Description = "Test Query" };
+            var queryDto = new QueryResponseDTO {  Description = "Test Query" };
 
             _repositoryMock.Setup(r => r.Get(queryId)).ReturnsAsync(query);
-            _mapperMock.Setup(m => m.Map<QueryDTO>(query)).Returns(queryDto);
+            _mapperMock.Setup(m => m.Map<QueryResponseDTO>(query)).Returns(queryDto);
 
             // Act
             var result = await _queryService.GetQuery(queryId);

@@ -63,7 +63,7 @@ namespace TestProject1
         public async Task GetQuery_ValidId_ReturnsQuery()
         {
             int id = 1;
-            var query = new QueryDTO { Description = "Test Query" };
+            var query = new QueryResponseDTO { Description = "Test Query" };
             _mockQueryService.Setup(service => service.GetQuery(id)).ReturnsAsync(query);
 
             var result = await _controller.GetQuery(id);
@@ -77,7 +77,7 @@ namespace TestProject1
         public async Task GetQuery_InvalidId_ReturnsNotFound()
         {
             int id = 99;
-            _mockQueryService.Setup(service => service.GetQuery(id)).ReturnsAsync((QueryDTO)null);
+            _mockQueryService.Setup(service => service.GetQuery(id)).ReturnsAsync((QueryResponseDTO)null);
 
             var result = await _controller.GetQuery(id);
 
@@ -188,10 +188,10 @@ namespace TestProject1
         [Test]
         public async Task GetAllQuery_ValidQuery_ReturnsOk()
         {
-            var queries = new List<QueryDTO>
+            var queries = new List<QueryResponseDTO>
     {
-        new QueryDTO {  Description = "Test Query 1" },
-        new QueryDTO {  Description = "Test Query 2" }
+        new QueryResponseDTO {  Description = "Test Query 1" },
+        new QueryResponseDTO {  Description = "Test Query 2" }
     };
             _mockQueryService.Setup(service => service.GetAllQuery()).ReturnsAsync(queries);
 
@@ -205,7 +205,7 @@ namespace TestProject1
         [Test]
         public async Task GetAllQuery_NoQueriesFound_ReturnsNotFound()
         {
-            _mockQueryService.Setup(service => service.GetAllQuery()).ReturnsAsync((List<QueryDTO>)null);
+            _mockQueryService.Setup(service => service.GetAllQuery()).ReturnsAsync((List<QueryResponseDTO>)null);
 
             var result = await _controller.GetAllQuery();
 

@@ -214,7 +214,7 @@ namespace QuizzApplicationBackend.Tests
         {
             var questionId = 1;
             var existingQuestion = new Question { QuestionId = questionId, QuestionName = "Old Question", Category = 0 };
-            var updatedQuestionDto = new QuestionDTO { QuestionName = "Updated Question", Category = 0 };
+            var updatedQuestionDto = new EditQuestionDTO { QuestionName = "Updated Question", Category = 0 };
             var updatedQuestion = new Question { QuestionId = questionId, QuestionName = "Updated Question", Category = 0 };
 
             _mockQuestionRepository.Setup(r => r.Get(questionId)).ReturnsAsync(existingQuestion);
@@ -230,7 +230,7 @@ namespace QuizzApplicationBackend.Tests
         public void EditQuestion_ShouldThrowNotFoundException_WhenQuestionNotFound()
         {
             var questionId = 1;
-            var updatedQuestionDto = new QuestionDTO { QuestionName = "Updated Question", Category = 0 };
+            var updatedQuestionDto = new EditQuestionDTO { QuestionName = "Updated Question", Category = 0 };
 
             _mockQuestionRepository.Setup(r => r.Get(questionId)).ThrowsAsync(new NotFoundException("Question not found"));
 
@@ -242,7 +242,7 @@ namespace QuizzApplicationBackend.Tests
         public void EditQuestion_ShouldThrowException_WhenOtherExceptionOccurs()
         {
             var questionId = 1;
-            var updatedQuestionDto = new QuestionDTO { QuestionName = "Updated Question", Category = 0 };
+            var updatedQuestionDto = new EditQuestionDTO { QuestionName = "Updated Question", Category = 0 };
 
             _mockQuestionRepository.Setup(r => r.Get(questionId)).ThrowsAsync(new Exception("Database error"));
 

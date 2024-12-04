@@ -139,7 +139,7 @@ namespace TestProject1
         {
             // Arrange
             int questionId = 1;
-            var questionDto = new QuestionDTO { QuestionName = "Updated question?" };
+            var questionDto = new EditQuestionDTO { QuestionName = "Updated question?" };
             _mockQuestionService.Setup(service => service.EditQuestion(questionId, questionDto)).ReturnsAsync(true);
 
             // Act
@@ -157,7 +157,7 @@ namespace TestProject1
         {
             // Arrange
             int questionId = 1;
-            var questionDto = new QuestionDTO { QuestionName = "Updated question?" };
+            var questionDto = new EditQuestionDTO { QuestionName = "Updated question?" };
             _mockQuestionService.Setup(service => service.EditQuestion(questionId, questionDto)).ReturnsAsync(false);
 
             // Act
@@ -282,7 +282,7 @@ namespace TestProject1
         {
             // Arrange
             int questionId = 1;
-            var questionDto = new QuestionDTO { QuestionName = "Updated question?" };
+            var questionDto = new EditQuestionDTO { QuestionName = "Updated question?" };
             _mockQuestionService.Setup(service => service.EditQuestion(questionId, questionDto)).ThrowsAsync(new Exception("Unexpected error"));
 
             // Act
@@ -337,7 +337,7 @@ namespace TestProject1
         {
             // Arrange
             int questionId = 1;
-            var questionDto = new QuestionDTO { QuestionName = "Updated question?" };
+            var questionDto = new EditQuestionDTO { QuestionName = "Updated question?" };
             _mockQuestionService.Setup(service => service.EditQuestion(questionId, questionDto))
                                 .ThrowsAsync(new NotFoundException("Question not found."));
 

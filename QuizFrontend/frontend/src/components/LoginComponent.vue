@@ -14,7 +14,6 @@ const router = useRouter();
 const logon = (event) => {
   event.preventDefault();
   login(email.value, password.value).then((response) => {
-    console.log(response.data);
     sessionStorage.setItem('Token', response.data.token);
     sessionStorage.setItem('Role', response.data.role);
     sessionStorage.setItem('Name', response.data.username);
@@ -40,8 +39,8 @@ const logon = (event) => {
         <p>Please login to continue</p>
         <form @submit="logon" class="login-form">
           <div class="input-group">
-            <label for="email">Email</label>
-            <input class="form-control" type="text" id="email" v-model="email" placeholder="Enter your email" required />
+            <label for="email">Username</label>
+            <input class="form-control" type="text" id="email" v-model="email" placeholder="Enter your ursername" required />
           </div>
           <div class="input-group">
             <label for="password">Password</label>

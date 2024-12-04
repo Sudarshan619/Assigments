@@ -12,6 +12,7 @@ namespace QuizzApplicationBackend.Models
         public string QuestionName { get; set; } = string.Empty;
 
         public Categories Category { get; set; }
+        public string SubCategory { get; set; } = string.Empty ;
 
         public int Points { get; set; }
 

@@ -165,7 +165,7 @@ namespace QuizzApplicationBackend.Services.Tests
             };
             _questionRepositoryMock.Setup(r => r.GetAll()).ReturnsAsync(questions);
 
-            var result = await _service.GetRandomQuestionsByCategory(category, 1,difficulty);
+            var result = await _service.GetRandomQuestionsByCategory(category, 1,difficulty,"rocket");
 
             Assert.AreEqual(1, result.Count());
             Assert.IsTrue(result.First().Category == category);
@@ -177,7 +177,7 @@ namespace QuizzApplicationBackend.Services.Tests
             _questionRepositoryMock.Setup(r => r.GetAll()).ReturnsAsync(new List<Question>());
 
             Assert.ThrowsAsync<CollectionEmptyException>(async () =>
-                await _service.GetRandomQuestionsByCategory(Categories.Politics, 1,Difficulties.Easy));
+                await _service.GetRandomQuestionsByCategory(Categories.Politics, 1,Difficulties.Easy, "rocket"));
         }
 
         [Test]
