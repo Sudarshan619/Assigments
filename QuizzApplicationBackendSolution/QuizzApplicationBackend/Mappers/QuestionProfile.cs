@@ -10,6 +10,8 @@ namespace QuizzApplicationBackend.Mappers
         {
             CreateMap<Question, QuestionDTO>();
             CreateMap<QuestionDTO, Question>();
+            CreateMap<EditQuestionDTO, Question>();
+            CreateMap<Question, EditQuestionDTO>();
         }
     }
 }

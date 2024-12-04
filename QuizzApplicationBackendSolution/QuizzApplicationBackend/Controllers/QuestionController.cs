@@ -94,7 +94,7 @@ namespace QuizzApplicationBackend.Controllers
 
         [HttpPut("{id}")]
         [Authorize(Roles = "QuizzCreator")]
-        public async Task<IActionResult> EditQuestion(int id, QuestionDTO questionDto)
+        public async Task<IActionResult> EditQuestion(int id, EditQuestionDTO questionDto)
         {
             try
             {

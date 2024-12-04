@@ -10,7 +10,7 @@ namespace QuizzApplicationBackend.Interfaces
 
         public Task<bool> DeleteQuestion(int id);
 
-        public Task<bool> EditQuestion(int id , QuestionDTO question);
+        public Task<bool> EditQuestion(int id , EditQuestionDTO question);
 
         public Task<bool> AddOptionsToQuestion(int id);
 

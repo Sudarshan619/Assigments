@@ -12,7 +12,7 @@ namespace QuizzApplicationBackend.Interfaces
         public Task<IEnumerable<QuizQuestionReponseDTO>> GetAllQuizzesWithQuestions();
 
         public Task<IEnumerable<QuizQuestionReponseDTO>> GetAllQuizzesWithQuestionsByCategory(Categories category);
-        public Task<K> GetRandomQuestionsByCategory(Categories category, int noOfQuestions,Difficulties difficulty);
+        public Task<K> GetRandomQuestionsByCategory(Categories category, int noOfQuestions,Difficulties difficulty,string title);
         public Task<QuizQuestionReponseDTO> GetQuiz(int id);
 
         public Task<IEnumerable<String>> GetAllCategory();

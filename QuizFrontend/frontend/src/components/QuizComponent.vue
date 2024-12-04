@@ -128,14 +128,11 @@ export default {
       try {
           const response = await getAllScorecard();
           scoreCard.value = response.data;
-          console.log(scoreCard.value);
-          console.log(parseInt(quizId), username)
           const user = scoreCard.value.find((score) => {
            return  score.quizId == parseInt(quizId) && score.username == username  
           }
                     
          );
-         console.log(user);
          if(user === undefined){
           return false
          }
@@ -148,19 +145,16 @@ export default {
     }
     
     const assignQuizId = (event) =>{
-       console.log(event.target.value)
        
        quizId.value =  event.target.value
        const answer = quizes.value.find((q)=>{
          return q.quizId == quizId.value
        })
        quiz.value = answer
-       console.log(quiz.value)
     }
 
    const searchQuizByTitle = ()=>{
                 event.preventDefault();
-                console.log(searchQuiz.value)
                 if(searchQuiz.value.length == 0){
                   getQuizes();
                 }
@@ -171,13 +165,11 @@ export default {
                       autoClose:3000
                      })
                       quizes.value  = response.data
-                      console.log(response);
                    })
-                   .catch(err =>{
+                   .catch(() =>{
                     toast.error("No quiz found for the search",{
                       autoClose:3000
                     })
-                     console.log(err)
                    })
                 }
               
@@ -188,14 +180,12 @@ export default {
        getByCategory(event.target.value)
        .then(response => {
           quizes.value = response.data
-          console.log(response.data)
        })
     }
 
     const getQuizes = ()=> getQuizAll()
         .then(response => {
           quizes.value = response.data;
-          console.log(response.data);
         })
         .catch(error => {
           console.error('Error fetching quizzes:', error);
@@ -306,18 +296,7 @@ export default {
   font-family: Sour Gummy;
 }
 
-.card-body::before {
-  /* content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 200%;
-  height: 100%;
-  background: linear-gradient(120deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 100%);
-  transform: skewX(-30deg);
-  transition: all 0.8s ease; 
-  animation: shine 3s infinite linear; */
-}
+
 
 @keyframes shine {
   0% {

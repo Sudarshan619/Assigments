@@ -130,13 +130,11 @@ export default{
     methods:{
       addQuery(){
                submitQuery(this.userId,this.type,this.description)
-               .then(response =>{
+               .then(() =>{
                  toast.success("Query added succesfully",{
                   autoClose:4000
                  })
-                 console.log(response.data)
                }).catch((err) =>{
-                  console.log(err)
                   if(err.response.data.errors.Description ){
                     toast.error("Description cannot be empty",{
                     autoClose:4000
@@ -165,13 +163,11 @@ export default{
            for(let i=0;i<size;i++){
              this.pages.push(i);
            }
-           console.log(response.data);
          })
      },
      changePage(index){
          this.currentPage = index;
          this.scoreCards = this.paginatedScoreCard.slice(index*this.scoresPerpage- this.scoresPerpage,index*this.scoresPerpage);
-         console.log(this.scoreCards)
       },
       inputChange(event){
         let image = event.target.files[0]
@@ -179,18 +175,16 @@ export default{
         .then(response =>{
           sessionStorage.setItem('Image',response.data.imagePath)
           this.image = "http://localhost:5193"+response.data.imagePath;
-          console.log(this.image)
         })
         
       }
     },
     mounted(){
-      console.log("scorecard")
+
       this.getAllScoreCard1();
       this.image = "http://localhost:5193"+sessionStorage.getItem('Image')
       this.username = sessionStorage.getItem('Name')
       this.role = sessionStorage.getItem('Role')
-      console.log(this.image)
     },
 }
 </script>

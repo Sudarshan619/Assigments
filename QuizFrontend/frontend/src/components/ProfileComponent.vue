@@ -461,7 +461,7 @@
               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" v-model="searchQuestion">
               <button @click="searchQuestions" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
-            <section class="create-form w-100" v-if="searchResults.length>0">
+            <section class="create-form w-100" v-if="showSearchResults && searchResults.length>0">
                 <h5>Available questions</h5>
                 <div v-for="searchResult in searchResults" :key="searchResult.id" class="search-result">
                     <aside>
@@ -471,6 +471,9 @@
                         Select
                     </button>
                 </div>
+                <button @click="hideResults" class="btn btn-secondary">
+                      <span aria-hidden="true">&times;</span>
+                </button>
                
             </section>
             <div>
@@ -590,9 +593,9 @@ export default{
             },
             editQuestion(){
                 event.preventDefault()
-                console.log(this.Category)
+
                updateQuestion(this.QuestionId,this.QuestionName,this.difficultyMap[this.difficulty],this.categoryMap[this.Category],this.Points)
-               .then(response => {
+               .then(()=> {
                  toast.success("Edit succesfull",{
                     autoClose:4000
                  })
@@ -602,7 +605,6 @@ export default{
                  this.Category = '',
                  this.Points = ''
                  this.showSearchResults = false
-                 console.log(response)
                })
                .catch(()=>{
                  toast.error("Could not edit check if all the fields are filled",{
@@ -612,10 +614,9 @@ export default{
             },
             editLeaderBoard(){
                 event.preventDefault()
-                console.log(this.Category)
-                console.log(this.boardId,this.LeaderBoardName,this.categoryMap[this.Category],this.quizId)
+
                 updateLeaderBoard(this.boardId,this.LeaderBoardName,this.categoryMap[this.Category],this.quizId)
-               .then(response => {
+               .then(()=> {
                  toast.success("Edit succesfull for the leaderboard",{
                     autoClose:4000
                  })
@@ -624,7 +625,6 @@ export default{
                  this.Category = '',
                  this.quizId = '',
                  this.showSearchResults = false
-                 console.log(response)
                })
                .catch(()=>{
                  toast.error("Could not edit check if all the fields are filled",{
@@ -634,9 +634,9 @@ export default{
             },
             editQuiz(){
                 event.preventDefault();
-                console.log(parseInt(this.quizId),parseInt(this.CreatorId),this.categoryMap[this.Category],this.duration,this.title,this.difficultyMap[this.difficulty],this.NoOfQuestions)
+               
                 updateQuiz(parseInt(this.quizId),parseInt(this.CreatorId),this.categoryMap[this.Category],this.duration,this.title,this.difficultyMap[this.difficulty],this.NoOfQuestions)
-                .then(response =>{
+                .then(() =>{
                     toast.success("Edit succesfull for quiz",{
                         autoClose:4000
                     })
@@ -648,7 +648,7 @@ export default{
                     this.difficulty = '',
                     this.NoOfQuestions = '',
                     this.showSearchResults = false
-                    console.log(response)
+
                 })
                 .catch(()=>{
                      toast.error("Could not update the quiz one or more field is missing",{
@@ -659,7 +659,7 @@ export default{
             },
             
             selectCategory(event){
-               console.log(event.target.value);
+
                this.selectedCategory = event.target.value
             },
             inputChange(event){
@@ -668,13 +668,11 @@ export default{
                .then(response =>{
                  sessionStorage.setItem('Image',response.data.imagePath)
                  this.image = "http://localhost:5193"+response.data.imagePath;
-                 console.log(this.image)
                })
                
              },
             addQuestion(){
                 event.preventDefault();
-                console.log(this.QuestionName,this.Category,this.Points)
                  const question = async()=>{
                     try {
                          await addQuestion(
@@ -708,16 +706,14 @@ export default{
 
             addLeaderBoard(){
                  event.preventDefault();
-                 console.log(this.LeaderBoardName,this.categoryMap[this.Category],this.quizId)
                  addLeaderBoard(this.LeaderBoardName,this.categoryMap[this.Category],this.quizId)
-                 .then(response => {
+                 .then(()=> {
                     toast.success("Leaderboard added", {
                         autoClose:4000
                     })
                     this.LeaderBoardName ='',
                     this.Category = '',
                     this.quizId=''
-                    console.log(response);
                  })
                  .catch(()=>{
                      toast.error("Could not create leader board",{
@@ -728,8 +724,7 @@ export default{
             },
 
             createQuiz(){
-            //    event.preventDefault();
-               console.log(this.CreatorId,this.categoryMap[this.Category],this.duration,this.title,this.difficultyMap[this.difficulty],this.NoOfQuestions)
+               event.preventDefault();
                addQuiz(parseInt(this.CreatorId),this.categoryMap[this.Category],this.duration,this.title,this.difficultyMap[this.difficulty],this.NoOfQuestions)
                .then( () => {
                  toast.success("Quiz created Succesfully",{
@@ -752,7 +747,6 @@ export default{
                
             },
             correctSelection(event){
-                console.log(this.map[event.target.value]);
                 this.isCorrect = this.map[event.target.value];
             },
             addMoreOption(){
@@ -771,7 +765,6 @@ export default{
                             autoClose:4000
                         })
                     }
-                    console.log(this.options);
                     this.questionId = '',
                     this.optionText = '',
                     this.isCorrect = false
@@ -784,8 +777,7 @@ export default{
                 
             },
             submitOption(){
-                // event.preventDefault();
-                console.log(this.options);
+                event.preventDefault();
                 this.addMoreOption();
                  const question = async()=>{
                     try{
@@ -794,6 +786,10 @@ export default{
                             autoClose:4000
                         })
                         this.options = []
+                        this.showSearchResults = false
+                        this.QuestionId = '',
+                        this.searchQuestion = '',
+                        this.QuestionName = ''
                     }
                     catch(error){
                         toast.error("Could not add options one or more field is empty",{
@@ -807,26 +803,25 @@ export default{
             },
             searchQuestions(){
                 event.preventDefault();
-                console.log(this.searchQuestion);
                 const question = async()=>{
-                     console.log(this.searchQuestion)
+                    
                      let question = await searchQuestions(this.searchQuestion);
                      this.searchResults = question.data;
                      this.showSearchResults = true;
-                     console.log(question);
+
 
                 }
                 question()
             },
             searchQuestionsDelete(){
                 event.preventDefault();
-                console.log(this.searchQuestion);
+
                 const question = async()=>{
-                     console.log(this.searchQuestion)
+
                      let question = await searchQuestions(this.searchQuestion);
                      this.showSearchResults = true;
                      this.searchResults = question.data;
-                     console.log(question);
+
 
                 }
                 question()
@@ -835,23 +830,22 @@ export default{
                 this.difficulty = event.target.value
             },
             onclick(event){
-                console.log(event.target.value)
+
                 this.Category = event.target.value
             },
             onSelect(event){
                event.preventDefault()
-               console.log(event.target.value)
+
                this.QuestionId = event.target.value
                let result = this.searchResults.find((question)=>{
                    return question.questionId == this.QuestionId
                })
-               console.log(result);
+
                this.QuestionName = result.questionName
                
             },
             onSelectDelete(event){
                 event.preventDefault();
-                console.log(event.target.value)
                 this.QuestionId = event.target.value
             },
             deleteSelection(text){
@@ -866,7 +860,7 @@ export default{
                 .then(response => {
                     this.searchResultQuiz  = response.data
                     this.showSearchResults = true
-                    console.log(response);
+
                 })
                 .catch(()=>{
                      toast.error("Some fields are empty please add try submitting ", {
@@ -904,21 +898,17 @@ export default{
             },
             searchUserByName(){
                 event.preventDefault();
-                console.log("searching//")
                 getUserByName(this.searchUser)
                 .then(response =>{
                     this.searchResultUser = response.data
-                    console.log(response.data)
                 })
 
             },
             searchBoardByName(){
                 event.preventDefault();
-                console.log(this.searchBoard)
                 getLeaderBoardByName(this.searchBoard)
                 .then(response =>{
                     this.searchResultBoard = response.data
-                    console.log(response.data)
                 })
             },
             onSelectBoard(event){
@@ -935,7 +925,7 @@ export default{
                 this.title = result.title
                 this.difficulty = result.difficulty
                 this.NoOfQuestions = result.questions.length;
-                console.log(result);
+
 
             },
             onSelectUser(event){
@@ -975,8 +965,10 @@ export default{
             deleteBoard(){
                 event.preventDefault()
                  deleteLeaderBoard(this.boardId)
-                 .then(response=>{
-                    console.log(response.data)
+                 .then(()=>{
+                    toast.success("Succesfully deleted leaderboard",{
+                        autoClose:4000
+                    })
                  })
                  .catch(()=>{
                    toast.error("Could not delete leaderboard",{
@@ -994,13 +986,11 @@ export default{
                   .then( data => data.json())
                   .then( response =>{
                     this.Categories = response;
-                    console.log("hello");
                   });
                   
                   this.image = "http://localhost:5193"+sessionStorage.getItem('Image')
                    this.username = sessionStorage.getItem('Name')
                    this.role = sessionStorage.getItem('Role')
-                   console.log(this.image)
      },
      created(){
          this.image = sessionStorage.getItem('Image')

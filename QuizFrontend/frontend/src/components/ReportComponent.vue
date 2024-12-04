@@ -125,13 +125,11 @@
         },
         addQuery(){
                  submitQuery(this.userId,this.type,this.description)
-                 .then(response =>{
+                 .then(() =>{
                    toast.success("Query added succesfully",{
                     autoClose:4000
                    })
-                   console.log(response.data)
                  }).catch((err) =>{
-                    console.log(err)
                     if(err.response.data.errors.Description ){
                       toast.error("Description cannot be empty",{
                       autoClose:4000
@@ -157,16 +155,15 @@
             for(let i=0;i<size;i++){
                this.pages.push(i);
              }
-             console.log(response.data);
            })
        },
        deleteQuery(id){
          deleteQuery(id)
-         .then( (response)=>{
+         .then( ()=>{
            toast.success("Deleted succesfully",{
             autoClose:4000
            })
-           console.log(response);
+
            this.getAllquery();
          })
        },
@@ -177,13 +174,11 @@
          this.description = query.description;
          this.type = query.queryType;
          this.reportedBy = query.reportedBy;
-         console.log(query.queryId,this.reportedBy,this.type,this.description)
           updateQuery(query.queryId,this.reportedBy,this.type,this.description)
-          .then(response =>{
+          .then(() =>{
             toast.success("Query updated",{
               autoClose:4000
             })
-            console.log(response);
             this.getAllquery()
           })
           .catch((err)=>{
@@ -193,7 +188,6 @@
        changePage(index){
            this.currentPage = index;
            this.scoreCards = this.paginatedScoreCard.slice(index*this.scoresPerpage- this.scoresPerpage,index*this.scoresPerpage);
-           console.log(this.scoreCards)
         },
         // inputChange(event){
         //   let image = event.target.files[0]
@@ -207,9 +201,7 @@
         // }
       },
       mounted(){
-        console.log("scorecard")
         this.getAllquery();
-        console.log(this.scoreCards)
       },
   }
   </script>

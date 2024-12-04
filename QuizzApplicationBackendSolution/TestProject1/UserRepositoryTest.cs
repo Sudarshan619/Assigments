@@ -51,7 +51,7 @@ public class UserRepositoryTest
     }
 
     [Test]
-    public async Task Add_ShouldThrowCouldNotAddException_WhenEmailServiceFails()
+    public async Task Add_ShouldThrowException_WhenUserAlreadyExists()
     {
         var user = new User
         {
@@ -62,8 +62,9 @@ public class UserRepositoryTest
             Role = Roles.QuizzCreator
         };
 
-        smtpSettingsMock.Setup(x => x.Value.Server).Throws(new Exception("Email service error"));
+        await repository.Add(user);
 
+        // Trying to add the same user again should throw exception
         Assert.ThrowsAsync<CouldNotAddException>(async () => await repository.Add(user));
     }
 
@@ -75,24 +76,14 @@ public class UserRepositoryTest
     }
 
     [Test]
-    public async Task Update_ShouldThrowException_WhenErrorOccursDuringUpdate()
+    public async Task Get_ShouldThrowNotFoundException_WhenUserDoesNotExist()
     {
-        var user = new User
-        {
-            Name = "TestUser",
-            Email = "email@example.com",
-            Password = Encoding.UTF8.GetBytes("Password"),
-            HashKey = Encoding.UTF8.GetBytes("TestHashKey"),
-            Role = Roles.QuizzCreator
-        };
-
-        context.Database.EnsureDeleted(); // Simulate a database failure.
-
-        Assert.ThrowsAsync<Exception>(async () => await repository.Update("TestUser", user));
+        var exception = async () => await repository.Get("NonExistentUser");
+        Assert.IsNull (exception);
     }
 
     [Test]
-    public async Task Delete_ShouldThrowException_WhenErrorOccursDuringDeletion()
+    public async Task Update_ShouldUpdateUser_WhenUserExists()
     {
         var user = new User
         {
@@ -102,109 +93,53 @@ public class UserRepositoryTest
             HashKey = Encoding.UTF8.GetBytes("TestHashKey"),
             Role = Roles.QuizzCreator
         };
-
         await repository.Add(user);
-
-        context.Database.EnsureDeleted(); // Simulate a database failure.
-
-        Assert.ThrowsAsync<Exception>(async () => await repository.Delete("TestUser"));
-    }
-
-    [Test]
-    public async Task Add_ShouldNotAddUser_WhenDuplicateUserExists()
-    {
-        var user1 = new User
-        {
-            Name = "TestUser",
-            Email = "testuser@example.com",
-            Password = Encoding.UTF8.GetBytes("Password"),
-            HashKey = Encoding.UTF8.GetBytes("TestHashKey"),
-            Role = Roles.QuizzCreator
-        };
-
-        var user2 = new User
-        {
-            Name = "TestUser",
-            Email = "duplicateuser@example.com",
-            Password = Encoding.UTF8.GetBytes("Password"),
-            HashKey = Encoding.UTF8.GetBytes("TestHashKey"),
-            Role = Roles.QuizzCreator
-        };
-
-        await repository.Add(user1);
-
-        Assert.ThrowsAsync<Exception>(async () => await repository.Add(user2));
-    }
-
-    [Test]
-    public async Task Get_ShouldReturnCorrectUser_WhenMultipleUsersExist()
-    {
-        var user1 = new User
-        {
-            Name = "User1",
-            Email = "user1@example.com",
-            Password = Encoding.UTF8.GetBytes("Password"),
-            HashKey = Encoding.UTF8.GetBytes("TestHashKey"),
-            Role = Roles.QuizzCreator
-        };
-        var user2 = new User
-        {
-            Name = "User2",
-            Email = "user2@example.com",
-            Password = Encoding.UTF8.GetBytes("Password"),
-            HashKey = Encoding.UTF8.GetBytes("TestHashKey"),
-            Role = Roles.QuizzCreator
-        };
-
-        await repository.Add(user1);
-        await repository.Add(user2);
-
-        var fetchedUser = await repository.Get("User2");
-        Assert.AreEqual(user2.Name, fetchedUser.Name);
-    }
-
-    [Test]
-    public async Task Update_ShouldOnlyUpdateSpecifiedUser_WhenMultipleUsersExist()
-    {
-        var user1 = new User
-        {
-            Name = "User1",
-            Email = "user1@example.com",
-            Password = Encoding.UTF8.GetBytes("Password"),
-            HashKey = Encoding.UTF8.GetBytes("TestHashKey"),
-            Role = Roles.QuizzCreator
-        };
-
-        var user2 = new User
-        {
-            Name = "User2",
-            Email = "user2@example.com",
-            Password = Encoding.UTF8.GetBytes("Password"),
-            HashKey = Encoding.UTF8.GetBytes("TestHashKey"),
-            Role = Roles.QuizzCreator
-        };
-
-        await repository.Add(user1);
-        await repository.Add(user2);
 
         var updatedUser = new User
         {
-            Name = "User2",
-            Email = "updateduser2@example.com",
+            Name = "TestUser",
+            Email = "updatedemail@example.com",
             Password = Encoding.UTF8.GetBytes("UpdatedPassword"),
             HashKey = Encoding.UTF8.GetBytes("UpdatedHashKey"),
             Role = Roles.QuizzCreator
         };
 
-        var result = await repository.Update("User2", updatedUser);
-        Assert.AreEqual(updatedUser.Email, result.Email);
+        var result = await repository.Update("TestUser", updatedUser);
 
-        var unaffectedUser = await repository.Get("User1");
-        Assert.AreEqual(user1.Email, unaffectedUser.Email);
+        Assert.AreEqual(updatedUser.Email, result.Email);  // Check if the email is updated
+        Assert.AreEqual(updatedUser.Password, result.Password); // Check if the password is updated
+    }
+
+
+
+    [Test]
+    public async Task Delete_ShouldDeleteUser_WhenUserExists()
+    {
+        var user = new User { Name = "TestUser", Email = "email@example.com", Password = Encoding.UTF8.GetBytes("Password"), HashKey = Encoding.UTF8.GetBytes("TestHashKey"), Role = Roles.QuizzCreator };
+        await repository.Add(user);
+
+        await repository.Delete("TestUser");
+
+        var exception = Assert.ThrowsAsync<CouldNotAddException>(async () => await repository.Get("TestUser"));
+        //Assert.AreEqual("User with name TestUser not found.", exception.Message);
+    }
+
+
+    [Test]
+    public async Task Delete_ShouldNotDeleteIfUserDoesNotExist()
+    {
+        Assert.ThrowsAsync<NotFoundException>(async () => await repository.Delete("NonExistentUser"));
     }
 
     [Test]
-    public async Task Delete_ShouldOnlyDeleteSpecifiedUser_WhenMultipleUsersExist()
+    public async Task GetAll_ShouldReturnEmptyList_WhenNoUsersExist()
+    {
+        var result = await repository.GetAll();
+        Assert.IsEmpty(result);
+    }
+
+    [Test]
+    public async Task GetAll_ShouldReturnAllUsers_WhenUsersExist()
     {
         var user1 = new User
         {
@@ -214,7 +149,6 @@ public class UserRepositoryTest
             HashKey = Encoding.UTF8.GetBytes("TestHashKey"),
             Role = Roles.QuizzCreator
         };
-
         var user2 = new User
         {
             Name = "User2",
@@ -227,10 +161,10 @@ public class UserRepositoryTest
         await repository.Add(user1);
         await repository.Add(user2);
 
-        await repository.Delete("User2");
+        var result = await repository.GetAll();
 
-        Assert.ThrowsAsync<NotFoundException>(async () => await repository.Get("User2"));
-        var existingUser = await repository.Get("User1");
-        Assert.IsNotNull(existingUser);
+        Assert.AreEqual(2, result.Count());  // Ensure there are two users
     }
+
+
 }

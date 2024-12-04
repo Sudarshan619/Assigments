@@ -8,41 +8,49 @@ namespace QuizzApplicationBackend.Repositories
 {
     public class ScorecardRepository : IRepository<int, ScoreCard>
     {
-        private readonly QuizContext ScorecardContext;
-        private readonly ILogger<ScorecardRepository> logger;
+        private readonly QuizContext _context;
+        private readonly ILogger<ScorecardRepository> _logger;
 
         public ScorecardRepository(QuizContext context, ILogger<ScorecardRepository> logger)
         {
-            ScorecardContext = context;
-            this.logger = logger;
+            _context = context;
+            _logger = logger;
         }
 
         public async Task<ScoreCard> Add(ScoreCard entity)
         {
+            if (entity == null)
+                throw new ArgumentNullException(nameof(entity), "Scorecard entity cannot be null");
+
             try
             {
-                ScorecardContext.ScoreCards.Add(entity);
-                await ScorecardContext.SaveChangesAsync();
+                await _context.ScoreCards.AddAsync(entity);
+                await _context.SaveChangesAsync();
                 return entity;
             }
             catch (Exception ex)
             {
-                throw new Exception("Not able to add Scorecard");
+                _logger.LogError(ex, "Error occurred while adding a ScoreCard");
+                throw new Exception("Failed to add ScoreCard");
             }
         }
 
         public async Task<ScoreCard> Delete(int id)
         {
+            var scoreCard = await Get(id);
+            if (scoreCard == null)
+                throw new NotFoundException("ScoreCard not found");
+
             try
             {
-                var res = await Get(id);
-                ScorecardContext.ScoreCards.Remove(res);
-                await ScorecardContext.SaveChangesAsync();
-                return res;
+                _context.ScoreCards.Remove(scoreCard);
+                await _context.SaveChangesAsync();
+                return scoreCard;
             }
             catch (Exception ex)
             {
-                throw new Exception("Not able to delete Question");
+                _logger.LogError(ex, "Error occurred while deleting ScoreCard");
+                throw new Exception("Failed to delete ScoreCard");
             }
         }
 
@@ -50,18 +58,15 @@ namespace QuizzApplicationBackend.Repositories
         {
             try
             {
-                var Scorecard = await ScorecardContext.ScoreCards.FirstOrDefaultAsync(e => e.ScoreCardId == id);
-                await ScorecardContext.SaveChangesAsync();
-                if (Scorecard != null)
-                {
-                    return Scorecard;
-                }
-                throw new NotFoundException("Scorecard not found");
-
+                var scoreCard = await _context.ScoreCards.FirstOrDefaultAsync(s => s.ScoreCardId == id);
+                if (scoreCard == null)
+                    throw new NotFoundException("ScoreCard not found");
+                return scoreCard;
             }
-            catch (NotFoundException ex)
+            catch (Exception ex)
             {
-                throw new NotFoundException(ex.Message);
+                _logger.LogError(ex, "Error occurred while retrieving ScoreCard");
+                throw;
             }
         }
 
@@ -69,37 +74,42 @@ namespace QuizzApplicationBackend.Repositories
         {
             try
             {
-                var scoreCards = await ScorecardContext.ScoreCards.ToListAsync();
+                var scoreCards = await _context.ScoreCards.ToListAsync();
                 if (!scoreCards.Any())
-                {
-                    throw new CollectionEmptyException("No scorecards available.");
-                }
-
+                    throw new CollectionEmptyException("No scorecards found");
                 return scoreCards;
             }
-            catch (CollectionEmptyException ex)
+            catch (Exception ex)
             {
-                throw new CollectionEmptyException(ex.Message);
-            } 
+                _logger.LogError(ex, "Error occurred while retrieving all ScoreCards");
+                throw;
+            }
         }
+
         public async Task<ScoreCard> Update(int id, ScoreCard entity)
         {
+            if (entity == null)
+                throw new ArgumentNullException(nameof(entity), "Scorecard entity cannot be null");
+
+            var scoreCard = await Get(id);
+            if (scoreCard == null)
+                throw new NotFoundException("ScoreCard not found");
+
             try
             {
-                var scoreCard = await Get(id);
-
                 scoreCard.QuizId = entity.QuizId;
                 scoreCard.UserId = entity.UserId;
                 scoreCard.Score = entity.Score;
+                scoreCard.Acuuracy = entity.Acuuracy;
 
-                var result = ScorecardContext.ScoreCards.Update(scoreCard);
-                await ScorecardContext.SaveChangesAsync();
-
+                _context.ScoreCards.Update(scoreCard);
+                await _context.SaveChangesAsync();
                 return scoreCard;
             }
-            catch (Exception ex) { 
-                
-                throw new Exception(ex.Message);
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error occurred while updating ScoreCard");
+                throw new Exception("Failed to update ScoreCard");
             }
         }
     }

@@ -145,17 +145,16 @@ export default {
                 this.duration = quizData.duration;
                 this.quizQuestions = quizData.questions;
                 this.currentQuestion = this.quizQuestions[0];
-                console.log(this.quizQuestions);
             },
             addQuery(){
                submitQuery(this.response.userId,this.type,this.description)
-               .then(response =>{
+               .then(()=>{
                  toast.success("Query added succesfully",{
                   autoClose:4000
                  })
-                 console.log(response.data)
+                
                }).catch((err) =>{
-                  console.log(err)
+                  
                   if(err.response.data.errors.Description ){
                     toast.error("Description cannot be empty",{
                     autoClose:4000
@@ -184,9 +183,7 @@ export default {
                  this.currentQuestion = this.quizQuestions[page - 1];
             },
             onclick(event){
-              console.log(event.target.value);
               this.currentOption = event.target.value;
-              console.log(this.response.options)
             },
             isContainsOption(optionId){
               const storedAnswers = sessionStorage.getItem('Answers');
@@ -238,17 +235,14 @@ export default {
                     
                 }
             
-                console.log("Updated Response:", this.response.options);
             },
             nextQuestion(event){
-              console.log(event.target.dataset.questionId)
               const questionId = event.target.dataset.questionId;
               //filter returns an array
               //find returns an element --> use when single element is needed
                this.currentQuestion = this.quizQuestions.find((question)=>{
                   return question.questionId.toString() === questionId.toString()              
                 })
-              console.log(this.currentQuestion[0]);
             },
             submitQuiz(){
                 this.response.options = JSON.parse(sessionStorage.getItem('Answers') || [])
@@ -264,13 +258,11 @@ export default {
                 let formattedTime = `${minutes.toString().padStart(2, '0')}:${remainingSec
                 .toString()
                  .padStart(2, '0')}`;
-                console.log(formattedTime);
                 this.response.submittedTime = formattedTime;
                submitQuiz(this.response)
                .then(data => {
                 
                 this.isSubmitted = true;
-                console.log(data);
                 toast(`${data.data} ,do not refresh automatically redirecting to home page`, {
                     autoClose: 4000,
                  });

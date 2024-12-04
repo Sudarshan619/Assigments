@@ -55,7 +55,7 @@ import QuestionComponent from './QuestionComponent.vue'
             created(){
                 getQuestions().then(response => {
                      this.getAllQuestions = response.data;
-                     console.log(this.getAllQuestions);
+                     
                    });              
                 
               }  

@@ -374,7 +374,7 @@
       },
       {
         "Name": "questionDto",
-        "Type": "QuizzApplicationBackend.DTO.QuestionDTO",
+        "Type": "QuizzApplicationBackend.DTO.EditQuestionDTO",
         "IsRequired": true
       }
     ],

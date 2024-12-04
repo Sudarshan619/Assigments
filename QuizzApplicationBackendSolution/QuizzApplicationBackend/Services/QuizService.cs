@@ -26,7 +26,7 @@ namespace QuizzApplicationBackend.Services
             {
                 var quiz = _mapper.Map<Quiz>(quizDto);
 
-                var question = await GetRandomQuestionsByCategory(quiz.Category, quizDto.NoOfQuestions, quizDto.Difficulty);
+                var question = await GetRandomQuestionsByCategory(quiz.Category, quizDto.NoOfQuestions, quizDto.Difficulty,quizDto.Title);
                 quiz.NoOfQuestions = quizDto.NoOfQuestions;
                 quiz.MaxPoint = question.Select(q => q.Points).Sum();
 
@@ -62,7 +62,7 @@ namespace QuizzApplicationBackend.Services
             {
                 var existingQuiz = await _quizRepository.Get(id);
                 var updatedQuiz = _mapper.Map(quizDto, existingQuiz);
-                var question = await GetRandomQuestionsByCategory(updatedQuiz.Category, quizDto.NoOfQuestions,quizDto.Difficulty);
+                var question = await GetRandomQuestionsByCategory(updatedQuiz.Category, quizDto.NoOfQuestions,quizDto.Difficulty, quizDto.Title);
                 updatedQuiz.MaxPoint = question.Select(e => e.Points).Sum();
 
                 var result = await _quizRepository.Update(id, updatedQuiz);
@@ -91,7 +91,7 @@ namespace QuizzApplicationBackend.Services
 
                 var questions = await _questionRepository.GetAll();
 
-                var quizQuestions = await GetRandomQuestionsByCategory(quiz.Category, quiz.NoOfQuestions, quiz.Difficulty);
+                var quizQuestions = await GetRandomQuestionsByCategory(quiz.Category, quiz.NoOfQuestions, quiz.Difficulty,quiz.Title);
                 //.Where(q => q.Category == quiz.Category && q.Difficulty == quiz.Difficulty)
                 //.Take(quiz.NoOfQuestions)
                 //.ToList();
@@ -138,21 +138,30 @@ namespace QuizzApplicationBackend.Services
         }
 
         // Other than CRUD
-        public async Task<IEnumerable<Question>> GetRandomQuestionsByCategory(Categories category, int noOfQuestions, Difficulties difficulty)
+        public async Task<IEnumerable<Question>> GetRandomQuestionsByCategory(Categories category, int noOfQuestions, Difficulties difficulty, string title)
         {
             try
             {
+
                 var questions = await _questionRepository.GetAll();
+
                 var filteredQuestions = questions.Where(q => q.Category == category && q.Difficulty == difficulty).ToList();
 
-                if (!filteredQuestions.Any())
+                var subcategoryQuestions = filteredQuestions.Where(q => 
+                    !string.IsNullOrEmpty(q.SubCategory) &&
+                    q.SubCategory.Equals(title, StringComparison.OrdinalIgnoreCase)).ToList();
+
+                //var combinedQuestions = filteredQuestions.Union(subcategoryQuestions).Distinct().ToList();
+                var random = new Random();
+                if (!subcategoryQuestions.Any())
                 {
-                    throw new CollectionEmptyException("No questions found for the specified category.");
+                    
+                    var commonQuestions = filteredQuestions.OrderBy(_ => random.Next()).ToList();
+                    var commonselectedQuestions = commonQuestions.Take(noOfQuestions).ToList();
+                    return commonselectedQuestions;
                 }
 
-                var random = new Random();
-                var randomizedQuestions = filteredQuestions.OrderBy(q => random.Next()).ToList();
-
+                var randomizedQuestions = subcategoryQuestions.OrderBy(_ => random.Next()).ToList();
                 var selectedQuestions = randomizedQuestions.Take(noOfQuestions).ToList();
 
                 return selectedQuestions;
@@ -166,6 +175,7 @@ namespace QuizzApplicationBackend.Services
                 throw new Exception("Error while retrieving random questions by category: " + ex.Message);
             }
         }
+
 
         public async Task<IEnumerable<QuizQuestionReponseDTO>> Search(string quizTitle)
         {

@@ -144,7 +144,7 @@ namespace QuizzApplicationBackend.Services
 
        
 
-        public async Task<bool> EditQuestion(int id, QuestionDTO question)
+        public async Task<bool> EditQuestion(int id, EditQuestionDTO question)
         {
             try
             {

@@ -4,34 +4,43 @@ using QuizzApplicationBackend.Context;
 using QuizzApplicationBackend.Exceptions;
 using QuizzApplicationBackend.Services;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace QuizzApplicationBackend.Repositories
 {
-    public class UserRepository : IRepository<string,User>
+    public class UserRepository : IRepository<string, User>
     {
         private readonly QuizContext _context;
         private readonly ILogger<UserRepository> _logger;
         private readonly EmailService _mailService;
 
-        public UserRepository(QuizContext context, ILogger<UserRepository> logger,EmailService mailService)
+        public UserRepository(QuizContext context, ILogger<UserRepository> logger, EmailService mailService)
         {
             _context = context;
             _logger = logger;
             _mailService = mailService;
         }
-        public async Task<User> Add(User entity)   
+
+        public async Task<User> Add(User entity)
         {
             try
             {
+                var existingUser = await _context.Users.FirstOrDefaultAsync(u => u.Name == entity.Name);
+                if (existingUser != null)
+                {
+                    throw new Exception("User already exists.");
+                }
+
                 _context.Users.Add(entity);
                 await _context.SaveChangesAsync();
 
                 await _mailService.SendEmailAsync(entity.Email, "Account created", $"Your account details have been created for user {entity.Name}.");
                 return entity;
             }
-            catch (CouldNotAddException ex) {
-
-                throw new CouldNotAddException("Error while adding user");
+            catch (Exception ex)
+            {
+                _logger.LogError($"Error while adding user: {ex.Message}");
+                throw new CouldNotAddException("Error while adding user.");
             }
         }
 
@@ -52,7 +61,7 @@ namespace QuizzApplicationBackend.Repositories
             catch (NotFoundException ex)
             {
                 _logger.LogError($"Delete failed: {ex.Message}");
-                throw new NotFoundException("Delete failed");
+                throw;
             }
             catch (Exception ex)
             {
@@ -61,67 +70,42 @@ namespace QuizzApplicationBackend.Repositories
             }
         }
 
-
         public async Task<User> Get(string name)
         {
-            try
-            {
-                var result = _context.Users.FirstOrDefault(e => e.Name == name);
-              
-                 return result;
-                
-                
-            }
-            catch (NotFoundException ex) { 
-                throw new NotFoundException(ex.Message);         
-            }
+            var user = await _context.Users.FirstOrDefaultAsync(e => e.Name == name);
+            return user; // Return null if user is not found
         }
 
         public async Task<IEnumerable<User>> GetAll()
         {
-            try
-            {
-                var result = await _context.Users.ToListAsync();
-               
-                return result;
-               
-            }
-            catch (NotFoundException ex)
-            {
-                throw new NotFoundException(ex.Message);
-            }
+            return await _context.Users.ToListAsync();
         }
 
-        public async Task<User> Update(string name, User entity)
+        public async Task<User> Update(string name, User updatedUser)
         {
-            try
-            {
-                var existingUser = await _context.Users.FirstOrDefaultAsync(u => u.Name == name);
-                if (existingUser == null)
-                {
-                    throw new NotFoundException($"User with name {name} not found.");
-                }
+            //// Fetch the existing user by name
+            //var existingUser = await _context.Users.FirstOrDefaultAsync(u => u.Name == name);
 
-                
-                existingUser.Email = entity.Email;
-                existingUser.Name = entity.Name;
-                existingUser.Password = entity.Password;
-                existingUser.Role = entity.Role;
+            //if (existingUser == null)
+            //{
+            //    throw new NotFoundException($"User with name {name} not found.");
+            //}
 
-                _context.Users.Update(existingUser);
-                await _context.SaveChangesAsync();
-                return existingUser;
-            }
-            catch (NotFoundException ex)
-            {
-                _logger.LogError($"Update failed: {ex.Message}");
-                throw new NotFoundException("Update failed");
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError($"Unexpected error while updating user: {ex.Message}");
-                throw new Exception("Error while updating user.");
-            }
+            //// Update the properties of the existing user
+            //existingUser.Email = updatedUser.Email;
+            //existingUser.Password = updatedUser.Password;
+            //existingUser.HashKey = updatedUser.HashKey;
+            //existingUser.Role = updatedUser.Role;
+
+            //// Save changes to the database
+            //_context.Users.Update(existingUser);
+            //await _context.SaveChangesAsync();
+
+            //// Return the updated user
+            //return existingUser;
+            throw new NotImplementedException();
         }
+
+
     }
 }
